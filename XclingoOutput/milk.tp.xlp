@@ -1,0 +1,14 @@
+
+Answer: 1
+>> locationB(r1,r3,2)	[1]
+  *
+  |__"mary is located at hallway in sentence 2"
+  |  |__"mary moved to hallway in sentence 2"
+
+>> locationB(r2,r3,2)	[1]
+  *
+  |__"milk is located at hallway in sentence 2"
+  |  |__"Since mary obtained the milk in sentence 1"
+  |  |__"mary moved to hallway in sentence 2"
+
+

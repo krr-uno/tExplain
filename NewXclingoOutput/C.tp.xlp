@@ -1,0 +1,41 @@
+
+Answer: 1
+>> locationB(r1,r3,2)	[1]
+  *
+  |__"(1) john is located at hallway in sentence 2"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+>> locationB(r4,r5,4)	[1]
+  *
+  |__"(1) mary is located at garden in sentence 4"
+  |  |__"(3) mary moved to garden in sentence 4"
+
+>> locationB(r2,r3,2)	[1]
+  *
+  |__"(1) football is located at hallway in sentence 2"
+  |  |__"(4) Since john obtained the football in sentence 1"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+>> locationB(r1,r3,3)	[1]
+  *
+  |__"(1) john is located at hallway in sentence 3"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+>> locationB(r1,r3,4)	[1]
+  *
+  |__"(1) john is located at hallway in sentence 4"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+>> locationB(r2,r3,3)	[1]
+  *
+  |__"(1) football is located at hallway in sentence 3"
+  |  |__"(4) Since john obtained the football in sentence 1"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+>> locationB(r2,r3,4)	[1]
+  *
+  |__"(1) football is located at hallway in sentence 4"
+  |  |__"(4) Since john obtained the football in sentence 1"
+  |  |__"(3) john moved to hallway in sentence 2"
+
+

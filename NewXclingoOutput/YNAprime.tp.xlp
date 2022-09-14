@@ -1,0 +1,48 @@
+
+Answer: 1
+>> notInLocation(r1,r1,1)	[1]
+  *
+  |__"mary is not located at mary in sentence 1"
+  |  |__"mary moved to kitchen in sentence 1"
+
+>> notInLocation(r1,r4,1)	[1]
+  *
+  |__"mary is not located at bedroom in sentence 1"
+  |  |__"mary moved to kitchen in sentence 1"
+
+>> notInLocation(r1,r3,1)	[1]
+  *
+  |__"mary is not located at john in sentence 1"
+  |  |__"mary moved to kitchen in sentence 1"
+
+>> notInLocation(r3,r1,2)	[1]
+  *
+  |__"john is not located at mary in sentence 2"
+  |  |__"john moved to bedroom in sentence 2"
+
+>> notInLocation(r3,r3,2)	[1]
+  *
+  |__"john is not located at john in sentence 2"
+  |  |__"john moved to bedroom in sentence 2"
+
+>> notInLocation(r3,r2,2)	[1]
+  *
+  |__"john is not located at kitchen in sentence 2"
+  |  |__"john moved to bedroom in sentence 2"
+
+>> notInLocation(r1,r3,2)	[1]
+  *
+  |__"mary is not located at john in sentence 2"
+  |  |__"mary moved to kitchen in sentence 1"
+
+>> notInLocation(r1,r4,2)	[1]
+  *
+  |__"mary is not located at bedroom in sentence 2"
+  |  |__"mary moved to kitchen in sentence 1"
+
+>> notInLocation(r1,r1,2)	[1]
+  *
+  |__"mary is not located at mary in sentence 2"
+  |  |__"mary moved to kitchen in sentence 1"
+
+
