@@ -1,0 +1,39 @@
+
+Answer: 1
+>> locationB(r5,r6,3)	[1]
+  *
+  |__"(1) sandra is located at kitchen in sentence 3"
+  |  |__"(3) sandra moved to kitchen in sentence 3"
+
+>> locationB(r3,r4,2)	[1]
+  *
+  |__"(1) john is located at bedroom in sentence 2"
+  |  |__"(2) john moved to bedroom in sentence 2"
+
+>> locationB(r1,r7,4)	[1]
+  *
+  |__"(1) mary is located at hallway in sentence 4"
+  |  |__"(2) mary moved to hallway in sentence 4"
+
+>> locationB(r2,r7,4)	[1]
+  *
+  |__"(1) milk is located at hallway in sentence 4"
+  |  |__"(4) Since mary obtained the milk in sentence 1"
+  |  |__"(2) mary moved to hallway in sentence 4"
+
+>> locationB(r3,r4,3)	[1]
+  *
+  |__"(1) john is located at bedroom in sentence 3"
+  |  |__"(2) john moved to bedroom in sentence 2"
+
+>> locationB(r5,r6,4)	[1]
+  *
+  |__"(1) sandra is located at kitchen in sentence 4"
+  |  |__"(3) sandra moved to kitchen in sentence 3"
+
+>> locationB(r3,r4,4)	[1]
+  *
+  |__"(1) john is located at bedroom in sentence 4"
+  |  |__"(2) john moved to bedroom in sentence 2"
+
+

@@ -1,0 +1,26 @@
+
+Answer: 1
+>> locationB(r3,r4,2)	[1]
+  *
+  |__"john was at hallway during sentence 2"
+  |  |__"john go_to hallway at time point 1"
+
+>> locationB(r1,r5,3)	[1]
+  *
+  |__"mary was at office during sentence 3"
+  |  |__"mary run_51_3_2 office at time point 2"
+
+>> locationB(r1,r2,1)	[1]
+  *
+  |__"mary was at bathroom during sentence 1"
+
+>> locationB(r1,r2,2)	[1]
+  *
+  |__"mary was at bathroom during sentence 2"
+
+>> locationB(r3,r4,3)	[1]
+  *
+  |__"john was at hallway during sentence 3"
+  |  |__"john go_to hallway at time point 1"
+
+

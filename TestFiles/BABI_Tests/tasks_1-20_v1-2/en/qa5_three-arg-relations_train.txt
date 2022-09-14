@@ -23,6 +23,8 @@
 23 Bill went back to the bathroom.
 24 Bill left the milk.
 25 Who received the apple? 	Fred	21
+
+
 1 Mary travelled to the garden.
 2 Mary journeyed to the kitchen.
 3 Bill went back to the office.
@@ -48,6 +50,8 @@
 23 Fred moved to the hallway.
 24 Jeff went to the office.
 25 Who did Mary give the milk to? 	Fred	21
+
+
 1 Fred travelled to the garden.
 2 Jeff took the milk there.
 3 Bill journeyed to the kitchen.
@@ -75,6 +79,8 @@
 25 Bill took the milk there.
 26 Jeff gave the football to Mary.
 27 Who did Jeff give the football to? 	Mary	26
+
+
 1 Fred travelled to the hallway.
 2 Bill moved to the bathroom.
 3 Mary travelled to the kitchen.
@@ -106,6 +112,8 @@
 29 Jeff passed the apple to Bill.
 30 Mary got the football there.
 31 What did Jeff give to Bill? 	apple	29
+
+
 1 Mary grabbed the milk there.
 2 Jeff travelled to the hallway.
 3 Mary handed the milk to Jeff.
@@ -141,6 +149,8 @@
 33 Fred moved to the kitchen.
 34 Mary passed the milk to Fred.
 35 Who did Mary give the milk to? 	Fred	34
+
+
 1 Jeff took the milk there.
 2 Jeff gave the milk to Bill.
 3 Who did Jeff give the milk to? 	Bill	2
@@ -164,6 +174,8 @@
 21 Mary passed the football to Fred.
 22 Mary got the apple there.
 23 Who gave the football to Fred? 	Mary	21
+
+
 1 Jeff went to the bedroom.
 2 Mary journeyed to the kitchen.
 3 Mary journeyed to the bathroom.
