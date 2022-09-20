@@ -18,7 +18,7 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -t
 1. Navigate into the `resources/srl-*` folder via a second window.
 2. Run the command:
 ```
-sh run_http_server.sh 8071 '/home/joelsare@unomaha.edu/Documents/Text2ALM/resources/models/eng'
+sh run_http_server.sh 8071 '../../models/eng/'
 ```
 
 ## Create tuples
@@ -53,7 +53,7 @@ Run the command:
 ```
 python xclingo.py LogicPrograms/yesNoA
 ```
-Where `LogicPrograms` is the directory where generated logic programs are located and `yesNoA` is the common prefix for all the logic programs you want to process.
+Where `LogicPrograms/yesNoA` is the directory where generated logic programs are located.
 
 For better readability, use redirection:
 ```
