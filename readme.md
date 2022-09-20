@@ -1,38 +1,61 @@
-# Text2ALM #
-
-A Thesis Project developed at the University of Nebraska Omaha by Craig Olson and Dr. Yuliya Lierler.
-
-## Publications Related to this Work ##
-* Processing Narratives by Means of Action Languages. [2019 Thesis Report](https://digitalcommons.unomaha.edu/compscistudent/1/)
-* Information Extraction Tool Text2ALM: From Narratives to Action Language System Descriptions. [ICLP 2019 Report](https://works.bepress.com/yuliya_lierler/86/)
-* An Architecture of Semantic Information Extraction Tool Text2ALM. [OSTIS 2020 Report](https://works.bepress.com/yuliya_lierler/91/)
-
-## What is this repository for? ##
-
-* Text2ALM takes narrative text as input and uses the VerbNet ontology to output an answer set of narrative properties.
-* The goal of the system is support Question Answering tasks about a narrative by outputing an answer set of elements that can be queried. 
-
-## Example ##
-### System Input ###
-
-Let the input file example.txt be given, containing the following narrative:
+# How to run tExplain
+Connect to remote machine using:
 ```
-John traveled to the garage.
-John picked up a football.
-John went to the kitchen.
+ssh YOURNETID@unomaha.edu@10.66.190.178
+```
+Where *YOURNETID* is replaced with your own NETID. Then enter the password associated with your NETID.
+
+**All source files are located in ```/bin/Text2ALM```**
+
+## Starting up Stanford CoreNLP
+1. Navigate into the `resources/stanford-corenlp-*` folder.
+2. Run the command:
+```
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -timeout 45000
 ```
 
-### System Output ###
-
-The desired output answer set could contain elements such as:
+## Starting up LTH
+1. Navigate into the `resources/srl-*` folder via a second window.
+2. Run the command:
 ```
-location(John, garage, 1), location(John, garage, 2), location(John, kitchen, 3),
-held_by(football, John, 2), held_by(football, John, 3),
-location(football, garage, 2), location(football, kitchen, 3)
+sh run_http_server.sh 8071 '/home/joelsare@unomaha.edu/Documents/Text2ALM/resources/models/eng'
 ```
 
-## Setup ##
-Go to this repository's [wiki](https://github.com/cdolson19/Text2ALM/wiki) to see how to prepare and run the system. 
+## Create tuples
+1. Navigate into the `Tuples` folder via a third window.
+2. Run the command:
+```
+python process.py yesNoA.txt
+```
+Where *yesNoA.txt* is the file to be processed into tuple format.
 
-## Contact Info ##
-Craig Olson (cdolson@unomaha.edu)
+This command will split the text file into five narratives and five question-answer-explanation tuples in a newly created directory within the `Tuples` directory. In this case, the directory `yesNoA` would be created from *yesNoA.txt*.
+
+## Create logic programs
+1. Navigate into the `text2ALM` directory.
+2. Run the command:
+```
+python getLogicPrograms.py Tuples/twoSuppA
+```
+Where `Tuples/twoSupA` is the directory that contains the processed narratives and question-answer-explanation tuples.
+
+This will create associated logic programs which are stored in the location `text2ALM/config.txt` is configured.
+
+## Create queries
+Run the command:
+```
+python Queries/twoSuppQuery.py Tuples/yesNoA.txt
+```
+Where `twoSuppQuery.py` corresponds to the correct type of queries you want to create and `Tuples/yesNoA.txt` is the text file you wish to create queries from.
+
+## Run Xclingo
+Run the command:
+```
+python xclingo.py LogicPrograms/yesNoA
+```
+Where `LogicPrograms` is the directory where generated logic programs are located and `yesNoA` is the common prefix for all the logic programs you want to process.
+
+For better readability, use redirection:
+```
+python xclingo.py LogicPrograms/yesNoA > output.txt
+```
