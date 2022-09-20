@@ -1,0 +1,22 @@
+Fred travelled to the garden.
+Jeff took the milk there.
+Bill journeyed to the kitchen.
+Jeff passed the milk to Bill.
+Bill gave the milk to Jeff.
+Jeff passed the milk to Bill.
+Bill gave the milk to Jeff.
+Jeff put down the milk.
+Jeff moved to the office.
+Mary went to the hallway.
+Bill picked up the milk there.
+Fred travelled to the office.
+Fred went back to the kitchen.
+Fred moved to the bedroom.
+Jeff travelled to the garden.
+Bill put down the milk there.
+Fred went to the office.
+Mary moved to the bedroom.
+Jeff went back to the bedroom.
+Jeff took the football there.
+Bill took the milk there.
+Jeff gave the football to Mary.

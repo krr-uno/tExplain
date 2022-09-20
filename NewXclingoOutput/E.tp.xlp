@@ -1,0 +1,57 @@
+
+Answer: 1
+>> locationB(r1,r2,1)	[1]
+  *
+  |__"(1) sandra is located at bathroom in sentence 1"
+  |  |__"(2) sandra moved to bathroom in sentence 1"
+
+>> locationB(r1,r4,3)	[1]
+  *
+  |__"(1) sandra is located at office in sentence 3"
+  |  |__"(3) sandra moved to office in sentence 3"
+
+>> locationB(r5,r2,4)	[1]
+  *
+  |__"(1) john is located at bathroom in sentence 4"
+  |  |__"(2) john moved to bathroom in sentence 4"
+
+>> locationB(r3,r4,3)	[1]
+  *
+  |__"(1) milk is located at office in sentence 3"
+  |  |__"(4) Since sandra obtained the milk in sentence 2"
+  |  |__"(3) sandra moved to office in sentence 3"
+
+>> locationB(r1,r4,4)	[2]
+  *
+  |__"(1) sandra is located at office in sentence 4"
+  |  |__"(3) sandra moved to office in sentence 3"
+  |  |__"(2) sandra moved to bathroom in sentence 1"
+
+  *
+  |__"(1) sandra is located at office in sentence 4"
+  |  |__"(3) sandra moved to office in sentence 3"
+
+>> locationB(r1,r2,2)	[1]
+  *
+  |__"(1) sandra is located at bathroom in sentence 2"
+  |  |__"(2) sandra moved to bathroom in sentence 1"
+
+>> locationB(r3,r4,4)	[2]
+  *
+  |__"(1) milk is located at office in sentence 4"
+  |  |__"(4) Since sandra obtained the milk in sentence 2"
+  |  |__"(3) sandra moved to office in sentence 3"
+  |  |__"(2) sandra moved to bathroom in sentence 1"
+
+  *
+  |__"(1) milk is located at office in sentence 4"
+  |  |__"(4) Since sandra obtained the milk in sentence 2"
+  |  |__"(3) sandra moved to office in sentence 3"
+
+>> locationB(r3,r2,2)	[1]
+  *
+  |__"(1) milk is located at bathroom in sentence 2"
+  |  |__"(4) Since sandra obtained the milk in sentence 2"
+  |  |__"(2) sandra moved to bathroom in sentence 1"
+
+

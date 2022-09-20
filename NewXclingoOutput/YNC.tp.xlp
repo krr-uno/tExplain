@@ -1,0 +1,38 @@
+
+Answer: 1
+>> locationB(r5,r2,4)	[1]
+  *
+  |__"sandra is located at bedroom in sentence 4"
+  |  |__"sandra moved to bedroom in sentence 4"
+
+>> locationB(r1,r4,3)	[1]
+  *
+  |__"daniel is located at bathroom in sentence 3"
+  |  |__"daniel moved to bathroom in sentence 3"
+
+>> locationB(r1,r2,1)	[1]
+  *
+  |__"daniel is located at bedroom in sentence 1"
+  |  |__"daniel moved to bedroom in sentence 1"
+
+>> locationB(r1,r3,2)	[1]
+  *
+  |__"daniel is located at garden in sentence 2"
+  |  |__"daniel moved to garden in sentence 2"
+
+>> locationB(r1,r4,4)	[3]
+  *
+  |__"daniel is located at bathroom in sentence 4"
+  |  |__"daniel moved to bathroom in sentence 3"
+  |  |__"daniel moved to garden in sentence 2"
+
+  *
+  |__"daniel is located at bathroom in sentence 4"
+  |  |__"daniel moved to bathroom in sentence 3"
+  |  |__"daniel moved to bedroom in sentence 1"
+
+  *
+  |__"daniel is located at bathroom in sentence 4"
+  |  |__"daniel moved to bathroom in sentence 3"
+
+

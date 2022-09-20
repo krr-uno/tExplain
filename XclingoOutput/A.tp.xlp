@@ -1,0 +1,10080 @@
+
+Answer: 1
+>> link(actions,universe)	[1]
+	1
+
+>> link(move,actions)	[1]
+	1
+
+>> link(locomotion,move)	[1]
+	1
+
+>> link(carry,locomotion)	[1]
+	1
+
+>> link(go_to,locomotion)	[1]
+	1
+
+>> link(meander_47_7,go_to)	[1]
+	1
+
+>> link(meander_47_7_1,meander_47_7)	[1]
+	1
+
+>> link(slide_11_2,go_to)	[1]
+	1
+
+>> link(slide_11_2_1,slide_11_2)	[1]
+	1
+
+>> link(leave,locomotion)	[1]
+	1
+
+>> link(walk,locomotion)	[1]
+	1
+
+>> link(run_51_3_2,walk)	[1]
+	1
+
+>> link(run_51_3_2_2,run_51_3_2)	[1]
+	1
+
+>> link(run_51_3_2_2_1,run_51_3_2_2)	[1]
+	1
+
+>> link(run_51_3_2_1,run_51_3_2)	[1]
+	1
+
+>> link(transfer,actions)	[1]
+	1
+
+>> link(receive,transfer)	[1]
+	1
+
+>> link(obtain,receive)	[1]
+	1
+
+>> link(take,obtain)	[1]
+	1
+
+>> link(get_13_5_1,obtain)	[1]
+	1
+
+>> link(get_13_5_1_1,get_13_5_1)	[1]
+	1
+
+>> link(deliver,transfer)	[1]
+	1
+
+>> link(lose,transfer)	[1]
+	1
+
+>> link(thing,universe)	[1]
+	1
+
+>> link(event,thing)	[1]
+	1
+
+>> link(actions,event)	[1]
+	1
+
+>> link(activity,event)	[1]
+	1
+
+>> link(entity,thing)	[1]
+	1
+
+>> link(spatial_entity,entity)	[1]
+	1
+
+>> link(place,spatial_entity)	[1]
+	1
+
+>> link(kitchen,place)	[1]
+	1
+
+>> link(bedroom,spatial_entity)	[1]
+	1
+
+>> link(hallway,spatial_entity)	[1]
+	1
+
+>> link(tangible_entity,spatial_entity)	[1]
+	1
+
+>> link(physical_object,tangible_entity)	[1]
+	1
+
+>> link(living_entity,physical_object)	[1]
+	1
+
+>> link(john,living_entity)	[1]
+	1
+
+>> link(mary,living_entity)	[1]
+	1
+
+>> link(milk,living_entity)	[1]
+	1
+
+>> link(sandra,living_entity)	[1]
+	1
+
+>> link(inanimate_object,physical_object)	[1]
+	1
+
+>> link(integers,universe)	[1]
+	1
+
+>> instance(r7,hallway)	[1]
+	1
+
+>> instance(r6,kitchen)	[1]
+	1
+
+>> instance(r5,sandra)	[1]
+	1
+
+>> instance(r4,bedroom)	[1]
+	1
+
+>> instance(r3,john)	[1]
+	1
+
+>> instance(r2,milk)	[1]
+	1
+
+>> instance(r1,mary)	[1]
+	1
+
+>> instance(e1,get_13_5_1_1)	[1]
+	1
+
+>> instance(e2,slide_11_2)	[1]
+	1
+
+>> instance(e3,meander_47_7)	[1]
+	1
+
+>> instance(e4,run_51_3_2_1)	[1]
+	1
+
+>> instance(r7,spatial_entity)	[1]
+	1
+
+>> instance(r6,place)	[1]
+	1
+
+>> instance(r5,living_entity)	[1]
+	1
+
+>> instance(r4,spatial_entity)	[1]
+	1
+
+>> instance(r3,living_entity)	[1]
+	1
+
+>> instance(r2,living_entity)	[1]
+	1
+
+>> instance(r1,living_entity)	[1]
+	1
+
+>> instance(r7,entity)	[1]
+	1
+
+>> instance(r6,spatial_entity)	[1]
+	1
+
+>> instance(r5,physical_object)	[1]
+	1
+
+>> instance(r4,entity)	[1]
+	1
+
+>> instance(r3,physical_object)	[1]
+	1
+
+>> instance(r2,physical_object)	[1]
+	1
+
+>> instance(r1,physical_object)	[1]
+	1
+
+>> instance(r7,thing)	[1]
+	1
+
+>> instance(r6,entity)	[1]
+	1
+
+>> instance(r5,tangible_entity)	[1]
+	1
+
+>> instance(r4,thing)	[1]
+	1
+
+>> instance(r3,tangible_entity)	[1]
+	1
+
+>> instance(r2,tangible_entity)	[1]
+	1
+
+>> instance(r1,tangible_entity)	[1]
+	1
+
+>> instance(r7,universe)	[1]
+	1
+
+>> instance(r6,thing)	[1]
+	1
+
+>> instance(r5,spatial_entity)	[1]
+	1
+
+>> instance(r4,universe)	[1]
+	1
+
+>> instance(r3,spatial_entity)	[1]
+	1
+
+>> instance(r2,spatial_entity)	[1]
+	1
+
+>> instance(r1,spatial_entity)	[1]
+	1
+
+>> instance(r6,universe)	[1]
+	1
+
+>> instance(r5,entity)	[1]
+	1
+
+>> instance(r3,entity)	[1]
+	1
+
+>> instance(r2,entity)	[1]
+	1
+
+>> instance(r1,entity)	[1]
+	1
+
+>> instance(r5,thing)	[1]
+	1
+
+>> instance(r3,thing)	[1]
+	1
+
+>> instance(r2,thing)	[1]
+	1
+
+>> instance(r1,thing)	[1]
+	1
+
+>> instance(r5,universe)	[1]
+	1
+
+>> instance(r3,universe)	[1]
+	1
+
+>> instance(r2,universe)	[1]
+	1
+
+>> instance(r1,universe)	[1]
+	1
+
+>> instance(e1,get_13_5_1)	[1]
+	1
+
+>> instance(e2,go_to)	[1]
+	1
+
+>> instance(e3,go_to)	[1]
+	1
+
+>> instance(e4,run_51_3_2)	[1]
+	1
+
+>> instance(e1,obtain)	[1]
+	1
+
+>> instance(e2,locomotion)	[1]
+	1
+
+>> instance(e3,locomotion)	[1]
+	1
+
+>> instance(e4,walk)	[1]
+	1
+
+>> instance(e1,receive)	[1]
+	1
+
+>> instance(e2,move)	[1]
+	1
+
+>> instance(e3,move)	[1]
+	1
+
+>> instance(e4,locomotion)	[1]
+	1
+
+>> instance(e1,transfer)	[1]
+	1
+
+>> instance(e2,actions)	[1]
+	1
+
+>> instance(e3,actions)	[1]
+	1
+
+>> instance(e4,move)	[1]
+	1
+
+>> instance(e1,actions)	[1]
+	1
+
+>> instance(e2,universe)	[1]
+	1
+
+>> instance(e2,event)	[1]
+	1
+
+>> instance(e3,universe)	[1]
+	1
+
+>> instance(e3,event)	[1]
+	1
+
+>> instance(e4,actions)	[1]
+	1
+
+>> instance(e1,universe)	[1]
+	1
+
+>> instance(e1,event)	[1]
+	1
+
+>> instance(e2,thing)	[1]
+	1
+
+>> instance(e3,thing)	[1]
+	1
+
+>> instance(e4,universe)	[1]
+	1
+
+>> instance(e4,event)	[1]
+	1
+
+>> instance(e1,thing)	[1]
+	1
+
+>> instance(e4,thing)	[1]
+	1
+
+>> subsort(actions,universe)	[1]
+	1
+
+>> subsort(move,actions)	[1]
+	1
+
+>> subsort(locomotion,move)	[1]
+	1
+
+>> subsort(carry,locomotion)	[1]
+	1
+
+>> subsort(go_to,locomotion)	[1]
+	1
+
+>> subsort(meander_47_7,go_to)	[1]
+	1
+
+>> subsort(meander_47_7_1,meander_47_7)	[1]
+	1
+
+>> subsort(slide_11_2,go_to)	[1]
+	1
+
+>> subsort(slide_11_2_1,slide_11_2)	[1]
+	1
+
+>> subsort(leave,locomotion)	[1]
+	1
+
+>> subsort(walk,locomotion)	[1]
+	1
+
+>> subsort(run_51_3_2,walk)	[1]
+	1
+
+>> subsort(run_51_3_2_2,run_51_3_2)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,run_51_3_2_2)	[1]
+	1
+
+>> subsort(run_51_3_2_1,run_51_3_2)	[1]
+	1
+
+>> subsort(transfer,actions)	[1]
+	1
+
+>> subsort(receive,transfer)	[1]
+	1
+
+>> subsort(obtain,receive)	[1]
+	1
+
+>> subsort(take,obtain)	[1]
+	1
+
+>> subsort(get_13_5_1,obtain)	[1]
+	1
+
+>> subsort(get_13_5_1_1,get_13_5_1)	[1]
+	1
+
+>> subsort(deliver,transfer)	[1]
+	1
+
+>> subsort(lose,transfer)	[1]
+	1
+
+>> subsort(thing,universe)	[1]
+	1
+
+>> subsort(event,thing)	[1]
+	1
+
+>> subsort(actions,event)	[1]
+	1
+
+>> subsort(activity,event)	[1]
+	1
+
+>> subsort(entity,thing)	[1]
+	1
+
+>> subsort(spatial_entity,entity)	[1]
+	1
+
+>> subsort(place,spatial_entity)	[1]
+	1
+
+>> subsort(kitchen,place)	[1]
+	1
+
+>> subsort(bedroom,spatial_entity)	[1]
+	1
+
+>> subsort(hallway,spatial_entity)	[1]
+	1
+
+>> subsort(tangible_entity,spatial_entity)	[1]
+	1
+
+>> subsort(physical_object,tangible_entity)	[1]
+	1
+
+>> subsort(living_entity,physical_object)	[1]
+	1
+
+>> subsort(john,living_entity)	[1]
+	1
+
+>> subsort(mary,living_entity)	[1]
+	1
+
+>> subsort(milk,living_entity)	[1]
+	1
+
+>> subsort(sandra,living_entity)	[1]
+	1
+
+>> subsort(inanimate_object,physical_object)	[1]
+	1
+
+>> subsort(integers,universe)	[1]
+	1
+
+>> subsort(john,physical_object)	[1]
+	1
+
+>> subsort(mary,physical_object)	[1]
+	1
+
+>> subsort(milk,physical_object)	[1]
+	1
+
+>> subsort(sandra,physical_object)	[1]
+	1
+
+>> subsort(living_entity,tangible_entity)	[1]
+	1
+
+>> subsort(inanimate_object,tangible_entity)	[1]
+	1
+
+>> subsort(physical_object,spatial_entity)	[1]
+	1
+
+>> subsort(kitchen,spatial_entity)	[1]
+	1
+
+>> subsort(place,entity)	[1]
+	1
+
+>> subsort(bedroom,entity)	[1]
+	1
+
+>> subsort(hallway,entity)	[1]
+	1
+
+>> subsort(tangible_entity,entity)	[1]
+	1
+
+>> subsort(spatial_entity,thing)	[1]
+	1
+
+>> subsort(move,event)	[1]
+	1
+
+>> subsort(transfer,event)	[1]
+	1
+
+>> subsort(actions,thing)	[1]
+	1
+
+>> subsort(activity,thing)	[1]
+	1
+
+>> subsort(event,universe)	[1]
+	1
+
+>> subsort(entity,universe)	[1]
+	1
+
+>> subsort(get_13_5_1_1,obtain)	[1]
+	1
+
+>> subsort(take,receive)	[1]
+	1
+
+>> subsort(get_13_5_1,receive)	[1]
+	1
+
+>> subsort(obtain,transfer)	[1]
+	1
+
+>> subsort(receive,actions)	[1]
+	1
+
+>> subsort(deliver,actions)	[1]
+	1
+
+>> subsort(lose,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,run_51_3_2)	[1]
+	1
+
+>> subsort(run_51_3_2_2,walk)	[1]
+	1
+
+>> subsort(run_51_3_2_1,walk)	[1]
+	1
+
+>> subsort(run_51_3_2,locomotion)	[1]
+	1
+
+>> subsort(slide_11_2_1,go_to)	[1]
+	1
+
+>> subsort(meander_47_7_1,go_to)	[1]
+	1
+
+>> subsort(meander_47_7,locomotion)	[1]
+	1
+
+>> subsort(slide_11_2,locomotion)	[1]
+	1
+
+>> subsort(carry,move)	[1]
+	1
+
+>> subsort(go_to,move)	[1]
+	1
+
+>> subsort(leave,move)	[1]
+	1
+
+>> subsort(walk,move)	[1]
+	1
+
+>> subsort(locomotion,actions)	[1]
+	1
+
+>> subsort(move,universe)	[1]
+	1
+
+>> subsort(transfer,universe)	[1]
+	1
+
+>> subsort(john,tangible_entity)	[1]
+	1
+
+>> subsort(mary,tangible_entity)	[1]
+	1
+
+>> subsort(milk,tangible_entity)	[1]
+	1
+
+>> subsort(sandra,tangible_entity)	[1]
+	1
+
+>> subsort(living_entity,spatial_entity)	[1]
+	1
+
+>> subsort(inanimate_object,spatial_entity)	[1]
+	1
+
+>> subsort(kitchen,entity)	[1]
+	1
+
+>> subsort(physical_object,entity)	[1]
+	1
+
+>> subsort(place,thing)	[1]
+	1
+
+>> subsort(bedroom,thing)	[1]
+	1
+
+>> subsort(hallway,thing)	[1]
+	1
+
+>> subsort(tangible_entity,thing)	[1]
+	1
+
+>> subsort(locomotion,event)	[1]
+	1
+
+>> subsort(receive,event)	[1]
+	1
+
+>> subsort(deliver,event)	[1]
+	1
+
+>> subsort(lose,event)	[1]
+	1
+
+>> subsort(move,thing)	[1]
+	1
+
+>> subsort(transfer,thing)	[1]
+	1
+
+>> subsort(activity,universe)	[1]
+	1
+
+>> subsort(spatial_entity,universe)	[1]
+	1
+
+>> subsort(get_13_5_1_1,receive)	[1]
+	1
+
+>> subsort(take,transfer)	[1]
+	1
+
+>> subsort(get_13_5_1,transfer)	[1]
+	1
+
+>> subsort(obtain,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,walk)	[1]
+	1
+
+>> subsort(run_51_3_2_2,locomotion)	[1]
+	1
+
+>> subsort(run_51_3_2_1,locomotion)	[1]
+	1
+
+>> subsort(meander_47_7_1,locomotion)	[1]
+	1
+
+>> subsort(slide_11_2_1,locomotion)	[1]
+	1
+
+>> subsort(meander_47_7,move)	[1]
+	1
+
+>> subsort(slide_11_2,move)	[1]
+	1
+
+>> subsort(run_51_3_2,move)	[1]
+	1
+
+>> subsort(carry,actions)	[1]
+	1
+
+>> subsort(go_to,actions)	[1]
+	1
+
+>> subsort(leave,actions)	[1]
+	1
+
+>> subsort(walk,actions)	[1]
+	1
+
+>> subsort(locomotion,universe)	[1]
+	1
+
+>> subsort(receive,universe)	[1]
+	1
+
+>> subsort(deliver,universe)	[1]
+	1
+
+>> subsort(lose,universe)	[1]
+	1
+
+>> subsort(john,spatial_entity)	[1]
+	1
+
+>> subsort(mary,spatial_entity)	[1]
+	1
+
+>> subsort(milk,spatial_entity)	[1]
+	1
+
+>> subsort(sandra,spatial_entity)	[1]
+	1
+
+>> subsort(living_entity,entity)	[1]
+	1
+
+>> subsort(inanimate_object,entity)	[1]
+	1
+
+>> subsort(kitchen,thing)	[1]
+	1
+
+>> subsort(physical_object,thing)	[1]
+	1
+
+>> subsort(carry,event)	[1]
+	1
+
+>> subsort(go_to,event)	[1]
+	1
+
+>> subsort(leave,event)	[1]
+	1
+
+>> subsort(walk,event)	[1]
+	1
+
+>> subsort(obtain,event)	[1]
+	1
+
+>> subsort(locomotion,thing)	[1]
+	1
+
+>> subsort(receive,thing)	[1]
+	1
+
+>> subsort(deliver,thing)	[1]
+	1
+
+>> subsort(lose,thing)	[1]
+	1
+
+>> subsort(place,universe)	[1]
+	1
+
+>> subsort(bedroom,universe)	[1]
+	1
+
+>> subsort(hallway,universe)	[1]
+	1
+
+>> subsort(tangible_entity,universe)	[1]
+	1
+
+>> subsort(get_13_5_1_1,transfer)	[1]
+	1
+
+>> subsort(take,actions)	[1]
+	1
+
+>> subsort(get_13_5_1,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,locomotion)	[1]
+	1
+
+>> subsort(meander_47_7_1,move)	[1]
+	1
+
+>> subsort(slide_11_2_1,move)	[1]
+	1
+
+>> subsort(run_51_3_2_2,move)	[1]
+	1
+
+>> subsort(run_51_3_2_1,move)	[1]
+	1
+
+>> subsort(meander_47_7,actions)	[1]
+	1
+
+>> subsort(slide_11_2,actions)	[1]
+	1
+
+>> subsort(run_51_3_2,actions)	[1]
+	1
+
+>> subsort(carry,universe)	[1]
+	1
+
+>> subsort(go_to,universe)	[1]
+	1
+
+>> subsort(leave,universe)	[1]
+	1
+
+>> subsort(walk,universe)	[1]
+	1
+
+>> subsort(obtain,universe)	[1]
+	1
+
+>> subsort(john,entity)	[1]
+	1
+
+>> subsort(mary,entity)	[1]
+	1
+
+>> subsort(milk,entity)	[1]
+	1
+
+>> subsort(sandra,entity)	[1]
+	1
+
+>> subsort(living_entity,thing)	[1]
+	1
+
+>> subsort(inanimate_object,thing)	[1]
+	1
+
+>> subsort(meander_47_7,event)	[1]
+	1
+
+>> subsort(slide_11_2,event)	[1]
+	1
+
+>> subsort(run_51_3_2,event)	[1]
+	1
+
+>> subsort(take,event)	[1]
+	1
+
+>> subsort(get_13_5_1,event)	[1]
+	1
+
+>> subsort(carry,thing)	[1]
+	1
+
+>> subsort(go_to,thing)	[1]
+	1
+
+>> subsort(leave,thing)	[1]
+	1
+
+>> subsort(walk,thing)	[1]
+	1
+
+>> subsort(obtain,thing)	[1]
+	1
+
+>> subsort(kitchen,universe)	[1]
+	1
+
+>> subsort(physical_object,universe)	[1]
+	1
+
+>> subsort(get_13_5_1_1,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,move)	[1]
+	1
+
+>> subsort(meander_47_7_1,actions)	[1]
+	1
+
+>> subsort(slide_11_2_1,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_2,actions)	[1]
+	1
+
+>> subsort(run_51_3_2_1,actions)	[1]
+	1
+
+>> subsort(meander_47_7,universe)	[1]
+	1
+
+>> subsort(slide_11_2,universe)	[1]
+	1
+
+>> subsort(run_51_3_2,universe)	[1]
+	1
+
+>> subsort(take,universe)	[1]
+	1
+
+>> subsort(get_13_5_1,universe)	[1]
+	1
+
+>> subsort(john,thing)	[1]
+	1
+
+>> subsort(mary,thing)	[1]
+	1
+
+>> subsort(milk,thing)	[1]
+	1
+
+>> subsort(sandra,thing)	[1]
+	1
+
+>> subsort(meander_47_7_1,event)	[1]
+	1
+
+>> subsort(slide_11_2_1,event)	[1]
+	1
+
+>> subsort(run_51_3_2_2,event)	[1]
+	1
+
+>> subsort(run_51_3_2_1,event)	[1]
+	1
+
+>> subsort(get_13_5_1_1,event)	[1]
+	1
+
+>> subsort(meander_47_7,thing)	[1]
+	1
+
+>> subsort(slide_11_2,thing)	[1]
+	1
+
+>> subsort(run_51_3_2,thing)	[1]
+	1
+
+>> subsort(take,thing)	[1]
+	1
+
+>> subsort(get_13_5_1,thing)	[1]
+	1
+
+>> subsort(living_entity,universe)	[1]
+	1
+
+>> subsort(inanimate_object,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,actions)	[1]
+	1
+
+>> subsort(meander_47_7_1,universe)	[1]
+	1
+
+>> subsort(slide_11_2_1,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_2,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_1,universe)	[1]
+	1
+
+>> subsort(get_13_5_1_1,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,event)	[1]
+	1
+
+>> subsort(meander_47_7_1,thing)	[1]
+	1
+
+>> subsort(slide_11_2_1,thing)	[1]
+	1
+
+>> subsort(run_51_3_2_2,thing)	[1]
+	1
+
+>> subsort(run_51_3_2_1,thing)	[1]
+	1
+
+>> subsort(get_13_5_1_1,thing)	[1]
+	1
+
+>> subsort(john,universe)	[1]
+	1
+
+>> subsort(mary,universe)	[1]
+	1
+
+>> subsort(milk,universe)	[1]
+	1
+
+>> subsort(sandra,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,universe)	[1]
+	1
+
+>> subsort(run_51_3_2_2_1,thing)	[1]
+	1
+
+>> -subsort(spatial_entity,spatial_entity)	[1]
+	1
+
+>> -subsort(spatial_entity,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(spatial_entity,physical_object)	[1]
+	1
+
+>> -subsort(spatial_entity,living_entity)	[1]
+	1
+
+>> -subsort(spatial_entity,activity)	[1]
+	1
+
+>> -subsort(spatial_entity,locomotion)	[1]
+	1
+
+>> -subsort(spatial_entity,deliver)	[1]
+	1
+
+>> -subsort(spatial_entity,run_51_3_2)	[1]
+	1
+
+>> -subsort(spatial_entity,inanimate_object)	[1]
+	1
+
+>> -subsort(spatial_entity,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(spatial_entity,integers)	[1]
+	1
+
+>> -subsort(spatial_entity,get_13_5_1)	[1]
+	1
+
+>> -subsort(spatial_entity,timeStep)	[1]
+	1
+
+>> -subsort(spatial_entity,leave)	[1]
+	1
+
+>> -subsort(spatial_entity,booleans)	[1]
+	1
+
+>> -subsort(spatial_entity,place)	[1]
+	1
+
+>> -subsort(spatial_entity,event)	[1]
+	1
+
+>> -subsort(spatial_entity,kitchen)	[1]
+	1
+
+>> -subsort(spatial_entity,obtain)	[1]
+	1
+
+>> -subsort(spatial_entity,receive)	[1]
+	1
+
+>> -subsort(spatial_entity,move)	[1]
+	1
+
+>> -subsort(spatial_entity,tangible_entity)	[1]
+	1
+
+>> -subsort(spatial_entity,hallway)	[1]
+	1
+
+>> -subsort(spatial_entity,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(spatial_entity,lose)	[1]
+	1
+
+>> -subsort(spatial_entity,mary)	[1]
+	1
+
+>> -subsort(spatial_entity,milk)	[1]
+	1
+
+>> -subsort(spatial_entity,meander_47_7_1)	[1]
+	1
+
+>> -subsort(spatial_entity,go_to)	[1]
+	1
+
+>> -subsort(spatial_entity,meander_47_7)	[1]
+	1
+
+>> -subsort(spatial_entity,bedroom)	[1]
+	1
+
+>> -subsort(spatial_entity,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(spatial_entity,take)	[1]
+	1
+
+>> -subsort(spatial_entity,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(spatial_entity,slide_11_2)	[1]
+	1
+
+>> -subsort(spatial_entity,transfer)	[1]
+	1
+
+>> -subsort(spatial_entity,sandra)	[1]
+	1
+
+>> -subsort(spatial_entity,slide_11_2_1)	[1]
+	1
+
+>> -subsort(spatial_entity,john)	[1]
+	1
+
+>> -subsort(spatial_entity,carry)	[1]
+	1
+
+>> -subsort(spatial_entity,actions)	[1]
+	1
+
+>> -subsort(spatial_entity,walk)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,spatial_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,physical_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,living_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,activity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,deliver)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,inanimate_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,integers)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,get_13_5_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,timeStep)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,leave)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,booleans)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,place)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,kitchen)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,obtain)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,receive)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,tangible_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,hallway)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,lose)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,mary)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,milk)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,go_to)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,meander_47_7)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,bedroom)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,take)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,slide_11_2)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,transfer)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,sandra)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,john)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,carry)	[1]
+	1
+
+>> -subsort(run_51_3_2_2_1,entity)	[1]
+	1
+
+>> -subsort(physical_object,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(physical_object,physical_object)	[1]
+	1
+
+>> -subsort(physical_object,living_entity)	[1]
+	1
+
+>> -subsort(physical_object,activity)	[1]
+	1
+
+>> -subsort(physical_object,locomotion)	[1]
+	1
+
+>> -subsort(physical_object,deliver)	[1]
+	1
+
+>> -subsort(physical_object,run_51_3_2)	[1]
+	1
+
+>> -subsort(physical_object,inanimate_object)	[1]
+	1
+
+>> -subsort(physical_object,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(physical_object,integers)	[1]
+	1
+
+>> -subsort(physical_object,get_13_5_1)	[1]
+	1
+
+>> -subsort(physical_object,timeStep)	[1]
+	1
+
+>> -subsort(physical_object,leave)	[1]
+	1
+
+>> -subsort(physical_object,booleans)	[1]
+	1
+
+>> -subsort(physical_object,place)	[1]
+	1
+
+>> -subsort(physical_object,event)	[1]
+	1
+
+>> -subsort(physical_object,kitchen)	[1]
+	1
+
+>> -subsort(physical_object,obtain)	[1]
+	1
+
+>> -subsort(physical_object,receive)	[1]
+	1
+
+>> -subsort(physical_object,move)	[1]
+	1
+
+>> -subsort(physical_object,hallway)	[1]
+	1
+
+>> -subsort(physical_object,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(physical_object,lose)	[1]
+	1
+
+>> -subsort(physical_object,mary)	[1]
+	1
+
+>> -subsort(physical_object,milk)	[1]
+	1
+
+>> -subsort(physical_object,meander_47_7_1)	[1]
+	1
+
+>> -subsort(physical_object,go_to)	[1]
+	1
+
+>> -subsort(physical_object,meander_47_7)	[1]
+	1
+
+>> -subsort(physical_object,bedroom)	[1]
+	1
+
+>> -subsort(physical_object,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(physical_object,take)	[1]
+	1
+
+>> -subsort(physical_object,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(physical_object,slide_11_2)	[1]
+	1
+
+>> -subsort(physical_object,transfer)	[1]
+	1
+
+>> -subsort(physical_object,sandra)	[1]
+	1
+
+>> -subsort(physical_object,slide_11_2_1)	[1]
+	1
+
+>> -subsort(physical_object,john)	[1]
+	1
+
+>> -subsort(physical_object,carry)	[1]
+	1
+
+>> -subsort(physical_object,actions)	[1]
+	1
+
+>> -subsort(physical_object,walk)	[1]
+	1
+
+>> -subsort(living_entity,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(living_entity,living_entity)	[1]
+	1
+
+>> -subsort(living_entity,activity)	[1]
+	1
+
+>> -subsort(living_entity,locomotion)	[1]
+	1
+
+>> -subsort(living_entity,deliver)	[1]
+	1
+
+>> -subsort(living_entity,run_51_3_2)	[1]
+	1
+
+>> -subsort(living_entity,inanimate_object)	[1]
+	1
+
+>> -subsort(living_entity,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(living_entity,integers)	[1]
+	1
+
+>> -subsort(living_entity,get_13_5_1)	[1]
+	1
+
+>> -subsort(living_entity,timeStep)	[1]
+	1
+
+>> -subsort(living_entity,leave)	[1]
+	1
+
+>> -subsort(living_entity,booleans)	[1]
+	1
+
+>> -subsort(living_entity,place)	[1]
+	1
+
+>> -subsort(living_entity,event)	[1]
+	1
+
+>> -subsort(living_entity,kitchen)	[1]
+	1
+
+>> -subsort(living_entity,obtain)	[1]
+	1
+
+>> -subsort(living_entity,receive)	[1]
+	1
+
+>> -subsort(living_entity,move)	[1]
+	1
+
+>> -subsort(living_entity,hallway)	[1]
+	1
+
+>> -subsort(living_entity,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(living_entity,lose)	[1]
+	1
+
+>> -subsort(living_entity,mary)	[1]
+	1
+
+>> -subsort(living_entity,milk)	[1]
+	1
+
+>> -subsort(living_entity,meander_47_7_1)	[1]
+	1
+
+>> -subsort(living_entity,go_to)	[1]
+	1
+
+>> -subsort(living_entity,meander_47_7)	[1]
+	1
+
+>> -subsort(living_entity,bedroom)	[1]
+	1
+
+>> -subsort(living_entity,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(living_entity,take)	[1]
+	1
+
+>> -subsort(living_entity,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(living_entity,slide_11_2)	[1]
+	1
+
+>> -subsort(living_entity,transfer)	[1]
+	1
+
+>> -subsort(living_entity,sandra)	[1]
+	1
+
+>> -subsort(living_entity,slide_11_2_1)	[1]
+	1
+
+>> -subsort(living_entity,john)	[1]
+	1
+
+>> -subsort(living_entity,carry)	[1]
+	1
+
+>> -subsort(living_entity,actions)	[1]
+	1
+
+>> -subsort(living_entity,walk)	[1]
+	1
+
+>> -subsort(activity,spatial_entity)	[1]
+	1
+
+>> -subsort(activity,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(activity,physical_object)	[1]
+	1
+
+>> -subsort(activity,living_entity)	[1]
+	1
+
+>> -subsort(activity,activity)	[1]
+	1
+
+>> -subsort(activity,locomotion)	[1]
+	1
+
+>> -subsort(activity,deliver)	[1]
+	1
+
+>> -subsort(activity,run_51_3_2)	[1]
+	1
+
+>> -subsort(activity,inanimate_object)	[1]
+	1
+
+>> -subsort(activity,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(activity,integers)	[1]
+	1
+
+>> -subsort(activity,get_13_5_1)	[1]
+	1
+
+>> -subsort(activity,timeStep)	[1]
+	1
+
+>> -subsort(activity,leave)	[1]
+	1
+
+>> -subsort(activity,booleans)	[1]
+	1
+
+>> -subsort(activity,place)	[1]
+	1
+
+>> -subsort(activity,kitchen)	[1]
+	1
+
+>> -subsort(activity,obtain)	[1]
+	1
+
+>> -subsort(activity,receive)	[1]
+	1
+
+>> -subsort(activity,move)	[1]
+	1
+
+>> -subsort(activity,tangible_entity)	[1]
+	1
+
+>> -subsort(activity,hallway)	[1]
+	1
+
+>> -subsort(activity,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(activity,lose)	[1]
+	1
+
+>> -subsort(activity,mary)	[1]
+	1
+
+>> -subsort(activity,milk)	[1]
+	1
+
+>> -subsort(activity,meander_47_7_1)	[1]
+	1
+
+>> -subsort(activity,go_to)	[1]
+	1
+
+>> -subsort(activity,meander_47_7)	[1]
+	1
+
+>> -subsort(activity,bedroom)	[1]
+	1
+
+>> -subsort(activity,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(activity,take)	[1]
+	1
+
+>> -subsort(activity,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(activity,slide_11_2)	[1]
+	1
+
+>> -subsort(activity,transfer)	[1]
+	1
+
+>> -subsort(activity,sandra)	[1]
+	1
+
+>> -subsort(activity,slide_11_2_1)	[1]
+	1
+
+>> -subsort(activity,john)	[1]
+	1
+
+>> -subsort(activity,carry)	[1]
+	1
+
+>> -subsort(activity,actions)	[1]
+	1
+
+>> -subsort(activity,entity)	[1]
+	1
+
+>> -subsort(activity,walk)	[1]
+	1
+
+>> -subsort(locomotion,spatial_entity)	[1]
+	1
+
+>> -subsort(locomotion,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(locomotion,physical_object)	[1]
+	1
+
+>> -subsort(locomotion,living_entity)	[1]
+	1
+
+>> -subsort(locomotion,activity)	[1]
+	1
+
+>> -subsort(locomotion,locomotion)	[1]
+	1
+
+>> -subsort(locomotion,deliver)	[1]
+	1
+
+>> -subsort(locomotion,run_51_3_2)	[1]
+	1
+
+>> -subsort(locomotion,inanimate_object)	[1]
+	1
+
+>> -subsort(locomotion,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(locomotion,integers)	[1]
+	1
+
+>> -subsort(locomotion,get_13_5_1)	[1]
+	1
+
+>> -subsort(locomotion,timeStep)	[1]
+	1
+
+>> -subsort(locomotion,leave)	[1]
+	1
+
+>> -subsort(locomotion,booleans)	[1]
+	1
+
+>> -subsort(locomotion,place)	[1]
+	1
+
+>> -subsort(locomotion,kitchen)	[1]
+	1
+
+>> -subsort(locomotion,obtain)	[1]
+	1
+
+>> -subsort(locomotion,receive)	[1]
+	1
+
+>> -subsort(locomotion,tangible_entity)	[1]
+	1
+
+>> -subsort(locomotion,hallway)	[1]
+	1
+
+>> -subsort(locomotion,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(locomotion,lose)	[1]
+	1
+
+>> -subsort(locomotion,mary)	[1]
+	1
+
+>> -subsort(locomotion,milk)	[1]
+	1
+
+>> -subsort(locomotion,meander_47_7_1)	[1]
+	1
+
+>> -subsort(locomotion,go_to)	[1]
+	1
+
+>> -subsort(locomotion,meander_47_7)	[1]
+	1
+
+>> -subsort(locomotion,bedroom)	[1]
+	1
+
+>> -subsort(locomotion,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(locomotion,take)	[1]
+	1
+
+>> -subsort(locomotion,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(locomotion,slide_11_2)	[1]
+	1
+
+>> -subsort(locomotion,transfer)	[1]
+	1
+
+>> -subsort(locomotion,sandra)	[1]
+	1
+
+>> -subsort(locomotion,slide_11_2_1)	[1]
+	1
+
+>> -subsort(locomotion,john)	[1]
+	1
+
+>> -subsort(locomotion,carry)	[1]
+	1
+
+>> -subsort(locomotion,entity)	[1]
+	1
+
+>> -subsort(locomotion,walk)	[1]
+	1
+
+>> -subsort(deliver,spatial_entity)	[1]
+	1
+
+>> -subsort(deliver,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(deliver,physical_object)	[1]
+	1
+
+>> -subsort(deliver,living_entity)	[1]
+	1
+
+>> -subsort(deliver,activity)	[1]
+	1
+
+>> -subsort(deliver,locomotion)	[1]
+	1
+
+>> -subsort(deliver,deliver)	[1]
+	1
+
+>> -subsort(deliver,run_51_3_2)	[1]
+	1
+
+>> -subsort(deliver,inanimate_object)	[1]
+	1
+
+>> -subsort(deliver,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(deliver,integers)	[1]
+	1
+
+>> -subsort(deliver,get_13_5_1)	[1]
+	1
+
+>> -subsort(deliver,timeStep)	[1]
+	1
+
+>> -subsort(deliver,leave)	[1]
+	1
+
+>> -subsort(deliver,booleans)	[1]
+	1
+
+>> -subsort(deliver,place)	[1]
+	1
+
+>> -subsort(deliver,kitchen)	[1]
+	1
+
+>> -subsort(deliver,obtain)	[1]
+	1
+
+>> -subsort(deliver,receive)	[1]
+	1
+
+>> -subsort(deliver,move)	[1]
+	1
+
+>> -subsort(deliver,tangible_entity)	[1]
+	1
+
+>> -subsort(deliver,hallway)	[1]
+	1
+
+>> -subsort(deliver,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(deliver,lose)	[1]
+	1
+
+>> -subsort(deliver,mary)	[1]
+	1
+
+>> -subsort(deliver,milk)	[1]
+	1
+
+>> -subsort(deliver,meander_47_7_1)	[1]
+	1
+
+>> -subsort(deliver,go_to)	[1]
+	1
+
+>> -subsort(deliver,meander_47_7)	[1]
+	1
+
+>> -subsort(deliver,bedroom)	[1]
+	1
+
+>> -subsort(deliver,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(deliver,take)	[1]
+	1
+
+>> -subsort(deliver,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(deliver,slide_11_2)	[1]
+	1
+
+>> -subsort(deliver,sandra)	[1]
+	1
+
+>> -subsort(deliver,slide_11_2_1)	[1]
+	1
+
+>> -subsort(deliver,john)	[1]
+	1
+
+>> -subsort(deliver,carry)	[1]
+	1
+
+>> -subsort(deliver,entity)	[1]
+	1
+
+>> -subsort(deliver,walk)	[1]
+	1
+
+>> -subsort(run_51_3_2,spatial_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,physical_object)	[1]
+	1
+
+>> -subsort(run_51_3_2,living_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2,activity)	[1]
+	1
+
+>> -subsort(run_51_3_2,deliver)	[1]
+	1
+
+>> -subsort(run_51_3_2,run_51_3_2)	[1]
+	1
+
+>> -subsort(run_51_3_2,inanimate_object)	[1]
+	1
+
+>> -subsort(run_51_3_2,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,integers)	[1]
+	1
+
+>> -subsort(run_51_3_2,get_13_5_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,timeStep)	[1]
+	1
+
+>> -subsort(run_51_3_2,leave)	[1]
+	1
+
+>> -subsort(run_51_3_2,booleans)	[1]
+	1
+
+>> -subsort(run_51_3_2,place)	[1]
+	1
+
+>> -subsort(run_51_3_2,kitchen)	[1]
+	1
+
+>> -subsort(run_51_3_2,obtain)	[1]
+	1
+
+>> -subsort(run_51_3_2,receive)	[1]
+	1
+
+>> -subsort(run_51_3_2,tangible_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2,hallway)	[1]
+	1
+
+>> -subsort(run_51_3_2,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(run_51_3_2,lose)	[1]
+	1
+
+>> -subsort(run_51_3_2,mary)	[1]
+	1
+
+>> -subsort(run_51_3_2,milk)	[1]
+	1
+
+>> -subsort(run_51_3_2,meander_47_7_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,go_to)	[1]
+	1
+
+>> -subsort(run_51_3_2,meander_47_7)	[1]
+	1
+
+>> -subsort(run_51_3_2,bedroom)	[1]
+	1
+
+>> -subsort(run_51_3_2,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(run_51_3_2,take)	[1]
+	1
+
+>> -subsort(run_51_3_2,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,slide_11_2)	[1]
+	1
+
+>> -subsort(run_51_3_2,transfer)	[1]
+	1
+
+>> -subsort(run_51_3_2,sandra)	[1]
+	1
+
+>> -subsort(run_51_3_2,slide_11_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2,john)	[1]
+	1
+
+>> -subsort(run_51_3_2,carry)	[1]
+	1
+
+>> -subsort(run_51_3_2,entity)	[1]
+	1
+
+>> -subsort(inanimate_object,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(inanimate_object,living_entity)	[1]
+	1
+
+>> -subsort(inanimate_object,activity)	[1]
+	1
+
+>> -subsort(inanimate_object,locomotion)	[1]
+	1
+
+>> -subsort(inanimate_object,deliver)	[1]
+	1
+
+>> -subsort(inanimate_object,run_51_3_2)	[1]
+	1
+
+>> -subsort(inanimate_object,inanimate_object)	[1]
+	1
+
+>> -subsort(inanimate_object,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(inanimate_object,integers)	[1]
+	1
+
+>> -subsort(inanimate_object,get_13_5_1)	[1]
+	1
+
+>> -subsort(inanimate_object,timeStep)	[1]
+	1
+
+>> -subsort(inanimate_object,leave)	[1]
+	1
+
+>> -subsort(inanimate_object,booleans)	[1]
+	1
+
+>> -subsort(inanimate_object,place)	[1]
+	1
+
+>> -subsort(inanimate_object,event)	[1]
+	1
+
+>> -subsort(inanimate_object,kitchen)	[1]
+	1
+
+>> -subsort(inanimate_object,obtain)	[1]
+	1
+
+>> -subsort(inanimate_object,receive)	[1]
+	1
+
+>> -subsort(inanimate_object,move)	[1]
+	1
+
+>> -subsort(inanimate_object,hallway)	[1]
+	1
+
+>> -subsort(inanimate_object,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(inanimate_object,lose)	[1]
+	1
+
+>> -subsort(inanimate_object,mary)	[1]
+	1
+
+>> -subsort(inanimate_object,milk)	[1]
+	1
+
+>> -subsort(inanimate_object,meander_47_7_1)	[1]
+	1
+
+>> -subsort(inanimate_object,go_to)	[1]
+	1
+
+>> -subsort(inanimate_object,meander_47_7)	[1]
+	1
+
+>> -subsort(inanimate_object,bedroom)	[1]
+	1
+
+>> -subsort(inanimate_object,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(inanimate_object,take)	[1]
+	1
+
+>> -subsort(inanimate_object,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(inanimate_object,slide_11_2)	[1]
+	1
+
+>> -subsort(inanimate_object,transfer)	[1]
+	1
+
+>> -subsort(inanimate_object,sandra)	[1]
+	1
+
+>> -subsort(inanimate_object,slide_11_2_1)	[1]
+	1
+
+>> -subsort(inanimate_object,john)	[1]
+	1
+
+>> -subsort(inanimate_object,carry)	[1]
+	1
+
+>> -subsort(inanimate_object,actions)	[1]
+	1
+
+>> -subsort(inanimate_object,walk)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,spatial_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,physical_object)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,living_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,activity)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,locomotion)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,deliver)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,run_51_3_2)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,inanimate_object)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,integers)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,timeStep)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,leave)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,booleans)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,place)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,kitchen)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,move)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,tangible_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,hallway)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,lose)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,mary)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,milk)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,go_to)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,meander_47_7)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,bedroom)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,take)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,slide_11_2)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,sandra)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,john)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,carry)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,entity)	[1]
+	1
+
+>> -subsort(get_13_5_1_1,walk)	[1]
+	1
+
+>> -subsort(integers,spatial_entity)	[1]
+	1
+
+>> -subsort(integers,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(integers,physical_object)	[1]
+	1
+
+>> -subsort(integers,living_entity)	[1]
+	1
+
+>> -subsort(integers,activity)	[1]
+	1
+
+>> -subsort(integers,locomotion)	[1]
+	1
+
+>> -subsort(integers,deliver)	[1]
+	1
+
+>> -subsort(integers,run_51_3_2)	[1]
+	1
+
+>> -subsort(integers,inanimate_object)	[1]
+	1
+
+>> -subsort(integers,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(integers,integers)	[1]
+	1
+
+>> -subsort(integers,get_13_5_1)	[1]
+	1
+
+>> -subsort(integers,timeStep)	[1]
+	1
+
+>> -subsort(integers,leave)	[1]
+	1
+
+>> -subsort(integers,booleans)	[1]
+	1
+
+>> -subsort(integers,place)	[1]
+	1
+
+>> -subsort(integers,event)	[1]
+	1
+
+>> -subsort(integers,kitchen)	[1]
+	1
+
+>> -subsort(integers,obtain)	[1]
+	1
+
+>> -subsort(integers,receive)	[1]
+	1
+
+>> -subsort(integers,move)	[1]
+	1
+
+>> -subsort(integers,tangible_entity)	[1]
+	1
+
+>> -subsort(integers,hallway)	[1]
+	1
+
+>> -subsort(integers,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(integers,lose)	[1]
+	1
+
+>> -subsort(integers,mary)	[1]
+	1
+
+>> -subsort(integers,milk)	[1]
+	1
+
+>> -subsort(integers,meander_47_7_1)	[1]
+	1
+
+>> -subsort(integers,go_to)	[1]
+	1
+
+>> -subsort(integers,meander_47_7)	[1]
+	1
+
+>> -subsort(integers,bedroom)	[1]
+	1
+
+>> -subsort(integers,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(integers,take)	[1]
+	1
+
+>> -subsort(integers,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(integers,slide_11_2)	[1]
+	1
+
+>> -subsort(integers,transfer)	[1]
+	1
+
+>> -subsort(integers,sandra)	[1]
+	1
+
+>> -subsort(integers,slide_11_2_1)	[1]
+	1
+
+>> -subsort(integers,john)	[1]
+	1
+
+>> -subsort(integers,carry)	[1]
+	1
+
+>> -subsort(integers,actions)	[1]
+	1
+
+>> -subsort(integers,thing)	[1]
+	1
+
+>> -subsort(integers,entity)	[1]
+	1
+
+>> -subsort(integers,walk)	[1]
+	1
+
+>> -subsort(get_13_5_1,spatial_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,physical_object)	[1]
+	1
+
+>> -subsort(get_13_5_1,living_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1,activity)	[1]
+	1
+
+>> -subsort(get_13_5_1,locomotion)	[1]
+	1
+
+>> -subsort(get_13_5_1,deliver)	[1]
+	1
+
+>> -subsort(get_13_5_1,run_51_3_2)	[1]
+	1
+
+>> -subsort(get_13_5_1,inanimate_object)	[1]
+	1
+
+>> -subsort(get_13_5_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,integers)	[1]
+	1
+
+>> -subsort(get_13_5_1,get_13_5_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,timeStep)	[1]
+	1
+
+>> -subsort(get_13_5_1,leave)	[1]
+	1
+
+>> -subsort(get_13_5_1,booleans)	[1]
+	1
+
+>> -subsort(get_13_5_1,place)	[1]
+	1
+
+>> -subsort(get_13_5_1,kitchen)	[1]
+	1
+
+>> -subsort(get_13_5_1,move)	[1]
+	1
+
+>> -subsort(get_13_5_1,tangible_entity)	[1]
+	1
+
+>> -subsort(get_13_5_1,hallway)	[1]
+	1
+
+>> -subsort(get_13_5_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(get_13_5_1,lose)	[1]
+	1
+
+>> -subsort(get_13_5_1,mary)	[1]
+	1
+
+>> -subsort(get_13_5_1,milk)	[1]
+	1
+
+>> -subsort(get_13_5_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,go_to)	[1]
+	1
+
+>> -subsort(get_13_5_1,meander_47_7)	[1]
+	1
+
+>> -subsort(get_13_5_1,bedroom)	[1]
+	1
+
+>> -subsort(get_13_5_1,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(get_13_5_1,take)	[1]
+	1
+
+>> -subsort(get_13_5_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,slide_11_2)	[1]
+	1
+
+>> -subsort(get_13_5_1,sandra)	[1]
+	1
+
+>> -subsort(get_13_5_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(get_13_5_1,john)	[1]
+	1
+
+>> -subsort(get_13_5_1,carry)	[1]
+	1
+
+>> -subsort(get_13_5_1,entity)	[1]
+	1
+
+>> -subsort(get_13_5_1,walk)	[1]
+	1
+
+>> -subsort(timeStep,spatial_entity)	[1]
+	1
+
+>> -subsort(timeStep,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(timeStep,physical_object)	[1]
+	1
+
+>> -subsort(timeStep,living_entity)	[1]
+	1
+
+>> -subsort(timeStep,activity)	[1]
+	1
+
+>> -subsort(timeStep,locomotion)	[1]
+	1
+
+>> -subsort(timeStep,deliver)	[1]
+	1
+
+>> -subsort(timeStep,run_51_3_2)	[1]
+	1
+
+>> -subsort(timeStep,inanimate_object)	[1]
+	1
+
+>> -subsort(timeStep,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(timeStep,integers)	[1]
+	1
+
+>> -subsort(timeStep,get_13_5_1)	[1]
+	1
+
+>> -subsort(timeStep,timeStep)	[1]
+	1
+
+>> -subsort(timeStep,leave)	[1]
+	1
+
+>> -subsort(timeStep,booleans)	[1]
+	1
+
+>> -subsort(timeStep,place)	[1]
+	1
+
+>> -subsort(timeStep,event)	[1]
+	1
+
+>> -subsort(timeStep,kitchen)	[1]
+	1
+
+>> -subsort(timeStep,obtain)	[1]
+	1
+
+>> -subsort(timeStep,receive)	[1]
+	1
+
+>> -subsort(timeStep,move)	[1]
+	1
+
+>> -subsort(timeStep,tangible_entity)	[1]
+	1
+
+>> -subsort(timeStep,hallway)	[1]
+	1
+
+>> -subsort(timeStep,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(timeStep,lose)	[1]
+	1
+
+>> -subsort(timeStep,mary)	[1]
+	1
+
+>> -subsort(timeStep,milk)	[1]
+	1
+
+>> -subsort(timeStep,meander_47_7_1)	[1]
+	1
+
+>> -subsort(timeStep,go_to)	[1]
+	1
+
+>> -subsort(timeStep,meander_47_7)	[1]
+	1
+
+>> -subsort(timeStep,bedroom)	[1]
+	1
+
+>> -subsort(timeStep,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(timeStep,take)	[1]
+	1
+
+>> -subsort(timeStep,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(timeStep,slide_11_2)	[1]
+	1
+
+>> -subsort(timeStep,transfer)	[1]
+	1
+
+>> -subsort(timeStep,sandra)	[1]
+	1
+
+>> -subsort(timeStep,slide_11_2_1)	[1]
+	1
+
+>> -subsort(timeStep,universe)	[1]
+	1
+
+>> -subsort(timeStep,john)	[1]
+	1
+
+>> -subsort(timeStep,carry)	[1]
+	1
+
+>> -subsort(timeStep,actions)	[1]
+	1
+
+>> -subsort(timeStep,thing)	[1]
+	1
+
+>> -subsort(timeStep,entity)	[1]
+	1
+
+>> -subsort(timeStep,walk)	[1]
+	1
+
+>> -subsort(leave,spatial_entity)	[1]
+	1
+
+>> -subsort(leave,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(leave,physical_object)	[1]
+	1
+
+>> -subsort(leave,living_entity)	[1]
+	1
+
+>> -subsort(leave,activity)	[1]
+	1
+
+>> -subsort(leave,deliver)	[1]
+	1
+
+>> -subsort(leave,run_51_3_2)	[1]
+	1
+
+>> -subsort(leave,inanimate_object)	[1]
+	1
+
+>> -subsort(leave,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(leave,integers)	[1]
+	1
+
+>> -subsort(leave,get_13_5_1)	[1]
+	1
+
+>> -subsort(leave,timeStep)	[1]
+	1
+
+>> -subsort(leave,leave)	[1]
+	1
+
+>> -subsort(leave,booleans)	[1]
+	1
+
+>> -subsort(leave,place)	[1]
+	1
+
+>> -subsort(leave,kitchen)	[1]
+	1
+
+>> -subsort(leave,obtain)	[1]
+	1
+
+>> -subsort(leave,receive)	[1]
+	1
+
+>> -subsort(leave,tangible_entity)	[1]
+	1
+
+>> -subsort(leave,hallway)	[1]
+	1
+
+>> -subsort(leave,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(leave,lose)	[1]
+	1
+
+>> -subsort(leave,mary)	[1]
+	1
+
+>> -subsort(leave,milk)	[1]
+	1
+
+>> -subsort(leave,meander_47_7_1)	[1]
+	1
+
+>> -subsort(leave,go_to)	[1]
+	1
+
+>> -subsort(leave,meander_47_7)	[1]
+	1
+
+>> -subsort(leave,bedroom)	[1]
+	1
+
+>> -subsort(leave,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(leave,take)	[1]
+	1
+
+>> -subsort(leave,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(leave,slide_11_2)	[1]
+	1
+
+>> -subsort(leave,transfer)	[1]
+	1
+
+>> -subsort(leave,sandra)	[1]
+	1
+
+>> -subsort(leave,slide_11_2_1)	[1]
+	1
+
+>> -subsort(leave,john)	[1]
+	1
+
+>> -subsort(leave,carry)	[1]
+	1
+
+>> -subsort(leave,entity)	[1]
+	1
+
+>> -subsort(leave,walk)	[1]
+	1
+
+>> -subsort(booleans,spatial_entity)	[1]
+	1
+
+>> -subsort(booleans,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(booleans,physical_object)	[1]
+	1
+
+>> -subsort(booleans,living_entity)	[1]
+	1
+
+>> -subsort(booleans,activity)	[1]
+	1
+
+>> -subsort(booleans,locomotion)	[1]
+	1
+
+>> -subsort(booleans,deliver)	[1]
+	1
+
+>> -subsort(booleans,run_51_3_2)	[1]
+	1
+
+>> -subsort(booleans,inanimate_object)	[1]
+	1
+
+>> -subsort(booleans,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(booleans,integers)	[1]
+	1
+
+>> -subsort(booleans,get_13_5_1)	[1]
+	1
+
+>> -subsort(booleans,timeStep)	[1]
+	1
+
+>> -subsort(booleans,leave)	[1]
+	1
+
+>> -subsort(booleans,booleans)	[1]
+	1
+
+>> -subsort(booleans,place)	[1]
+	1
+
+>> -subsort(booleans,event)	[1]
+	1
+
+>> -subsort(booleans,kitchen)	[1]
+	1
+
+>> -subsort(booleans,obtain)	[1]
+	1
+
+>> -subsort(booleans,receive)	[1]
+	1
+
+>> -subsort(booleans,move)	[1]
+	1
+
+>> -subsort(booleans,tangible_entity)	[1]
+	1
+
+>> -subsort(booleans,hallway)	[1]
+	1
+
+>> -subsort(booleans,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(booleans,lose)	[1]
+	1
+
+>> -subsort(booleans,mary)	[1]
+	1
+
+>> -subsort(booleans,milk)	[1]
+	1
+
+>> -subsort(booleans,meander_47_7_1)	[1]
+	1
+
+>> -subsort(booleans,go_to)	[1]
+	1
+
+>> -subsort(booleans,meander_47_7)	[1]
+	1
+
+>> -subsort(booleans,bedroom)	[1]
+	1
+
+>> -subsort(booleans,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(booleans,take)	[1]
+	1
+
+>> -subsort(booleans,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(booleans,slide_11_2)	[1]
+	1
+
+>> -subsort(booleans,transfer)	[1]
+	1
+
+>> -subsort(booleans,sandra)	[1]
+	1
+
+>> -subsort(booleans,slide_11_2_1)	[1]
+	1
+
+>> -subsort(booleans,universe)	[1]
+	1
+
+>> -subsort(booleans,john)	[1]
+	1
+
+>> -subsort(booleans,carry)	[1]
+	1
+
+>> -subsort(booleans,actions)	[1]
+	1
+
+>> -subsort(booleans,thing)	[1]
+	1
+
+>> -subsort(booleans,entity)	[1]
+	1
+
+>> -subsort(booleans,walk)	[1]
+	1
+
+>> -subsort(place,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(place,physical_object)	[1]
+	1
+
+>> -subsort(place,living_entity)	[1]
+	1
+
+>> -subsort(place,activity)	[1]
+	1
+
+>> -subsort(place,locomotion)	[1]
+	1
+
+>> -subsort(place,deliver)	[1]
+	1
+
+>> -subsort(place,run_51_3_2)	[1]
+	1
+
+>> -subsort(place,inanimate_object)	[1]
+	1
+
+>> -subsort(place,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(place,integers)	[1]
+	1
+
+>> -subsort(place,get_13_5_1)	[1]
+	1
+
+>> -subsort(place,timeStep)	[1]
+	1
+
+>> -subsort(place,leave)	[1]
+	1
+
+>> -subsort(place,booleans)	[1]
+	1
+
+>> -subsort(place,place)	[1]
+	1
+
+>> -subsort(place,event)	[1]
+	1
+
+>> -subsort(place,kitchen)	[1]
+	1
+
+>> -subsort(place,obtain)	[1]
+	1
+
+>> -subsort(place,receive)	[1]
+	1
+
+>> -subsort(place,move)	[1]
+	1
+
+>> -subsort(place,tangible_entity)	[1]
+	1
+
+>> -subsort(place,hallway)	[1]
+	1
+
+>> -subsort(place,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(place,lose)	[1]
+	1
+
+>> -subsort(place,mary)	[1]
+	1
+
+>> -subsort(place,milk)	[1]
+	1
+
+>> -subsort(place,meander_47_7_1)	[1]
+	1
+
+>> -subsort(place,go_to)	[1]
+	1
+
+>> -subsort(place,meander_47_7)	[1]
+	1
+
+>> -subsort(place,bedroom)	[1]
+	1
+
+>> -subsort(place,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(place,take)	[1]
+	1
+
+>> -subsort(place,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(place,slide_11_2)	[1]
+	1
+
+>> -subsort(place,transfer)	[1]
+	1
+
+>> -subsort(place,sandra)	[1]
+	1
+
+>> -subsort(place,slide_11_2_1)	[1]
+	1
+
+>> -subsort(place,john)	[1]
+	1
+
+>> -subsort(place,carry)	[1]
+	1
+
+>> -subsort(place,actions)	[1]
+	1
+
+>> -subsort(place,walk)	[1]
+	1
+
+>> -subsort(event,spatial_entity)	[1]
+	1
+
+>> -subsort(event,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(event,physical_object)	[1]
+	1
+
+>> -subsort(event,living_entity)	[1]
+	1
+
+>> -subsort(event,activity)	[1]
+	1
+
+>> -subsort(event,locomotion)	[1]
+	1
+
+>> -subsort(event,deliver)	[1]
+	1
+
+>> -subsort(event,run_51_3_2)	[1]
+	1
+
+>> -subsort(event,inanimate_object)	[1]
+	1
+
+>> -subsort(event,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(event,integers)	[1]
+	1
+
+>> -subsort(event,get_13_5_1)	[1]
+	1
+
+>> -subsort(event,timeStep)	[1]
+	1
+
+>> -subsort(event,leave)	[1]
+	1
+
+>> -subsort(event,booleans)	[1]
+	1
+
+>> -subsort(event,place)	[1]
+	1
+
+>> -subsort(event,event)	[1]
+	1
+
+>> -subsort(event,kitchen)	[1]
+	1
+
+>> -subsort(event,obtain)	[1]
+	1
+
+>> -subsort(event,receive)	[1]
+	1
+
+>> -subsort(event,move)	[1]
+	1
+
+>> -subsort(event,tangible_entity)	[1]
+	1
+
+>> -subsort(event,hallway)	[1]
+	1
+
+>> -subsort(event,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(event,lose)	[1]
+	1
+
+>> -subsort(event,mary)	[1]
+	1
+
+>> -subsort(event,milk)	[1]
+	1
+
+>> -subsort(event,meander_47_7_1)	[1]
+	1
+
+>> -subsort(event,go_to)	[1]
+	1
+
+>> -subsort(event,meander_47_7)	[1]
+	1
+
+>> -subsort(event,bedroom)	[1]
+	1
+
+>> -subsort(event,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(event,take)	[1]
+	1
+
+>> -subsort(event,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(event,slide_11_2)	[1]
+	1
+
+>> -subsort(event,transfer)	[1]
+	1
+
+>> -subsort(event,sandra)	[1]
+	1
+
+>> -subsort(event,slide_11_2_1)	[1]
+	1
+
+>> -subsort(event,john)	[1]
+	1
+
+>> -subsort(event,carry)	[1]
+	1
+
+>> -subsort(event,actions)	[1]
+	1
+
+>> -subsort(event,entity)	[1]
+	1
+
+>> -subsort(event,walk)	[1]
+	1
+
+>> -subsort(kitchen,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(kitchen,physical_object)	[1]
+	1
+
+>> -subsort(kitchen,living_entity)	[1]
+	1
+
+>> -subsort(kitchen,activity)	[1]
+	1
+
+>> -subsort(kitchen,locomotion)	[1]
+	1
+
+>> -subsort(kitchen,deliver)	[1]
+	1
+
+>> -subsort(kitchen,run_51_3_2)	[1]
+	1
+
+>> -subsort(kitchen,inanimate_object)	[1]
+	1
+
+>> -subsort(kitchen,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(kitchen,integers)	[1]
+	1
+
+>> -subsort(kitchen,get_13_5_1)	[1]
+	1
+
+>> -subsort(kitchen,timeStep)	[1]
+	1
+
+>> -subsort(kitchen,leave)	[1]
+	1
+
+>> -subsort(kitchen,booleans)	[1]
+	1
+
+>> -subsort(kitchen,event)	[1]
+	1
+
+>> -subsort(kitchen,kitchen)	[1]
+	1
+
+>> -subsort(kitchen,obtain)	[1]
+	1
+
+>> -subsort(kitchen,receive)	[1]
+	1
+
+>> -subsort(kitchen,move)	[1]
+	1
+
+>> -subsort(kitchen,tangible_entity)	[1]
+	1
+
+>> -subsort(kitchen,hallway)	[1]
+	1
+
+>> -subsort(kitchen,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(kitchen,lose)	[1]
+	1
+
+>> -subsort(kitchen,mary)	[1]
+	1
+
+>> -subsort(kitchen,milk)	[1]
+	1
+
+>> -subsort(kitchen,meander_47_7_1)	[1]
+	1
+
+>> -subsort(kitchen,go_to)	[1]
+	1
+
+>> -subsort(kitchen,meander_47_7)	[1]
+	1
+
+>> -subsort(kitchen,bedroom)	[1]
+	1
+
+>> -subsort(kitchen,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(kitchen,take)	[1]
+	1
+
+>> -subsort(kitchen,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(kitchen,slide_11_2)	[1]
+	1
+
+>> -subsort(kitchen,transfer)	[1]
+	1
+
+>> -subsort(kitchen,sandra)	[1]
+	1
+
+>> -subsort(kitchen,slide_11_2_1)	[1]
+	1
+
+>> -subsort(kitchen,john)	[1]
+	1
+
+>> -subsort(kitchen,carry)	[1]
+	1
+
+>> -subsort(kitchen,actions)	[1]
+	1
+
+>> -subsort(kitchen,walk)	[1]
+	1
+
+>> -subsort(obtain,spatial_entity)	[1]
+	1
+
+>> -subsort(obtain,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(obtain,physical_object)	[1]
+	1
+
+>> -subsort(obtain,living_entity)	[1]
+	1
+
+>> -subsort(obtain,activity)	[1]
+	1
+
+>> -subsort(obtain,locomotion)	[1]
+	1
+
+>> -subsort(obtain,deliver)	[1]
+	1
+
+>> -subsort(obtain,run_51_3_2)	[1]
+	1
+
+>> -subsort(obtain,inanimate_object)	[1]
+	1
+
+>> -subsort(obtain,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(obtain,integers)	[1]
+	1
+
+>> -subsort(obtain,get_13_5_1)	[1]
+	1
+
+>> -subsort(obtain,timeStep)	[1]
+	1
+
+>> -subsort(obtain,leave)	[1]
+	1
+
+>> -subsort(obtain,booleans)	[1]
+	1
+
+>> -subsort(obtain,place)	[1]
+	1
+
+>> -subsort(obtain,kitchen)	[1]
+	1
+
+>> -subsort(obtain,obtain)	[1]
+	1
+
+>> -subsort(obtain,move)	[1]
+	1
+
+>> -subsort(obtain,tangible_entity)	[1]
+	1
+
+>> -subsort(obtain,hallway)	[1]
+	1
+
+>> -subsort(obtain,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(obtain,lose)	[1]
+	1
+
+>> -subsort(obtain,mary)	[1]
+	1
+
+>> -subsort(obtain,milk)	[1]
+	1
+
+>> -subsort(obtain,meander_47_7_1)	[1]
+	1
+
+>> -subsort(obtain,go_to)	[1]
+	1
+
+>> -subsort(obtain,meander_47_7)	[1]
+	1
+
+>> -subsort(obtain,bedroom)	[1]
+	1
+
+>> -subsort(obtain,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(obtain,take)	[1]
+	1
+
+>> -subsort(obtain,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(obtain,slide_11_2)	[1]
+	1
+
+>> -subsort(obtain,sandra)	[1]
+	1
+
+>> -subsort(obtain,slide_11_2_1)	[1]
+	1
+
+>> -subsort(obtain,john)	[1]
+	1
+
+>> -subsort(obtain,carry)	[1]
+	1
+
+>> -subsort(obtain,entity)	[1]
+	1
+
+>> -subsort(obtain,walk)	[1]
+	1
+
+>> -subsort(receive,spatial_entity)	[1]
+	1
+
+>> -subsort(receive,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(receive,physical_object)	[1]
+	1
+
+>> -subsort(receive,living_entity)	[1]
+	1
+
+>> -subsort(receive,activity)	[1]
+	1
+
+>> -subsort(receive,locomotion)	[1]
+	1
+
+>> -subsort(receive,deliver)	[1]
+	1
+
+>> -subsort(receive,run_51_3_2)	[1]
+	1
+
+>> -subsort(receive,inanimate_object)	[1]
+	1
+
+>> -subsort(receive,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(receive,integers)	[1]
+	1
+
+>> -subsort(receive,get_13_5_1)	[1]
+	1
+
+>> -subsort(receive,timeStep)	[1]
+	1
+
+>> -subsort(receive,leave)	[1]
+	1
+
+>> -subsort(receive,booleans)	[1]
+	1
+
+>> -subsort(receive,place)	[1]
+	1
+
+>> -subsort(receive,kitchen)	[1]
+	1
+
+>> -subsort(receive,obtain)	[1]
+	1
+
+>> -subsort(receive,receive)	[1]
+	1
+
+>> -subsort(receive,move)	[1]
+	1
+
+>> -subsort(receive,tangible_entity)	[1]
+	1
+
+>> -subsort(receive,hallway)	[1]
+	1
+
+>> -subsort(receive,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(receive,lose)	[1]
+	1
+
+>> -subsort(receive,mary)	[1]
+	1
+
+>> -subsort(receive,milk)	[1]
+	1
+
+>> -subsort(receive,meander_47_7_1)	[1]
+	1
+
+>> -subsort(receive,go_to)	[1]
+	1
+
+>> -subsort(receive,meander_47_7)	[1]
+	1
+
+>> -subsort(receive,bedroom)	[1]
+	1
+
+>> -subsort(receive,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(receive,take)	[1]
+	1
+
+>> -subsort(receive,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(receive,slide_11_2)	[1]
+	1
+
+>> -subsort(receive,sandra)	[1]
+	1
+
+>> -subsort(receive,slide_11_2_1)	[1]
+	1
+
+>> -subsort(receive,john)	[1]
+	1
+
+>> -subsort(receive,carry)	[1]
+	1
+
+>> -subsort(receive,entity)	[1]
+	1
+
+>> -subsort(receive,walk)	[1]
+	1
+
+>> -subsort(move,spatial_entity)	[1]
+	1
+
+>> -subsort(move,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(move,physical_object)	[1]
+	1
+
+>> -subsort(move,living_entity)	[1]
+	1
+
+>> -subsort(move,activity)	[1]
+	1
+
+>> -subsort(move,locomotion)	[1]
+	1
+
+>> -subsort(move,deliver)	[1]
+	1
+
+>> -subsort(move,run_51_3_2)	[1]
+	1
+
+>> -subsort(move,inanimate_object)	[1]
+	1
+
+>> -subsort(move,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(move,integers)	[1]
+	1
+
+>> -subsort(move,get_13_5_1)	[1]
+	1
+
+>> -subsort(move,timeStep)	[1]
+	1
+
+>> -subsort(move,leave)	[1]
+	1
+
+>> -subsort(move,booleans)	[1]
+	1
+
+>> -subsort(move,place)	[1]
+	1
+
+>> -subsort(move,kitchen)	[1]
+	1
+
+>> -subsort(move,obtain)	[1]
+	1
+
+>> -subsort(move,receive)	[1]
+	1
+
+>> -subsort(move,move)	[1]
+	1
+
+>> -subsort(move,tangible_entity)	[1]
+	1
+
+>> -subsort(move,hallway)	[1]
+	1
+
+>> -subsort(move,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(move,lose)	[1]
+	1
+
+>> -subsort(move,mary)	[1]
+	1
+
+>> -subsort(move,milk)	[1]
+	1
+
+>> -subsort(move,meander_47_7_1)	[1]
+	1
+
+>> -subsort(move,go_to)	[1]
+	1
+
+>> -subsort(move,meander_47_7)	[1]
+	1
+
+>> -subsort(move,bedroom)	[1]
+	1
+
+>> -subsort(move,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(move,take)	[1]
+	1
+
+>> -subsort(move,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(move,slide_11_2)	[1]
+	1
+
+>> -subsort(move,transfer)	[1]
+	1
+
+>> -subsort(move,sandra)	[1]
+	1
+
+>> -subsort(move,slide_11_2_1)	[1]
+	1
+
+>> -subsort(move,john)	[1]
+	1
+
+>> -subsort(move,carry)	[1]
+	1
+
+>> -subsort(move,entity)	[1]
+	1
+
+>> -subsort(move,walk)	[1]
+	1
+
+>> -subsort(tangible_entity,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(tangible_entity,physical_object)	[1]
+	1
+
+>> -subsort(tangible_entity,living_entity)	[1]
+	1
+
+>> -subsort(tangible_entity,activity)	[1]
+	1
+
+>> -subsort(tangible_entity,locomotion)	[1]
+	1
+
+>> -subsort(tangible_entity,deliver)	[1]
+	1
+
+>> -subsort(tangible_entity,run_51_3_2)	[1]
+	1
+
+>> -subsort(tangible_entity,inanimate_object)	[1]
+	1
+
+>> -subsort(tangible_entity,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(tangible_entity,integers)	[1]
+	1
+
+>> -subsort(tangible_entity,get_13_5_1)	[1]
+	1
+
+>> -subsort(tangible_entity,timeStep)	[1]
+	1
+
+>> -subsort(tangible_entity,leave)	[1]
+	1
+
+>> -subsort(tangible_entity,booleans)	[1]
+	1
+
+>> -subsort(tangible_entity,place)	[1]
+	1
+
+>> -subsort(tangible_entity,event)	[1]
+	1
+
+>> -subsort(tangible_entity,kitchen)	[1]
+	1
+
+>> -subsort(tangible_entity,obtain)	[1]
+	1
+
+>> -subsort(tangible_entity,receive)	[1]
+	1
+
+>> -subsort(tangible_entity,move)	[1]
+	1
+
+>> -subsort(tangible_entity,tangible_entity)	[1]
+	1
+
+>> -subsort(tangible_entity,hallway)	[1]
+	1
+
+>> -subsort(tangible_entity,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(tangible_entity,lose)	[1]
+	1
+
+>> -subsort(tangible_entity,mary)	[1]
+	1
+
+>> -subsort(tangible_entity,milk)	[1]
+	1
+
+>> -subsort(tangible_entity,meander_47_7_1)	[1]
+	1
+
+>> -subsort(tangible_entity,go_to)	[1]
+	1
+
+>> -subsort(tangible_entity,meander_47_7)	[1]
+	1
+
+>> -subsort(tangible_entity,bedroom)	[1]
+	1
+
+>> -subsort(tangible_entity,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(tangible_entity,take)	[1]
+	1
+
+>> -subsort(tangible_entity,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(tangible_entity,slide_11_2)	[1]
+	1
+
+>> -subsort(tangible_entity,transfer)	[1]
+	1
+
+>> -subsort(tangible_entity,sandra)	[1]
+	1
+
+>> -subsort(tangible_entity,slide_11_2_1)	[1]
+	1
+
+>> -subsort(tangible_entity,john)	[1]
+	1
+
+>> -subsort(tangible_entity,carry)	[1]
+	1
+
+>> -subsort(tangible_entity,actions)	[1]
+	1
+
+>> -subsort(tangible_entity,walk)	[1]
+	1
+
+>> -subsort(hallway,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(hallway,physical_object)	[1]
+	1
+
+>> -subsort(hallway,living_entity)	[1]
+	1
+
+>> -subsort(hallway,activity)	[1]
+	1
+
+>> -subsort(hallway,locomotion)	[1]
+	1
+
+>> -subsort(hallway,deliver)	[1]
+	1
+
+>> -subsort(hallway,run_51_3_2)	[1]
+	1
+
+>> -subsort(hallway,inanimate_object)	[1]
+	1
+
+>> -subsort(hallway,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(hallway,integers)	[1]
+	1
+
+>> -subsort(hallway,get_13_5_1)	[1]
+	1
+
+>> -subsort(hallway,timeStep)	[1]
+	1
+
+>> -subsort(hallway,leave)	[1]
+	1
+
+>> -subsort(hallway,booleans)	[1]
+	1
+
+>> -subsort(hallway,place)	[1]
+	1
+
+>> -subsort(hallway,event)	[1]
+	1
+
+>> -subsort(hallway,kitchen)	[1]
+	1
+
+>> -subsort(hallway,obtain)	[1]
+	1
+
+>> -subsort(hallway,receive)	[1]
+	1
+
+>> -subsort(hallway,move)	[1]
+	1
+
+>> -subsort(hallway,tangible_entity)	[1]
+	1
+
+>> -subsort(hallway,hallway)	[1]
+	1
+
+>> -subsort(hallway,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(hallway,lose)	[1]
+	1
+
+>> -subsort(hallway,mary)	[1]
+	1
+
+>> -subsort(hallway,milk)	[1]
+	1
+
+>> -subsort(hallway,meander_47_7_1)	[1]
+	1
+
+>> -subsort(hallway,go_to)	[1]
+	1
+
+>> -subsort(hallway,meander_47_7)	[1]
+	1
+
+>> -subsort(hallway,bedroom)	[1]
+	1
+
+>> -subsort(hallway,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(hallway,take)	[1]
+	1
+
+>> -subsort(hallway,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(hallway,slide_11_2)	[1]
+	1
+
+>> -subsort(hallway,transfer)	[1]
+	1
+
+>> -subsort(hallway,sandra)	[1]
+	1
+
+>> -subsort(hallway,slide_11_2_1)	[1]
+	1
+
+>> -subsort(hallway,john)	[1]
+	1
+
+>> -subsort(hallway,carry)	[1]
+	1
+
+>> -subsort(hallway,actions)	[1]
+	1
+
+>> -subsort(hallway,walk)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,spatial_entity)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,physical_object)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,living_entity)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,activity)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,locomotion)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,deliver)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,run_51_3_2)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,inanimate_object)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,integers)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,get_13_5_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,timeStep)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,leave)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,booleans)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,place)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,event)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,kitchen)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,obtain)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,receive)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,move)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,tangible_entity)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,hallway)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,lose)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,mary)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,milk)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,meander_47_7_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,go_to)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,meander_47_7)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,bedroom)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,take)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,slide_11_2)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,transfer)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,sandra)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,slide_11_2_1)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,universe)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,john)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,carry)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,actions)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,thing)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,entity)	[1]
+	1
+
+>> -subsort(comparable_integers_subsort,walk)	[1]
+	1
+
+>> -subsort(lose,spatial_entity)	[1]
+	1
+
+>> -subsort(lose,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(lose,physical_object)	[1]
+	1
+
+>> -subsort(lose,living_entity)	[1]
+	1
+
+>> -subsort(lose,activity)	[1]
+	1
+
+>> -subsort(lose,locomotion)	[1]
+	1
+
+>> -subsort(lose,deliver)	[1]
+	1
+
+>> -subsort(lose,run_51_3_2)	[1]
+	1
+
+>> -subsort(lose,inanimate_object)	[1]
+	1
+
+>> -subsort(lose,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(lose,integers)	[1]
+	1
+
+>> -subsort(lose,get_13_5_1)	[1]
+	1
+
+>> -subsort(lose,timeStep)	[1]
+	1
+
+>> -subsort(lose,leave)	[1]
+	1
+
+>> -subsort(lose,booleans)	[1]
+	1
+
+>> -subsort(lose,place)	[1]
+	1
+
+>> -subsort(lose,kitchen)	[1]
+	1
+
+>> -subsort(lose,obtain)	[1]
+	1
+
+>> -subsort(lose,receive)	[1]
+	1
+
+>> -subsort(lose,move)	[1]
+	1
+
+>> -subsort(lose,tangible_entity)	[1]
+	1
+
+>> -subsort(lose,hallway)	[1]
+	1
+
+>> -subsort(lose,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(lose,lose)	[1]
+	1
+
+>> -subsort(lose,mary)	[1]
+	1
+
+>> -subsort(lose,milk)	[1]
+	1
+
+>> -subsort(lose,meander_47_7_1)	[1]
+	1
+
+>> -subsort(lose,go_to)	[1]
+	1
+
+>> -subsort(lose,meander_47_7)	[1]
+	1
+
+>> -subsort(lose,bedroom)	[1]
+	1
+
+>> -subsort(lose,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(lose,take)	[1]
+	1
+
+>> -subsort(lose,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(lose,slide_11_2)	[1]
+	1
+
+>> -subsort(lose,sandra)	[1]
+	1
+
+>> -subsort(lose,slide_11_2_1)	[1]
+	1
+
+>> -subsort(lose,john)	[1]
+	1
+
+>> -subsort(lose,carry)	[1]
+	1
+
+>> -subsort(lose,entity)	[1]
+	1
+
+>> -subsort(lose,walk)	[1]
+	1
+
+>> -subsort(mary,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(mary,activity)	[1]
+	1
+
+>> -subsort(mary,locomotion)	[1]
+	1
+
+>> -subsort(mary,deliver)	[1]
+	1
+
+>> -subsort(mary,run_51_3_2)	[1]
+	1
+
+>> -subsort(mary,inanimate_object)	[1]
+	1
+
+>> -subsort(mary,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(mary,integers)	[1]
+	1
+
+>> -subsort(mary,get_13_5_1)	[1]
+	1
+
+>> -subsort(mary,timeStep)	[1]
+	1
+
+>> -subsort(mary,leave)	[1]
+	1
+
+>> -subsort(mary,booleans)	[1]
+	1
+
+>> -subsort(mary,place)	[1]
+	1
+
+>> -subsort(mary,event)	[1]
+	1
+
+>> -subsort(mary,kitchen)	[1]
+	1
+
+>> -subsort(mary,obtain)	[1]
+	1
+
+>> -subsort(mary,receive)	[1]
+	1
+
+>> -subsort(mary,move)	[1]
+	1
+
+>> -subsort(mary,hallway)	[1]
+	1
+
+>> -subsort(mary,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(mary,lose)	[1]
+	1
+
+>> -subsort(mary,mary)	[1]
+	1
+
+>> -subsort(mary,milk)	[1]
+	1
+
+>> -subsort(mary,meander_47_7_1)	[1]
+	1
+
+>> -subsort(mary,go_to)	[1]
+	1
+
+>> -subsort(mary,meander_47_7)	[1]
+	1
+
+>> -subsort(mary,bedroom)	[1]
+	1
+
+>> -subsort(mary,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(mary,take)	[1]
+	1
+
+>> -subsort(mary,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(mary,slide_11_2)	[1]
+	1
+
+>> -subsort(mary,transfer)	[1]
+	1
+
+>> -subsort(mary,sandra)	[1]
+	1
+
+>> -subsort(mary,slide_11_2_1)	[1]
+	1
+
+>> -subsort(mary,john)	[1]
+	1
+
+>> -subsort(mary,carry)	[1]
+	1
+
+>> -subsort(mary,actions)	[1]
+	1
+
+>> -subsort(mary,walk)	[1]
+	1
+
+>> -subsort(milk,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(milk,activity)	[1]
+	1
+
+>> -subsort(milk,locomotion)	[1]
+	1
+
+>> -subsort(milk,deliver)	[1]
+	1
+
+>> -subsort(milk,run_51_3_2)	[1]
+	1
+
+>> -subsort(milk,inanimate_object)	[1]
+	1
+
+>> -subsort(milk,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(milk,integers)	[1]
+	1
+
+>> -subsort(milk,get_13_5_1)	[1]
+	1
+
+>> -subsort(milk,timeStep)	[1]
+	1
+
+>> -subsort(milk,leave)	[1]
+	1
+
+>> -subsort(milk,booleans)	[1]
+	1
+
+>> -subsort(milk,place)	[1]
+	1
+
+>> -subsort(milk,event)	[1]
+	1
+
+>> -subsort(milk,kitchen)	[1]
+	1
+
+>> -subsort(milk,obtain)	[1]
+	1
+
+>> -subsort(milk,receive)	[1]
+	1
+
+>> -subsort(milk,move)	[1]
+	1
+
+>> -subsort(milk,hallway)	[1]
+	1
+
+>> -subsort(milk,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(milk,lose)	[1]
+	1
+
+>> -subsort(milk,mary)	[1]
+	1
+
+>> -subsort(milk,milk)	[1]
+	1
+
+>> -subsort(milk,meander_47_7_1)	[1]
+	1
+
+>> -subsort(milk,go_to)	[1]
+	1
+
+>> -subsort(milk,meander_47_7)	[1]
+	1
+
+>> -subsort(milk,bedroom)	[1]
+	1
+
+>> -subsort(milk,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(milk,take)	[1]
+	1
+
+>> -subsort(milk,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(milk,slide_11_2)	[1]
+	1
+
+>> -subsort(milk,transfer)	[1]
+	1
+
+>> -subsort(milk,sandra)	[1]
+	1
+
+>> -subsort(milk,slide_11_2_1)	[1]
+	1
+
+>> -subsort(milk,john)	[1]
+	1
+
+>> -subsort(milk,carry)	[1]
+	1
+
+>> -subsort(milk,actions)	[1]
+	1
+
+>> -subsort(milk,walk)	[1]
+	1
+
+>> -subsort(meander_47_7_1,spatial_entity)	[1]
+	1
+
+>> -subsort(meander_47_7_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,physical_object)	[1]
+	1
+
+>> -subsort(meander_47_7_1,living_entity)	[1]
+	1
+
+>> -subsort(meander_47_7_1,activity)	[1]
+	1
+
+>> -subsort(meander_47_7_1,deliver)	[1]
+	1
+
+>> -subsort(meander_47_7_1,run_51_3_2)	[1]
+	1
+
+>> -subsort(meander_47_7_1,inanimate_object)	[1]
+	1
+
+>> -subsort(meander_47_7_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,integers)	[1]
+	1
+
+>> -subsort(meander_47_7_1,get_13_5_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,timeStep)	[1]
+	1
+
+>> -subsort(meander_47_7_1,leave)	[1]
+	1
+
+>> -subsort(meander_47_7_1,booleans)	[1]
+	1
+
+>> -subsort(meander_47_7_1,place)	[1]
+	1
+
+>> -subsort(meander_47_7_1,kitchen)	[1]
+	1
+
+>> -subsort(meander_47_7_1,obtain)	[1]
+	1
+
+>> -subsort(meander_47_7_1,receive)	[1]
+	1
+
+>> -subsort(meander_47_7_1,tangible_entity)	[1]
+	1
+
+>> -subsort(meander_47_7_1,hallway)	[1]
+	1
+
+>> -subsort(meander_47_7_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(meander_47_7_1,lose)	[1]
+	1
+
+>> -subsort(meander_47_7_1,mary)	[1]
+	1
+
+>> -subsort(meander_47_7_1,milk)	[1]
+	1
+
+>> -subsort(meander_47_7_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,bedroom)	[1]
+	1
+
+>> -subsort(meander_47_7_1,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(meander_47_7_1,take)	[1]
+	1
+
+>> -subsort(meander_47_7_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,slide_11_2)	[1]
+	1
+
+>> -subsort(meander_47_7_1,transfer)	[1]
+	1
+
+>> -subsort(meander_47_7_1,sandra)	[1]
+	1
+
+>> -subsort(meander_47_7_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7_1,john)	[1]
+	1
+
+>> -subsort(meander_47_7_1,carry)	[1]
+	1
+
+>> -subsort(meander_47_7_1,entity)	[1]
+	1
+
+>> -subsort(meander_47_7_1,walk)	[1]
+	1
+
+>> -subsort(go_to,spatial_entity)	[1]
+	1
+
+>> -subsort(go_to,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(go_to,physical_object)	[1]
+	1
+
+>> -subsort(go_to,living_entity)	[1]
+	1
+
+>> -subsort(go_to,activity)	[1]
+	1
+
+>> -subsort(go_to,deliver)	[1]
+	1
+
+>> -subsort(go_to,run_51_3_2)	[1]
+	1
+
+>> -subsort(go_to,inanimate_object)	[1]
+	1
+
+>> -subsort(go_to,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(go_to,integers)	[1]
+	1
+
+>> -subsort(go_to,get_13_5_1)	[1]
+	1
+
+>> -subsort(go_to,timeStep)	[1]
+	1
+
+>> -subsort(go_to,leave)	[1]
+	1
+
+>> -subsort(go_to,booleans)	[1]
+	1
+
+>> -subsort(go_to,place)	[1]
+	1
+
+>> -subsort(go_to,kitchen)	[1]
+	1
+
+>> -subsort(go_to,obtain)	[1]
+	1
+
+>> -subsort(go_to,receive)	[1]
+	1
+
+>> -subsort(go_to,tangible_entity)	[1]
+	1
+
+>> -subsort(go_to,hallway)	[1]
+	1
+
+>> -subsort(go_to,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(go_to,lose)	[1]
+	1
+
+>> -subsort(go_to,mary)	[1]
+	1
+
+>> -subsort(go_to,milk)	[1]
+	1
+
+>> -subsort(go_to,meander_47_7_1)	[1]
+	1
+
+>> -subsort(go_to,go_to)	[1]
+	1
+
+>> -subsort(go_to,meander_47_7)	[1]
+	1
+
+>> -subsort(go_to,bedroom)	[1]
+	1
+
+>> -subsort(go_to,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(go_to,take)	[1]
+	1
+
+>> -subsort(go_to,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(go_to,slide_11_2)	[1]
+	1
+
+>> -subsort(go_to,transfer)	[1]
+	1
+
+>> -subsort(go_to,sandra)	[1]
+	1
+
+>> -subsort(go_to,slide_11_2_1)	[1]
+	1
+
+>> -subsort(go_to,john)	[1]
+	1
+
+>> -subsort(go_to,carry)	[1]
+	1
+
+>> -subsort(go_to,entity)	[1]
+	1
+
+>> -subsort(go_to,walk)	[1]
+	1
+
+>> -subsort(meander_47_7,spatial_entity)	[1]
+	1
+
+>> -subsort(meander_47_7,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7,physical_object)	[1]
+	1
+
+>> -subsort(meander_47_7,living_entity)	[1]
+	1
+
+>> -subsort(meander_47_7,activity)	[1]
+	1
+
+>> -subsort(meander_47_7,deliver)	[1]
+	1
+
+>> -subsort(meander_47_7,run_51_3_2)	[1]
+	1
+
+>> -subsort(meander_47_7,inanimate_object)	[1]
+	1
+
+>> -subsort(meander_47_7,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(meander_47_7,integers)	[1]
+	1
+
+>> -subsort(meander_47_7,get_13_5_1)	[1]
+	1
+
+>> -subsort(meander_47_7,timeStep)	[1]
+	1
+
+>> -subsort(meander_47_7,leave)	[1]
+	1
+
+>> -subsort(meander_47_7,booleans)	[1]
+	1
+
+>> -subsort(meander_47_7,place)	[1]
+	1
+
+>> -subsort(meander_47_7,kitchen)	[1]
+	1
+
+>> -subsort(meander_47_7,obtain)	[1]
+	1
+
+>> -subsort(meander_47_7,receive)	[1]
+	1
+
+>> -subsort(meander_47_7,tangible_entity)	[1]
+	1
+
+>> -subsort(meander_47_7,hallway)	[1]
+	1
+
+>> -subsort(meander_47_7,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(meander_47_7,lose)	[1]
+	1
+
+>> -subsort(meander_47_7,mary)	[1]
+	1
+
+>> -subsort(meander_47_7,milk)	[1]
+	1
+
+>> -subsort(meander_47_7,meander_47_7_1)	[1]
+	1
+
+>> -subsort(meander_47_7,meander_47_7)	[1]
+	1
+
+>> -subsort(meander_47_7,bedroom)	[1]
+	1
+
+>> -subsort(meander_47_7,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(meander_47_7,take)	[1]
+	1
+
+>> -subsort(meander_47_7,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7,slide_11_2)	[1]
+	1
+
+>> -subsort(meander_47_7,transfer)	[1]
+	1
+
+>> -subsort(meander_47_7,sandra)	[1]
+	1
+
+>> -subsort(meander_47_7,slide_11_2_1)	[1]
+	1
+
+>> -subsort(meander_47_7,john)	[1]
+	1
+
+>> -subsort(meander_47_7,carry)	[1]
+	1
+
+>> -subsort(meander_47_7,entity)	[1]
+	1
+
+>> -subsort(meander_47_7,walk)	[1]
+	1
+
+>> -subsort(bedroom,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(bedroom,physical_object)	[1]
+	1
+
+>> -subsort(bedroom,living_entity)	[1]
+	1
+
+>> -subsort(bedroom,activity)	[1]
+	1
+
+>> -subsort(bedroom,locomotion)	[1]
+	1
+
+>> -subsort(bedroom,deliver)	[1]
+	1
+
+>> -subsort(bedroom,run_51_3_2)	[1]
+	1
+
+>> -subsort(bedroom,inanimate_object)	[1]
+	1
+
+>> -subsort(bedroom,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(bedroom,integers)	[1]
+	1
+
+>> -subsort(bedroom,get_13_5_1)	[1]
+	1
+
+>> -subsort(bedroom,timeStep)	[1]
+	1
+
+>> -subsort(bedroom,leave)	[1]
+	1
+
+>> -subsort(bedroom,booleans)	[1]
+	1
+
+>> -subsort(bedroom,place)	[1]
+	1
+
+>> -subsort(bedroom,event)	[1]
+	1
+
+>> -subsort(bedroom,kitchen)	[1]
+	1
+
+>> -subsort(bedroom,obtain)	[1]
+	1
+
+>> -subsort(bedroom,receive)	[1]
+	1
+
+>> -subsort(bedroom,move)	[1]
+	1
+
+>> -subsort(bedroom,tangible_entity)	[1]
+	1
+
+>> -subsort(bedroom,hallway)	[1]
+	1
+
+>> -subsort(bedroom,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(bedroom,lose)	[1]
+	1
+
+>> -subsort(bedroom,mary)	[1]
+	1
+
+>> -subsort(bedroom,milk)	[1]
+	1
+
+>> -subsort(bedroom,meander_47_7_1)	[1]
+	1
+
+>> -subsort(bedroom,go_to)	[1]
+	1
+
+>> -subsort(bedroom,meander_47_7)	[1]
+	1
+
+>> -subsort(bedroom,bedroom)	[1]
+	1
+
+>> -subsort(bedroom,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(bedroom,take)	[1]
+	1
+
+>> -subsort(bedroom,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(bedroom,slide_11_2)	[1]
+	1
+
+>> -subsort(bedroom,transfer)	[1]
+	1
+
+>> -subsort(bedroom,sandra)	[1]
+	1
+
+>> -subsort(bedroom,slide_11_2_1)	[1]
+	1
+
+>> -subsort(bedroom,john)	[1]
+	1
+
+>> -subsort(bedroom,carry)	[1]
+	1
+
+>> -subsort(bedroom,actions)	[1]
+	1
+
+>> -subsort(bedroom,walk)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,spatial_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,physical_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,living_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,activity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,deliver)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,inanimate_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,integers)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,get_13_5_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,timeStep)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,leave)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,booleans)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,place)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,kitchen)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,obtain)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,receive)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,tangible_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,hallway)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,lose)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,mary)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,milk)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,meander_47_7_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,go_to)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,meander_47_7)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,bedroom)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,take)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,slide_11_2)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,transfer)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,sandra)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,slide_11_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,john)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,carry)	[1]
+	1
+
+>> -subsort(run_51_3_2_2,entity)	[1]
+	1
+
+>> -subsort(take,spatial_entity)	[1]
+	1
+
+>> -subsort(take,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(take,physical_object)	[1]
+	1
+
+>> -subsort(take,living_entity)	[1]
+	1
+
+>> -subsort(take,activity)	[1]
+	1
+
+>> -subsort(take,locomotion)	[1]
+	1
+
+>> -subsort(take,deliver)	[1]
+	1
+
+>> -subsort(take,run_51_3_2)	[1]
+	1
+
+>> -subsort(take,inanimate_object)	[1]
+	1
+
+>> -subsort(take,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(take,integers)	[1]
+	1
+
+>> -subsort(take,get_13_5_1)	[1]
+	1
+
+>> -subsort(take,timeStep)	[1]
+	1
+
+>> -subsort(take,leave)	[1]
+	1
+
+>> -subsort(take,booleans)	[1]
+	1
+
+>> -subsort(take,place)	[1]
+	1
+
+>> -subsort(take,kitchen)	[1]
+	1
+
+>> -subsort(take,move)	[1]
+	1
+
+>> -subsort(take,tangible_entity)	[1]
+	1
+
+>> -subsort(take,hallway)	[1]
+	1
+
+>> -subsort(take,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(take,lose)	[1]
+	1
+
+>> -subsort(take,mary)	[1]
+	1
+
+>> -subsort(take,milk)	[1]
+	1
+
+>> -subsort(take,meander_47_7_1)	[1]
+	1
+
+>> -subsort(take,go_to)	[1]
+	1
+
+>> -subsort(take,meander_47_7)	[1]
+	1
+
+>> -subsort(take,bedroom)	[1]
+	1
+
+>> -subsort(take,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(take,take)	[1]
+	1
+
+>> -subsort(take,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(take,slide_11_2)	[1]
+	1
+
+>> -subsort(take,sandra)	[1]
+	1
+
+>> -subsort(take,slide_11_2_1)	[1]
+	1
+
+>> -subsort(take,john)	[1]
+	1
+
+>> -subsort(take,carry)	[1]
+	1
+
+>> -subsort(take,entity)	[1]
+	1
+
+>> -subsort(take,walk)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,spatial_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,physical_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,living_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,activity)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,deliver)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,inanimate_object)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,integers)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,get_13_5_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,timeStep)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,leave)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,booleans)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,place)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,kitchen)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,obtain)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,receive)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,tangible_entity)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,hallway)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,lose)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,mary)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,milk)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,go_to)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,meander_47_7)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,bedroom)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,take)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,slide_11_2)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,transfer)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,sandra)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,john)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,carry)	[1]
+	1
+
+>> -subsort(run_51_3_2_1,entity)	[1]
+	1
+
+>> -subsort(slide_11_2,spatial_entity)	[1]
+	1
+
+>> -subsort(slide_11_2,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2,physical_object)	[1]
+	1
+
+>> -subsort(slide_11_2,living_entity)	[1]
+	1
+
+>> -subsort(slide_11_2,activity)	[1]
+	1
+
+>> -subsort(slide_11_2,deliver)	[1]
+	1
+
+>> -subsort(slide_11_2,run_51_3_2)	[1]
+	1
+
+>> -subsort(slide_11_2,inanimate_object)	[1]
+	1
+
+>> -subsort(slide_11_2,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(slide_11_2,integers)	[1]
+	1
+
+>> -subsort(slide_11_2,get_13_5_1)	[1]
+	1
+
+>> -subsort(slide_11_2,timeStep)	[1]
+	1
+
+>> -subsort(slide_11_2,leave)	[1]
+	1
+
+>> -subsort(slide_11_2,booleans)	[1]
+	1
+
+>> -subsort(slide_11_2,place)	[1]
+	1
+
+>> -subsort(slide_11_2,kitchen)	[1]
+	1
+
+>> -subsort(slide_11_2,obtain)	[1]
+	1
+
+>> -subsort(slide_11_2,receive)	[1]
+	1
+
+>> -subsort(slide_11_2,tangible_entity)	[1]
+	1
+
+>> -subsort(slide_11_2,hallway)	[1]
+	1
+
+>> -subsort(slide_11_2,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(slide_11_2,lose)	[1]
+	1
+
+>> -subsort(slide_11_2,mary)	[1]
+	1
+
+>> -subsort(slide_11_2,milk)	[1]
+	1
+
+>> -subsort(slide_11_2,meander_47_7_1)	[1]
+	1
+
+>> -subsort(slide_11_2,meander_47_7)	[1]
+	1
+
+>> -subsort(slide_11_2,bedroom)	[1]
+	1
+
+>> -subsort(slide_11_2,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(slide_11_2,take)	[1]
+	1
+
+>> -subsort(slide_11_2,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2,slide_11_2)	[1]
+	1
+
+>> -subsort(slide_11_2,transfer)	[1]
+	1
+
+>> -subsort(slide_11_2,sandra)	[1]
+	1
+
+>> -subsort(slide_11_2,slide_11_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2,john)	[1]
+	1
+
+>> -subsort(slide_11_2,carry)	[1]
+	1
+
+>> -subsort(slide_11_2,entity)	[1]
+	1
+
+>> -subsort(slide_11_2,walk)	[1]
+	1
+
+>> -subsort(transfer,spatial_entity)	[1]
+	1
+
+>> -subsort(transfer,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(transfer,physical_object)	[1]
+	1
+
+>> -subsort(transfer,living_entity)	[1]
+	1
+
+>> -subsort(transfer,activity)	[1]
+	1
+
+>> -subsort(transfer,locomotion)	[1]
+	1
+
+>> -subsort(transfer,deliver)	[1]
+	1
+
+>> -subsort(transfer,run_51_3_2)	[1]
+	1
+
+>> -subsort(transfer,inanimate_object)	[1]
+	1
+
+>> -subsort(transfer,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(transfer,integers)	[1]
+	1
+
+>> -subsort(transfer,get_13_5_1)	[1]
+	1
+
+>> -subsort(transfer,timeStep)	[1]
+	1
+
+>> -subsort(transfer,leave)	[1]
+	1
+
+>> -subsort(transfer,booleans)	[1]
+	1
+
+>> -subsort(transfer,place)	[1]
+	1
+
+>> -subsort(transfer,kitchen)	[1]
+	1
+
+>> -subsort(transfer,obtain)	[1]
+	1
+
+>> -subsort(transfer,receive)	[1]
+	1
+
+>> -subsort(transfer,move)	[1]
+	1
+
+>> -subsort(transfer,tangible_entity)	[1]
+	1
+
+>> -subsort(transfer,hallway)	[1]
+	1
+
+>> -subsort(transfer,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(transfer,lose)	[1]
+	1
+
+>> -subsort(transfer,mary)	[1]
+	1
+
+>> -subsort(transfer,milk)	[1]
+	1
+
+>> -subsort(transfer,meander_47_7_1)	[1]
+	1
+
+>> -subsort(transfer,go_to)	[1]
+	1
+
+>> -subsort(transfer,meander_47_7)	[1]
+	1
+
+>> -subsort(transfer,bedroom)	[1]
+	1
+
+>> -subsort(transfer,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(transfer,take)	[1]
+	1
+
+>> -subsort(transfer,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(transfer,slide_11_2)	[1]
+	1
+
+>> -subsort(transfer,transfer)	[1]
+	1
+
+>> -subsort(transfer,sandra)	[1]
+	1
+
+>> -subsort(transfer,slide_11_2_1)	[1]
+	1
+
+>> -subsort(transfer,john)	[1]
+	1
+
+>> -subsort(transfer,carry)	[1]
+	1
+
+>> -subsort(transfer,entity)	[1]
+	1
+
+>> -subsort(transfer,walk)	[1]
+	1
+
+>> -subsort(sandra,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(sandra,activity)	[1]
+	1
+
+>> -subsort(sandra,locomotion)	[1]
+	1
+
+>> -subsort(sandra,deliver)	[1]
+	1
+
+>> -subsort(sandra,run_51_3_2)	[1]
+	1
+
+>> -subsort(sandra,inanimate_object)	[1]
+	1
+
+>> -subsort(sandra,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(sandra,integers)	[1]
+	1
+
+>> -subsort(sandra,get_13_5_1)	[1]
+	1
+
+>> -subsort(sandra,timeStep)	[1]
+	1
+
+>> -subsort(sandra,leave)	[1]
+	1
+
+>> -subsort(sandra,booleans)	[1]
+	1
+
+>> -subsort(sandra,place)	[1]
+	1
+
+>> -subsort(sandra,event)	[1]
+	1
+
+>> -subsort(sandra,kitchen)	[1]
+	1
+
+>> -subsort(sandra,obtain)	[1]
+	1
+
+>> -subsort(sandra,receive)	[1]
+	1
+
+>> -subsort(sandra,move)	[1]
+	1
+
+>> -subsort(sandra,hallway)	[1]
+	1
+
+>> -subsort(sandra,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(sandra,lose)	[1]
+	1
+
+>> -subsort(sandra,mary)	[1]
+	1
+
+>> -subsort(sandra,milk)	[1]
+	1
+
+>> -subsort(sandra,meander_47_7_1)	[1]
+	1
+
+>> -subsort(sandra,go_to)	[1]
+	1
+
+>> -subsort(sandra,meander_47_7)	[1]
+	1
+
+>> -subsort(sandra,bedroom)	[1]
+	1
+
+>> -subsort(sandra,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(sandra,take)	[1]
+	1
+
+>> -subsort(sandra,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(sandra,slide_11_2)	[1]
+	1
+
+>> -subsort(sandra,transfer)	[1]
+	1
+
+>> -subsort(sandra,sandra)	[1]
+	1
+
+>> -subsort(sandra,slide_11_2_1)	[1]
+	1
+
+>> -subsort(sandra,john)	[1]
+	1
+
+>> -subsort(sandra,carry)	[1]
+	1
+
+>> -subsort(sandra,actions)	[1]
+	1
+
+>> -subsort(sandra,walk)	[1]
+	1
+
+>> -subsort(slide_11_2_1,spatial_entity)	[1]
+	1
+
+>> -subsort(slide_11_2_1,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,physical_object)	[1]
+	1
+
+>> -subsort(slide_11_2_1,living_entity)	[1]
+	1
+
+>> -subsort(slide_11_2_1,activity)	[1]
+	1
+
+>> -subsort(slide_11_2_1,deliver)	[1]
+	1
+
+>> -subsort(slide_11_2_1,run_51_3_2)	[1]
+	1
+
+>> -subsort(slide_11_2_1,inanimate_object)	[1]
+	1
+
+>> -subsort(slide_11_2_1,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,integers)	[1]
+	1
+
+>> -subsort(slide_11_2_1,get_13_5_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,timeStep)	[1]
+	1
+
+>> -subsort(slide_11_2_1,leave)	[1]
+	1
+
+>> -subsort(slide_11_2_1,booleans)	[1]
+	1
+
+>> -subsort(slide_11_2_1,place)	[1]
+	1
+
+>> -subsort(slide_11_2_1,kitchen)	[1]
+	1
+
+>> -subsort(slide_11_2_1,obtain)	[1]
+	1
+
+>> -subsort(slide_11_2_1,receive)	[1]
+	1
+
+>> -subsort(slide_11_2_1,tangible_entity)	[1]
+	1
+
+>> -subsort(slide_11_2_1,hallway)	[1]
+	1
+
+>> -subsort(slide_11_2_1,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(slide_11_2_1,lose)	[1]
+	1
+
+>> -subsort(slide_11_2_1,mary)	[1]
+	1
+
+>> -subsort(slide_11_2_1,milk)	[1]
+	1
+
+>> -subsort(slide_11_2_1,meander_47_7_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,meander_47_7)	[1]
+	1
+
+>> -subsort(slide_11_2_1,bedroom)	[1]
+	1
+
+>> -subsort(slide_11_2_1,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(slide_11_2_1,take)	[1]
+	1
+
+>> -subsort(slide_11_2_1,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,transfer)	[1]
+	1
+
+>> -subsort(slide_11_2_1,sandra)	[1]
+	1
+
+>> -subsort(slide_11_2_1,slide_11_2_1)	[1]
+	1
+
+>> -subsort(slide_11_2_1,john)	[1]
+	1
+
+>> -subsort(slide_11_2_1,carry)	[1]
+	1
+
+>> -subsort(slide_11_2_1,entity)	[1]
+	1
+
+>> -subsort(slide_11_2_1,walk)	[1]
+	1
+
+>> -subsort(universe,spatial_entity)	[1]
+	1
+
+>> -subsort(universe,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(universe,physical_object)	[1]
+	1
+
+>> -subsort(universe,living_entity)	[1]
+	1
+
+>> -subsort(universe,activity)	[1]
+	1
+
+>> -subsort(universe,locomotion)	[1]
+	1
+
+>> -subsort(universe,deliver)	[1]
+	1
+
+>> -subsort(universe,run_51_3_2)	[1]
+	1
+
+>> -subsort(universe,inanimate_object)	[1]
+	1
+
+>> -subsort(universe,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(universe,integers)	[1]
+	1
+
+>> -subsort(universe,get_13_5_1)	[1]
+	1
+
+>> -subsort(universe,timeStep)	[1]
+	1
+
+>> -subsort(universe,leave)	[1]
+	1
+
+>> -subsort(universe,booleans)	[1]
+	1
+
+>> -subsort(universe,place)	[1]
+	1
+
+>> -subsort(universe,event)	[1]
+	1
+
+>> -subsort(universe,kitchen)	[1]
+	1
+
+>> -subsort(universe,obtain)	[1]
+	1
+
+>> -subsort(universe,receive)	[1]
+	1
+
+>> -subsort(universe,move)	[1]
+	1
+
+>> -subsort(universe,tangible_entity)	[1]
+	1
+
+>> -subsort(universe,hallway)	[1]
+	1
+
+>> -subsort(universe,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(universe,lose)	[1]
+	1
+
+>> -subsort(universe,mary)	[1]
+	1
+
+>> -subsort(universe,milk)	[1]
+	1
+
+>> -subsort(universe,meander_47_7_1)	[1]
+	1
+
+>> -subsort(universe,go_to)	[1]
+	1
+
+>> -subsort(universe,meander_47_7)	[1]
+	1
+
+>> -subsort(universe,bedroom)	[1]
+	1
+
+>> -subsort(universe,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(universe,take)	[1]
+	1
+
+>> -subsort(universe,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(universe,slide_11_2)	[1]
+	1
+
+>> -subsort(universe,transfer)	[1]
+	1
+
+>> -subsort(universe,sandra)	[1]
+	1
+
+>> -subsort(universe,slide_11_2_1)	[1]
+	1
+
+>> -subsort(universe,universe)	[1]
+	1
+
+>> -subsort(universe,john)	[1]
+	1
+
+>> -subsort(universe,carry)	[1]
+	1
+
+>> -subsort(universe,actions)	[1]
+	1
+
+>> -subsort(universe,thing)	[1]
+	1
+
+>> -subsort(universe,entity)	[1]
+	1
+
+>> -subsort(universe,walk)	[1]
+	1
+
+>> -subsort(john,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(john,activity)	[1]
+	1
+
+>> -subsort(john,locomotion)	[1]
+	1
+
+>> -subsort(john,deliver)	[1]
+	1
+
+>> -subsort(john,run_51_3_2)	[1]
+	1
+
+>> -subsort(john,inanimate_object)	[1]
+	1
+
+>> -subsort(john,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(john,integers)	[1]
+	1
+
+>> -subsort(john,get_13_5_1)	[1]
+	1
+
+>> -subsort(john,timeStep)	[1]
+	1
+
+>> -subsort(john,leave)	[1]
+	1
+
+>> -subsort(john,booleans)	[1]
+	1
+
+>> -subsort(john,place)	[1]
+	1
+
+>> -subsort(john,event)	[1]
+	1
+
+>> -subsort(john,kitchen)	[1]
+	1
+
+>> -subsort(john,obtain)	[1]
+	1
+
+>> -subsort(john,receive)	[1]
+	1
+
+>> -subsort(john,move)	[1]
+	1
+
+>> -subsort(john,hallway)	[1]
+	1
+
+>> -subsort(john,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(john,lose)	[1]
+	1
+
+>> -subsort(john,mary)	[1]
+	1
+
+>> -subsort(john,milk)	[1]
+	1
+
+>> -subsort(john,meander_47_7_1)	[1]
+	1
+
+>> -subsort(john,go_to)	[1]
+	1
+
+>> -subsort(john,meander_47_7)	[1]
+	1
+
+>> -subsort(john,bedroom)	[1]
+	1
+
+>> -subsort(john,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(john,take)	[1]
+	1
+
+>> -subsort(john,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(john,slide_11_2)	[1]
+	1
+
+>> -subsort(john,transfer)	[1]
+	1
+
+>> -subsort(john,sandra)	[1]
+	1
+
+>> -subsort(john,slide_11_2_1)	[1]
+	1
+
+>> -subsort(john,john)	[1]
+	1
+
+>> -subsort(john,carry)	[1]
+	1
+
+>> -subsort(john,actions)	[1]
+	1
+
+>> -subsort(john,walk)	[1]
+	1
+
+>> -subsort(carry,spatial_entity)	[1]
+	1
+
+>> -subsort(carry,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(carry,physical_object)	[1]
+	1
+
+>> -subsort(carry,living_entity)	[1]
+	1
+
+>> -subsort(carry,activity)	[1]
+	1
+
+>> -subsort(carry,deliver)	[1]
+	1
+
+>> -subsort(carry,run_51_3_2)	[1]
+	1
+
+>> -subsort(carry,inanimate_object)	[1]
+	1
+
+>> -subsort(carry,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(carry,integers)	[1]
+	1
+
+>> -subsort(carry,get_13_5_1)	[1]
+	1
+
+>> -subsort(carry,timeStep)	[1]
+	1
+
+>> -subsort(carry,leave)	[1]
+	1
+
+>> -subsort(carry,booleans)	[1]
+	1
+
+>> -subsort(carry,place)	[1]
+	1
+
+>> -subsort(carry,kitchen)	[1]
+	1
+
+>> -subsort(carry,obtain)	[1]
+	1
+
+>> -subsort(carry,receive)	[1]
+	1
+
+>> -subsort(carry,tangible_entity)	[1]
+	1
+
+>> -subsort(carry,hallway)	[1]
+	1
+
+>> -subsort(carry,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(carry,lose)	[1]
+	1
+
+>> -subsort(carry,mary)	[1]
+	1
+
+>> -subsort(carry,milk)	[1]
+	1
+
+>> -subsort(carry,meander_47_7_1)	[1]
+	1
+
+>> -subsort(carry,go_to)	[1]
+	1
+
+>> -subsort(carry,meander_47_7)	[1]
+	1
+
+>> -subsort(carry,bedroom)	[1]
+	1
+
+>> -subsort(carry,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(carry,take)	[1]
+	1
+
+>> -subsort(carry,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(carry,slide_11_2)	[1]
+	1
+
+>> -subsort(carry,transfer)	[1]
+	1
+
+>> -subsort(carry,sandra)	[1]
+	1
+
+>> -subsort(carry,slide_11_2_1)	[1]
+	1
+
+>> -subsort(carry,john)	[1]
+	1
+
+>> -subsort(carry,carry)	[1]
+	1
+
+>> -subsort(carry,entity)	[1]
+	1
+
+>> -subsort(carry,walk)	[1]
+	1
+
+>> -subsort(actions,spatial_entity)	[1]
+	1
+
+>> -subsort(actions,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(actions,physical_object)	[1]
+	1
+
+>> -subsort(actions,living_entity)	[1]
+	1
+
+>> -subsort(actions,activity)	[1]
+	1
+
+>> -subsort(actions,locomotion)	[1]
+	1
+
+>> -subsort(actions,deliver)	[1]
+	1
+
+>> -subsort(actions,run_51_3_2)	[1]
+	1
+
+>> -subsort(actions,inanimate_object)	[1]
+	1
+
+>> -subsort(actions,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(actions,integers)	[1]
+	1
+
+>> -subsort(actions,get_13_5_1)	[1]
+	1
+
+>> -subsort(actions,timeStep)	[1]
+	1
+
+>> -subsort(actions,leave)	[1]
+	1
+
+>> -subsort(actions,booleans)	[1]
+	1
+
+>> -subsort(actions,place)	[1]
+	1
+
+>> -subsort(actions,kitchen)	[1]
+	1
+
+>> -subsort(actions,obtain)	[1]
+	1
+
+>> -subsort(actions,receive)	[1]
+	1
+
+>> -subsort(actions,move)	[1]
+	1
+
+>> -subsort(actions,tangible_entity)	[1]
+	1
+
+>> -subsort(actions,hallway)	[1]
+	1
+
+>> -subsort(actions,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(actions,lose)	[1]
+	1
+
+>> -subsort(actions,mary)	[1]
+	1
+
+>> -subsort(actions,milk)	[1]
+	1
+
+>> -subsort(actions,meander_47_7_1)	[1]
+	1
+
+>> -subsort(actions,go_to)	[1]
+	1
+
+>> -subsort(actions,meander_47_7)	[1]
+	1
+
+>> -subsort(actions,bedroom)	[1]
+	1
+
+>> -subsort(actions,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(actions,take)	[1]
+	1
+
+>> -subsort(actions,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(actions,slide_11_2)	[1]
+	1
+
+>> -subsort(actions,transfer)	[1]
+	1
+
+>> -subsort(actions,sandra)	[1]
+	1
+
+>> -subsort(actions,slide_11_2_1)	[1]
+	1
+
+>> -subsort(actions,john)	[1]
+	1
+
+>> -subsort(actions,carry)	[1]
+	1
+
+>> -subsort(actions,actions)	[1]
+	1
+
+>> -subsort(actions,entity)	[1]
+	1
+
+>> -subsort(actions,walk)	[1]
+	1
+
+>> -subsort(thing,spatial_entity)	[1]
+	1
+
+>> -subsort(thing,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(thing,physical_object)	[1]
+	1
+
+>> -subsort(thing,living_entity)	[1]
+	1
+
+>> -subsort(thing,activity)	[1]
+	1
+
+>> -subsort(thing,locomotion)	[1]
+	1
+
+>> -subsort(thing,deliver)	[1]
+	1
+
+>> -subsort(thing,run_51_3_2)	[1]
+	1
+
+>> -subsort(thing,inanimate_object)	[1]
+	1
+
+>> -subsort(thing,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(thing,integers)	[1]
+	1
+
+>> -subsort(thing,get_13_5_1)	[1]
+	1
+
+>> -subsort(thing,timeStep)	[1]
+	1
+
+>> -subsort(thing,leave)	[1]
+	1
+
+>> -subsort(thing,booleans)	[1]
+	1
+
+>> -subsort(thing,place)	[1]
+	1
+
+>> -subsort(thing,event)	[1]
+	1
+
+>> -subsort(thing,kitchen)	[1]
+	1
+
+>> -subsort(thing,obtain)	[1]
+	1
+
+>> -subsort(thing,receive)	[1]
+	1
+
+>> -subsort(thing,move)	[1]
+	1
+
+>> -subsort(thing,tangible_entity)	[1]
+	1
+
+>> -subsort(thing,hallway)	[1]
+	1
+
+>> -subsort(thing,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(thing,lose)	[1]
+	1
+
+>> -subsort(thing,mary)	[1]
+	1
+
+>> -subsort(thing,milk)	[1]
+	1
+
+>> -subsort(thing,meander_47_7_1)	[1]
+	1
+
+>> -subsort(thing,go_to)	[1]
+	1
+
+>> -subsort(thing,meander_47_7)	[1]
+	1
+
+>> -subsort(thing,bedroom)	[1]
+	1
+
+>> -subsort(thing,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(thing,take)	[1]
+	1
+
+>> -subsort(thing,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(thing,slide_11_2)	[1]
+	1
+
+>> -subsort(thing,transfer)	[1]
+	1
+
+>> -subsort(thing,sandra)	[1]
+	1
+
+>> -subsort(thing,slide_11_2_1)	[1]
+	1
+
+>> -subsort(thing,john)	[1]
+	1
+
+>> -subsort(thing,carry)	[1]
+	1
+
+>> -subsort(thing,actions)	[1]
+	1
+
+>> -subsort(thing,thing)	[1]
+	1
+
+>> -subsort(thing,entity)	[1]
+	1
+
+>> -subsort(thing,walk)	[1]
+	1
+
+>> -subsort(entity,spatial_entity)	[1]
+	1
+
+>> -subsort(entity,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(entity,physical_object)	[1]
+	1
+
+>> -subsort(entity,living_entity)	[1]
+	1
+
+>> -subsort(entity,activity)	[1]
+	1
+
+>> -subsort(entity,locomotion)	[1]
+	1
+
+>> -subsort(entity,deliver)	[1]
+	1
+
+>> -subsort(entity,run_51_3_2)	[1]
+	1
+
+>> -subsort(entity,inanimate_object)	[1]
+	1
+
+>> -subsort(entity,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(entity,integers)	[1]
+	1
+
+>> -subsort(entity,get_13_5_1)	[1]
+	1
+
+>> -subsort(entity,timeStep)	[1]
+	1
+
+>> -subsort(entity,leave)	[1]
+	1
+
+>> -subsort(entity,booleans)	[1]
+	1
+
+>> -subsort(entity,place)	[1]
+	1
+
+>> -subsort(entity,event)	[1]
+	1
+
+>> -subsort(entity,kitchen)	[1]
+	1
+
+>> -subsort(entity,obtain)	[1]
+	1
+
+>> -subsort(entity,receive)	[1]
+	1
+
+>> -subsort(entity,move)	[1]
+	1
+
+>> -subsort(entity,tangible_entity)	[1]
+	1
+
+>> -subsort(entity,hallway)	[1]
+	1
+
+>> -subsort(entity,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(entity,lose)	[1]
+	1
+
+>> -subsort(entity,mary)	[1]
+	1
+
+>> -subsort(entity,milk)	[1]
+	1
+
+>> -subsort(entity,meander_47_7_1)	[1]
+	1
+
+>> -subsort(entity,go_to)	[1]
+	1
+
+>> -subsort(entity,meander_47_7)	[1]
+	1
+
+>> -subsort(entity,bedroom)	[1]
+	1
+
+>> -subsort(entity,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(entity,take)	[1]
+	1
+
+>> -subsort(entity,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(entity,slide_11_2)	[1]
+	1
+
+>> -subsort(entity,transfer)	[1]
+	1
+
+>> -subsort(entity,sandra)	[1]
+	1
+
+>> -subsort(entity,slide_11_2_1)	[1]
+	1
+
+>> -subsort(entity,john)	[1]
+	1
+
+>> -subsort(entity,carry)	[1]
+	1
+
+>> -subsort(entity,actions)	[1]
+	1
+
+>> -subsort(entity,entity)	[1]
+	1
+
+>> -subsort(entity,walk)	[1]
+	1
+
+>> -subsort(walk,spatial_entity)	[1]
+	1
+
+>> -subsort(walk,run_51_3_2_2_1)	[1]
+	1
+
+>> -subsort(walk,physical_object)	[1]
+	1
+
+>> -subsort(walk,living_entity)	[1]
+	1
+
+>> -subsort(walk,activity)	[1]
+	1
+
+>> -subsort(walk,deliver)	[1]
+	1
+
+>> -subsort(walk,run_51_3_2)	[1]
+	1
+
+>> -subsort(walk,inanimate_object)	[1]
+	1
+
+>> -subsort(walk,get_13_5_1_1)	[1]
+	1
+
+>> -subsort(walk,integers)	[1]
+	1
+
+>> -subsort(walk,get_13_5_1)	[1]
+	1
+
+>> -subsort(walk,timeStep)	[1]
+	1
+
+>> -subsort(walk,leave)	[1]
+	1
+
+>> -subsort(walk,booleans)	[1]
+	1
+
+>> -subsort(walk,place)	[1]
+	1
+
+>> -subsort(walk,kitchen)	[1]
+	1
+
+>> -subsort(walk,obtain)	[1]
+	1
+
+>> -subsort(walk,receive)	[1]
+	1
+
+>> -subsort(walk,tangible_entity)	[1]
+	1
+
+>> -subsort(walk,hallway)	[1]
+	1
+
+>> -subsort(walk,comparable_integers_subsort)	[1]
+	1
+
+>> -subsort(walk,lose)	[1]
+	1
+
+>> -subsort(walk,mary)	[1]
+	1
+
+>> -subsort(walk,milk)	[1]
+	1
+
+>> -subsort(walk,meander_47_7_1)	[1]
+	1
+
+>> -subsort(walk,go_to)	[1]
+	1
+
+>> -subsort(walk,meander_47_7)	[1]
+	1
+
+>> -subsort(walk,bedroom)	[1]
+	1
+
+>> -subsort(walk,run_51_3_2_2)	[1]
+	1
+
+>> -subsort(walk,take)	[1]
+	1
+
+>> -subsort(walk,run_51_3_2_1)	[1]
+	1
+
+>> -subsort(walk,slide_11_2)	[1]
+	1
+
+>> -subsort(walk,transfer)	[1]
+	1
+
+>> -subsort(walk,sandra)	[1]
+	1
+
+>> -subsort(walk,slide_11_2_1)	[1]
+	1
+
+>> -subsort(walk,john)	[1]
+	1
+
+>> -subsort(walk,carry)	[1]
+	1
+
+>> -subsort(walk,entity)	[1]
+	1
+
+>> -subsort(walk,walk)	[1]
+	1
+
+>> has_parent(actions)	[1]
+	1
+
+>> has_parent(move)	[1]
+	1
+
+>> has_parent(locomotion)	[1]
+	1
+
+>> has_parent(carry)	[1]
+	1
+
+>> has_parent(go_to)	[1]
+	1
+
+>> has_parent(meander_47_7)	[1]
+	1
+
+>> has_parent(meander_47_7_1)	[1]
+	1
+
+>> has_parent(slide_11_2)	[1]
+	1
+
+>> has_parent(slide_11_2_1)	[1]
+	1
+
+>> has_parent(leave)	[1]
+	1
+
+>> has_parent(walk)	[1]
+	1
+
+>> has_parent(run_51_3_2)	[1]
+	1
+
+>> has_parent(run_51_3_2_2)	[1]
+	1
+
+>> has_parent(run_51_3_2_2_1)	[1]
+	1
+
+>> has_parent(run_51_3_2_1)	[1]
+	1
+
+>> has_parent(transfer)	[1]
+	1
+
+>> has_parent(receive)	[1]
+	1
+
+>> has_parent(obtain)	[1]
+	1
+
+>> has_parent(take)	[1]
+	1
+
+>> has_parent(get_13_5_1)	[1]
+	1
+
+>> has_parent(get_13_5_1_1)	[1]
+	1
+
+>> has_parent(deliver)	[1]
+	1
+
+>> has_parent(lose)	[1]
+	1
+
+>> has_parent(thing)	[1]
+	1
+
+>> has_parent(event)	[1]
+	1
+
+>> has_parent(activity)	[1]
+	1
+
+>> has_parent(entity)	[1]
+	1
+
+>> has_parent(spatial_entity)	[1]
+	1
+
+>> has_parent(place)	[1]
+	1
+
+>> has_parent(kitchen)	[1]
+	1
+
+>> has_parent(bedroom)	[1]
+	1
+
+>> has_parent(hallway)	[1]
+	1
+
+>> has_parent(tangible_entity)	[1]
+	1
+
+>> has_parent(physical_object)	[1]
+	1
+
+>> has_parent(living_entity)	[1]
+	1
+
+>> has_parent(john)	[1]
+	1
+
+>> has_parent(mary)	[1]
+	1
+
+>> has_parent(milk)	[1]
+	1
+
+>> has_parent(sandra)	[1]
+	1
+
+>> has_parent(inanimate_object)	[1]
+	1
+
+>> has_parent(integers)	[1]
+	1
+
+>> -has_parent(timeStep)	[1]
+	1
+
+>> -has_parent(booleans)	[1]
+	1
+
+>> -has_parent(comparable_integers_subsort)	[1]
+	1
+
+>> -has_parent(universe)	[1]
+	1
+
+>> has_child(universe)	[1]
+	1
+
+>> has_child(actions)	[1]
+	1
+
+>> has_child(move)	[1]
+	1
+
+>> has_child(locomotion)	[1]
+	1
+
+>> has_child(go_to)	[1]
+	1
+
+>> has_child(meander_47_7)	[1]
+	1
+
+>> has_child(slide_11_2)	[1]
+	1
+
+>> has_child(walk)	[1]
+	1
+
+>> has_child(run_51_3_2)	[1]
+	1
+
+>> has_child(run_51_3_2_2)	[1]
+	1
+
+>> has_child(transfer)	[1]
+	1
+
+>> has_child(receive)	[1]
+	1
+
+>> has_child(obtain)	[1]
+	1
+
+>> has_child(get_13_5_1)	[1]
+	1
+
+>> has_child(thing)	[1]
+	1
+
+>> has_child(event)	[1]
+	1
+
+>> has_child(entity)	[1]
+	1
+
+>> has_child(spatial_entity)	[1]
+	1
+
+>> has_child(place)	[1]
+	1
+
+>> has_child(tangible_entity)	[1]
+	1
+
+>> has_child(physical_object)	[1]
+	1
+
+>> has_child(living_entity)	[1]
+	1
+
+>> -has_child(run_51_3_2_2_1)	[1]
+	1
+
+>> -has_child(activity)	[1]
+	1
+
+>> -has_child(deliver)	[1]
+	1
+
+>> -has_child(inanimate_object)	[1]
+	1
+
+>> -has_child(get_13_5_1_1)	[1]
+	1
+
+>> -has_child(integers)	[1]
+	1
+
+>> -has_child(timeStep)	[1]
+	1
+
+>> -has_child(leave)	[1]
+	1
+
+>> -has_child(booleans)	[1]
+	1
+
+>> -has_child(kitchen)	[1]
+	1
+
+>> -has_child(hallway)	[1]
+	1
+
+>> -has_child(comparable_integers_subsort)	[1]
+	1
+
+>> -has_child(lose)	[1]
+	1
+
+>> -has_child(mary)	[1]
+	1
+
+>> -has_child(milk)	[1]
+	1
+
+>> -has_child(meander_47_7_1)	[1]
+	1
+
+>> -has_child(bedroom)	[1]
+	1
+
+>> -has_child(take)	[1]
+	1
+
+>> -has_child(run_51_3_2_1)	[1]
+	1
+
+>> -has_child(sandra)	[1]
+	1
+
+>> -has_child(slide_11_2_1)	[1]
+	1
+
+>> -has_child(john)	[1]
+	1
+
+>> -has_child(carry)	[1]
+	1
+
+>> source(run_51_3_2_2_1)	[1]
+	1
+
+>> source(activity)	[1]
+	1
+
+>> source(deliver)	[1]
+	1
+
+>> source(inanimate_object)	[1]
+	1
+
+>> source(get_13_5_1_1)	[1]
+	1
+
+>> source(integers)	[1]
+	1
+
+>> source(timeStep)	[1]
+	1
+
+>> source(leave)	[1]
+	1
+
+>> source(booleans)	[1]
+	1
+
+>> source(kitchen)	[1]
+	1
+
+>> source(hallway)	[1]
+	1
+
+>> source(comparable_integers_subsort)	[1]
+	1
+
+>> source(lose)	[1]
+	1
+
+>> source(mary)	[1]
+	1
+
+>> source(milk)	[1]
+	1
+
+>> source(meander_47_7_1)	[1]
+	1
+
+>> source(bedroom)	[1]
+	1
+
+>> source(take)	[1]
+	1
+
+>> source(run_51_3_2_1)	[1]
+	1
+
+>> source(sandra)	[1]
+	1
+
+>> source(slide_11_2_1)	[1]
+	1
+
+>> source(john)	[1]
+	1
+
+>> source(carry)	[1]
+	1
+
+>> -source(spatial_entity)	[1]
+	1
+
+>> -source(physical_object)	[1]
+	1
+
+>> -source(living_entity)	[1]
+	1
+
+>> -source(locomotion)	[1]
+	1
+
+>> -source(run_51_3_2)	[1]
+	1
+
+>> -source(get_13_5_1)	[1]
+	1
+
+>> -source(place)	[1]
+	1
+
+>> -source(event)	[1]
+	1
+
+>> -source(obtain)	[1]
+	1
+
+>> -source(receive)	[1]
+	1
+
+>> -source(move)	[1]
+	1
+
+>> -source(tangible_entity)	[1]
+	1
+
+>> -source(go_to)	[1]
+	1
+
+>> -source(meander_47_7)	[1]
+	1
+
+>> -source(run_51_3_2_2)	[1]
+	1
+
+>> -source(slide_11_2)	[1]
+	1
+
+>> -source(transfer)	[1]
+	1
+
+>> -source(universe)	[1]
+	1
+
+>> -source(actions)	[1]
+	1
+
+>> -source(thing)	[1]
+	1
+
+>> -source(entity)	[1]
+	1
+
+>> -source(walk)	[1]
+	1
+
+>> sink(timeStep)	[1]
+	1
+
+>> sink(booleans)	[1]
+	1
+
+>> sink(comparable_integers_subsort)	[1]
+	1
+
+>> sink(universe)	[1]
+	1
+
+>> -sink(spatial_entity)	[1]
+	1
+
+>> -sink(run_51_3_2_2_1)	[1]
+	1
+
+>> -sink(physical_object)	[1]
+	1
+
+>> -sink(living_entity)	[1]
+	1
+
+>> -sink(activity)	[1]
+	1
+
+>> -sink(locomotion)	[1]
+	1
+
+>> -sink(deliver)	[1]
+	1
+
+>> -sink(run_51_3_2)	[1]
+	1
+
+>> -sink(inanimate_object)	[1]
+	1
+
+>> -sink(get_13_5_1_1)	[1]
+	1
+
+>> -sink(integers)	[1]
+	1
+
+>> -sink(get_13_5_1)	[1]
+	1
+
+>> -sink(leave)	[1]
+	1
+
+>> -sink(place)	[1]
+	1
+
+>> -sink(event)	[1]
+	1
+
+>> -sink(kitchen)	[1]
+	1
+
+>> -sink(obtain)	[1]
+	1
+
+>> -sink(receive)	[1]
+	1
+
+>> -sink(move)	[1]
+	1
+
+>> -sink(tangible_entity)	[1]
+	1
+
+>> -sink(hallway)	[1]
+	1
+
+>> -sink(lose)	[1]
+	1
+
+>> -sink(mary)	[1]
+	1
+
+>> -sink(milk)	[1]
+	1
+
+>> -sink(meander_47_7_1)	[1]
+	1
+
+>> -sink(go_to)	[1]
+	1
+
+>> -sink(meander_47_7)	[1]
+	1
+
+>> -sink(bedroom)	[1]
+	1
+
+>> -sink(run_51_3_2_2)	[1]
+	1
+
+>> -sink(take)	[1]
+	1
+
+>> -sink(run_51_3_2_1)	[1]
+	1
+
+>> -sink(slide_11_2)	[1]
+	1
+
+>> -sink(transfer)	[1]
+	1
+
+>> -sink(sandra)	[1]
+	1
+
+>> -sink(slide_11_2_1)	[1]
+	1
+
+>> -sink(john)	[1]
+	1
+
+>> -sink(carry)	[1]
+	1
+
+>> -sink(actions)	[1]
+	1
+
+>> -sink(thing)	[1]
+	1
+
+>> -sink(entity)	[1]
+	1
+
+>> -sink(walk)	[1]
+	1
+
+>> -defined_result(e1)	[1]
+	1
+
+>> -defined_result(e2)	[1]
+	1
+
+>> -defined_result(e3)	[1]
+	1
+
+>> -defined_result(e4)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_material(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_material(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_material(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_material(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_goal(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_goal(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_goal(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_goal(e4,r1)	[1]
+	1
+
+>> -dom_event_donor(e1,r2)	[1]
+	1
+
+>> -dom_event_donor(e1,r3)	[1]
+	1
+
+>> -dom_event_donor(e1,r4)	[1]
+	1
+
+>> -dom_event_donor(e1,r5)	[1]
+	1
+
+>> -dom_event_donor(e1,r6)	[1]
+	1
+
+>> -dom_event_donor(e1,r7)	[1]
+	1
+
+>> -dom_event_donor(e1,r1)	[1]
+	1
+
+>> -dom_event_donor(e2,r2)	[1]
+	1
+
+>> -dom_event_donor(e2,r3)	[1]
+	1
+
+>> -dom_event_donor(e2,r4)	[1]
+	1
+
+>> -dom_event_donor(e2,r5)	[1]
+	1
+
+>> -dom_event_donor(e2,r6)	[1]
+	1
+
+>> -dom_event_donor(e2,r7)	[1]
+	1
+
+>> -dom_event_donor(e2,r1)	[1]
+	1
+
+>> -dom_event_donor(e3,r2)	[1]
+	1
+
+>> -dom_event_donor(e3,r3)	[1]
+	1
+
+>> -dom_event_donor(e3,r4)	[1]
+	1
+
+>> -dom_event_donor(e3,r5)	[1]
+	1
+
+>> -dom_event_donor(e3,r6)	[1]
+	1
+
+>> -dom_event_donor(e3,r7)	[1]
+	1
+
+>> -dom_event_donor(e3,r1)	[1]
+	1
+
+>> -dom_event_donor(e4,r2)	[1]
+	1
+
+>> -dom_event_donor(e4,r3)	[1]
+	1
+
+>> -dom_event_donor(e4,r4)	[1]
+	1
+
+>> -dom_event_donor(e4,r5)	[1]
+	1
+
+>> -dom_event_donor(e4,r6)	[1]
+	1
+
+>> -dom_event_donor(e4,r7)	[1]
+	1
+
+>> -dom_event_donor(e4,r1)	[1]
+	1
+
+>> -dom_event_origin(e1,r2)	[1]
+	1
+
+>> -dom_event_origin(e1,r3)	[1]
+	1
+
+>> -dom_event_origin(e1,r4)	[1]
+	1
+
+>> -dom_event_origin(e1,r5)	[1]
+	1
+
+>> -dom_event_origin(e1,r6)	[1]
+	1
+
+>> -dom_event_origin(e1,r7)	[1]
+	1
+
+>> -dom_event_origin(e1,r1)	[1]
+	1
+
+>> -dom_event_origin(e2,r2)	[1]
+	1
+
+>> -dom_event_origin(e2,r3)	[1]
+	1
+
+>> -dom_event_origin(e2,r4)	[1]
+	1
+
+>> -dom_event_origin(e2,r5)	[1]
+	1
+
+>> -dom_event_origin(e2,r6)	[1]
+	1
+
+>> -dom_event_origin(e2,r7)	[1]
+	1
+
+>> -dom_event_origin(e2,r1)	[1]
+	1
+
+>> -dom_event_origin(e3,r2)	[1]
+	1
+
+>> -dom_event_origin(e3,r3)	[1]
+	1
+
+>> -dom_event_origin(e3,r4)	[1]
+	1
+
+>> -dom_event_origin(e3,r5)	[1]
+	1
+
+>> -dom_event_origin(e3,r6)	[1]
+	1
+
+>> -dom_event_origin(e3,r7)	[1]
+	1
+
+>> -dom_event_origin(e3,r1)	[1]
+	1
+
+>> -dom_event_origin(e4,r2)	[1]
+	1
+
+>> -dom_event_origin(e4,r3)	[1]
+	1
+
+>> -dom_event_origin(e4,r4)	[1]
+	1
+
+>> -dom_event_origin(e4,r5)	[1]
+	1
+
+>> -dom_event_origin(e4,r6)	[1]
+	1
+
+>> -dom_event_origin(e4,r7)	[1]
+	1
+
+>> -dom_event_origin(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,e1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,e2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,e3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e1,e4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,e1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,e2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,e3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e2,e4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,e1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,e2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,e3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e3,e4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,e1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,e2)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,e3)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_attribute(e4,e4)	[1]
+	1
+
+>> -dom_event_away_from(e1,r2)	[1]
+	1
+
+>> -dom_event_away_from(e1,r3)	[1]
+	1
+
+>> -dom_event_away_from(e1,r4)	[1]
+	1
+
+>> -dom_event_away_from(e1,r5)	[1]
+	1
+
+>> -dom_event_away_from(e1,r6)	[1]
+	1
+
+>> -dom_event_away_from(e1,r7)	[1]
+	1
+
+>> -dom_event_away_from(e1,r1)	[1]
+	1
+
+>> -dom_event_away_from(e2,r2)	[1]
+	1
+
+>> -dom_event_away_from(e2,r3)	[1]
+	1
+
+>> -dom_event_away_from(e2,r4)	[1]
+	1
+
+>> -dom_event_away_from(e2,r5)	[1]
+	1
+
+>> -dom_event_away_from(e2,r6)	[1]
+	1
+
+>> -dom_event_away_from(e2,r7)	[1]
+	1
+
+>> -dom_event_away_from(e2,r1)	[1]
+	1
+
+>> -dom_event_away_from(e3,r2)	[1]
+	1
+
+>> -dom_event_away_from(e3,r3)	[1]
+	1
+
+>> -dom_event_away_from(e3,r4)	[1]
+	1
+
+>> -dom_event_away_from(e3,r5)	[1]
+	1
+
+>> -dom_event_away_from(e3,r6)	[1]
+	1
+
+>> -dom_event_away_from(e3,r7)	[1]
+	1
+
+>> -dom_event_away_from(e3,r1)	[1]
+	1
+
+>> -dom_event_away_from(e4,r2)	[1]
+	1
+
+>> -dom_event_away_from(e4,r3)	[1]
+	1
+
+>> -dom_event_away_from(e4,r4)	[1]
+	1
+
+>> -dom_event_away_from(e4,r5)	[1]
+	1
+
+>> -dom_event_away_from(e4,r6)	[1]
+	1
+
+>> -dom_event_away_from(e4,r7)	[1]
+	1
+
+>> -dom_event_away_from(e4,r1)	[1]
+	1
+
+>> -instance(r2,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r2,activity)	[1]
+	1
+
+>> -instance(r2,locomotion)	[1]
+	1
+
+>> -instance(r2,deliver)	[1]
+	1
+
+>> -instance(r2,run_51_3_2)	[1]
+	1
+
+>> -instance(r2,inanimate_object)	[1]
+	1
+
+>> -instance(r2,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r2,integers)	[1]
+	1
+
+>> -instance(r2,get_13_5_1)	[1]
+	1
+
+>> -instance(r2,timeStep)	[1]
+	1
+
+>> -instance(r2,leave)	[1]
+	1
+
+>> -instance(r2,booleans)	[1]
+	1
+
+>> -instance(r2,place)	[1]
+	1
+
+>> -instance(r2,event)	[1]
+	1
+
+>> -instance(r2,kitchen)	[1]
+	1
+
+>> -instance(r2,obtain)	[1]
+	1
+
+>> -instance(r2,receive)	[1]
+	1
+
+>> -instance(r2,move)	[1]
+	1
+
+>> -instance(r2,hallway)	[1]
+	1
+
+>> -instance(r2,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r2,lose)	[1]
+	1
+
+>> -instance(r2,mary)	[1]
+	1
+
+>> -instance(r2,meander_47_7_1)	[1]
+	1
+
+>> -instance(r2,go_to)	[1]
+	1
+
+>> -instance(r2,meander_47_7)	[1]
+	1
+
+>> -instance(r2,bedroom)	[1]
+	1
+
+>> -instance(r2,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r2,take)	[1]
+	1
+
+>> -instance(r2,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r2,slide_11_2)	[1]
+	1
+
+>> -instance(r2,transfer)	[1]
+	1
+
+>> -instance(r2,sandra)	[1]
+	1
+
+>> -instance(r2,slide_11_2_1)	[1]
+	1
+
+>> -instance(r2,john)	[1]
+	1
+
+>> -instance(r2,carry)	[1]
+	1
+
+>> -instance(r2,actions)	[1]
+	1
+
+>> -instance(r2,walk)	[1]
+	1
+
+>> -instance(r3,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r3,activity)	[1]
+	1
+
+>> -instance(r3,locomotion)	[1]
+	1
+
+>> -instance(r3,deliver)	[1]
+	1
+
+>> -instance(r3,run_51_3_2)	[1]
+	1
+
+>> -instance(r3,inanimate_object)	[1]
+	1
+
+>> -instance(r3,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r3,integers)	[1]
+	1
+
+>> -instance(r3,get_13_5_1)	[1]
+	1
+
+>> -instance(r3,timeStep)	[1]
+	1
+
+>> -instance(r3,leave)	[1]
+	1
+
+>> -instance(r3,booleans)	[1]
+	1
+
+>> -instance(r3,place)	[1]
+	1
+
+>> -instance(r3,event)	[1]
+	1
+
+>> -instance(r3,kitchen)	[1]
+	1
+
+>> -instance(r3,obtain)	[1]
+	1
+
+>> -instance(r3,receive)	[1]
+	1
+
+>> -instance(r3,move)	[1]
+	1
+
+>> -instance(r3,hallway)	[1]
+	1
+
+>> -instance(r3,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r3,lose)	[1]
+	1
+
+>> -instance(r3,mary)	[1]
+	1
+
+>> -instance(r3,milk)	[1]
+	1
+
+>> -instance(r3,meander_47_7_1)	[1]
+	1
+
+>> -instance(r3,go_to)	[1]
+	1
+
+>> -instance(r3,meander_47_7)	[1]
+	1
+
+>> -instance(r3,bedroom)	[1]
+	1
+
+>> -instance(r3,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r3,take)	[1]
+	1
+
+>> -instance(r3,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r3,slide_11_2)	[1]
+	1
+
+>> -instance(r3,transfer)	[1]
+	1
+
+>> -instance(r3,sandra)	[1]
+	1
+
+>> -instance(r3,slide_11_2_1)	[1]
+	1
+
+>> -instance(r3,carry)	[1]
+	1
+
+>> -instance(r3,actions)	[1]
+	1
+
+>> -instance(r3,walk)	[1]
+	1
+
+>> -instance(r4,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r4,physical_object)	[1]
+	1
+
+>> -instance(r4,living_entity)	[1]
+	1
+
+>> -instance(r4,activity)	[1]
+	1
+
+>> -instance(r4,locomotion)	[1]
+	1
+
+>> -instance(r4,deliver)	[1]
+	1
+
+>> -instance(r4,run_51_3_2)	[1]
+	1
+
+>> -instance(r4,inanimate_object)	[1]
+	1
+
+>> -instance(r4,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r4,integers)	[1]
+	1
+
+>> -instance(r4,get_13_5_1)	[1]
+	1
+
+>> -instance(r4,timeStep)	[1]
+	1
+
+>> -instance(r4,leave)	[1]
+	1
+
+>> -instance(r4,booleans)	[1]
+	1
+
+>> -instance(r4,place)	[1]
+	1
+
+>> -instance(r4,event)	[1]
+	1
+
+>> -instance(r4,kitchen)	[1]
+	1
+
+>> -instance(r4,obtain)	[1]
+	1
+
+>> -instance(r4,receive)	[1]
+	1
+
+>> -instance(r4,move)	[1]
+	1
+
+>> -instance(r4,tangible_entity)	[1]
+	1
+
+>> -instance(r4,hallway)	[1]
+	1
+
+>> -instance(r4,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r4,lose)	[1]
+	1
+
+>> -instance(r4,mary)	[1]
+	1
+
+>> -instance(r4,milk)	[1]
+	1
+
+>> -instance(r4,meander_47_7_1)	[1]
+	1
+
+>> -instance(r4,go_to)	[1]
+	1
+
+>> -instance(r4,meander_47_7)	[1]
+	1
+
+>> -instance(r4,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r4,take)	[1]
+	1
+
+>> -instance(r4,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r4,slide_11_2)	[1]
+	1
+
+>> -instance(r4,transfer)	[1]
+	1
+
+>> -instance(r4,sandra)	[1]
+	1
+
+>> -instance(r4,slide_11_2_1)	[1]
+	1
+
+>> -instance(r4,john)	[1]
+	1
+
+>> -instance(r4,carry)	[1]
+	1
+
+>> -instance(r4,actions)	[1]
+	1
+
+>> -instance(r4,walk)	[1]
+	1
+
+>> -instance(r5,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r5,activity)	[1]
+	1
+
+>> -instance(r5,locomotion)	[1]
+	1
+
+>> -instance(r5,deliver)	[1]
+	1
+
+>> -instance(r5,run_51_3_2)	[1]
+	1
+
+>> -instance(r5,inanimate_object)	[1]
+	1
+
+>> -instance(r5,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r5,integers)	[1]
+	1
+
+>> -instance(r5,get_13_5_1)	[1]
+	1
+
+>> -instance(r5,timeStep)	[1]
+	1
+
+>> -instance(r5,leave)	[1]
+	1
+
+>> -instance(r5,booleans)	[1]
+	1
+
+>> -instance(r5,place)	[1]
+	1
+
+>> -instance(r5,event)	[1]
+	1
+
+>> -instance(r5,kitchen)	[1]
+	1
+
+>> -instance(r5,obtain)	[1]
+	1
+
+>> -instance(r5,receive)	[1]
+	1
+
+>> -instance(r5,move)	[1]
+	1
+
+>> -instance(r5,hallway)	[1]
+	1
+
+>> -instance(r5,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r5,lose)	[1]
+	1
+
+>> -instance(r5,mary)	[1]
+	1
+
+>> -instance(r5,milk)	[1]
+	1
+
+>> -instance(r5,meander_47_7_1)	[1]
+	1
+
+>> -instance(r5,go_to)	[1]
+	1
+
+>> -instance(r5,meander_47_7)	[1]
+	1
+
+>> -instance(r5,bedroom)	[1]
+	1
+
+>> -instance(r5,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r5,take)	[1]
+	1
+
+>> -instance(r5,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r5,slide_11_2)	[1]
+	1
+
+>> -instance(r5,transfer)	[1]
+	1
+
+>> -instance(r5,slide_11_2_1)	[1]
+	1
+
+>> -instance(r5,john)	[1]
+	1
+
+>> -instance(r5,carry)	[1]
+	1
+
+>> -instance(r5,actions)	[1]
+	1
+
+>> -instance(r5,walk)	[1]
+	1
+
+>> -instance(r6,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r6,physical_object)	[1]
+	1
+
+>> -instance(r6,living_entity)	[1]
+	1
+
+>> -instance(r6,activity)	[1]
+	1
+
+>> -instance(r6,locomotion)	[1]
+	1
+
+>> -instance(r6,deliver)	[1]
+	1
+
+>> -instance(r6,run_51_3_2)	[1]
+	1
+
+>> -instance(r6,inanimate_object)	[1]
+	1
+
+>> -instance(r6,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r6,integers)	[1]
+	1
+
+>> -instance(r6,get_13_5_1)	[1]
+	1
+
+>> -instance(r6,timeStep)	[1]
+	1
+
+>> -instance(r6,leave)	[1]
+	1
+
+>> -instance(r6,booleans)	[1]
+	1
+
+>> -instance(r6,event)	[1]
+	1
+
+>> -instance(r6,obtain)	[1]
+	1
+
+>> -instance(r6,receive)	[1]
+	1
+
+>> -instance(r6,move)	[1]
+	1
+
+>> -instance(r6,tangible_entity)	[1]
+	1
+
+>> -instance(r6,hallway)	[1]
+	1
+
+>> -instance(r6,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r6,lose)	[1]
+	1
+
+>> -instance(r6,mary)	[1]
+	1
+
+>> -instance(r6,milk)	[1]
+	1
+
+>> -instance(r6,meander_47_7_1)	[1]
+	1
+
+>> -instance(r6,go_to)	[1]
+	1
+
+>> -instance(r6,meander_47_7)	[1]
+	1
+
+>> -instance(r6,bedroom)	[1]
+	1
+
+>> -instance(r6,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r6,take)	[1]
+	1
+
+>> -instance(r6,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r6,slide_11_2)	[1]
+	1
+
+>> -instance(r6,transfer)	[1]
+	1
+
+>> -instance(r6,sandra)	[1]
+	1
+
+>> -instance(r6,slide_11_2_1)	[1]
+	1
+
+>> -instance(r6,john)	[1]
+	1
+
+>> -instance(r6,carry)	[1]
+	1
+
+>> -instance(r6,actions)	[1]
+	1
+
+>> -instance(r6,walk)	[1]
+	1
+
+>> -instance(r7,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r7,physical_object)	[1]
+	1
+
+>> -instance(r7,living_entity)	[1]
+	1
+
+>> -instance(r7,activity)	[1]
+	1
+
+>> -instance(r7,locomotion)	[1]
+	1
+
+>> -instance(r7,deliver)	[1]
+	1
+
+>> -instance(r7,run_51_3_2)	[1]
+	1
+
+>> -instance(r7,inanimate_object)	[1]
+	1
+
+>> -instance(r7,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r7,integers)	[1]
+	1
+
+>> -instance(r7,get_13_5_1)	[1]
+	1
+
+>> -instance(r7,timeStep)	[1]
+	1
+
+>> -instance(r7,leave)	[1]
+	1
+
+>> -instance(r7,booleans)	[1]
+	1
+
+>> -instance(r7,place)	[1]
+	1
+
+>> -instance(r7,event)	[1]
+	1
+
+>> -instance(r7,kitchen)	[1]
+	1
+
+>> -instance(r7,obtain)	[1]
+	1
+
+>> -instance(r7,receive)	[1]
+	1
+
+>> -instance(r7,move)	[1]
+	1
+
+>> -instance(r7,tangible_entity)	[1]
+	1
+
+>> -instance(r7,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r7,lose)	[1]
+	1
+
+>> -instance(r7,mary)	[1]
+	1
+
+>> -instance(r7,milk)	[1]
+	1
+
+>> -instance(r7,meander_47_7_1)	[1]
+	1
+
+>> -instance(r7,go_to)	[1]
+	1
+
+>> -instance(r7,meander_47_7)	[1]
+	1
+
+>> -instance(r7,bedroom)	[1]
+	1
+
+>> -instance(r7,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r7,take)	[1]
+	1
+
+>> -instance(r7,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r7,slide_11_2)	[1]
+	1
+
+>> -instance(r7,transfer)	[1]
+	1
+
+>> -instance(r7,sandra)	[1]
+	1
+
+>> -instance(r7,slide_11_2_1)	[1]
+	1
+
+>> -instance(r7,john)	[1]
+	1
+
+>> -instance(r7,carry)	[1]
+	1
+
+>> -instance(r7,actions)	[1]
+	1
+
+>> -instance(r7,walk)	[1]
+	1
+
+>> -instance(false,spatial_entity)	[1]
+	1
+
+>> -instance(false,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(false,physical_object)	[1]
+	1
+
+>> -instance(false,living_entity)	[1]
+	1
+
+>> -instance(false,activity)	[1]
+	1
+
+>> -instance(false,locomotion)	[1]
+	1
+
+>> -instance(false,deliver)	[1]
+	1
+
+>> -instance(false,run_51_3_2)	[1]
+	1
+
+>> -instance(false,inanimate_object)	[1]
+	1
+
+>> -instance(false,get_13_5_1_1)	[1]
+	1
+
+>> -instance(false,integers)	[1]
+	1
+
+>> -instance(false,get_13_5_1)	[1]
+	1
+
+>> -instance(false,timeStep)	[1]
+	1
+
+>> -instance(false,leave)	[1]
+	1
+
+>> -instance(false,booleans)	[1]
+	1
+
+>> -instance(false,place)	[1]
+	1
+
+>> -instance(false,event)	[1]
+	1
+
+>> -instance(false,kitchen)	[1]
+	1
+
+>> -instance(false,obtain)	[1]
+	1
+
+>> -instance(false,receive)	[1]
+	1
+
+>> -instance(false,move)	[1]
+	1
+
+>> -instance(false,tangible_entity)	[1]
+	1
+
+>> -instance(false,hallway)	[1]
+	1
+
+>> -instance(false,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(false,lose)	[1]
+	1
+
+>> -instance(false,mary)	[1]
+	1
+
+>> -instance(false,milk)	[1]
+	1
+
+>> -instance(false,meander_47_7_1)	[1]
+	1
+
+>> -instance(false,go_to)	[1]
+	1
+
+>> -instance(false,meander_47_7)	[1]
+	1
+
+>> -instance(false,bedroom)	[1]
+	1
+
+>> -instance(false,run_51_3_2_2)	[1]
+	1
+
+>> -instance(false,take)	[1]
+	1
+
+>> -instance(false,run_51_3_2_1)	[1]
+	1
+
+>> -instance(false,slide_11_2)	[1]
+	1
+
+>> -instance(false,transfer)	[1]
+	1
+
+>> -instance(false,sandra)	[1]
+	1
+
+>> -instance(false,slide_11_2_1)	[1]
+	1
+
+>> -instance(false,universe)	[1]
+	1
+
+>> -instance(false,john)	[1]
+	1
+
+>> -instance(false,carry)	[1]
+	1
+
+>> -instance(false,actions)	[1]
+	1
+
+>> -instance(false,thing)	[1]
+	1
+
+>> -instance(false,entity)	[1]
+	1
+
+>> -instance(false,walk)	[1]
+	1
+
+>> -instance(e1,spatial_entity)	[1]
+	1
+
+>> -instance(e1,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(e1,physical_object)	[1]
+	1
+
+>> -instance(e1,living_entity)	[1]
+	1
+
+>> -instance(e1,activity)	[1]
+	1
+
+>> -instance(e1,locomotion)	[1]
+	1
+
+>> -instance(e1,deliver)	[1]
+	1
+
+>> -instance(e1,run_51_3_2)	[1]
+	1
+
+>> -instance(e1,inanimate_object)	[1]
+	1
+
+>> -instance(e1,integers)	[1]
+	1
+
+>> -instance(e1,timeStep)	[1]
+	1
+
+>> -instance(e1,leave)	[1]
+	1
+
+>> -instance(e1,booleans)	[1]
+	1
+
+>> -instance(e1,place)	[1]
+	1
+
+>> -instance(e1,kitchen)	[1]
+	1
+
+>> -instance(e1,move)	[1]
+	1
+
+>> -instance(e1,tangible_entity)	[1]
+	1
+
+>> -instance(e1,hallway)	[1]
+	1
+
+>> -instance(e1,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(e1,lose)	[1]
+	1
+
+>> -instance(e1,mary)	[1]
+	1
+
+>> -instance(e1,milk)	[1]
+	1
+
+>> -instance(e1,meander_47_7_1)	[1]
+	1
+
+>> -instance(e1,go_to)	[1]
+	1
+
+>> -instance(e1,meander_47_7)	[1]
+	1
+
+>> -instance(e1,bedroom)	[1]
+	1
+
+>> -instance(e1,run_51_3_2_2)	[1]
+	1
+
+>> -instance(e1,take)	[1]
+	1
+
+>> -instance(e1,run_51_3_2_1)	[1]
+	1
+
+>> -instance(e1,slide_11_2)	[1]
+	1
+
+>> -instance(e1,sandra)	[1]
+	1
+
+>> -instance(e1,slide_11_2_1)	[1]
+	1
+
+>> -instance(e1,john)	[1]
+	1
+
+>> -instance(e1,carry)	[1]
+	1
+
+>> -instance(e1,entity)	[1]
+	1
+
+>> -instance(e1,walk)	[1]
+	1
+
+>> -instance(e2,spatial_entity)	[1]
+	1
+
+>> -instance(e2,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(e2,physical_object)	[1]
+	1
+
+>> -instance(e2,living_entity)	[1]
+	1
+
+>> -instance(e2,activity)	[1]
+	1
+
+>> -instance(e2,deliver)	[1]
+	1
+
+>> -instance(e2,run_51_3_2)	[1]
+	1
+
+>> -instance(e2,inanimate_object)	[1]
+	1
+
+>> -instance(e2,get_13_5_1_1)	[1]
+	1
+
+>> -instance(e2,integers)	[1]
+	1
+
+>> -instance(e2,get_13_5_1)	[1]
+	1
+
+>> -instance(e2,timeStep)	[1]
+	1
+
+>> -instance(e2,leave)	[1]
+	1
+
+>> -instance(e2,booleans)	[1]
+	1
+
+>> -instance(e2,place)	[1]
+	1
+
+>> -instance(e2,kitchen)	[1]
+	1
+
+>> -instance(e2,obtain)	[1]
+	1
+
+>> -instance(e2,receive)	[1]
+	1
+
+>> -instance(e2,tangible_entity)	[1]
+	1
+
+>> -instance(e2,hallway)	[1]
+	1
+
+>> -instance(e2,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(e2,lose)	[1]
+	1
+
+>> -instance(e2,mary)	[1]
+	1
+
+>> -instance(e2,milk)	[1]
+	1
+
+>> -instance(e2,meander_47_7_1)	[1]
+	1
+
+>> -instance(e2,meander_47_7)	[1]
+	1
+
+>> -instance(e2,bedroom)	[1]
+	1
+
+>> -instance(e2,run_51_3_2_2)	[1]
+	1
+
+>> -instance(e2,take)	[1]
+	1
+
+>> -instance(e2,run_51_3_2_1)	[1]
+	1
+
+>> -instance(e2,transfer)	[1]
+	1
+
+>> -instance(e2,sandra)	[1]
+	1
+
+>> -instance(e2,slide_11_2_1)	[1]
+	1
+
+>> -instance(e2,john)	[1]
+	1
+
+>> -instance(e2,carry)	[1]
+	1
+
+>> -instance(e2,entity)	[1]
+	1
+
+>> -instance(e2,walk)	[1]
+	1
+
+>> -instance(e3,spatial_entity)	[1]
+	1
+
+>> -instance(e3,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(e3,physical_object)	[1]
+	1
+
+>> -instance(e3,living_entity)	[1]
+	1
+
+>> -instance(e3,activity)	[1]
+	1
+
+>> -instance(e3,deliver)	[1]
+	1
+
+>> -instance(e3,run_51_3_2)	[1]
+	1
+
+>> -instance(e3,inanimate_object)	[1]
+	1
+
+>> -instance(e3,get_13_5_1_1)	[1]
+	1
+
+>> -instance(e3,integers)	[1]
+	1
+
+>> -instance(e3,get_13_5_1)	[1]
+	1
+
+>> -instance(e3,timeStep)	[1]
+	1
+
+>> -instance(e3,leave)	[1]
+	1
+
+>> -instance(e3,booleans)	[1]
+	1
+
+>> -instance(e3,place)	[1]
+	1
+
+>> -instance(e3,kitchen)	[1]
+	1
+
+>> -instance(e3,obtain)	[1]
+	1
+
+>> -instance(e3,receive)	[1]
+	1
+
+>> -instance(e3,tangible_entity)	[1]
+	1
+
+>> -instance(e3,hallway)	[1]
+	1
+
+>> -instance(e3,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(e3,lose)	[1]
+	1
+
+>> -instance(e3,mary)	[1]
+	1
+
+>> -instance(e3,milk)	[1]
+	1
+
+>> -instance(e3,meander_47_7_1)	[1]
+	1
+
+>> -instance(e3,bedroom)	[1]
+	1
+
+>> -instance(e3,run_51_3_2_2)	[1]
+	1
+
+>> -instance(e3,take)	[1]
+	1
+
+>> -instance(e3,run_51_3_2_1)	[1]
+	1
+
+>> -instance(e3,slide_11_2)	[1]
+	1
+
+>> -instance(e3,transfer)	[1]
+	1
+
+>> -instance(e3,sandra)	[1]
+	1
+
+>> -instance(e3,slide_11_2_1)	[1]
+	1
+
+>> -instance(e3,john)	[1]
+	1
+
+>> -instance(e3,carry)	[1]
+	1
+
+>> -instance(e3,entity)	[1]
+	1
+
+>> -instance(e3,walk)	[1]
+	1
+
+>> -instance(e4,spatial_entity)	[1]
+	1
+
+>> -instance(e4,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(e4,physical_object)	[1]
+	1
+
+>> -instance(e4,living_entity)	[1]
+	1
+
+>> -instance(e4,activity)	[1]
+	1
+
+>> -instance(e4,deliver)	[1]
+	1
+
+>> -instance(e4,inanimate_object)	[1]
+	1
+
+>> -instance(e4,get_13_5_1_1)	[1]
+	1
+
+>> -instance(e4,integers)	[1]
+	1
+
+>> -instance(e4,get_13_5_1)	[1]
+	1
+
+>> -instance(e4,timeStep)	[1]
+	1
+
+>> -instance(e4,leave)	[1]
+	1
+
+>> -instance(e4,booleans)	[1]
+	1
+
+>> -instance(e4,place)	[1]
+	1
+
+>> -instance(e4,kitchen)	[1]
+	1
+
+>> -instance(e4,obtain)	[1]
+	1
+
+>> -instance(e4,receive)	[1]
+	1
+
+>> -instance(e4,tangible_entity)	[1]
+	1
+
+>> -instance(e4,hallway)	[1]
+	1
+
+>> -instance(e4,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(e4,lose)	[1]
+	1
+
+>> -instance(e4,mary)	[1]
+	1
+
+>> -instance(e4,milk)	[1]
+	1
+
+>> -instance(e4,meander_47_7_1)	[1]
+	1
+
+>> -instance(e4,go_to)	[1]
+	1
+
+>> -instance(e4,meander_47_7)	[1]
+	1
+
+>> -instance(e4,bedroom)	[1]
+	1
+
+>> -instance(e4,run_51_3_2_2)	[1]
+	1
+
+>> -instance(e4,take)	[1]
+	1
+
+>> -instance(e4,slide_11_2)	[1]
+	1
+
+>> -instance(e4,transfer)	[1]
+	1
+
+>> -instance(e4,sandra)	[1]
+	1
+
+>> -instance(e4,slide_11_2_1)	[1]
+	1
+
+>> -instance(e4,john)	[1]
+	1
+
+>> -instance(e4,carry)	[1]
+	1
+
+>> -instance(e4,entity)	[1]
+	1
+
+>> -instance(true,spatial_entity)	[1]
+	1
+
+>> -instance(true,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(true,physical_object)	[1]
+	1
+
+>> -instance(true,living_entity)	[1]
+	1
+
+>> -instance(true,activity)	[1]
+	1
+
+>> -instance(true,locomotion)	[1]
+	1
+
+>> -instance(true,deliver)	[1]
+	1
+
+>> -instance(true,run_51_3_2)	[1]
+	1
+
+>> -instance(true,inanimate_object)	[1]
+	1
+
+>> -instance(true,get_13_5_1_1)	[1]
+	1
+
+>> -instance(true,integers)	[1]
+	1
+
+>> -instance(true,get_13_5_1)	[1]
+	1
+
+>> -instance(true,timeStep)	[1]
+	1
+
+>> -instance(true,leave)	[1]
+	1
+
+>> -instance(true,booleans)	[1]
+	1
+
+>> -instance(true,place)	[1]
+	1
+
+>> -instance(true,event)	[1]
+	1
+
+>> -instance(true,kitchen)	[1]
+	1
+
+>> -instance(true,obtain)	[1]
+	1
+
+>> -instance(true,receive)	[1]
+	1
+
+>> -instance(true,move)	[1]
+	1
+
+>> -instance(true,tangible_entity)	[1]
+	1
+
+>> -instance(true,hallway)	[1]
+	1
+
+>> -instance(true,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(true,lose)	[1]
+	1
+
+>> -instance(true,mary)	[1]
+	1
+
+>> -instance(true,milk)	[1]
+	1
+
+>> -instance(true,meander_47_7_1)	[1]
+	1
+
+>> -instance(true,go_to)	[1]
+	1
+
+>> -instance(true,meander_47_7)	[1]
+	1
+
+>> -instance(true,bedroom)	[1]
+	1
+
+>> -instance(true,run_51_3_2_2)	[1]
+	1
+
+>> -instance(true,take)	[1]
+	1
+
+>> -instance(true,run_51_3_2_1)	[1]
+	1
+
+>> -instance(true,slide_11_2)	[1]
+	1
+
+>> -instance(true,transfer)	[1]
+	1
+
+>> -instance(true,sandra)	[1]
+	1
+
+>> -instance(true,slide_11_2_1)	[1]
+	1
+
+>> -instance(true,universe)	[1]
+	1
+
+>> -instance(true,john)	[1]
+	1
+
+>> -instance(true,carry)	[1]
+	1
+
+>> -instance(true,actions)	[1]
+	1
+
+>> -instance(true,thing)	[1]
+	1
+
+>> -instance(true,entity)	[1]
+	1
+
+>> -instance(true,walk)	[1]
+	1
+
+>> -instance(r1,run_51_3_2_2_1)	[1]
+	1
+
+>> -instance(r1,activity)	[1]
+	1
+
+>> -instance(r1,locomotion)	[1]
+	1
+
+>> -instance(r1,deliver)	[1]
+	1
+
+>> -instance(r1,run_51_3_2)	[1]
+	1
+
+>> -instance(r1,inanimate_object)	[1]
+	1
+
+>> -instance(r1,get_13_5_1_1)	[1]
+	1
+
+>> -instance(r1,integers)	[1]
+	1
+
+>> -instance(r1,get_13_5_1)	[1]
+	1
+
+>> -instance(r1,timeStep)	[1]
+	1
+
+>> -instance(r1,leave)	[1]
+	1
+
+>> -instance(r1,booleans)	[1]
+	1
+
+>> -instance(r1,place)	[1]
+	1
+
+>> -instance(r1,event)	[1]
+	1
+
+>> -instance(r1,kitchen)	[1]
+	1
+
+>> -instance(r1,obtain)	[1]
+	1
+
+>> -instance(r1,receive)	[1]
+	1
+
+>> -instance(r1,move)	[1]
+	1
+
+>> -instance(r1,hallway)	[1]
+	1
+
+>> -instance(r1,comparable_integers_subsort)	[1]
+	1
+
+>> -instance(r1,lose)	[1]
+	1
+
+>> -instance(r1,milk)	[1]
+	1
+
+>> -instance(r1,meander_47_7_1)	[1]
+	1
+
+>> -instance(r1,go_to)	[1]
+	1
+
+>> -instance(r1,meander_47_7)	[1]
+	1
+
+>> -instance(r1,bedroom)	[1]
+	1
+
+>> -instance(r1,run_51_3_2_2)	[1]
+	1
+
+>> -instance(r1,take)	[1]
+	1
+
+>> -instance(r1,run_51_3_2_1)	[1]
+	1
+
+>> -instance(r1,slide_11_2)	[1]
+	1
+
+>> -instance(r1,transfer)	[1]
+	1
+
+>> -instance(r1,sandra)	[1]
+	1
+
+>> -instance(r1,slide_11_2_1)	[1]
+	1
+
+>> -instance(r1,john)	[1]
+	1
+
+>> -instance(r1,carry)	[1]
+	1
+
+>> -instance(r1,actions)	[1]
+	1
+
+>> -instance(r1,walk)	[1]
+	1
+
+>> -dom_event_toward(e1,r2)	[1]
+	1
+
+>> -dom_event_toward(e1,r3)	[1]
+	1
+
+>> -dom_event_toward(e1,r4)	[1]
+	1
+
+>> -dom_event_toward(e1,r5)	[1]
+	1
+
+>> -dom_event_toward(e1,r6)	[1]
+	1
+
+>> -dom_event_toward(e1,r7)	[1]
+	1
+
+>> -dom_event_toward(e1,r1)	[1]
+	1
+
+>> -dom_event_toward(e2,r2)	[1]
+	1
+
+>> -dom_event_toward(e2,r3)	[1]
+	1
+
+>> -dom_event_toward(e2,r4)	[1]
+	1
+
+>> -dom_event_toward(e2,r5)	[1]
+	1
+
+>> -dom_event_toward(e2,r6)	[1]
+	1
+
+>> -dom_event_toward(e2,r7)	[1]
+	1
+
+>> -dom_event_toward(e2,r1)	[1]
+	1
+
+>> -dom_event_toward(e3,r2)	[1]
+	1
+
+>> -dom_event_toward(e3,r3)	[1]
+	1
+
+>> -dom_event_toward(e3,r4)	[1]
+	1
+
+>> -dom_event_toward(e3,r5)	[1]
+	1
+
+>> -dom_event_toward(e3,r6)	[1]
+	1
+
+>> -dom_event_toward(e3,r7)	[1]
+	1
+
+>> -dom_event_toward(e3,r1)	[1]
+	1
+
+>> -dom_event_toward(e4,r2)	[1]
+	1
+
+>> -dom_event_toward(e4,r3)	[1]
+	1
+
+>> -dom_event_toward(e4,r4)	[1]
+	1
+
+>> -dom_event_toward(e4,r5)	[1]
+	1
+
+>> -dom_event_toward(e4,r6)	[1]
+	1
+
+>> -dom_event_toward(e4,r7)	[1]
+	1
+
+>> -dom_event_toward(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,e1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,e2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,e3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e1,e4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,e1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,e2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,e3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e2,e4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,e1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,e2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,e3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e3,e4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,e1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,e2)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,e3)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_pivot(e4,e4)	[1]
+	1
+
+>> -dom_event_raw_material(e1,r2)	[1]
+	1
+
+>> -dom_event_raw_material(e1,r3)	[1]
+	1
+
+>> -dom_event_raw_material(e1,r5)	[1]
+	1
+
+>> -dom_event_raw_material(e1,r1)	[1]
+	1
+
+>> -dom_event_raw_material(e2,r2)	[1]
+	1
+
+>> -dom_event_raw_material(e2,r3)	[1]
+	1
+
+>> -dom_event_raw_material(e2,r5)	[1]
+	1
+
+>> -dom_event_raw_material(e2,r1)	[1]
+	1
+
+>> -dom_event_raw_material(e3,r2)	[1]
+	1
+
+>> -dom_event_raw_material(e3,r3)	[1]
+	1
+
+>> -dom_event_raw_material(e3,r5)	[1]
+	1
+
+>> -dom_event_raw_material(e3,r1)	[1]
+	1
+
+>> -dom_event_raw_material(e4,r2)	[1]
+	1
+
+>> -dom_event_raw_material(e4,r3)	[1]
+	1
+
+>> -dom_event_raw_material(e4,r5)	[1]
+	1
+
+>> -dom_event_raw_material(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_instrument(e4,r1)	[1]
+	1
+
+>> -dom_event_beneficiary(e1,r2)	[1]
+	1
+
+>> -dom_event_beneficiary(e2,r2)	[1]
+	1
+
+>> -dom_event_beneficiary(e3,r2)	[1]
+	1
+
+>> -dom_event_beneficiary(e4,r2)	[1]
+	1
+
+>> -dom_event_beneficiary(e1,r3)	[1]
+	1
+
+>> -dom_event_beneficiary(e2,r3)	[1]
+	1
+
+>> -dom_event_beneficiary(e3,r3)	[1]
+	1
+
+>> -dom_event_beneficiary(e4,r3)	[1]
+	1
+
+>> -dom_event_beneficiary(e1,r5)	[1]
+	1
+
+>> -dom_event_beneficiary(e2,r5)	[1]
+	1
+
+>> -dom_event_beneficiary(e3,r5)	[1]
+	1
+
+>> -dom_event_beneficiary(e4,r5)	[1]
+	1
+
+>> -dom_event_beneficiary(e1,r1)	[1]
+	1
+
+>> -dom_event_beneficiary(e2,r1)	[1]
+	1
+
+>> -dom_event_beneficiary(e3,r1)	[1]
+	1
+
+>> -dom_event_beneficiary(e4,r1)	[1]
+	1
+
+>> dom_actions_vn_location(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_location(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_location(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_location(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_location(e4,r1)	[1]
+	1
+
+>> -defined_away_from(e1)	[1]
+	1
+
+>> -defined_away_from(e2)	[1]
+	1
+
+>> -defined_away_from(e3)	[1]
+	1
+
+>> -defined_away_from(e4)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_extent(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_extent(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_extent(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_extent(e4,r1)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r2)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r3)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r4)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r5)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r6)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r7)	[1]
+	1
+
+>> -dom_event_experiencer(e1,r1)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r2)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r3)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r4)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r5)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r6)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r7)	[1]
+	1
+
+>> -dom_event_experiencer(e2,r1)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r2)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r3)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r4)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r5)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r6)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r7)	[1]
+	1
+
+>> -dom_event_experiencer(e3,r1)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r2)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r3)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r4)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r5)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r6)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r7)	[1]
+	1
+
+>> -dom_event_experiencer(e4,r1)	[1]
+	1
+
+>> dom_event_object(e1,r2)	[1]
+	1
+
+>> dom_event_object(e3,r5)	[1]
+	1
+
+>> dom_event_object(e2,r3)	[1]
+	1
+
+>> dom_event_object(e4,r1)	[1]
+	1
+
+>> -dom_event_object(e1,r3)	[1]
+	1
+
+>> -dom_event_object(e1,r4)	[1]
+	1
+
+>> -dom_event_object(e1,r5)	[1]
+	1
+
+>> -dom_event_object(e1,r6)	[1]
+	1
+
+>> -dom_event_object(e1,r7)	[1]
+	1
+
+>> -dom_event_object(e1,r1)	[1]
+	1
+
+>> -dom_event_object(e2,r2)	[1]
+	1
+
+>> -dom_event_object(e2,r4)	[1]
+	1
+
+>> -dom_event_object(e2,r5)	[1]
+	1
+
+>> -dom_event_object(e2,r6)	[1]
+	1
+
+>> -dom_event_object(e2,r7)	[1]
+	1
+
+>> -dom_event_object(e2,r1)	[1]
+	1
+
+>> -dom_event_object(e3,r2)	[1]
+	1
+
+>> -dom_event_object(e3,r3)	[1]
+	1
+
+>> -dom_event_object(e3,r4)	[1]
+	1
+
+>> -dom_event_object(e3,r6)	[1]
+	1
+
+>> -dom_event_object(e3,r7)	[1]
+	1
+
+>> -dom_event_object(e3,r1)	[1]
+	1
+
+>> -dom_event_object(e4,r2)	[1]
+	1
+
+>> -dom_event_object(e4,r3)	[1]
+	1
+
+>> -dom_event_object(e4,r4)	[1]
+	1
+
+>> -dom_event_object(e4,r5)	[1]
+	1
+
+>> -dom_event_object(e4,r6)	[1]
+	1
+
+>> -dom_event_object(e4,r7)	[1]
+	1
+
+>> dom_event_recipient(e1,r1)	[1]
+	1
+
+>> -dom_event_recipient(e1,r2)	[1]
+	1
+
+>> -dom_event_recipient(e1,r3)	[1]
+	1
+
+>> -dom_event_recipient(e1,r4)	[1]
+	1
+
+>> -dom_event_recipient(e1,r5)	[1]
+	1
+
+>> -dom_event_recipient(e1,r6)	[1]
+	1
+
+>> -dom_event_recipient(e1,r7)	[1]
+	1
+
+>> -dom_event_recipient(e2,r2)	[1]
+	1
+
+>> -dom_event_recipient(e2,r3)	[1]
+	1
+
+>> -dom_event_recipient(e2,r4)	[1]
+	1
+
+>> -dom_event_recipient(e2,r5)	[1]
+	1
+
+>> -dom_event_recipient(e2,r6)	[1]
+	1
+
+>> -dom_event_recipient(e2,r7)	[1]
+	1
+
+>> -dom_event_recipient(e2,r1)	[1]
+	1
+
+>> -dom_event_recipient(e3,r2)	[1]
+	1
+
+>> -dom_event_recipient(e3,r3)	[1]
+	1
+
+>> -dom_event_recipient(e3,r4)	[1]
+	1
+
+>> -dom_event_recipient(e3,r5)	[1]
+	1
+
+>> -dom_event_recipient(e3,r6)	[1]
+	1
+
+>> -dom_event_recipient(e3,r7)	[1]
+	1
+
+>> -dom_event_recipient(e3,r1)	[1]
+	1
+
+>> -dom_event_recipient(e4,r2)	[1]
+	1
+
+>> -dom_event_recipient(e4,r3)	[1]
+	1
+
+>> -dom_event_recipient(e4,r4)	[1]
+	1
+
+>> -dom_event_recipient(e4,r5)	[1]
+	1
+
+>> -dom_event_recipient(e4,r6)	[1]
+	1
+
+>> -dom_event_recipient(e4,r7)	[1]
+	1
+
+>> -dom_event_recipient(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r6)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r7)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,e1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,e2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,e3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e1,e4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r6)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r7)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,e1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,e2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,e3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e2,e4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r6)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r7)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,e1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,e2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,e3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e3,e4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r4)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r6)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r7)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,e1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,e2)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,e3)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,r1)	[1]
+	1
+
+>> -dom_actions_vn_stimulus(e4,e4)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e1,r2)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e1,r3)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e1,r5)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e1,r1)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e2,r2)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e2,r3)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e2,r5)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e2,r1)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e3,r2)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e3,r3)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e3,r5)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e3,r1)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e4,r2)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e4,r3)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e4,r5)	[1]
+	1
+
+>> -dom_actions_vn_beneficiary(e4,r1)	[1]
+	1
+
+>> -defined_destination(e1)	[1]
+	1
+
+>> dom_event_agent(e3,r5)	[1]
+	1
+
+>> dom_event_agent(e2,r3)	[1]
+	1
+
+>> dom_event_agent(e4,r1)

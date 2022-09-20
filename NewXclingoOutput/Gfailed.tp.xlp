@@ -1,0 +1,38 @@
+
+Answer: 1
+>> locationB(r1,r2,1)	[1]
+  *
+  |__"(1) john is located at kitchen in sentence 1"
+  |  |__"(2) john moved to kitchen in sentence 1"
+
+>> locationB(r3,r4,2)	[1]
+  *
+  |__"(1) mary is located at garden in sentence 2"
+  |  |__"(2) mary moved to garden in sentence 2"
+
+>> locationB(r1,r4,4)	[1]
+  *
+  |__"(1) john is located at garden in sentence 4"
+  |  |__"(3) john moved to garden in sentence 4"
+
+>> locationB(r3,r4,3)	[1]
+  *
+  |__"(1) mary is located at garden in sentence 3"
+  |  |__"(2) mary moved to garden in sentence 2"
+
+>> locationB(r1,r2,2)	[1]
+  *
+  |__"(1) john is located at kitchen in sentence 2"
+  |  |__"(2) john moved to kitchen in sentence 1"
+
+>> locationB(r3,r4,4)	[1]
+  *
+  |__"(1) mary is located at garden in sentence 4"
+  |  |__"(2) mary moved to garden in sentence 2"
+
+>> locationB(r1,r2,3)	[1]
+  *
+  |__"(1) john is located at kitchen in sentence 3"
+  |  |__"(2) john moved to kitchen in sentence 1"
+
+
