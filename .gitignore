@@ -19,6 +19,7 @@ Output/BABITestResults/*
 Resources/srl-20131216
 Resources/stanford-corenlp-full-2018-10-05
 Resources/models
+LogicPrograms/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
