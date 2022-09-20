@@ -1,12 +1,19 @@
 import os, glob, sys
 from sys import argv
 
-directory, filename = argv[1].split('/')
+directory = os.path.dirname(argv[1])
+filename = os.path.basename(argv[1])
+
+# print("directory", directory)
+# print("filename", filename)
 
 regex = filename + "*.tp.lp"
 
 file_list = glob.glob(os.path.join(os.getcwd(), directory, regex))
 query_list = glob.glob(os.path.join(os.getcwd(), "query*.lp"))
+
+# print("file_list", file_list)
+# print("query_list", query_list)
 
 file_list.sort()
 query_list.sort()

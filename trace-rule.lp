@@ -22,7 +22,7 @@ possesses(D_G,O_G,TS_G) :-
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
 % !show_trace entityCarrying(L,E,T).
 
-%!show_trace locationT2(A,B,C).
+% !show_trace locationT2(A,B,C).
 
 top_concept(move).
 top_concept(obtain).

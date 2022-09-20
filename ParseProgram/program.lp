@@ -1,4 +1,4 @@
-
+a = b :- p(x).
 link(actions,universe).
 link(transfer,actions).
 link(lose,transfer).
