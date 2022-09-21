@@ -22,8 +22,6 @@ possesses(D_G,O_G,TS_G) :-
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
 % !show_trace entityCarrying(L,E,T).
 
-%!show_trace locationT2(A,B,C).
-
 top_concept(move).
 top_concept(obtain).
 top_concept(relinquish).
@@ -31,9 +29,18 @@ link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).
 
-changeLoc(Oname, L1, L2name, T) :- is_a(Oref,Oname), is_a(L2ref,L2name), locationB(Oref, L1, T-1), locationB(Oref, L2ref, T), L1 != L2ref.
+changeLoc(Oname, L1, L2name, T) :- 
+    is_a(Oref,Oname), is_a(L2ref,L2name), 
+    locationB(Oref, L1, T-1), 
+    locationB(Oref, L2ref, T), 
+    L1 != L2ref.
 
-locationT2(Oname,L,T) :- is_a(Oref,Oname), location(Oref,L,T).
+%!show_trace changeLoc(N, M, O, T).
+
+locationT2(Oname,L,T) :- 
+    is_a(Oref,Oname), location(Oref,L,T).
+
+% !show_trace locationT2(A,B,C).
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 

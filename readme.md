@@ -1,4 +1,6 @@
 # How to run tExplain
+**Requires VPN to connect to remote machine**: [link here](https://nu-vpn.nebraska.edu/)
+
 Connect to remote machine using:
 ```
 ssh YOURNETID@unomaha.edu@10.66.190.178
