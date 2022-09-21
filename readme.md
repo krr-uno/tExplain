@@ -37,18 +37,18 @@ This command will split the text file into five narratives and five question-ans
 1. Navigate into the `text2ALM` directory.
 2. Run the command:
 ```
-python getLogicPrograms.py Tuples/twoSuppA
+python getLogicPrograms.py Tuples/yesNoA
 ```
-Where `Tuples/twoSupA` is the directory that contains the processed narratives and question-answer-explanation tuples.
+Where `Tuples/yesNoA` is the directory that contains the processed narratives and question-answer-explanation tuples.
 
 This will create associated logic programs which are stored in the location `text2ALM/config.txt` is configured.
 
 ## Create queries
 Run the command:
 ```
-python Queries/twoSuppQuery.py Tuples/yesNoA.txt
+python Queries/yesNoQuery.py Tuples/yesNoA.txt
 ```
-Where `twoSuppQuery.py` corresponds to the correct type of queries you want to create and `Tuples/yesNoA.txt` is the text file you wish to create queries from.
+Where `yesNoQuery.py` corresponds to the correct type of queries you want to create and `Tuples/yesNoA.txt` is the text file you wish to create queries from.
 
 ## Run Xclingo
 Run the command:
