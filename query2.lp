@@ -1,1 +1,1 @@
-%!show_trace numberObjectsbyEntityatTime(N, mary, 6).
+%!show_trace changeLoc(football, L1, bathroom, T).

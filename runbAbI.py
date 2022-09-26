@@ -8,7 +8,7 @@ from sys import argv
 #6 – Yes/No Questions 
 #7 – Counting 
 #8 – Lists/Sets 
-valid = [1,2,3,5,6,7,8]
+valid = [2,3,6,7]
 
 def process(name):
     i = 0
@@ -49,15 +49,33 @@ def getLogicPrograms(filename):
         command = "./logic.sh " + f + " " + filename
         os.system(command)
 
+def xclingo():
+    directory = "%s/%s" % (logicDir, filename)
 
-if str.isdigit(argv[2]):
-    if int(argv[2]) not in valid:
-        print("ERROR: second arguments must be either 1, 2, 3, 5, 6, 7, or 8.")
+    regex = filename + "*.tp.lp"
+
+    file_list = glob.glob(os.path.join(os.getcwd(), directory, regex))
+    query_list = glob.glob(os.path.join(os.getcwd(), "query*.lp"))
+
+    # print("file_list", file_list)
+    # print("query_list", query_list)
+
+    file_list.sort()
+    query_list.sort()
+    for f, q in zip(file_list, query_list):
+        command = "xclingo -n 0 0 %s %s %s" % (f, q, "trace-rule.lp")
+        os.system(command)
+
+num = argv[2]
+if str.isdigit(num):
+    if int(num) not in valid:
+        print("ERROR: second arguments must be either: %s." % valid)
         quit()
 else:
     print("ERROR: second argument must be integer")
     quit()
 
+num = int(argv[2])
 filename = os.path.basename(argv[1]).replace('.txt', '')
 
 with open(argv[1]) as f:
@@ -68,8 +86,8 @@ config.read("config.ini")
 logicDir = config['APP']['logicprogram_directory']
 tuplesDir = config['APP']['tuples_directory']
 queriesDir = config['APP']['queries_directory']
-
 baseDir = os.getcwd()
+
 
 
 # GENERATE TUPLES
@@ -79,7 +97,21 @@ os.chdir(filename)
 specificTupleDir = os.getcwd()
 process(filename)
 
-
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
+
+# GENERATE QUERIES
+command = ""
+if num == 2:
+    command = "python %s/%s %s" % (queriesDir, "twoSuppQuery.py", argv[1])
+elif num == 3:
+    command = "python %s/%s %s" % (queriesDir, "threeSuppQuery.py", argv[1])
+elif num == 6:
+    command = "python %s/%s %s" % (queriesDir, "yesNoQuery.py", argv[1])
+elif num == 7:
+    command = "python %s/%s %s" % (queriesDir, "countingQuery.py", argv[1])
+os.system(command)
+
+# RUN XCLINGO
+xclingo()
