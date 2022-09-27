@@ -40,12 +40,15 @@ def process(name):
             print(re.sub('^\d+ ', '', line), file = narrativeFile, end="")
 
 def getLogicPrograms(filename):
+    directory = "%s/%s" % (logicDir, filename)
+    if os.path.exists(directory):
+        shutil.rmtree(directory)
     file_list = glob.glob(os.path.join(os.getcwd(), specificTupleDir, "*Narrative*.txt"))
     file_list.sort()
-    print(file_list)
+    # print(file_list)
 
     for f in file_list:
-        print(f)
+        # print(f)
         command = "./logic.sh " + f + " " + filename
         os.system(command)
 
@@ -92,6 +95,8 @@ baseDir = os.getcwd()
 
 # GENERATE TUPLES
 os.chdir(tuplesDir)
+if os.path.exists(filename):
+    shutil.rmtree(filename)
 os.mkdir(filename)
 os.chdir(filename)
 specificTupleDir = os.getcwd()
@@ -99,7 +104,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-# getLogicPrograms(filename)
+getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""

@@ -1,1 +1,1 @@
-%!show_trace changeLoc(milk, L1, kitchen, T).
+%!show_trace numberObjectsbyEntityatTime(N, mary, 14).
