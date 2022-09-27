@@ -23,41 +23,42 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -t
 sh run_http_server.sh 8071 '../../models/eng/'
 ```
 
-## Create tuples
-1. Navigate into the `Tuples` folder via a third window.
-2. Run the command:
-```
-python process.py yesNoA.txt
-```
-Where *yesNoA.txt* is the file to be processed into tuple format.
+## Config file
+Locate the config.ini file in the root directory.
+Configure the **direct** file paths to `LogicProgram_directory`, `Tuples_directory`, and `Queries_directory`.
 
-This command will split the text file into five narratives and five question-answer-explanation tuples in a newly created directory within the `Tuples` directory. In this case, the directory `yesNoA` would be created from *yesNoA.txt*.
 
-## Create logic programs
-1. Navigate into the `text2ALM` directory.
-2. Run the command:
+## bAbI Narrative
+To input a bAbI narrative, run:
 ```
-python getLogicPrograms.py Tuples/yesNoA
+python runbAbI.py Tuples/countingA.txt 7 
 ```
-Where `Tuples/yesNoA` is the directory that contains the processed narratives and question-answer-explanation tuples.
+Where the first argument `Tuples/countingA.txt` is the text file containing ONE bAbI narrative.
 
-This will create associated logic programs which are stored in the location `text2ALM/config.txt` is configured.
+And the second argument `7` is an integer which must belong to one of the below corresponding to one bAbI task:
+bAbI task  | Number
+------------- | -------------
+Single Supporting Facts | 1
+Two Supporting Facts | 2
+Three Supporting Facts | 3
+Three Argument Relations | 5
+Yes/No Questions | 6
+Counting | 7
+Lists/Sets | 8
 
-## Create queries
-Run the command:
-```
-python Queries/yesNoQuery.py Tuples/yesNoA.txt
-```
-Where `yesNoQuery.py` corresponds to the correct type of queries you want to create and `Tuples/yesNoA.txt` is the text file you wish to create queries from.
+`runbAbI.py` will :
+* create queries from the scripts located in the `Queries_directory`
+* create tuples in the `Tuples_directory` location
+* create logic programs in the `LogicProgram_directory` location
+* execute xclingo on each tuple, logic program, and query
 
-## Run Xclingo
-Run the command:
+## Standalone Narrative
+To input a standalone (non-bAbI format) narrative, run:
 ```
-python xclingo.py LogicPrograms/yesNoA
+python runStandalone.py TestFiles/withoutGrabz.txt
 ```
-Where `LogicPrograms/yesNoA` is the directory where generated logic programs are located.
+Where `TestFiles/withoutGrabz.txt` is the text file containing an English narrative.
 
-For better readability, use redirection:
-```
-python xclingo.py LogicPrograms/yesNoA > output.txt
-```
+`runStandalone.py` will:
+* create a **single** logic program in the `LogicProgram_directory` location
+* execute xclingo on the single logic program
