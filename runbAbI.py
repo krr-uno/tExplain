@@ -41,8 +41,8 @@ def process(name):
 
 def getLogicPrograms(filename):
     directory = "%s/%s" % (logicDir, filename)
-    if os.path.exists(directory):
-        shutil.rmtree(directory)
+    # if os.path.exists(directory):
+    #     shutil.rmtree(directory)
     file_list = glob.glob(os.path.join(os.getcwd(), specificTupleDir, "*Narrative*.txt"))
     file_list.sort()
     # print(file_list)

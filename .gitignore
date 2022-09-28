@@ -12,13 +12,13 @@ TestFiles/BABI_Tests/tasks_1-20_v1-2/en-valid
 TestFiles/BABI_Tests/tasks_1-20_v1-2/en-valid-10k
 TestFiles/BABI_Tests/tasks_1-20_v1-2/en-10k
 Output/BABIParser_Outputs/*
+Resources/srl-20131216
+Resources/stanford-corenlp-full-2018-10-05
+Resources/models
 Output/Logs/*
 Output/Text2ALM_Outputs/*
 Output/VerbNetALMGenerator_Outputs/*
 Output/BABITestResults/*
-Resources/srl-20131216
-Resources/stanford-corenlp-full-2018-10-05
-Resources/models
 LogicPrograms/
 
 # Byte-compiled / optimized / DLL files
