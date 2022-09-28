@@ -10,7 +10,7 @@ Where *YOURNETID* is replaced with your own NETID. Then enter the password assoc
 **All source files are located in ```/bin/Text2ALM```**
 
 # System setup
-Go to this repository's [wiki](https://github.com/jorgefandinno/tExplain/wiki/System-Setup) to see how to prepare and run the system.
+Go to this repository's [system setup wiki](https://github.com/jorgefandinno/tExplain/wiki/System-Setup) to see how to prepare the system.
 
 ## Starting up Stanford CoreNLP
 1. Navigate into the `resources/stanford-corenlp-*` folder.
