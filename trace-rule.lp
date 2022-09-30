@@ -35,7 +35,7 @@ changeLoc(Oname, L1, L2name, T) :-
     locationB(Oref, L2ref, T), 
     L1 != L2ref.
 
-% !show_trace changeLoc(N, M, O, T).
+%!show_trace changeLoc(N, M, O, T).
 
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).

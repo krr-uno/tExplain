@@ -1,45 +1,6 @@
-Text2ALM...
-countingA
-countingANarrative1.txt
-countingANarrative1
-Sparc...
-Text2ALM...
-countingA
-countingANarrative2.txt
-countingANarrative2
-Sparc...
-Text2ALM...
-countingA
-countingANarrative3.txt
-countingANarrative3
-Sparc...
-Text2ALM...
-countingA
-countingANarrative4.txt
-countingANarrative4
-Sparc...
-Text2ALM...
-countingA
-countingANarrative5.txt
-countingANarrative5
-Sparc...
 Answer 1
   *
-  |__mary is holding 1 items at time point 4
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 6
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 8
-
-Answer 1
-  *
-  |__mary is holding 0 items at time point 12
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 14
+  |__Location of mary before bathroom : office in sentence 2
+  |  |__mary moved to office in sentence 1
+  |  |__mary moved to bathroom in sentence 2
 
