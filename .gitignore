@@ -19,7 +19,6 @@ Output/Logs/*
 Output/Text2ALM_Outputs/*
 Output/VerbNetALMGenerator_Outputs/*
 Output/BABITestResults/*
-LogicPrograms/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
