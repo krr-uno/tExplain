@@ -18,15 +18,28 @@ possesses(D_G,O_G,TS_G) :-
     timeStep(TS_G),
     actions(X_G).
 
-possesses(X0_G,X1_G,VAR_0) :-
-    possesses(X0_G,X1_G,I_G),
+% possesses(X0_G,X1_G,VAR_0) :-
+%     possesses(X0_G,X1_G,I_G),
+%     not -possesses(X0_G,X1_G,VAR_0),
+%     dom_possesses(X0_G,X1_G,VAR_0),
+%     VAR_0=I_G-1,
+%     entity(X0_G),
+%     entity(X1_G),
+%     timeStep(I_G),
+%     timeStep(VAR_0).
+
+possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
+
+must_possesses(X0_G,X1_G,VAR_0) :-
+    must_possesses(X0_G,X1_G,I_G),
     not -possesses(X0_G,X1_G,VAR_0),
-    dom_possesses(X0_G,X1_G,VAR_0),
     VAR_0=I_G-1,
     entity(X0_G),
     entity(X1_G),
     timeStep(I_G),
     timeStep(VAR_0).
+
+%!trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
 
 
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).

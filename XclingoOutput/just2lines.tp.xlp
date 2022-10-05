@@ -1,8 +1,0 @@
-
-Answer: 1
->> locationB(r3,r4,2)	[1]
-  *
-  |__"john is located at bedroom in sentence 2"
-  |  |__"john moved to bedroom in sentence 2"
-
-
