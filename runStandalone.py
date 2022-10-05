@@ -31,8 +31,17 @@ def xclingo():
     # print("file_list", file_list)
 
     file_list.sort()
+
+    specificXclingoDir = xclingoDir + "/" + filename
+    if os.path.exists(specificXclingoDir):
+        shutil.rmtree(specificXclingoDir)
+    os.mkdir(specificXclingoDir)
+
     for f in file_list:
-        command = "xclingo -n 0 0 %s %s" % (f, "trace-rule.lp")
+        outputfile = os.path.basename(f).replace('.tp.lp', '.txt')
+        outputfile = specificXclingoDir + "/" + outputfile
+
+        command = "xclingo -n 0 0 %s %s > %s" % (f, "trace-rule.lp", outputfile)
         os.system(command)
 
 filename = os.path.basename(argv[1]).replace('.txt', '')
@@ -44,6 +53,7 @@ with open(argv[1]) as f:
 config = configparser.ConfigParser()
 config.read("config.ini")
 logicDir = config['APP']['logicprogram_directory']
+xclingoDir = config['APP']['xclingo_directory']
 
 
 

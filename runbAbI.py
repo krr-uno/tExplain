@@ -56,6 +56,8 @@ def xclingo():
     directory = "%s/%s" % (logicDir, filename)
 
     regex = filename + "*.tp.lp"
+    masteroutputfile = xclingoDir + "/" + filename + "/" + filename + ".txt"
+    # print("master:", masteroutputfile)
 
     file_list = glob.glob(os.path.join(os.getcwd(), directory, regex))
     query_list = glob.glob(os.path.join(os.getcwd(), "query*.lp"))
@@ -65,8 +67,18 @@ def xclingo():
 
     file_list.sort()
     query_list.sort()
+
+    specificXclingoDir = xclingoDir + "/" + filename
+    if os.path.exists(specificXclingoDir):
+        shutil.rmtree(specificXclingoDir)
+    os.mkdir(specificXclingoDir)
+
     for f, q in zip(file_list, query_list):
-        command = "xclingo -n 0 0 %s %s %s" % (f, q, "trace-rule.lp")
+        outputfile = os.path.basename(f).replace('.tp.lp', '.txt')
+        outputfile = specificXclingoDir + "/" + outputfile
+        command = "xclingo -n 0 0 %s %s %s > %s" % (f, q, "trace-rule.lp", outputfile)
+        os.system(command)
+        command = "cat %s >> %s" % (outputfile, masteroutputfile)
         os.system(command)
 
 num = argv[2]
@@ -89,6 +101,7 @@ config.read("config.ini")
 logicDir = config['APP']['logicprogram_directory']
 tuplesDir = config['APP']['tuples_directory']
 queriesDir = config['APP']['queries_directory']
+xclingoDir = config['APP']['xclingo_directory']
 baseDir = os.getcwd()
 
 

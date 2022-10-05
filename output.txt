@@ -1,19 +1,25 @@
-Answer 1
-  *
-  |__Location of football before bathroom : office in sentence 3
-  |  |__happened(run_51_3_2_1,1);mary moved to office in sentence 2
-  |  |__happened(run_51_3_2_1,2);mary moved to bathroom in sentence 3
-  |  |__happened(get_13_5_1_1,0);Since mary obtained the football in sentence 1
-
-  *
-  |__Location of football before bathroom : office in sentence 3
-  |  |__happened(run_51_3_2_1,1);mary moved to office in sentence 2
-  |  |__happened(run_51_3_2_1,2);mary moved to bathroom in sentence 3
-  |  |__happened(fire_10_10,3)
-  |  |__happened(get_13_5_1_1,0);Since mary obtained the football in sentence 1
-
-  *
-  |__Location of mary before bathroom : office in sentence 3
-  |  |__happened(run_51_3_2_1,1);mary moved to office in sentence 2
-  |  |__happened(run_51_3_2_1,2);mary moved to bathroom in sentence 3
-
+Text2ALM...
+countingA
+countingANarrative1.txt
+countingANarrative1
+Sparc...
+Text2ALM...
+countingA
+countingANarrative2.txt
+countingANarrative2
+Sparc...
+Text2ALM...
+countingA
+countingANarrative3.txt
+countingANarrative3
+Sparc...
+Text2ALM...
+countingA
+countingANarrative4.txt
+countingANarrative4
+Sparc...
+Text2ALM...
+countingA
+countingANarrative5.txt
+countingANarrative5
+Sparc...

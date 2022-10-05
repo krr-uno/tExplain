@@ -1,0 +1,51 @@
+Answer 1
+  *
+  |__Location of football before hallway : garden in sentence 10
+  |  |__happened(meander_47_7,9);mary moved to hallway in sentence 10
+  |  |__happened(run_51_3_2_1,8);mary moved to garden in sentence 9
+  |  |__happened(steal_10_5,3);Since mary obtained the football in sentence 4
+
+  *
+  |__Location of football before garden : bathroom in sentence 9
+  |  |__happened(run_51_3_2_1,8);mary moved to garden in sentence 9
+  |  |__happened(steal_10_5,3);Since mary obtained the football in sentence 4
+  |  |__happened(slide_11_2,0);mary moved to bathroom in sentence 1
+
+  *
+  |__Location of sandra before garden : office in sentence 8
+  |  |__happened(slide_11_2,7);sandra moved to garden in sentence 8
+  |  |__happened(meander_47_7,4);sandra moved to office in sentence 5
+
+  *
+  |__Location of john before bedroom : kitchen in sentence 7
+  |  |__happened(slide_11_2,6);john moved to bedroom in sentence 7
+  |  |__happened(meander_47_7,2);john moved to kitchen in sentence 3
+
+  *
+  |__Location of daniel before garden : office in sentence 14
+  |  |__happened(run_51_3_2_1,13);daniel moved to garden in sentence 14
+  |  |__happened(meander_47_7,5);daniel moved to office in sentence 6
+
+  *
+  |__Location of mary before garden : bathroom in sentence 9
+  |  |__happened(run_51_3_2_1,8);mary moved to garden in sentence 9
+  |  |__happened(slide_11_2,0);mary moved to bathroom in sentence 1
+
+  *
+  |__Location of sandra before bedroom : garden in sentence 11
+  |  |__happened(run_51_3_2_1,10);sandra moved to bedroom in sentence 11
+  |  |__happened(slide_11_2,7);sandra moved to garden in sentence 8
+
+  *
+  |__Location of sandra before office : bedroom in sentence 5
+  |  |__happened(meander_47_7,4);sandra moved to office in sentence 5
+  |  |__happened(run_51_3_2_1,1);sandra moved to bedroom in sentence 2
+
+  *
+  |__mary is holding 1 items at time point 14
+
+  *
+  |__Location of mary before hallway : garden in sentence 10
+  |  |__happened(meander_47_7,9);mary moved to hallway in sentence 10
+  |  |__happened(run_51_3_2_1,8);mary moved to garden in sentence 9
+

@@ -1,0 +1,54 @@
+Answer 1
+  *
+  |__Location of football before kitchen : hallway in sentence 12
+  |  |__happened(meander_47_7,7);sandra moved to hallway in sentence 8
+  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
+  |  |__happened(get_13_5_1_1,10);Since sandra obtained the football in sentence 11
+
+  *
+  |__Location of football before kitchen : hallway in sentence 12
+  |  |__happened(meander_47_7,7);sandra moved to hallway in sentence 8
+  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
+  |  |__happened(get_13_5_1_1,10);Since sandra obtained the football in sentence 11
+  |  |__happened(future_having_13_3,12);Since sandra relinquished the football in sentence 13
+
+  *
+  |__football is located at kitchen in sentence 14
+  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
+  |  |__happened(get_13_5_1_1,10);Since sandra obtained the football in sentence 11
+
+  *
+  |__football is located at kitchen in sentence 14
+  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
+  |  |__happened(future_having_13_3,12);Since sandra relinquished the football in sentence 13
+
+  *
+  |__Location of john before office : kitchen in sentence 9
+  |  |__happened(run_51_3_2_1,8);john moved to office in sentence 9
+  |  |__happened(run_51_3_2_1,4);john moved to kitchen in sentence 5
+
+  *
+  |__Location of john before garden : bathroom in sentence 14
+  |  |__happened(slide_11_2,13);john moved to garden in sentence 14
+  |  |__happened(meander_47_7,9);john moved to bathroom in sentence 10
+
+  *
+  |__Location of sandra before kitchen : hallway in sentence 12
+  |  |__happened(meander_47_7,7);sandra moved to hallway in sentence 8
+  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
+
+  *
+  |__Location of sandra before garden : bedroom in sentence 6
+  |  |__happened(meander_47_7,5);sandra moved to garden in sentence 6
+  |  |__happened(run_51_3_2_1,2);sandra moved to bedroom in sentence 3
+
+  *
+  |__Location of sandra before hallway : garden in sentence 8
+  |  |__happened(meander_47_7,5);sandra moved to garden in sentence 6
+  |  |__happened(meander_47_7,7);sandra moved to hallway in sentence 8
+
+  *
+  |__Location of john before bathroom : office in sentence 10
+  |  |__happened(run_51_3_2_1,8);john moved to office in sentence 9
+  |  |__happened(meander_47_7,9);john moved to bathroom in sentence 10
+
