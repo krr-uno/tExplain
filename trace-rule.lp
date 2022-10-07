@@ -39,7 +39,7 @@ must_possesses(X0_G,X1_G,VAR_0) :-
     timeStep(I_G),
     timeStep(VAR_0).
 
-% !trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
+%!trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
 
 
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
