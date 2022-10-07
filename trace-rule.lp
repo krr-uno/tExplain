@@ -48,6 +48,7 @@ must_possesses(X0_G,X1_G,VAR_0) :-
 top_concept(move).
 top_concept(obtain).
 top_concept(relinquish).
+top_concept(lose).
 link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).
