@@ -1,0 +1,5 @@
+[APP]
+LogicProgram_directory = ~/tExplain/Master/LogicPrograms
+Tuples_directory = ~/tExplain/Master/Tuples
+Queries_directory = ~/tExplain/Queries
+Xclingo_directory = ~/tExplain/Master/Xclingo_output

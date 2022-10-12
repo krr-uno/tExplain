@@ -14,3 +14,8 @@ mv *.model "${SCRIPT_PATH}/resources/models/eng/"
 mv "${SCRIPT_PATH}/resources/models/eng/CoNLL2009-ST-English-ALL.anna-3.3.srl-4.1.srl.model" "${SCRIPT_PATH}/resources/models/eng/CoNLL2009-ST-English-ALL.anna-3.3.srl.model"
 unzip stanford-corenlp-full-2018-10-05.zip -d "${SCRIPT_PATH}/resources/"
 rm -rf "${TMP_PATH}"
+
+if [ ! -f "config.ini" ]
+then
+    cp config.ini.master config.ini
+fi

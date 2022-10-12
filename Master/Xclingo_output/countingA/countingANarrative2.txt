@@ -1,9 +1,1 @@
 Answer 1
-  *
-  |__Location of sandra before office : bedroom in sentence 5
-  |  |__happened(meander_47_7,4);sandra moved to office in sentence 5
-  |  |__happened(run_51_3_2_1,1);sandra moved to bedroom in sentence 2
-
-  *
-  |__mary is holding 1 items at time point 6
-
