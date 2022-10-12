@@ -1,1 +1,1 @@
-%!show_trace numberObjectsbyEntityatTime(N, mary, 12).
+%!show_trace changeLoc(apple, L1, garden, T).

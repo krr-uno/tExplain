@@ -18,6 +18,7 @@ def process(name):
     questionName = name + "Question" + str(current + 1) + ".txt"
     questionFile = open(questionName, 'w')
     seen = 0
+    print('length of narrative:', len(narrative))
     while i < len(narrative):
         line = narrative[i]
         i += 1
@@ -26,7 +27,7 @@ def process(name):
             if seen < current:
                 print(re.sub('^\d+ ', '', line), file = questionFile, end="")
                 seen += 1
-                if seen == 5:
+                if i == len(narrative):
                     break
                 narrativeFile.close()
                 questionFile.close()

@@ -8,7 +8,7 @@ with open(sys.argv[1]) as f:
 
 for line in narrative:
     match = None
-    match = re.search(r"(\d+) .* the (\w+) .* the (\w+)\?", line)
+    match = re.search(r"(\d+)? .* the (\w+) .* the (\w+)\?", line)
     if match:
         adjust += 1
         object = match.group(2)
@@ -16,6 +16,7 @@ for line in narrative:
         questions.append((object, loc2))
 
 adjust = 1
+print('here')
 for q in questions:
     filename = "query" + str(adjust) + ".lp"
     f = open(filename, "w")

@@ -58,7 +58,7 @@ xclingoDir = config['APP']['xclingo_directory']
 
 
 # GENERATE LOGIC PROGRAMS
-# getLogicPrograms(filename)
+getLogicPrograms(filename)
 
 # RUN XCLINGO
 xclingo()

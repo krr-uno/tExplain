@@ -131,3 +131,4 @@ venv.bak/
 !Output/Text2ALM_Outputs/__init__.py
 !Output/VerbNetALMGenerator_Outputs/__init__.py
 !Output/BABITestResults/__init__.py
+config.ini
