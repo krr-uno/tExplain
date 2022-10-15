@@ -82,14 +82,19 @@ def xclingo():
         command = "cat %s >> %s" % (outputfile, masteroutputfile)
         os.system(command)
 
-num = argv[2]
-if str.isdigit(num):
-    if int(num) not in valid:
-        print("ERROR: second arguments must be either: %s." % valid)
-        quit()
-else:
-    print("ERROR: second argument must be integer")
+if len(argv) < 3:
+    print("ERROR: must have 2 arguments")
+    print("format: runbAbI.py [narrative] [num]")
     quit()
+else:
+    num = argv[2]
+    if str.isdigit(num):
+        if int(num) not in valid:
+            print("ERROR: second arguments must be either: %s." % valid)
+            quit()
+    else:
+        print("ERROR: second argument must be integer")
+        quit()
 
 num = int(argv[2])
 filename = os.path.basename(argv[1]).replace('.txt', '')
@@ -118,7 +123,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""
