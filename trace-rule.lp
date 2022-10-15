@@ -8,7 +8,7 @@ numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeSte
 
 entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
 
-must_possesses(D_G,O_G,TS_G) :- 
+possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
     event_object(X_G,O_G),
     occurs(X_G,TS_G),
