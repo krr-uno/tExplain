@@ -118,7 +118,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""
