@@ -4,7 +4,9 @@ notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Ore
 notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_aB(Lref,Lname), location(Oref,Lref',T), Lref!=Lref', not is_a(Lref',Lname).
 inLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref,T).
 
-numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeStep(T), living_entity(Eref), is_a(Eref,Ename).
+numberObjectsbyEntityatTime(N,Ename,T):-
+ N=#count{O: held_by(O,Eref,T)}, timeStep(T), 
+ living_entity(Eref), is_a(Eref,Ename).
 
 entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
 
@@ -55,7 +57,7 @@ changeLoc(Oname, L1, L2name, T) :-
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
-%!show_trace locationT2(A,B,C).
+% !show_trace locationT2(A,B,C).
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 

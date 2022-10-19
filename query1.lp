@@ -1,1 +1,1 @@
-%!show_trace changeLoc(football, L1, bathroom, T).
+%!show_trace numberObjectsbyEntityatTime(N, daniel, 2).

@@ -18,7 +18,6 @@ def process(name):
     questionName = name + "Question" + str(current + 1) + ".txt"
     questionFile = open(questionName, 'w')
     seen = 0
-    print('length of narrative:', len(narrative))
     while i < len(narrative):
         line = narrative[i]
         i += 1
@@ -118,7 +117,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-# getLogicPrograms(filename)
+getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""
