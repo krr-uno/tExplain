@@ -13,17 +13,18 @@ Where *YOURNETID* is replaced with your own NETID. Then enter the password assoc
 Go to this repository's [system setup wiki](https://github.com/jorgefandinno/tExplain/wiki/System-Setup) to see how to prepare the system.
 
 ## Starting up Stanford CoreNLP
-1. Navigate into the `resources/stanford-corenlp-*` folder.
-2. Run the command:
+Run the command:
 ```
-java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -timeout 45000
+cd resources/srl-20131216/scripts/
+sh run_http_server.sh 8071 '../../models/eng/'
 ```
 
 ## Starting up LTH
-1. Navigate into the `resources/srl-*` folder via a second window.
+1. Open a new terminal.
 2. Run the command:
 ```
-sh run_http_server.sh 8071 '../../models/eng/'
+cd resources/stanford-corenlp-full-2018-10-05/
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -timeout 45000
 ```
 
 ## Config file
