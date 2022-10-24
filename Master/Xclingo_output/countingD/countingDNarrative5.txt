@@ -1,0 +1,4 @@
+Answer 1
+  *
+  |__john is holding 2 items at time point 12
+
