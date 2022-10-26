@@ -8,7 +8,7 @@ from sys import argv
 #6 – Yes/No Questions 
 #7 – Counting 
 #8 – Lists/Sets 
-valid = [2,3,6,7]
+valid = [2,3,6,7,8]
 
 def process(name):
     i = 0
@@ -18,7 +18,6 @@ def process(name):
     questionName = name + "Question" + str(current + 1) + ".txt"
     questionFile = open(questionName, 'w')
     seen = 0
-    print('length of narrative:', len(narrative))
     while i < len(narrative):
         line = narrative[i]
         i += 1
@@ -82,19 +81,14 @@ def xclingo():
         command = "cat %s >> %s" % (outputfile, masteroutputfile)
         os.system(command)
 
-if len(argv) < 3:
-    print("ERROR: must have 2 arguments")
-    print("format: runbAbI.py [narrative] [num]")
-    quit()
-else:
-    num = argv[2]
-    if str.isdigit(num):
-        if int(num) not in valid:
-            print("ERROR: second arguments must be either: %s." % valid)
-            quit()
-    else:
-        print("ERROR: second argument must be integer")
+num = argv[2]
+if str.isdigit(num):
+    if int(num) not in valid:
+        print("ERROR: second arguments must be either: %s." % valid)
         quit()
+else:
+    print("ERROR: second argument must be integer")
+    quit()
 
 num = int(argv[2])
 filename = os.path.basename(argv[1]).replace('.txt', '')
@@ -123,7 +117,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-# getLogicPrograms(filename)
+getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""
@@ -135,7 +129,10 @@ elif num == 6:
     command = "python %s/%s %s" % (queriesDir, "yesNoQuery.py", argv[1])
 elif num == 7:
     command = "python %s/%s %s" % (queriesDir, "countingQuery.py", argv[1])
+elif num == 8:
+    command = "python %s/%s %s" % (queriesDir, "listsQuery.py", argv[1])
 os.system(command)
+
 
 # RUN XCLINGO
 xclingo()

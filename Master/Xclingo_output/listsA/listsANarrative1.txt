@@ -1,0 +1,5 @@
+Answer 1
+  *
+  |__mary is holding [football] at time point 4
+  |  |__Since mary obtained the football in sentence 3
+
