@@ -60,7 +60,7 @@ def xclingo():
     # print("master:", masteroutputfile)
 
     file_list = glob.glob(os.path.join(os.getcwd(), directory, regex))
-    query_list = glob.glob(os.path.join(os.getcwd(), "query*.lp"))
+    query_list = glob.glob(os.path.join(os.getcwd(), queriesDir, "query*.lp"))
 
     # print("file_list", file_list)
     # print("query_list", query_list)
@@ -117,20 +117,10 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
-command = ""
-if num == 2:
-    command = "python %s/%s %s" % (queriesDir, "twoSuppQuery.py", argv[1])
-elif num == 3:
-    command = "python %s/%s %s" % (queriesDir, "threeSuppQuery.py", argv[1])
-elif num == 6:
-    command = "python %s/%s %s" % (queriesDir, "yesNoQuery.py", argv[1])
-elif num == 7:
-    command = "python %s/%s %s" % (queriesDir, "countingQuery.py", argv[1])
-elif num == 8:
-    command = "python %s/%s %s" % (queriesDir, "listsQuery.py", argv[1])
+command = "python query.py %s %s %s" % (argv[1], num, queriesDir)
 os.system(command)
 
 
