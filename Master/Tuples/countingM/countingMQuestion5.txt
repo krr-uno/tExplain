@@ -1,0 +1,1 @@
+How many objects is Mary carrying? 	two	10 11 19 20

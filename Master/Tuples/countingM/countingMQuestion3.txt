@@ -1,0 +1,1 @@
+How many objects is John carrying? 	none	8 10 11 14
