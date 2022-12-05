@@ -1,0 +1,4 @@
+Answer 1
+  *
+  |__daniel is holding 0 items at time point 6
+

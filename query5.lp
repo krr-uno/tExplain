@@ -1,1 +1,1 @@
-%!show_trace numberObjectsbyEntityatTime(N, mary, 14).
+%!show_trace numberObjectsbyEntityatTime(N, daniel, 10).
