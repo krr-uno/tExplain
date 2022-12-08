@@ -55,7 +55,7 @@ changeLoc(Oname, L1, L2name, T) :-
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
-%!show_trace locationT2(A,B,C).
+% !show_trace locationT2(A,B,C). 
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 

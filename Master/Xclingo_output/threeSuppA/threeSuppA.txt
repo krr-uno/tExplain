@@ -1,0 +1,80 @@
+Answer 1
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
+Answer 1
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
+Answer 1
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(steal_10_5,10);Since daniel obtained the apple in sentence 11
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(future_having_13_3,26);Since daniel relinquished the apple in sentence 27
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(future_having_13_3,26);Since daniel relinquished the apple in sentence 27
+  |  |__happened(steal_10_5,10);Since daniel obtained the apple in sentence 11
+
+Answer 1
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(steal_10_5,10);Since daniel obtained the apple in sentence 11
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(future_having_13_3,26);Since daniel relinquished the apple in sentence 27
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__happened(meander_47_7,19);daniel moved to garden in sentence 20
+  |  |__happened(run_51_3_2_1,14);daniel moved to bathroom in sentence 15
+  |  |__happened(future_having_13_3,26);Since daniel relinquished the apple in sentence 27
+  |  |__happened(steal_10_5,10);Since daniel obtained the apple in sentence 11
+

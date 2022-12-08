@@ -1,0 +1,20 @@
+Answer 1
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(fire_10_10,22);Since mary dropped the football in sentence 23
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+
+  *
+  |__Location of football before bathroom : office in sentence 17
+  |  |__happened(run_51_3_2_1,16);mary moved to bathroom in sentence 17
+  |  |__happened(run_51_3_2_1,4);mary moved to office in sentence 5
+  |  |__happened(get_13_5_1_1,2);Since mary obtained the football in sentence 3
+
