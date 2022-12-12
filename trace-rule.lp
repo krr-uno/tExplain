@@ -8,9 +8,8 @@ numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeSte
 
 entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
 
-possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
-must_possesses(D_G,O_G,TS_G) :- 
+must_possess(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
     event_object(X_G,O_G),
     occurs(X_G,TS_G),
@@ -20,14 +19,20 @@ must_possesses(D_G,O_G,TS_G) :-
     timeStep(TS_G),
     actions(X_G).
 
-must_possesses(X0_G,X1_G,VAR_0) :-
-    must_possesses(X0_G,X1_G,I_G),
+other_possessor(X0_G,X1_G,VAR_0) :- possesses(X2_G,X1_G,VAR_0), X2_G != X0_G, entity(X0_G).
+
+must_possess(X0_G,X1_G,VAR_0) :-
+    must_possess(X0_G,X1_G,I_G),
     not -possesses(X0_G,X1_G,VAR_0),
+    not other_possessor(X0_G,X1_G,VAR_0),
     VAR_0=I_G-1,
     entity(X0_G),
     entity(X1_G),
     timeStep(I_G),
     timeStep(VAR_0).
+
+possesses(D_G,O_G,TS_G) :- must_possess(D_G,O_G,TS_G).
+
 
 %!trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
 
@@ -44,11 +49,13 @@ link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).
 
-changeLoc(Oname, L1, L2name, T) :- 
-    is_a(Oref,Oname), is_a(L2ref,L2name), 
-    locationB(Oref, L1, T-1), 
+changeLoc(Oname, L1name, L2name, T) :- 
+    is_a(Oref,Oname),
+    is_a(L2ref, L2name), 
+    is_a(L1ref, L1name),
+    locationB(Oref, L1ref, T-1), 
     locationB(Oref, L2ref, T), 
-    L1 != L2ref.
+    L1ref != L2ref.
 
 % !show_trace changeLoc(N, M, O, T).
 
@@ -70,7 +77,7 @@ locationT2(Oname,L,T) :-
 %!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
 %!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
 
-%!trace {"Location of % before % : % in sentence %", O, L2, L1',T} changeLoc(O, L1, L2, T) :  is_a(L1, L1').
+%!trace {"Location of % before % : % in sentence %", O, L2, L1, T} changeLoc(O, L1, L2, T).
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
