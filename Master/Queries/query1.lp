@@ -1,1 +1,1 @@
-%!show_trace changeLoc(apple, L1, hallway, T).
+%!show_trace xclingo_locationT2(apple,L,4).

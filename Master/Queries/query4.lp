@@ -1,1 +1,1 @@
-%!show_trace changeLoc(milk, L1, hallway, T).
+%!show_trace xclingo_locationT2(football,L,12).

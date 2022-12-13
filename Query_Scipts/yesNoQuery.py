@@ -20,8 +20,8 @@ adjust = 1
 for q in questions:
     filename = "query" + str(adjust) + ".lp"
     f = open(filename, "w")
-    f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
-    f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
+    f.write('%%!show_trace xclingo_not_in_location(%s, %s, %d).\n' % (q[0], q[1], q[2]))
+    f.write('%%!show_trace xclingo_in_location(%s, %s, %d).\n' % (q[0], q[1], q[2]))
     f.write('is_aB(%s, %s).\n' % (q[1], q[1]))
     adjust += 1
     f.close()

@@ -1,4 +1,4 @@
-locationB(A,B,C) :- location(A,B,C).
+xclingo_location(A,B,C) :- location(A,B,C).
 
 notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref',T), Lref!=Lref'.
 notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_aB(Lref,Lname), location(Oref,Lref',T), Lref!=Lref', not is_a(Lref',Lname).
@@ -56,13 +56,13 @@ event_top_concept(E,C):-link_r(E,C),top_concept(C).
 
 changeLoc(Oname, L1, L2name, T) :- 
     is_a(Oref,Oname), is_a(L2ref,L2name), 
-    locationB(Oref, L1, T-1), 
-    locationB(Oref, L2ref, T), 
+    xclingo_location(Oref, L1, T-1), 
+    xclingo_location(Oref, L2ref, T), 
     L1 != L2ref.
 
 % !show_trace changeLoc(N, M, O, T).
 
-locationT2(Oname,L,T) :- 
+xclingo_locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
 % !show_trace locationT2(A,B,C).
@@ -76,7 +76,7 @@ locationT2(Oname,L,T) :-
 %!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_donor(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
 
 
-%!trace {"% is located at % in sentence %", O, S', B} locationT2(O, S, B) : is_a(S, S').
+%!trace {"% is located at % in sentence %", O, S', B} xclingo_locationT2(O, S, B) : is_a(S, S').
 %!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
 %!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
 
