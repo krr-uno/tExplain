@@ -1,0 +1,13 @@
+Answer 1
+  *
+  |__Location of milk before kitchen : hallway in sentence 11
+  |  |__happened(run_51_3_2_1,9);sandra moved to hallway in sentence 10
+  |  |__happened(meander_47_7,10);sandra moved to kitchen in sentence 11
+  |  |__happened(get_13_5_1,8);Since sandra obtained the milk in sentence 9
+
+  *
+  |__Location of milk before kitchen : hallway in sentence 5
+  |  |__happened(meander_47_7,3);sandra moved to hallway in sentence 4
+  |  |__happened(run_51_3_2_1,4);sandra moved to kitchen in sentence 5
+  |  |__happened(leave_51_2,7);Since sandra relinquished the milk in sentence 8
+
