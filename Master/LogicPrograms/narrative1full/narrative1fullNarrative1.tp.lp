@@ -19,21 +19,21 @@ link(meander_47_7_1,meander_47_7).
 link(transfer,actions).
 link(lose,transfer).
 link(relinquish,lose).
-link(future_having_13_3,relinquish).
-link(future_having_13_3_1,future_having_13_3).
 link(supply,relinquish).
 link(feed,supply).
-link(give,relinquish).
-link(donate,give).
 link(leave_51_2,relinquish).
 link(leave_51_2_1,leave_51_2).
+link(give,relinquish).
+link(donate,give).
+link(future_having_13_3,relinquish).
+link(future_having_13_3_1,future_having_13_3).
 link(fire_10_10,lose).
 link(deliver,transfer).
 link(receive,transfer).
 link(obtain,receive).
+link(take,obtain).
 link(get_13_5_1,obtain).
 link(get_13_5_1_1,get_13_5_1).
-link(take,obtain).
 link(steal_10_5,obtain).
 link(steal_10_5_1,steal_10_5).
 link(activity,event).
@@ -280,92 +280,92 @@ event_object(A_G,B_G):-instance(A_G,fire_10_10),actions_vn_attribute(A_G,B_G),en
 :-instance(X_G,leave),-defined_origin(X_G),universe(X_G),event(X_G).
 event_object(X_G,Y_G):-instance(X_G,locomotion),event_agent(X_G,Y_G),event(X_G),entity(Y_G),universe(X_G).
 event_agent(X_G,Y_G):-instance(X_G,locomotion),event_object(X_G,Y_G),entity(Y_G),universe(X_G),event(X_G).
-event_agent(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_theme(X_G,Y_G),entity(Y_G),event(X_G),actions(X_G),universe(X_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_initial_location(X_G,Y_G),actions(X_G),spatial_entity(Y_G),event(X_G),universe(X_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_destination(X_G,Y_G),spatial_entity(Y_G),actions(X_G),universe(X_G),event(X_G).
-event_path(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_trajectory(X_G,Y_G),spatial_entity(Y_G),universe(X_G),event(X_G),actions(X_G),thing(Y_G).
-event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_theme(X_G,Y_G),actions(X_G),universe(X_G),event(X_G),entity(Y_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_initial_location(X_G,Y_G),universe(X_G),event(X_G),actions(X_G),spatial_entity(Y_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_destination(X_G,Y_G),actions(X_G),event(X_G),spatial_entity(Y_G),universe(X_G).
-event_path(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_trajectory(X_G,Y_G),universe(X_G),event(X_G),thing(Y_G),actions(X_G),spatial_entity(Y_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_result(X_G,Y_G),event(X_G),actions(X_G),spatial_entity(Y_G),thing(Y_G),universe(X_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_source(X_G,Y_G),event(X_G),actions(X_G),universe(X_G),spatial_entity(Y_G).
-event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_theme(X_G,Y_G),entity(Y_G),event(X_G),universe(X_G),actions(X_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_initial_location(X_G,Y_G),spatial_entity(Y_G),universe(X_G),event(X_G),actions(X_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_destination(X_G,Y_G),event(X_G),universe(X_G),spatial_entity(Y_G),actions(X_G).
-event_path(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_trajectory(X_G,Y_G),actions(X_G),spatial_entity(Y_G),event(X_G),universe(X_G),thing(Y_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_result(X_G,Y_G),thing(Y_G),event(X_G),spatial_entity(Y_G),actions(X_G),universe(X_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_source(X_G,Y_G),spatial_entity(Y_G),actions(X_G),event(X_G),universe(X_G).
-event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_theme(X_G,Y_G),entity(Y_G),universe(X_G),actions(X_G),event(X_G).
-event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_initial_location(X_G,Y_G),event(X_G),spatial_entity(Y_G),actions(X_G),universe(X_G).
-event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_destination(X_G,Y_G),event(X_G),universe(X_G),actions(X_G),spatial_entity(Y_G).
-event_path(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_trajectory(X_G,Y_G),actions(X_G),universe(X_G),thing(Y_G),event(X_G),spatial_entity(Y_G).
+event_agent(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_agent(X_G,Y_G),entity(Y_G),event(X_G),actions(X_G),universe(X_G).
+event_agent(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_theme(X_G,Y_G),actions(X_G),entity(Y_G),event(X_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_destination(X_G,Y_G),spatial_entity(Y_G),actions(X_G),universe(X_G),event(X_G).
+event_origin(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_initial_location(X_G,Y_G),spatial_entity(Y_G),universe(X_G),event(X_G),actions(X_G).
+event_path(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_trajectory(X_G,Y_G),actions(X_G),universe(X_G),event(X_G),thing(Y_G),spatial_entity(Y_G).
+event_agent(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_agent(X_G,Y_G),universe(X_G),event(X_G),actions(X_G),entity(Y_G).
+event_agent(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_theme(X_G,Y_G),actions(X_G),event(X_G),entity(Y_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_destination(X_G,Y_G),universe(X_G),event(X_G),spatial_entity(Y_G),actions(X_G).
+event_origin(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_initial_location(X_G,Y_G),event(X_G),actions(X_G),spatial_entity(Y_G),universe(X_G).
+event_path(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_trajectory(X_G,Y_G),event(X_G),actions(X_G),universe(X_G),spatial_entity(Y_G),thing(Y_G).
+event_agent(X_G,Y_G):-instance(X_G,meander_47_7),actions_vn_theme(X_G,Y_G),entity(Y_G),event(X_G),universe(X_G),actions(X_G).
+event_destination(X_G,Y_G):-instance(X_G,meander_47_7),actions_vn_location(X_G,Y_G),spatial_entity(Y_G),universe(X_G),event(X_G),actions(X_G).
+event_agent(X_G,Y_G):-instance(X_G,meander_47_7_1),actions_vn_theme(X_G,Y_G),event(X_G),universe(X_G),entity(Y_G),actions(X_G).
+event_destination(X_G,Y_G):-instance(X_G,meander_47_7_1),actions_vn_location(X_G,Y_G),actions(X_G),spatial_entity(Y_G),event(X_G),universe(X_G).
 event_agent(X_G,Y_G):-instance(X_G,receive),event_recipient(X_G,Y_G),entity(Y_G),event(X_G),universe(X_G).
-event_recipient(X_G,Y_G):-instance(X_G,receive),event_agent(X_G,Y_G),entity(Y_G),universe(X_G),event(X_G).
-:-instance(X_G,take),-defined_donor(X_G),universe(X_G),event(X_G).
+event_recipient(X_G,Y_G):-instance(X_G,receive),event_agent(X_G,Y_G),entity(Y_G),event(X_G),universe(X_G).
+:-instance(X_G,take),-defined_donor(X_G),event(X_G),universe(X_G).
 :-instance(X_G,take),event_donor(X_G,D_G),-instance(D_G,tangible_entity),entity(D_G),universe(D_G),universe(X_G),event(X_G).
-event_agent(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_agent(A_G,B_G),entity(B_G),universe(A_G),actions(A_G),event(A_G).
-event_object(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_asset(A_G,B_G),entity(B_G),event(A_G),universe(A_G),thing(B_G),actions(A_G).
-event_donor(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_source(A_G,B_G),entity(B_G),spatial_entity(B_G),event(A_G),universe(A_G),actions(A_G).
-event_recipient(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_beneficiary(A_G,B_G),event(A_G),entity(B_G),actions(A_G),universe(A_G),living_entity(B_G).
-event_object(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_theme(A_G,B_G),entity(B_G),universe(A_G),event(A_G),actions(A_G).
-event_agent(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_agent(A_G,B_G),actions(A_G),universe(A_G),entity(B_G),event(A_G).
-event_object(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_asset(A_G,B_G),universe(A_G),actions(A_G),event(A_G),entity(B_G),thing(B_G).
-event_recipient(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_beneficiary(A_G,B_G),living_entity(B_G),entity(B_G),actions(A_G),event(A_G),universe(A_G).
-event_donor(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_source(A_G,B_G),spatial_entity(B_G),universe(A_G),entity(B_G),event(A_G),actions(A_G).
-event_object(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_theme(A_G,B_G),actions(A_G),universe(A_G),entity(B_G),event(A_G).
-event_agent(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_agent(X_G,Y_G),entity(Y_G),universe(X_G),actions(X_G),event(X_G).
-event_agent(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_theme(X_G,Y_G),entity(Y_G),actions(X_G),event(X_G),universe(X_G).
-event_destination(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_destination(X_G,Y_G),event(X_G),spatial_entity(Y_G),universe(X_G),actions(X_G).
-event_origin(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_initial_location(X_G,Y_G),spatial_entity(Y_G),actions(X_G),universe(X_G),event(X_G).
-event_path(X_G,Y_G):-instance(X_G,slide_11_2),actions_vn_trajectory(X_G,Y_G),spatial_entity(Y_G),thing(Y_G),universe(X_G),event(X_G),actions(X_G).
-event_agent(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_agent(X_G,Y_G),universe(X_G),entity(Y_G),actions(X_G),event(X_G).
-event_agent(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_theme(X_G,Y_G),entity(Y_G),universe(X_G),actions(X_G),event(X_G).
-event_destination(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_destination(X_G,Y_G),universe(X_G),spatial_entity(Y_G),actions(X_G),event(X_G).
-event_origin(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_initial_location(X_G,Y_G),universe(X_G),actions(X_G),event(X_G),spatial_entity(Y_G).
-event_path(X_G,Y_G):-instance(X_G,slide_11_2_1),actions_vn_trajectory(X_G,Y_G),event(X_G),spatial_entity(Y_G),universe(X_G),thing(Y_G),actions(X_G).
+event_agent(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_agent(A_G,B_G),event(A_G),universe(A_G),entity(B_G),actions(A_G).
+event_beneficiary(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_beneficiary(A_G,B_G),living_entity(B_G),universe(A_G),actions(A_G),event(A_G).
+event_donor(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_source(A_G,B_G),universe(A_G),entity(B_G),actions(A_G),event(A_G),spatial_entity(B_G).
+event_object(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_theme(A_G,B_G),actions(A_G),event(A_G),universe(A_G),entity(B_G).
+event_agent(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_agent(A_G,B_G),actions(A_G),entity(B_G),event(A_G),universe(A_G).
+event_beneficiary(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_beneficiary(A_G,B_G),actions(A_G),living_entity(B_G),event(A_G),universe(A_G).
+event_donor(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_source(A_G,B_G),entity(B_G),universe(A_G),actions(A_G),event(A_G),spatial_entity(B_G).
+event_object(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_theme(A_G,B_G),entity(B_G),event(A_G),universe(A_G),actions(A_G).
 :-instance(X_G,relinquish),-defined_agent(X_G),event(X_G),universe(X_G).
-:-instance(X_G,relinquish),event_agent(X_G,A_G),-instance(A_G,tangible_entity),event(X_G),entity(A_G),universe(A_G),universe(X_G).
-:-instance(X_G,relinquish),event_donor(X_G,D1_G),event_donor(X_G,D2_G),entity(D1_G),entity(D2_G),D1_G!=D2_G,event(X_G),universe(X_G).
-:-instance(X_G,relinquish),event_agent(X_G,A_G),event_donor(X_G,D_G),entity(A_G),entity(D_G),A_G!=D_G,universe(X_G),event(X_G).
-event_donor(X_G,Y_G):-instance(X_G,relinquish),event_agent(X_G,Y_G),entity(Y_G),universe(X_G),event(X_G).
+:-instance(X_G,relinquish),event_agent(X_G,A_G),-instance(A_G,tangible_entity),universe(A_G),entity(A_G),universe(X_G),event(X_G).
+:-instance(X_G,relinquish),event_donor(X_G,D1_G),event_donor(X_G,D2_G),entity(D1_G),entity(D2_G),D1_G!=D2_G,universe(X_G),event(X_G).
+:-instance(X_G,relinquish),event_agent(X_G,A_G),event_donor(X_G,D_G),entity(A_G),entity(D_G),A_G!=D_G,event(X_G),universe(X_G).
+event_donor(X_G,Y_G):-instance(X_G,relinquish),event_agent(X_G,Y_G),universe(X_G),entity(Y_G),event(X_G).
 :-instance(X_G,give),-defined_recipient(X_G),event(X_G),universe(X_G).
-:-instance(X_G,give),event_recipient(X_G,R_G),-instance(R_G,tangible_entity),universe(X_G),entity(R_G),universe(R_G),event(X_G).
-:-instance(X_G,donate),-defined_beneficiary(X_G),universe(X_G),event(X_G).
-:-instance(X_G,donate),event_beneficiary(X_G,B_G),-instance(B_G,tangible_entity),living_entity(B_G),event(X_G),universe(X_G),universe(B_G).
+:-instance(X_G,give),event_recipient(X_G,R_G),-instance(R_G,tangible_entity),universe(R_G),universe(X_G),entity(R_G),event(X_G).
+:-instance(X_G,donate),-defined_beneficiary(X_G),event(X_G),universe(X_G).
+:-instance(X_G,donate),event_beneficiary(X_G,B_G),-instance(B_G,tangible_entity),universe(X_G),universe(B_G),living_entity(B_G),event(X_G).
 :-instance(X_G,supply),event_object(X_G,O_G),-instance(O_G,tangible_entity),event(X_G),entity(O_G),universe(X_G),universe(O_G).
-:-instance(X_G,supply),event_recipient(X_G,R_G),-instance(R_G,tangible_entity),universe(X_G),entity(R_G),event(X_G),universe(R_G).
+:-instance(X_G,supply),event_recipient(X_G,R_G),-instance(R_G,tangible_entity),event(X_G),universe(X_G),entity(R_G),universe(R_G).
 :-instance(X_G,feed),-defined_recipient(X_G),universe(X_G),event(X_G).
-:-instance(X_G,feed),event_recipient(X_G,R_G),-instance(R_G,living_entity),universe(R_G),event(X_G),universe(X_G),entity(R_G).
-:-instance(X_G,feed),event_donor(X_G,D_G),-instance(D_G,living_entity),event(X_G),universe(X_G),entity(D_G),universe(D_G).
-event_agent(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_theme(A_G,B_G),entity(B_G),actions(A_G),event(A_G),universe(A_G).
-event_object(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_source(A_G,B_G),universe(A_G),spatial_entity(B_G),event(A_G),entity(B_G),actions(A_G).
-event_object(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_goal(A_G,B_G),entity(B_G),universe(A_G),actions(A_G),event(A_G).
-event_agent(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_theme(A_G,B_G),actions(A_G),entity(B_G),event(A_G),universe(A_G).
-event_object(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_source(A_G,B_G),universe(A_G),spatial_entity(B_G),entity(B_G),event(A_G),actions(A_G).
-event_object(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_goal(A_G,B_G),universe(A_G),entity(B_G),event(A_G),actions(A_G).
-event_agent(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_agent(A_G,B_G),actions(A_G),entity(B_G),universe(A_G),event(A_G).
-event_beneficiary(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_beneficiary(A_G,B_G),actions(A_G),event(A_G),living_entity(B_G),universe(A_G).
-event_donor(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_source(A_G,B_G),universe(A_G),entity(B_G),event(A_G),spatial_entity(B_G),actions(A_G).
-event_object(A_G,B_G):-instance(A_G,steal_10_5),actions_vn_theme(A_G,B_G),entity(B_G),event(A_G),actions(A_G),universe(A_G).
-event_agent(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_agent(A_G,B_G),universe(A_G),entity(B_G),actions(A_G),event(A_G).
-event_beneficiary(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_beneficiary(A_G,B_G),living_entity(B_G),universe(A_G),event(A_G),actions(A_G).
-event_donor(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_source(A_G,B_G),entity(B_G),universe(A_G),spatial_entity(B_G),actions(A_G),event(A_G).
-event_object(A_G,B_G):-instance(A_G,steal_10_5_1),actions_vn_theme(A_G,B_G),event(A_G),actions(A_G),entity(B_G),universe(A_G).
-event_donor(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_agent(A_G,B_G),entity(B_G),actions(A_G),universe(A_G),event(A_G).
-event_agent(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_agent(A_G,B_G),actions(A_G),event(A_G),entity(B_G),universe(A_G).
-event_object(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_goal(A_G,B_G),universe(A_G),event(A_G),entity(B_G),actions(A_G).
-event_object(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_theme(A_G,B_G),entity(B_G),actions(A_G),event(A_G),universe(A_G).
+:-instance(X_G,feed),event_recipient(X_G,R_G),-instance(R_G,living_entity),universe(X_G),event(X_G),universe(R_G),entity(R_G).
+:-instance(X_G,feed),event_donor(X_G,D_G),-instance(D_G,living_entity),entity(D_G),universe(D_G),event(X_G),universe(X_G).
+event_donor(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_agent(A_G,B_G),event(A_G),entity(B_G),universe(A_G),actions(A_G).
+event_agent(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_agent(A_G,B_G),event(A_G),universe(A_G),entity(B_G),actions(A_G).
+event_object(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_goal(A_G,B_G),event(A_G),actions(A_G),entity(B_G),universe(A_G).
+event_object(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_theme(A_G,B_G),entity(B_G),event(A_G),universe(A_G),actions(A_G).
 event_beneficiary(A_G,B_G):-instance(A_G,future_having_13_3),actions_vn_beneficiary(A_G,B_G),actions(A_G),living_entity(B_G),universe(A_G),event(A_G).
-event_donor(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_agent(A_G,B_G),event(A_G),entity(B_G),universe(A_G),actions(A_G).
-event_agent(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_agent(A_G,B_G),actions(A_G),entity(B_G),event(A_G),universe(A_G).
-event_object(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_goal(A_G,B_G),entity(B_G),actions(A_G),event(A_G),universe(A_G).
-event_object(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_theme(A_G,B_G),actions(A_G),entity(B_G),universe(A_G),event(A_G).
-event_beneficiary(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_beneficiary(A_G,B_G),universe(A_G),living_entity(B_G),event(A_G),actions(A_G).
-event_agent(X_G,Y_G):-instance(X_G,meander_47_7),actions_vn_theme(X_G,Y_G),event(X_G),entity(Y_G),universe(X_G),actions(X_G).
-event_destination(X_G,Y_G):-instance(X_G,meander_47_7),actions_vn_location(X_G,Y_G),spatial_entity(Y_G),event(X_G),actions(X_G),universe(X_G).
-event_agent(X_G,Y_G):-instance(X_G,meander_47_7_1),actions_vn_theme(X_G,Y_G),universe(X_G),entity(Y_G),actions(X_G),event(X_G).
-event_destination(X_G,Y_G):-instance(X_G,meander_47_7_1),actions_vn_location(X_G,Y_G),event(X_G),spatial_entity(Y_G),universe(X_G),actions(X_G).
+event_donor(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_agent(A_G,B_G),entity(B_G),event(A_G),universe(A_G),actions(A_G).
+event_agent(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_agent(A_G,B_G),entity(B_G),universe(A_G),event(A_G),actions(A_G).
+event_object(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_goal(A_G,B_G),event(A_G),entity(B_G),actions(A_G),universe(A_G).
+event_object(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_theme(A_G,B_G),event(A_G),universe(A_G),actions(A_G),entity(B_G).
+event_beneficiary(A_G,B_G):-instance(A_G,future_having_13_3_1),actions_vn_beneficiary(A_G,B_G),universe(A_G),actions(A_G),event(A_G),living_entity(B_G).
+event_agent(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_theme(A_G,B_G),event(A_G),universe(A_G),actions(A_G),entity(B_G).
+event_object(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_source(A_G,B_G),entity(B_G),universe(A_G),event(A_G),actions(A_G),spatial_entity(B_G).
+event_object(A_G,B_G):-instance(A_G,leave_51_2),actions_vn_goal(A_G,B_G),entity(B_G),universe(A_G),event(A_G),actions(A_G).
+event_agent(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_theme(A_G,B_G),entity(B_G),universe(A_G),event(A_G),actions(A_G).
+event_object(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_source(A_G,B_G),event(A_G),actions(A_G),spatial_entity(B_G),universe(A_G),entity(B_G).
+event_object(A_G,B_G):-instance(A_G,leave_51_2_1),actions_vn_goal(A_G,B_G),event(A_G),entity(B_G),actions(A_G),universe(A_G).
+event_agent(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_agent(A_G,B_G),event(A_G),actions(A_G),universe(A_G),entity(B_G).
+event_object(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_asset(A_G,B_G),universe(A_G),entity(B_G),event(A_G),actions(A_G),thing(B_G).
+event_donor(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_source(A_G,B_G),spatial_entity(B_G),actions(A_G),entity(B_G),event(A_G),universe(A_G).
+event_recipient(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_beneficiary(A_G,B_G),universe(A_G),living_entity(B_G),event(A_G),entity(B_G),actions(A_G).
+event_object(A_G,B_G):-instance(A_G,get_13_5_1),actions_vn_theme(A_G,B_G),entity(B_G),universe(A_G),actions(A_G),event(A_G).
+event_agent(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_agent(A_G,B_G),actions(A_G),entity(B_G),event(A_G),universe(A_G).
+event_object(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_asset(A_G,B_G),universe(A_G),thing(B_G),entity(B_G),event(A_G),actions(A_G).
+event_recipient(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_beneficiary(A_G,B_G),universe(A_G),living_entity(B_G),event(A_G),actions(A_G),entity(B_G).
+event_donor(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_source(A_G,B_G),actions(A_G),entity(B_G),universe(A_G),event(A_G),spatial_entity(B_G).
+event_object(A_G,B_G):-instance(A_G,get_13_5_1_1),actions_vn_theme(A_G,B_G),actions(A_G),event(A_G),entity(B_G),universe(A_G).
+event_agent(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_theme(X_G,Y_G),universe(X_G),entity(Y_G),event(X_G),actions(X_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_initial_location(X_G,Y_G),spatial_entity(Y_G),event(X_G),actions(X_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_destination(X_G,Y_G),universe(X_G),spatial_entity(Y_G),actions(X_G),event(X_G).
+event_path(X_G,Y_G):-instance(X_G,run_51_3_2),actions_vn_trajectory(X_G,Y_G),thing(Y_G),universe(X_G),event(X_G),actions(X_G),spatial_entity(Y_G).
+event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_theme(X_G,Y_G),entity(Y_G),universe(X_G),actions(X_G),event(X_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_initial_location(X_G,Y_G),event(X_G),actions(X_G),spatial_entity(Y_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_destination(X_G,Y_G),spatial_entity(Y_G),actions(X_G),universe(X_G),event(X_G).
+event_path(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_trajectory(X_G,Y_G),actions(X_G),event(X_G),thing(Y_G),spatial_entity(Y_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_result(X_G,Y_G),universe(X_G),event(X_G),thing(Y_G),spatial_entity(Y_G),actions(X_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2),actions_vn_source(X_G,Y_G),spatial_entity(Y_G),actions(X_G),event(X_G),universe(X_G).
+event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_theme(X_G,Y_G),actions(X_G),entity(Y_G),universe(X_G),event(X_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_initial_location(X_G,Y_G),event(X_G),spatial_entity(Y_G),universe(X_G),actions(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_destination(X_G,Y_G),actions(X_G),spatial_entity(Y_G),event(X_G),universe(X_G).
+event_path(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_trajectory(X_G,Y_G),spatial_entity(Y_G),actions(X_G),event(X_G),thing(Y_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_result(X_G,Y_G),actions(X_G),spatial_entity(Y_G),universe(X_G),event(X_G),thing(Y_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_2_1),actions_vn_source(X_G,Y_G),universe(X_G),spatial_entity(Y_G),event(X_G),actions(X_G).
+event_agent(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_theme(X_G,Y_G),event(X_G),entity(Y_G),universe(X_G),actions(X_G).
+event_origin(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_initial_location(X_G,Y_G),spatial_entity(Y_G),event(X_G),actions(X_G),universe(X_G).
+event_destination(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_destination(X_G,Y_G),universe(X_G),spatial_entity(Y_G),actions(X_G),event(X_G).
+event_path(X_G,Y_G):-instance(X_G,run_51_3_2_1),actions_vn_trajectory(X_G,Y_G),event(X_G),thing(Y_G),universe(X_G),actions(X_G),spatial_entity(Y_G).
 defined_agent(X_G):-event_agent(X_G,Y_G),entity(Y_G),event(X_G).
 defined_object(X_G):-event_object(X_G,Y_G),entity(Y_G),event(X_G).
 defined_base(X_G):-event_base(X_G,Y_G),thing(Y_G),event(X_G).
@@ -433,9 +433,10 @@ is_a(e35,run_51_3_2_1):-instance(r9,entity),instance(r7,spatial_entity).
 is_a(e36,leave_51_2):-instance(r3,entity),instance(r8,spatial_entity).
 is_a(e37,run_51_3_2_1):-instance(r9,entity),instance(r11,spatial_entity).
 is_a(e38,get_13_5_1):-instance(r3,entity),instance(r8,entity).
-is_a(e39,run_51_3_2_1):-instance(r3,entity),instance(r11,spatial_entity).
-is_a(e40,run_51_3_2_1):-instance(r6,entity),instance(r11,spatial_entity).
-is_a(e41,meander_47_7):-instance(r3,entity),instance(r10,spatial_entity).
+is_a(e39,future_having_13_3):-instance(r1,entity),instance(r5,entity).
+is_a(e40,run_51_3_2_1):-instance(r3,entity),instance(r11,spatial_entity).
+is_a(e41,run_51_3_2_1):-instance(r6,entity),instance(r11,spatial_entity).
+is_a(e42,meander_47_7):-instance(r3,entity),instance(r10,spatial_entity).
 actions_vn_theme(e1,r1):-instance(r1,entity).
 actions_vn_destination(e1,r2):-instance(r1,entity),instance(r2,spatial_entity).
 actions_vn_theme(e2,r3):-instance(r3,entity).
@@ -512,12 +513,14 @@ actions_vn_theme(e37,r9):-instance(r9,entity).
 actions_vn_destination(e37,r11):-instance(r9,entity),instance(r11,spatial_entity).
 actions_vn_agent(e38,r3):-instance(r3,entity).
 actions_vn_theme(e38,r8):-instance(r3,entity),instance(r8,entity).
-actions_vn_theme(e39,r3):-instance(r3,entity).
-actions_vn_destination(e39,r11):-instance(r3,entity),instance(r11,spatial_entity).
-actions_vn_theme(e40,r6):-instance(r6,entity).
-actions_vn_destination(e40,r11):-instance(r6,entity),instance(r11,spatial_entity).
-actions_vn_theme(e41,r3):-instance(r3,entity).
-actions_vn_location(e41,r10):-instance(r3,entity),instance(r10,spatial_entity).
+actions_vn_agent(e39,r1):-instance(r1,entity).
+actions_vn_theme(e39,r5):-instance(r1,entity),instance(r5,entity).
+actions_vn_theme(e40,r3):-instance(r3,entity).
+actions_vn_destination(e40,r11):-instance(r3,entity),instance(r11,spatial_entity).
+actions_vn_theme(e41,r6):-instance(r6,entity).
+actions_vn_destination(e41,r11):-instance(r6,entity),instance(r11,spatial_entity).
+actions_vn_theme(e42,r3):-instance(r3,entity).
+actions_vn_location(e42,r10):-instance(r3,entity),instance(r10,spatial_entity).
 is_beside(X0_G,X1_G,VAR_0):-is_beside(X0_G,X1_G,I_G),not  -is_beside(X0_G,X1_G,VAR_1),dom_is_beside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_2).
 -is_beside(X0_G,X1_G,VAR_0):--is_beside(X0_G,X1_G,I_G),not  is_beside(X0_G,X1_G,VAR_1),dom_is_beside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_2),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1).
 dom_is_beside(X0_G,X1_G,I_G):-is_beside(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
@@ -536,180 +539,180 @@ dom_is_accessible(X0_G,I_G):-is_accessible(X0_G,I_G),timeStep(I_G),entity(X0_G).
 dom_is_accessible(X0_G,I_G):--is_accessible(X0_G,I_G),timeStep(I_G),entity(X0_G).
 dom_is_accessible(X0_G,VAR_0):-dom_is_accessible(X0_G,I_G),not  -dom_is_accessible(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
 -dom_is_accessible(X0_G,VAR_0):--dom_is_accessible(X0_G,I_G),not  dom_is_accessible(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
-known_to(X0_G,X1_G,VAR_0):-known_to(X0_G,X1_G,I_G),not  -known_to(X0_G,X1_G,VAR_1),dom_known_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2),timeStep(I_G).
--known_to(X0_G,X1_G,VAR_0):--known_to(X0_G,X1_G,I_G),not  known_to(X0_G,X1_G,VAR_1),dom_known_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G).
-dom_known_to(X0_G,X1_G,I_G):-known_to(X0_G,X1_G,I_G),tangible_entity(X1_G),entity(X0_G),timeStep(I_G).
-dom_known_to(X0_G,X1_G,I_G):--known_to(X0_G,X1_G,I_G),tangible_entity(X1_G),timeStep(I_G),entity(X0_G).
-dom_known_to(X0_G,X1_G,VAR_0):-dom_known_to(X0_G,X1_G,I_G),not  -dom_known_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),tangible_entity(X1_G),timeStep(VAR_1),timeStep(I_G),entity(X0_G).
--dom_known_to(X0_G,X1_G,VAR_0):--dom_known_to(X0_G,X1_G,I_G),not  dom_known_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),timeStep(VAR_0),entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
-accessible_to(X0_G,X1_G,VAR_0):-accessible_to(X0_G,X1_G,I_G),not  -accessible_to(X0_G,X1_G,VAR_1),dom_accessible_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),entity(X0_G),thing(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
--accessible_to(X0_G,X1_G,VAR_0):--accessible_to(X0_G,X1_G,I_G),not  accessible_to(X0_G,X1_G,VAR_1),dom_accessible_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,thing(X1_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G),entity(X0_G),timeStep(VAR_0).
-dom_accessible_to(X0_G,X1_G,I_G):-accessible_to(X0_G,X1_G,I_G),thing(X1_G),timeStep(I_G),entity(X0_G).
-dom_accessible_to(X0_G,X1_G,I_G):--accessible_to(X0_G,X1_G,I_G),thing(X1_G),entity(X0_G),timeStep(I_G).
-dom_accessible_to(X0_G,X1_G,VAR_0):-dom_accessible_to(X0_G,X1_G,I_G),not  -dom_accessible_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,thing(X1_G),timeStep(VAR_0),entity(X0_G),timeStep(I_G),timeStep(VAR_1).
--dom_accessible_to(X0_G,X1_G,VAR_0):--dom_accessible_to(X0_G,X1_G,I_G),not  dom_accessible_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),thing(X1_G),entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
-abuts(X0_G,X1_G,VAR_0):-abuts(X0_G,X1_G,I_G),not  -abuts(X0_G,X1_G,VAR_1),dom_abuts(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),timeStep(VAR_0),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1).
--abuts(X0_G,X1_G,VAR_0):--abuts(X0_G,X1_G,I_G),not  abuts(X0_G,X1_G,VAR_1),dom_abuts(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
-dom_abuts(X0_G,X1_G,I_G):-abuts(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_abuts(X0_G,X1_G,I_G):--abuts(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
-dom_abuts(X0_G,X1_G,VAR_0):-dom_abuts(X0_G,X1_G,I_G),not  -dom_abuts(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G),spatial_entity(X1_G).
--dom_abuts(X0_G,X1_G,VAR_0):--dom_abuts(X0_G,X1_G,I_G),not  dom_abuts(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0).
-is_opposite(X0_G,X1_G,VAR_0):-is_opposite(X0_G,X1_G,I_G),not  -is_opposite(X0_G,X1_G,VAR_1),dom_is_opposite(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(VAR_1).
--is_opposite(X0_G,X1_G,VAR_0):--is_opposite(X0_G,X1_G,I_G),not  is_opposite(X0_G,X1_G,VAR_1),dom_is_opposite(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
-dom_is_opposite(X0_G,X1_G,I_G):-is_opposite(X0_G,X1_G,I_G),spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G).
+accessible_to(X0_G,X1_G,VAR_0):-accessible_to(X0_G,X1_G,I_G),not  -accessible_to(X0_G,X1_G,VAR_1),dom_accessible_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),thing(X1_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2),timeStep(I_G).
+-accessible_to(X0_G,X1_G,VAR_0):--accessible_to(X0_G,X1_G,I_G),not  accessible_to(X0_G,X1_G,VAR_1),dom_accessible_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,thing(X1_G),entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G).
+dom_accessible_to(X0_G,X1_G,I_G):-accessible_to(X0_G,X1_G,I_G),thing(X1_G),entity(X0_G),timeStep(I_G).
+dom_accessible_to(X0_G,X1_G,I_G):--accessible_to(X0_G,X1_G,I_G),thing(X1_G),timeStep(I_G),entity(X0_G).
+dom_accessible_to(X0_G,X1_G,VAR_0):-dom_accessible_to(X0_G,X1_G,I_G),not  -dom_accessible_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),thing(X1_G),timeStep(VAR_1),timeStep(I_G),entity(X0_G).
+-dom_accessible_to(X0_G,X1_G,VAR_0):--dom_accessible_to(X0_G,X1_G,I_G),not  dom_accessible_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),timeStep(VAR_0),entity(X0_G),timeStep(I_G),thing(X1_G).
+abuts(X0_G,X1_G,VAR_0):-abuts(X0_G,X1_G,I_G),not  -abuts(X0_G,X1_G,VAR_1),dom_abuts(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
+-abuts(X0_G,X1_G,VAR_0):--abuts(X0_G,X1_G,I_G),not  abuts(X0_G,X1_G,VAR_1),dom_abuts(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0).
+dom_abuts(X0_G,X1_G,I_G):-abuts(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
+dom_abuts(X0_G,X1_G,I_G):--abuts(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_abuts(X0_G,X1_G,VAR_0):-dom_abuts(X0_G,X1_G,I_G),not  -dom_abuts(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
+-dom_abuts(X0_G,X1_G,VAR_0):--dom_abuts(X0_G,X1_G,I_G),not  dom_abuts(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
+is_opposite(X0_G,X1_G,VAR_0):-is_opposite(X0_G,X1_G,I_G),not  -is_opposite(X0_G,X1_G,VAR_1),dom_is_opposite(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),timeStep(VAR_0),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1).
+-is_opposite(X0_G,X1_G,VAR_0):--is_opposite(X0_G,X1_G,I_G),not  is_opposite(X0_G,X1_G,VAR_1),dom_is_opposite(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
+dom_is_opposite(X0_G,X1_G,I_G):-is_opposite(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
 dom_is_opposite(X0_G,X1_G,I_G):--is_opposite(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
-dom_is_opposite(X0_G,X1_G,VAR_0):-dom_is_opposite(X0_G,X1_G,I_G),not  -dom_is_opposite(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_1),spatial_entity(X1_G),timeStep(VAR_0).
--dom_is_opposite(X0_G,X1_G,VAR_0):--dom_is_opposite(X0_G,X1_G,I_G),not  dom_is_opposite(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
-confined_to(X0_G,X1_G,VAR_0):-confined_to(X0_G,X1_G,I_G),not  -confined_to(X0_G,X1_G,VAR_1),dom_confined_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
--confined_to(X0_G,X1_G,VAR_0):--confined_to(X0_G,X1_G,I_G),not  confined_to(X0_G,X1_G,VAR_1),dom_confined_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
-dom_confined_to(X0_G,X1_G,I_G):-confined_to(X0_G,X1_G,I_G),tangible_entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
-dom_confined_to(X0_G,X1_G,I_G):--confined_to(X0_G,X1_G,I_G),tangible_entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
-dom_confined_to(X0_G,X1_G,VAR_0):-dom_confined_to(X0_G,X1_G,I_G),not  -dom_confined_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),tangible_entity(X1_G),timeStep(I_G).
--dom_confined_to(X0_G,X1_G,VAR_0):--dom_confined_to(X0_G,X1_G,I_G),not  dom_confined_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
-content(X0_G,X1_G,VAR_0):-content(X0_G,X1_G,I_G),not  -content(X0_G,X1_G,VAR_1),dom_content(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X1_G),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
--content(X0_G,X1_G,VAR_0):--content(X0_G,X1_G,I_G),not  content(X0_G,X1_G,VAR_1),dom_content(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(I_G),entity(X1_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(VAR_1).
-dom_content(X0_G,X1_G,I_G):-content(X0_G,X1_G,I_G),tangible_entity(X0_G),entity(X1_G),timeStep(I_G).
-dom_content(X0_G,X1_G,I_G):--content(X0_G,X1_G,I_G),tangible_entity(X0_G),entity(X1_G),timeStep(I_G).
-dom_content(X0_G,X1_G,VAR_0):-dom_content(X0_G,X1_G,I_G),not  -dom_content(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X1_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
--dom_content(X0_G,X1_G,VAR_0):--dom_content(X0_G,X1_G,I_G),not  dom_content(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G),tangible_entity(X0_G).
-has_part(X0_G,X1_G,VAR_0):-has_part(X0_G,X1_G,I_G),not  -has_part(X0_G,X1_G,VAR_1),dom_has_part(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X1_G),timeStep(VAR_2),timeStep(VAR_1),entity(X0_G),timeStep(I_G),timeStep(VAR_0).
--has_part(X0_G,X1_G,VAR_0):--has_part(X0_G,X1_G,I_G),not  has_part(X0_G,X1_G,VAR_1),dom_has_part(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X1_G),timeStep(I_G),timeStep(VAR_1),entity(X0_G),timeStep(VAR_0),timeStep(VAR_2).
-dom_has_part(X0_G,X1_G,I_G):-has_part(X0_G,X1_G,I_G),entity(X0_G),entity(X1_G),timeStep(I_G).
-dom_has_part(X0_G,X1_G,I_G):--has_part(X0_G,X1_G,I_G),entity(X1_G),entity(X0_G),timeStep(I_G).
-dom_has_part(X0_G,X1_G,VAR_0):-dom_has_part(X0_G,X1_G,I_G),not  -dom_has_part(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),entity(X1_G),entity(X0_G),timeStep(VAR_0),timeStep(I_G).
--dom_has_part(X0_G,X1_G,VAR_0):--dom_has_part(X0_G,X1_G,I_G),not  dom_has_part(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
-encloses(X0_G,X1_G,VAR_0):-encloses(X0_G,X1_G,I_G),not  -encloses(X0_G,X1_G,VAR_1),dom_encloses(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
--encloses(X0_G,X1_G,VAR_0):--encloses(X0_G,X1_G,I_G),not  encloses(X0_G,X1_G,VAR_1),dom_encloses(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_0).
-dom_encloses(X0_G,X1_G,I_G):-encloses(X0_G,X1_G,I_G),spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G).
-dom_encloses(X0_G,X1_G,I_G):--encloses(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
-dom_encloses(X0_G,X1_G,VAR_0):-dom_encloses(X0_G,X1_G,I_G),not  -dom_encloses(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0),spatial_entity(X0_G),timeStep(I_G).
--dom_encloses(X0_G,X1_G,VAR_0):--dom_encloses(X0_G,X1_G,I_G),not  dom_encloses(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_1).
-is_inside(X0_G,X1_G,VAR_0):-is_inside(X0_G,X1_G,I_G),not  -is_inside(X0_G,X1_G,VAR_1),dom_is_inside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
--is_inside(X0_G,X1_G,VAR_0):--is_inside(X0_G,X1_G,I_G),not  is_inside(X0_G,X1_G,VAR_1),dom_is_inside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
-dom_is_inside(X0_G,X1_G,I_G):-is_inside(X0_G,X1_G,I_G),spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G).
-dom_is_inside(X0_G,X1_G,I_G):--is_inside(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_is_inside(X0_G,X1_G,VAR_0):-dom_is_inside(X0_G,X1_G,I_G),not  -dom_is_inside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1).
--dom_is_inside(X0_G,X1_G,VAR_0):--dom_is_inside(X0_G,X1_G,I_G),not  dom_is_inside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
-is_above(X0_G,X1_G,VAR_0):-is_above(X0_G,X1_G,I_G),not  -is_above(X0_G,X1_G,VAR_1),dom_is_above(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_2),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0).
--is_above(X0_G,X1_G,VAR_0):--is_above(X0_G,X1_G,I_G),not  is_above(X0_G,X1_G,VAR_1),dom_is_above(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_2).
-dom_is_above(X0_G,X1_G,I_G):-is_above(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
-dom_is_above(X0_G,X1_G,I_G):--is_above(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_above(X0_G,X1_G,VAR_0):-dom_is_above(X0_G,X1_G,I_G),not  -dom_is_above(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
--dom_is_above(X0_G,X1_G,VAR_0):--dom_is_above(X0_G,X1_G,I_G),not  dom_is_above(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
-location(X0_G,X1_G,VAR_0):-location(X0_G,X1_G,I_G),not  -location(X0_G,X1_G,VAR_1),dom_location(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_2).
--location(X0_G,X1_G,VAR_0):--location(X0_G,X1_G,I_G),not  location(X0_G,X1_G,VAR_1),dom_location(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),spatial_entity(X1_G),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2).
-dom_location(X0_G,X1_G,I_G):-location(X0_G,X1_G,I_G),spatial_entity(X1_G),tangible_entity(X0_G),timeStep(I_G).
+dom_is_opposite(X0_G,X1_G,VAR_0):-dom_is_opposite(X0_G,X1_G,I_G),not  -dom_is_opposite(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G),spatial_entity(X1_G).
+-dom_is_opposite(X0_G,X1_G,VAR_0):--dom_is_opposite(X0_G,X1_G,I_G),not  dom_is_opposite(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0).
+confined_to(X0_G,X1_G,VAR_0):-confined_to(X0_G,X1_G,I_G),not  -confined_to(X0_G,X1_G,VAR_1),dom_confined_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(I_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(VAR_1).
+-confined_to(X0_G,X1_G,VAR_0):--confined_to(X0_G,X1_G,I_G),not  confined_to(X0_G,X1_G,VAR_1),dom_confined_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
+dom_confined_to(X0_G,X1_G,I_G):-confined_to(X0_G,X1_G,I_G),tangible_entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
+dom_confined_to(X0_G,X1_G,I_G):--confined_to(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X0_G),tangible_entity(X1_G).
+dom_confined_to(X0_G,X1_G,VAR_0):-dom_confined_to(X0_G,X1_G,I_G),not  -dom_confined_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_1),tangible_entity(X1_G),timeStep(VAR_0).
+-dom_confined_to(X0_G,X1_G,VAR_0):--dom_confined_to(X0_G,X1_G,I_G),not  dom_confined_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+content(X0_G,X1_G,VAR_0):-content(X0_G,X1_G,I_G),not  -content(X0_G,X1_G,VAR_1),dom_content(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
+-content(X0_G,X1_G,VAR_0):--content(X0_G,X1_G,I_G),not  content(X0_G,X1_G,VAR_1),dom_content(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
+dom_content(X0_G,X1_G,I_G):-content(X0_G,X1_G,I_G),entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
+dom_content(X0_G,X1_G,I_G):--content(X0_G,X1_G,I_G),tangible_entity(X0_G),timeStep(I_G),entity(X1_G).
+dom_content(X0_G,X1_G,VAR_0):-dom_content(X0_G,X1_G,I_G),not  -dom_content(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),entity(X1_G),timeStep(I_G).
+-dom_content(X0_G,X1_G,VAR_0):--dom_content(X0_G,X1_G,I_G),not  dom_content(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X1_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+encloses(X0_G,X1_G,VAR_0):-encloses(X0_G,X1_G,I_G),not  -encloses(X0_G,X1_G,VAR_1),dom_encloses(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
+-encloses(X0_G,X1_G,VAR_0):--encloses(X0_G,X1_G,I_G),not  encloses(X0_G,X1_G,VAR_1),dom_encloses(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(VAR_1).
+dom_encloses(X0_G,X1_G,I_G):-encloses(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_encloses(X0_G,X1_G,I_G):--encloses(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_encloses(X0_G,X1_G,VAR_0):-dom_encloses(X0_G,X1_G,I_G),not  -dom_encloses(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+-dom_encloses(X0_G,X1_G,VAR_0):--dom_encloses(X0_G,X1_G,I_G),not  dom_encloses(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G).
+is_inside(X0_G,X1_G,VAR_0):-is_inside(X0_G,X1_G,I_G),not  -is_inside(X0_G,X1_G,VAR_1),dom_is_inside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_1),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
+-is_inside(X0_G,X1_G,VAR_0):--is_inside(X0_G,X1_G,I_G),not  is_inside(X0_G,X1_G,VAR_1),dom_is_inside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_2).
+dom_is_inside(X0_G,X1_G,I_G):-is_inside(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_is_inside(X0_G,X1_G,I_G):--is_inside(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_is_inside(X0_G,X1_G,VAR_0):-dom_is_inside(X0_G,X1_G,I_G),not  -dom_is_inside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G).
+-dom_is_inside(X0_G,X1_G,VAR_0):--dom_is_inside(X0_G,X1_G,I_G),not  dom_is_inside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+is_touching(X0_G,X1_G,VAR_0):-is_touching(X0_G,X1_G,I_G),not  -is_touching(X0_G,X1_G,VAR_1),dom_is_touching(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
+-is_touching(X0_G,X1_G,VAR_0):--is_touching(X0_G,X1_G,I_G),not  is_touching(X0_G,X1_G,VAR_1),dom_is_touching(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_0).
+dom_is_touching(X0_G,X1_G,I_G):-is_touching(X0_G,X1_G,I_G),tangible_entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
+dom_is_touching(X0_G,X1_G,I_G):--is_touching(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G).
+dom_is_touching(X0_G,X1_G,VAR_0):-dom_is_touching(X0_G,X1_G,I_G),not  -dom_is_touching(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0),tangible_entity(X0_G),timeStep(I_G).
+-dom_is_touching(X0_G,X1_G,VAR_0):--dom_is_touching(X0_G,X1_G,I_G),not  dom_is_touching(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X1_G),timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_1).
+is_above(X0_G,X1_G,VAR_0):-is_above(X0_G,X1_G,I_G),not  -is_above(X0_G,X1_G,VAR_1),dom_is_above(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+-is_above(X0_G,X1_G,VAR_0):--is_above(X0_G,X1_G,I_G),not  is_above(X0_G,X1_G,VAR_1),dom_is_above(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+dom_is_above(X0_G,X1_G,I_G):-is_above(X0_G,X1_G,I_G),spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G).
+dom_is_above(X0_G,X1_G,I_G):--is_above(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_is_above(X0_G,X1_G,VAR_0):-dom_is_above(X0_G,X1_G,I_G),not  -dom_is_above(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_above(X0_G,X1_G,VAR_0):--dom_is_above(X0_G,X1_G,I_G),not  dom_is_above(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+location(X0_G,X1_G,VAR_0):-location(X0_G,X1_G,I_G),not  -location(X0_G,X1_G,VAR_1),dom_location(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_2),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0).
+-location(X0_G,X1_G,VAR_0):--location(X0_G,X1_G,I_G),not  location(X0_G,X1_G,VAR_1),dom_location(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_2).
+dom_location(X0_G,X1_G,I_G):-location(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),tangible_entity(X0_G).
 dom_location(X0_G,X1_G,I_G):--location(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
-dom_location(X0_G,X1_G,VAR_0):-dom_location(X0_G,X1_G,I_G),not  -dom_location(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),tangible_entity(X0_G),timeStep(VAR_0),spatial_entity(X1_G),timeStep(I_G).
--dom_location(X0_G,X1_G,VAR_0):--dom_location(X0_G,X1_G,I_G),not  dom_location(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1).
-is_blocked(X0_G,VAR_0):-is_blocked(X0_G,I_G),not  -is_blocked(X0_G,VAR_1),dom_is_blocked(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2).
--is_blocked(X0_G,VAR_0):--is_blocked(X0_G,I_G),not  is_blocked(X0_G,VAR_1),dom_is_blocked(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_2).
+dom_location(X0_G,X1_G,VAR_0):-dom_location(X0_G,X1_G,I_G),not  -dom_location(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+-dom_location(X0_G,X1_G,VAR_0):--dom_location(X0_G,X1_G,I_G),not  dom_location(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),spatial_entity(X1_G),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
+is_blocked(X0_G,VAR_0):-is_blocked(X0_G,I_G),not  -is_blocked(X0_G,VAR_1),dom_is_blocked(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
+-is_blocked(X0_G,VAR_0):--is_blocked(X0_G,I_G),not  is_blocked(X0_G,VAR_1),dom_is_blocked(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
 dom_is_blocked(X0_G,I_G):-is_blocked(X0_G,I_G),timeStep(I_G),spatial_entity(X0_G).
 dom_is_blocked(X0_G,I_G):--is_blocked(X0_G,I_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_blocked(X0_G,VAR_0):-dom_is_blocked(X0_G,I_G),not  -dom_is_blocked(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),spatial_entity(X0_G).
--dom_is_blocked(X0_G,VAR_0):--dom_is_blocked(X0_G,I_G),not  dom_is_blocked(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
-is_over(X0_G,X1_G,VAR_0):-is_over(X0_G,X1_G,I_G),not  -is_over(X0_G,X1_G,VAR_1),dom_is_over(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
--is_over(X0_G,X1_G,VAR_0):--is_over(X0_G,X1_G,I_G),not  is_over(X0_G,X1_G,VAR_1),dom_is_over(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G).
+dom_is_blocked(X0_G,VAR_0):-dom_is_blocked(X0_G,I_G),not  -dom_is_blocked(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+-dom_is_blocked(X0_G,VAR_0):--dom_is_blocked(X0_G,I_G),not  dom_is_blocked(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
+is_over(X0_G,X1_G,VAR_0):-is_over(X0_G,X1_G,I_G),not  -is_over(X0_G,X1_G,VAR_1),dom_is_over(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),spatial_entity(X0_G),timeStep(VAR_0),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_2).
+-is_over(X0_G,X1_G,VAR_0):--is_over(X0_G,X1_G,I_G),not  is_over(X0_G,X1_G,VAR_1),dom_is_over(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_2),timeStep(I_G),timeStep(VAR_1).
 dom_is_over(X0_G,X1_G,I_G):-is_over(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_is_over(X0_G,X1_G,I_G):--is_over(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_is_over(X0_G,X1_G,VAR_0):-dom_is_over(X0_G,X1_G,I_G),not  -dom_is_over(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_1).
--dom_is_over(X0_G,X1_G,VAR_0):--dom_is_over(X0_G,X1_G,I_G),not  dom_is_over(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
-contained_in(X0_G,X1_G,VAR_0):-contained_in(X0_G,X1_G,I_G),not  -contained_in(X0_G,X1_G,VAR_1),dom_contained_in(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_2),timeStep(I_G),tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0).
--contained_in(X0_G,X1_G,VAR_0):--contained_in(X0_G,X1_G,I_G),not  contained_in(X0_G,X1_G,VAR_1),dom_contained_in(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),tangible_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0),tangible_entity(X0_G),timeStep(I_G).
+dom_is_over(X0_G,X1_G,I_G):--is_over(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
+dom_is_over(X0_G,X1_G,VAR_0):-dom_is_over(X0_G,X1_G,I_G),not  -dom_is_over(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+-dom_is_over(X0_G,X1_G,VAR_0):--dom_is_over(X0_G,X1_G,I_G),not  dom_is_over(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G).
+contained_in(X0_G,X1_G,VAR_0):-contained_in(X0_G,X1_G,I_G),not  -contained_in(X0_G,X1_G,VAR_1),dom_contained_in(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),timeStep(I_G),timeStep(VAR_2),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
+-contained_in(X0_G,X1_G,VAR_0):--contained_in(X0_G,X1_G,I_G),not  contained_in(X0_G,X1_G,VAR_1),dom_contained_in(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G).
 dom_contained_in(X0_G,X1_G,I_G):-contained_in(X0_G,X1_G,I_G),tangible_entity(X0_G),tangible_entity(X1_G),timeStep(I_G).
-dom_contained_in(X0_G,X1_G,I_G):--contained_in(X0_G,X1_G,I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(I_G).
-dom_contained_in(X0_G,X1_G,VAR_0):-dom_contained_in(X0_G,X1_G,I_G),not  -dom_contained_in(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
--dom_contained_in(X0_G,X1_G,VAR_0):--dom_contained_in(X0_G,X1_G,I_G),not  dom_contained_in(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),tangible_entity(X1_G).
-is_between(X0_G,X1_G,VAR_0):-is_between(X0_G,X1_G,I_G),not  -is_between(X0_G,X1_G,VAR_1),dom_is_between(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0).
--is_between(X0_G,X1_G,VAR_0):--is_between(X0_G,X1_G,I_G),not  is_between(X0_G,X1_G,VAR_1),dom_is_between(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_2).
-dom_is_between(X0_G,X1_G,I_G):-is_between(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_contained_in(X0_G,X1_G,I_G):--contained_in(X0_G,X1_G,I_G),tangible_entity(X0_G),tangible_entity(X1_G),timeStep(I_G).
+dom_contained_in(X0_G,X1_G,VAR_0):-dom_contained_in(X0_G,X1_G,I_G),not  -dom_contained_in(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),timeStep(VAR_0),timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_1).
+-dom_contained_in(X0_G,X1_G,VAR_0):--dom_contained_in(X0_G,X1_G,I_G),not  dom_contained_in(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+is_between(X0_G,X1_G,VAR_0):-is_between(X0_G,X1_G,I_G),not  -is_between(X0_G,X1_G,VAR_1),dom_is_between(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_2),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0).
+-is_between(X0_G,X1_G,VAR_0):--is_between(X0_G,X1_G,I_G),not  is_between(X0_G,X1_G,VAR_1),dom_is_between(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0),spatial_entity(X0_G),timeStep(I_G).
+dom_is_between(X0_G,X1_G,I_G):-is_between(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
 dom_is_between(X0_G,X1_G,I_G):--is_between(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
-dom_is_between(X0_G,X1_G,VAR_0):-dom_is_between(X0_G,X1_G,I_G),not  -dom_is_between(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
--dom_is_between(X0_G,X1_G,VAR_0):--dom_is_between(X0_G,X1_G,I_G),not  dom_is_between(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
-is_in_front_of(X0_G,X1_G,VAR_0):-is_in_front_of(X0_G,X1_G,I_G),not  -is_in_front_of(X0_G,X1_G,VAR_1),dom_is_in_front_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_1).
--is_in_front_of(X0_G,X1_G,VAR_0):--is_in_front_of(X0_G,X1_G,I_G),not  is_in_front_of(X0_G,X1_G,VAR_1),dom_is_in_front_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_2),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
-dom_is_in_front_of(X0_G,X1_G,I_G):-is_in_front_of(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_in_front_of(X0_G,X1_G,I_G):--is_in_front_of(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_in_front_of(X0_G,X1_G,VAR_0):-dom_is_in_front_of(X0_G,X1_G,I_G),not  -dom_is_in_front_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_1).
--dom_is_in_front_of(X0_G,X1_G,VAR_0):--dom_is_in_front_of(X0_G,X1_G,I_G),not  dom_is_in_front_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
-held_by(X0_G,X1_G,VAR_0):-held_by(X0_G,X1_G,I_G),not  -held_by(X0_G,X1_G,VAR_1),dom_held_by(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
--held_by(X0_G,X1_G,VAR_0):--held_by(X0_G,X1_G,I_G),not  held_by(X0_G,X1_G,VAR_1),dom_held_by(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_2).
-dom_held_by(X0_G,X1_G,I_G):-held_by(X0_G,X1_G,I_G),tangible_entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
-dom_held_by(X0_G,X1_G,I_G):--held_by(X0_G,X1_G,I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(I_G).
-dom_held_by(X0_G,X1_G,VAR_0):-dom_held_by(X0_G,X1_G,I_G),not  -dom_held_by(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),timeStep(VAR_0),timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_1).
--dom_held_by(X0_G,X1_G,VAR_0):--dom_held_by(X0_G,X1_G,I_G),not  dom_held_by(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),tangible_entity(X1_G),timeStep(VAR_0),timeStep(I_G).
-is_held(X0_G,VAR_0):-is_held(X0_G,I_G),not  -is_held(X0_G,VAR_1),dom_is_held(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(VAR_0).
--is_held(X0_G,VAR_0):--is_held(X0_G,I_G),not  is_held(X0_G,VAR_1),dom_is_held(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G).
+dom_is_between(X0_G,X1_G,VAR_0):-dom_is_between(X0_G,X1_G,I_G),not  -dom_is_between(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+-dom_is_between(X0_G,X1_G,VAR_0):--dom_is_between(X0_G,X1_G,I_G),not  dom_is_between(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),spatial_entity(X1_G).
+is_in_front_of(X0_G,X1_G,VAR_0):-is_in_front_of(X0_G,X1_G,I_G),not  -is_in_front_of(X0_G,X1_G,VAR_1),dom_is_in_front_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0).
+-is_in_front_of(X0_G,X1_G,VAR_0):--is_in_front_of(X0_G,X1_G,I_G),not  is_in_front_of(X0_G,X1_G,VAR_1),dom_is_in_front_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_2).
+dom_is_in_front_of(X0_G,X1_G,I_G):-is_in_front_of(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_is_in_front_of(X0_G,X1_G,I_G):--is_in_front_of(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_is_in_front_of(X0_G,X1_G,VAR_0):-dom_is_in_front_of(X0_G,X1_G,I_G),not  -dom_is_in_front_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_in_front_of(X0_G,X1_G,VAR_0):--dom_is_in_front_of(X0_G,X1_G,I_G),not  dom_is_in_front_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
+held_by(X0_G,X1_G,VAR_0):-held_by(X0_G,X1_G,I_G),not  -held_by(X0_G,X1_G,VAR_1),dom_held_by(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),timeStep(VAR_0),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_1).
+-held_by(X0_G,X1_G,VAR_0):--held_by(X0_G,X1_G,I_G),not  held_by(X0_G,X1_G,VAR_1),dom_held_by(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),timeStep(VAR_2),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
+dom_held_by(X0_G,X1_G,I_G):-held_by(X0_G,X1_G,I_G),tangible_entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
+dom_held_by(X0_G,X1_G,I_G):--held_by(X0_G,X1_G,I_G),tangible_entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
+dom_held_by(X0_G,X1_G,VAR_0):-dom_held_by(X0_G,X1_G,I_G),not  -dom_held_by(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X1_G),timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_1).
+-dom_held_by(X0_G,X1_G,VAR_0):--dom_held_by(X0_G,X1_G,I_G),not  dom_held_by(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+is_held(X0_G,VAR_0):-is_held(X0_G,I_G),not  -is_held(X0_G,VAR_1),dom_is_held(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+-is_held(X0_G,VAR_0):--is_held(X0_G,I_G),not  is_held(X0_G,VAR_1),dom_is_held(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2).
 dom_is_held(X0_G,I_G):-is_held(X0_G,I_G),tangible_entity(X0_G),timeStep(I_G).
-dom_is_held(X0_G,I_G):--is_held(X0_G,I_G),timeStep(I_G),tangible_entity(X0_G).
-dom_is_held(X0_G,VAR_0):-dom_is_held(X0_G,I_G),not  -dom_is_held(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),timeStep(VAR_1),tangible_entity(X0_G),timeStep(I_G).
--dom_is_held(X0_G,VAR_0):--dom_is_held(X0_G,I_G),not  dom_is_held(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
-is_touching(X0_G,X1_G,VAR_0):-is_touching(X0_G,X1_G,I_G),not  -is_touching(X0_G,X1_G,VAR_1),dom_is_touching(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),tangible_entity(X1_G),timeStep(VAR_2),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
--is_touching(X0_G,X1_G,VAR_0):--is_touching(X0_G,X1_G,I_G),not  is_touching(X0_G,X1_G,VAR_1),dom_is_touching(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
-dom_is_touching(X0_G,X1_G,I_G):-is_touching(X0_G,X1_G,I_G),tangible_entity(X1_G),timeStep(I_G),tangible_entity(X0_G).
-dom_is_touching(X0_G,X1_G,I_G):--is_touching(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X0_G),tangible_entity(X1_G).
-dom_is_touching(X0_G,X1_G,VAR_0):-dom_is_touching(X0_G,X1_G,I_G),not  -dom_is_touching(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
--dom_is_touching(X0_G,X1_G,VAR_0):--dom_is_touching(X0_G,X1_G,I_G),not  dom_is_touching(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0),tangible_entity(X0_G),timeStep(I_G).
-is_under(X0_G,X1_G,VAR_0):-is_under(X0_G,X1_G,I_G),not  -is_under(X0_G,X1_G,VAR_1),dom_is_under(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_2),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1).
--is_under(X0_G,X1_G,VAR_0):--is_under(X0_G,X1_G,I_G),not  is_under(X0_G,X1_G,VAR_1),dom_is_under(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(VAR_1),timeStep(I_G).
-dom_is_under(X0_G,X1_G,I_G):-is_under(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
+dom_is_held(X0_G,I_G):--is_held(X0_G,I_G),tangible_entity(X0_G),timeStep(I_G).
+dom_is_held(X0_G,VAR_0):-dom_is_held(X0_G,I_G),not  -dom_is_held(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_held(X0_G,VAR_0):--dom_is_held(X0_G,I_G),not  dom_is_held(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
+has_part(X0_G,X1_G,VAR_0):-has_part(X0_G,X1_G,I_G),not  -has_part(X0_G,X1_G,VAR_1),dom_has_part(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X1_G),timeStep(VAR_0),timeStep(I_G),entity(X0_G),timeStep(VAR_2),timeStep(VAR_1).
+-has_part(X0_G,X1_G,VAR_0):--has_part(X0_G,X1_G,I_G),not  has_part(X0_G,X1_G,VAR_1),dom_has_part(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),entity(X1_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2).
+dom_has_part(X0_G,X1_G,I_G):-has_part(X0_G,X1_G,I_G),entity(X0_G),entity(X1_G),timeStep(I_G).
+dom_has_part(X0_G,X1_G,I_G):--has_part(X0_G,X1_G,I_G),entity(X0_G),entity(X1_G),timeStep(I_G).
+dom_has_part(X0_G,X1_G,VAR_0):-dom_has_part(X0_G,X1_G,I_G),not  -dom_has_part(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X1_G),timeStep(I_G),entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
+-dom_has_part(X0_G,X1_G,VAR_0):--dom_has_part(X0_G,X1_G,I_G),not  dom_has_part(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),entity(X1_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+is_known(X0_G,VAR_0):-is_known(X0_G,I_G),not  -is_known(X0_G,VAR_1),dom_is_known(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_1).
+-is_known(X0_G,VAR_0):--is_known(X0_G,I_G),not  is_known(X0_G,VAR_1),dom_is_known(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G),entity(X0_G),timeStep(VAR_0).
+dom_is_known(X0_G,I_G):-is_known(X0_G,I_G),timeStep(I_G),entity(X0_G).
+dom_is_known(X0_G,I_G):--is_known(X0_G,I_G),entity(X0_G),timeStep(I_G).
+dom_is_known(X0_G,VAR_0):-dom_is_known(X0_G,I_G),not  -dom_is_known(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),entity(X0_G),timeStep(I_G),timeStep(VAR_1).
+-dom_is_known(X0_G,VAR_0):--dom_is_known(X0_G,I_G),not  dom_is_known(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),entity(X0_G),timeStep(VAR_0),timeStep(I_G).
+known_to(X0_G,X1_G,VAR_0):-known_to(X0_G,X1_G,I_G),not  -known_to(X0_G,X1_G,VAR_1),dom_known_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),entity(X0_G),tangible_entity(X1_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
+-known_to(X0_G,X1_G,VAR_0):--known_to(X0_G,X1_G,I_G),not  known_to(X0_G,X1_G,VAR_1),dom_known_to(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X1_G),timeStep(I_G),entity(X0_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(VAR_1).
+dom_known_to(X0_G,X1_G,I_G):-known_to(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X1_G),entity(X0_G).
+dom_known_to(X0_G,X1_G,I_G):--known_to(X0_G,X1_G,I_G),entity(X0_G),timeStep(I_G),tangible_entity(X1_G).
+dom_known_to(X0_G,X1_G,VAR_0):-dom_known_to(X0_G,X1_G,I_G),not  -dom_known_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_known_to(X0_G,X1_G,VAR_0):--dom_known_to(X0_G,X1_G,I_G),not  dom_known_to(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),entity(X0_G),timeStep(I_G),tangible_entity(X1_G),timeStep(VAR_1).
+is_under(X0_G,X1_G,VAR_0):-is_under(X0_G,X1_G,I_G),not  -is_under(X0_G,X1_G,VAR_1),dom_is_under(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),spatial_entity(X1_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
+-is_under(X0_G,X1_G,VAR_0):--is_under(X0_G,X1_G,I_G),not  is_under(X0_G,X1_G,VAR_1),dom_is_under(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),timeStep(VAR_2),spatial_entity(X0_G),timeStep(VAR_1),spatial_entity(X1_G),timeStep(I_G).
+dom_is_under(X0_G,X1_G,I_G):-is_under(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
 dom_is_under(X0_G,X1_G,I_G):--is_under(X0_G,X1_G,I_G),spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G).
-dom_is_under(X0_G,X1_G,VAR_0):-dom_is_under(X0_G,X1_G,I_G),not  -dom_is_under(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
--dom_is_under(X0_G,X1_G,VAR_0):--dom_is_under(X0_G,X1_G,I_G),not  dom_is_under(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1).
-shut_out_of(X0_G,X1_G,VAR_0):-shut_out_of(X0_G,X1_G,I_G),not  -shut_out_of(X0_G,X1_G,VAR_1),dom_shut_out_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_0),tangible_entity(X1_G),timeStep(VAR_2),timeStep(VAR_1).
--shut_out_of(X0_G,X1_G,VAR_0):--shut_out_of(X0_G,X1_G,I_G),not  shut_out_of(X0_G,X1_G,VAR_1),dom_shut_out_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_2),tangible_entity(X1_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
-dom_shut_out_of(X0_G,X1_G,I_G):-shut_out_of(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G).
-dom_shut_out_of(X0_G,X1_G,I_G):--shut_out_of(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G).
-dom_shut_out_of(X0_G,X1_G,VAR_0):-dom_shut_out_of(X0_G,X1_G,I_G),not  -dom_shut_out_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
--dom_shut_out_of(X0_G,X1_G,VAR_0):--dom_shut_out_of(X0_G,X1_G,I_G),not  dom_shut_out_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
-is_at(X0_G,X1_G,VAR_0):-is_at(X0_G,X1_G,I_G),not  -is_at(X0_G,X1_G,VAR_1),dom_is_at(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
--is_at(X0_G,X1_G,VAR_0):--is_at(X0_G,X1_G,I_G),not  is_at(X0_G,X1_G,VAR_1),dom_is_at(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(VAR_1).
-dom_is_at(X0_G,X1_G,I_G):-is_at(X0_G,X1_G,I_G),spatial_entity(X1_G),entity(X0_G),timeStep(I_G).
-dom_is_at(X0_G,X1_G,I_G):--is_at(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),entity(X0_G).
-dom_is_at(X0_G,X1_G,VAR_0):-dom_is_at(X0_G,X1_G,I_G),not  -dom_is_at(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
--dom_is_at(X0_G,X1_G,VAR_0):--dom_is_at(X0_G,X1_G,I_G),not  dom_is_at(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),timeStep(VAR_0),entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-is_behind(X0_G,X1_G,VAR_0):-is_behind(X0_G,X1_G,I_G),not  -is_behind(X0_G,X1_G,VAR_1),dom_is_behind(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
--is_behind(X0_G,X1_G,VAR_0):--is_behind(X0_G,X1_G,I_G),not  is_behind(X0_G,X1_G,VAR_1),dom_is_behind(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),timeStep(VAR_2),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G).
+dom_is_under(X0_G,X1_G,VAR_0):-dom_is_under(X0_G,X1_G,I_G),not  -dom_is_under(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_under(X0_G,X1_G,VAR_0):--dom_is_under(X0_G,X1_G,I_G),not  dom_is_under(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_1).
+shut_out_of(X0_G,X1_G,VAR_0):-shut_out_of(X0_G,X1_G,I_G),not  -shut_out_of(X0_G,X1_G,VAR_1),dom_shut_out_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(VAR_0).
+-shut_out_of(X0_G,X1_G,VAR_0):--shut_out_of(X0_G,X1_G,I_G),not  shut_out_of(X0_G,X1_G,VAR_1),dom_shut_out_of(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),tangible_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_1).
+dom_shut_out_of(X0_G,X1_G,I_G):-shut_out_of(X0_G,X1_G,I_G),timeStep(I_G),tangible_entity(X0_G),tangible_entity(X1_G).
+dom_shut_out_of(X0_G,X1_G,I_G):--shut_out_of(X0_G,X1_G,I_G),tangible_entity(X1_G),tangible_entity(X0_G),timeStep(I_G).
+dom_shut_out_of(X0_G,X1_G,VAR_0):-dom_shut_out_of(X0_G,X1_G,I_G),not  -dom_shut_out_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
+-dom_shut_out_of(X0_G,X1_G,VAR_0):--dom_shut_out_of(X0_G,X1_G,I_G),not  dom_shut_out_of(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X1_G),tangible_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
+is_at(X0_G,X1_G,VAR_0):-is_at(X0_G,X1_G,I_G),not  -is_at(X0_G,X1_G,VAR_1),dom_is_at(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
+-is_at(X0_G,X1_G,VAR_0):--is_at(X0_G,X1_G,I_G),not  is_at(X0_G,X1_G,VAR_1),dom_is_at(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),spatial_entity(X1_G),entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2).
+dom_is_at(X0_G,X1_G,I_G):-is_at(X0_G,X1_G,I_G),entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_is_at(X0_G,X1_G,I_G):--is_at(X0_G,X1_G,I_G),entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_is_at(X0_G,X1_G,VAR_0):-dom_is_at(X0_G,X1_G,I_G),not  -dom_is_at(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),spatial_entity(X1_G),timeStep(I_G),entity(X0_G),timeStep(VAR_1).
+-dom_is_at(X0_G,X1_G,VAR_0):--dom_is_at(X0_G,X1_G,I_G),not  dom_is_at(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+is_behind(X0_G,X1_G,VAR_0):-is_behind(X0_G,X1_G,I_G),not  -is_behind(X0_G,X1_G,VAR_1),dom_is_behind(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_2),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
+-is_behind(X0_G,X1_G,VAR_0):--is_behind(X0_G,X1_G,I_G),not  is_behind(X0_G,X1_G,VAR_1),dom_is_behind(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(VAR_1).
 dom_is_behind(X0_G,X1_G,I_G):-is_behind(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_behind(X0_G,X1_G,I_G):--is_behind(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
-dom_is_behind(X0_G,X1_G,VAR_0):-dom_is_behind(X0_G,X1_G,I_G),not  -dom_is_behind(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
--dom_is_behind(X0_G,X1_G,VAR_0):--dom_is_behind(X0_G,X1_G,I_G),not  dom_is_behind(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_1),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G).
-is_below(X0_G,X1_G,VAR_0):-is_below(X0_G,X1_G,I_G),not  -is_below(X0_G,X1_G,VAR_1),dom_is_below(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_2).
--is_below(X0_G,X1_G,VAR_0):--is_below(X0_G,X1_G,I_G),not  is_below(X0_G,X1_G,VAR_1),dom_is_below(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),timeStep(VAR_2),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
+dom_is_behind(X0_G,X1_G,I_G):--is_behind(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
+dom_is_behind(X0_G,X1_G,VAR_0):-dom_is_behind(X0_G,X1_G,I_G),not  -dom_is_behind(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),timeStep(VAR_1),spatial_entity(X0_G),timeStep(VAR_0).
+-dom_is_behind(X0_G,X1_G,VAR_0):--dom_is_behind(X0_G,X1_G,I_G),not  dom_is_behind(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_1).
+is_below(X0_G,X1_G,VAR_0):-is_below(X0_G,X1_G,I_G),not  -is_below(X0_G,X1_G,VAR_1),dom_is_below(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_2),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+-is_below(X0_G,X1_G,VAR_0):--is_below(X0_G,X1_G,I_G),not  is_below(X0_G,X1_G,VAR_1),dom_is_below(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
 dom_is_below(X0_G,X1_G,I_G):-is_below(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
-dom_is_below(X0_G,X1_G,I_G):--is_below(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
-dom_is_below(X0_G,X1_G,VAR_0):-dom_is_below(X0_G,X1_G,I_G),not  -dom_is_below(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
--dom_is_below(X0_G,X1_G,VAR_0):--dom_is_below(X0_G,X1_G,I_G),not  dom_is_below(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1).
-is_restrained(X0_G,VAR_0):-is_restrained(X0_G,I_G),not  -is_restrained(X0_G,VAR_1),dom_is_restrained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2).
--is_restrained(X0_G,VAR_0):--is_restrained(X0_G,I_G),not  is_restrained(X0_G,VAR_1),dom_is_restrained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),timeStep(VAR_2),tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_0).
+dom_is_below(X0_G,X1_G,I_G):--is_below(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
+dom_is_below(X0_G,X1_G,VAR_0):-dom_is_below(X0_G,X1_G,I_G),not  -dom_is_below(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_below(X0_G,X1_G,VAR_0):--dom_is_below(X0_G,X1_G,I_G),not  dom_is_below(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(VAR_1),timeStep(I_G).
+is_restrained(X0_G,VAR_0):-is_restrained(X0_G,I_G),not  -is_restrained(X0_G,VAR_1),dom_is_restrained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
+-is_restrained(X0_G,VAR_0):--is_restrained(X0_G,I_G),not  is_restrained(X0_G,VAR_1),dom_is_restrained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2).
 dom_is_restrained(X0_G,I_G):-is_restrained(X0_G,I_G),timeStep(I_G),tangible_entity(X0_G).
 dom_is_restrained(X0_G,I_G):--is_restrained(X0_G,I_G),timeStep(I_G),tangible_entity(X0_G).
-dom_is_restrained(X0_G,VAR_0):-dom_is_restrained(X0_G,I_G),not  -dom_is_restrained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
--dom_is_restrained(X0_G,VAR_0):--dom_is_restrained(X0_G,I_G),not  dom_is_restrained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
-is_along(X0_G,X1_G,VAR_0):-is_along(X0_G,X1_G,I_G),not  -is_along(X0_G,X1_G,VAR_1),dom_is_along(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),spatial_entity(X1_G),timeStep(VAR_1),timeStep(VAR_2),spatial_entity(X0_G),timeStep(I_G).
--is_along(X0_G,X1_G,VAR_0):--is_along(X0_G,X1_G,I_G),not  is_along(X0_G,X1_G,VAR_1),dom_is_along(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
-dom_is_along(X0_G,X1_G,I_G):-is_along(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_is_along(X0_G,X1_G,I_G):--is_along(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_along(X0_G,X1_G,VAR_0):-dom_is_along(X0_G,X1_G,I_G),not  -dom_is_along(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),timeStep(VAR_1),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0).
--dom_is_along(X0_G,X1_G,VAR_0):--dom_is_along(X0_G,X1_G,I_G),not  dom_is_along(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),spatial_entity(X1_G),timeStep(VAR_1),timeStep(I_G).
-is_contained(X0_G,VAR_0):-is_contained(X0_G,I_G),not  -is_contained(X0_G,VAR_1),dom_is_contained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_2).
--is_contained(X0_G,VAR_0):--is_contained(X0_G,I_G),not  is_contained(X0_G,VAR_1),dom_is_contained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(VAR_2),timeStep(I_G).
+dom_is_restrained(X0_G,VAR_0):-dom_is_restrained(X0_G,I_G),not  -dom_is_restrained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1).
+-dom_is_restrained(X0_G,VAR_0):--dom_is_restrained(X0_G,I_G),not  dom_is_restrained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
+is_along(X0_G,X1_G,VAR_0):-is_along(X0_G,X1_G,I_G),not  -is_along(X0_G,X1_G,VAR_1),dom_is_along(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),timeStep(VAR_2),timeStep(VAR_1),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0).
+-is_along(X0_G,X1_G,VAR_0):--is_along(X0_G,X1_G,I_G),not  is_along(X0_G,X1_G,VAR_1),dom_is_along(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_1),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_2),timeStep(VAR_0).
+dom_is_along(X0_G,X1_G,I_G):-is_along(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X0_G),spatial_entity(X1_G).
+dom_is_along(X0_G,X1_G,I_G):--is_along(X0_G,X1_G,I_G),timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G).
+dom_is_along(X0_G,X1_G,VAR_0):-dom_is_along(X0_G,X1_G,I_G),not  -dom_is_along(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G).
+-dom_is_along(X0_G,X1_G,VAR_0):--dom_is_along(X0_G,X1_G,I_G),not  dom_is_along(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
+is_contained(X0_G,VAR_0):-is_contained(X0_G,I_G),not  -is_contained(X0_G,VAR_1),dom_is_contained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_2),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
+-is_contained(X0_G,VAR_0):--is_contained(X0_G,I_G),not  is_contained(X0_G,VAR_1),dom_is_contained(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(I_G),timeStep(VAR_2),timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_1).
 dom_is_contained(X0_G,I_G):-is_contained(X0_G,I_G),timeStep(I_G),tangible_entity(X0_G).
 dom_is_contained(X0_G,I_G):--is_contained(X0_G,I_G),tangible_entity(X0_G),timeStep(I_G).
-dom_is_contained(X0_G,VAR_0):-dom_is_contained(X0_G,I_G),not  -dom_is_contained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(I_G),timeStep(VAR_0),timeStep(VAR_1).
--dom_is_contained(X0_G,VAR_0):--dom_is_contained(X0_G,I_G),not  dom_is_contained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_1),timeStep(I_G).
-is_outside(X0_G,X1_G,VAR_0):-is_outside(X0_G,X1_G,I_G),not  -is_outside(X0_G,X1_G,VAR_1),dom_is_outside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),timeStep(VAR_2),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
--is_outside(X0_G,X1_G,VAR_0):--is_outside(X0_G,X1_G,I_G),not  is_outside(X0_G,X1_G,VAR_1),dom_is_outside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_1),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_2).
-dom_is_outside(X0_G,X1_G,I_G):-is_outside(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
-dom_is_outside(X0_G,X1_G,I_G):--is_outside(X0_G,X1_G,I_G),spatial_entity(X1_G),timeStep(I_G),spatial_entity(X0_G).
-dom_is_outside(X0_G,X1_G,VAR_0):-dom_is_outside(X0_G,X1_G,I_G),not  -dom_is_outside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X1_G),timeStep(VAR_0),spatial_entity(X0_G),timeStep(I_G),timeStep(VAR_1).
--dom_is_outside(X0_G,X1_G,VAR_0):--dom_is_outside(X0_G,X1_G,I_G),not  dom_is_outside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_0).
-is_known(X0_G,VAR_0):-is_known(X0_G,I_G),not  -is_known(X0_G,VAR_1),dom_is_known(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),timeStep(VAR_1),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_2).
--is_known(X0_G,VAR_0):--is_known(X0_G,I_G),not  is_known(X0_G,VAR_1),dom_is_known(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,entity(X0_G),timeStep(VAR_0),timeStep(VAR_2),timeStep(I_G),timeStep(VAR_1).
-dom_is_known(X0_G,I_G):-is_known(X0_G,I_G),entity(X0_G),timeStep(I_G).
-dom_is_known(X0_G,I_G):--is_known(X0_G,I_G),entity(X0_G),timeStep(I_G).
-dom_is_known(X0_G,VAR_0):-dom_is_known(X0_G,I_G),not  -dom_is_known(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),timeStep(VAR_0),entity(X0_G),timeStep(VAR_1).
--dom_is_known(X0_G,VAR_0):--dom_is_known(X0_G,I_G),not  dom_is_known(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+dom_is_contained(X0_G,VAR_0):-dom_is_contained(X0_G,I_G),not  -dom_is_contained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_0),timeStep(VAR_1),timeStep(I_G).
+-dom_is_contained(X0_G,VAR_0):--dom_is_contained(X0_G,I_G),not  dom_is_contained(X0_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,tangible_entity(X0_G),timeStep(VAR_1),timeStep(I_G),timeStep(VAR_0).
+is_outside(X0_G,X1_G,VAR_0):-is_outside(X0_G,X1_G,I_G),not  -is_outside(X0_G,X1_G,VAR_1),dom_is_outside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1),timeStep(VAR_2).
+-is_outside(X0_G,X1_G,VAR_0):--is_outside(X0_G,X1_G,I_G),not  is_outside(X0_G,X1_G,VAR_1),dom_is_outside(X0_G,X1_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,spatial_entity(X0_G),spatial_entity(X1_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
+dom_is_outside(X0_G,X1_G,I_G):-is_outside(X0_G,X1_G,I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(I_G).
+dom_is_outside(X0_G,X1_G,I_G):--is_outside(X0_G,X1_G,I_G),spatial_entity(X0_G),spatial_entity(X1_G),timeStep(I_G).
+dom_is_outside(X0_G,X1_G,VAR_0):-dom_is_outside(X0_G,X1_G,I_G),not  -dom_is_outside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,spatial_entity(X0_G),timeStep(VAR_0),spatial_entity(X1_G),timeStep(I_G),timeStep(VAR_1).
+-dom_is_outside(X0_G,X1_G,VAR_0):--dom_is_outside(X0_G,X1_G,I_G),not  dom_is_outside(X0_G,X1_G,VAR_1),VAR_0=I_G+1,VAR_1=I_G+1,timeStep(I_G),spatial_entity(X1_G),spatial_entity(X0_G),timeStep(VAR_1),timeStep(VAR_0).
 is_confined(X0_G,VAR_0):-is_confined(X0_G,I_G),not  -is_confined(X0_G,VAR_1),dom_is_confined(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,tangible_entity(X0_G),timeStep(VAR_2),timeStep(VAR_0),timeStep(I_G),timeStep(VAR_1).
 -is_confined(X0_G,VAR_0):--is_confined(X0_G,I_G),not  is_confined(X0_G,VAR_1),dom_is_confined(X0_G,VAR_2),VAR_0=I_G+1,VAR_1=I_G+1,VAR_2=I_G+1,timeStep(VAR_0),tangible_entity(X0_G),timeStep(VAR_1),timeStep(VAR_2),timeStep(I_G).
 dom_is_confined(X0_G,I_G):-is_confined(X0_G,I_G),tangible_entity(X0_G),timeStep(I_G).
@@ -853,6 +856,7 @@ happened(e38,37).
 happened(e39,38).
 happened(e40,39).
 happened(e41,40).
+happened(e42,41).
 occurs(e1,0):-happened(e1,0).
 occurs(e2,1):-happened(e2,1).
 occurs(e3,2):-happened(e3,2).
@@ -894,6 +898,7 @@ occurs(e38,37):-happened(e38,37).
 occurs(e39,38):-happened(e39,38).
 occurs(e40,39):-happened(e40,39).
 occurs(e41,40):-happened(e41,40).
+occurs(e42,41):-happened(e42,41).
 spatial_entity(r2).
 spatial_entity(r3).
 spatial_entity(r4).
@@ -1006,6 +1011,7 @@ universe(r12).
 universe(r11).
 universe(r13).
 universe(e40).
+universe(e42).
 universe(e41).
 universe(true).
 universe(e11).
@@ -1053,13 +1059,14 @@ event(e15).
 event(e37).
 event(e36).
 event(e14).
-event(e17).
 event(e39).
+event(e17).
 event(e38).
 event(e16).
 event(e19).
 event(e18).
 event(e40).
+event(e42).
 event(e20).
 event(e41).
 event(e22).
@@ -1102,6 +1109,7 @@ actions(e19).
 actions(e18).
 actions(e40).
 actions(e20).
+actions(e42).
 actions(e41).
 actions(e22).
 actions(e21).
@@ -1144,6 +1152,7 @@ thing(r12).
 thing(r11).
 thing(r13).
 thing(e40).
+thing(e42).
 thing(e41).
 thing(e11).
 thing(e10).
@@ -1230,6 +1239,7 @@ timeStep(9).
 timeStep(40).
 timeStep(41).
 timeStep(20).
+timeStep(42).
 timeStep(21).
 event_path_(X1,X2):-event_path(X1,X2).
 event_path__(X1,X2):--event_path(X1,X2).

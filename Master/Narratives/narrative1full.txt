@@ -36,7 +36,8 @@
 36 Sandra left the milk there.
 37 Daniel travelled to the hallway.
 38 Sandra picked up the milk.
-39 Sandra travelled to the hallway.
-40 John journeyed to the hallway.
-41 Sandra went to the kitchen.
-42 Where was the milk before the kitchen? 	hallway	14 16 15
+39 Mary left the football.
+40 Sandra travelled to the hallway.
+41 John journeyed to the hallway.
+42 Sandra went to the kitchen.
+43 Where was the milk before the kitchen? 	hallway	42 46 44
