@@ -1,20 +1,68 @@
-Answer 1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative1.tp.lp /bin/text2ALM/Master/Queries/query1.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 1 items at time point 4
+  |__"mary is holding 1 items at time point 4"
+  |  |__"Since mary obtained the football in sentence 4"
 
-Answer 1
+##Total Explanations:	1
+Models:	1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative2.tp.lp /bin/text2ALM/Master/Queries/query2.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 1 items at time point 6
+  |__"mary is holding 1 items at time point 6"
+  |  |__"Since mary obtained the football in sentence 4"
 
-Answer 1
+##Total Explanations:	1
+Models:	1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative3.tp.lp /bin/text2ALM/Master/Queries/query3.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 1 items at time point 8
+  |__"mary is holding 1 items at time point 8"
+  |  |__"Since mary obtained the football in sentence 4"
 
-Answer 1
+##Total Explanations:	1
+Models:	1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative4.tp.lp /bin/text2ALM/Master/Queries/query4.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 0 items at time point 12
+  |__"mary is holding 0 items at time point 12"
 
-Answer 1
+##Total Explanations:	1
+Models:	1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative5.tp.lp /bin/text2ALM/Master/Queries/query5.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 1 items at time point 14
+  |__"mary is holding 1 items at time point 14"
+  |  |__"Since mary obtained the football in sentence 13"
+  |  |__"Since mary dropped the football in sentence 12"
 
+##Explanation: 1.2
+  *
+  |__"mary is holding 1 items at time point 14"
+  |  |__"Since mary obtained the football in sentence 13"
+  |  |__"Since mary obtained the football in sentence 4"
+  |  |__"Since mary dropped the football in sentence 12"
+
+##Explanation: 1.3
+  *
+  |__"mary is holding 1 items at time point 14"
+  |  |__"Since mary obtained the football in sentence 13"
+  |  |__"Since mary obtained the football in sentence 4"
+
+##Explanation: 1.4
+  *
+  |__"mary is holding 1 items at time point 14"
+  |  |__"Since mary obtained the football in sentence 13"
+
+##Total Explanations:	4
+Models:	1

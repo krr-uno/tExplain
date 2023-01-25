@@ -1,3 +1,190 @@
 xclingo version 2.0b16
 Reading from /bin/text2ALM/Master/LogicPrograms/countingC/countingCNarrative5.tp.lp /bin/text2ALM/Master/Queries/query5.lp trace-rule.lp
-*** ERROR: (xclingo, explainer program) too many messages.
+Answer: 1
+##Explanation: 1.1
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.2
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.3
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 1.4
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.5
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.6
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 1.7
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 1.8
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 1.9
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 1.10
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.11
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 1.12
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 1.13
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 1.14
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Total Explanations:	14
+Answer: 2
+##Explanation: 2.1
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.2
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.3
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 2.4
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.5
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 2.6
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.7
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.8
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 2.9
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+
+##Explanation: 2.10
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 2.11
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 2"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+  |  |__"Since daniel relinquished the apple in sentence 3"
+
+##Explanation: 2.12
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Explanation: 2.13
+  *
+  |__"daniel is holding 1 items at time point 10"
+  |  |__"Since daniel obtained the apple in sentence 5"
+  |  |__"Since daniel obtained the apple in sentence 9"
+  |  |__"Since daniel dropped the apple in sentence 8"
+
+##Total Explanations:	13
+Models:	2

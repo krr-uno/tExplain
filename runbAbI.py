@@ -117,12 +117,12 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = "python query.py %s %s %s" % (argv[1], num, queriesDir)
 os.system(command)
 
 
-# RUN XCLINGO0
+# RUN XCLINGO
 xclingo()

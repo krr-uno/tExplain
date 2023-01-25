@@ -67,8 +67,12 @@ xclingo_locationT2(Oname,L,T) :-
 
 % !show_trace locationT2(A,B,C).
 
-%     !trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 %!trace {numberObjectsbyEntityatTime(N,E,T), "% is holding % items at time point %", E, N, T}.
+%!trace {happened(X1,X2), "% %d to % in sentence %", X0', A, B', X2 + 1} :- is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_destination(X1,B), is_a(B, B').
+%!trace {happened(X1,X2), "% %d to % in sentence %", X0', A, B', X2 + 1} :- is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_location(X1,B), is_a(B, B').
+%!trace {happened(X1,X2), "Since % %ed the % in sentence %", X0', A, B', X2 + 1} :- is_a(X1, X1'), event_recipient(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
+%!trace {happened(X1,X2), "Since % %ed the % in sentence %", X0', A, B', X2 + 1} :- is_a(X1, X1'), event_donor(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
+
 
 % !trace {"% %d to % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_destination(X1,B), is_a(B, B').
 % !trace {"% %d to % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_location(X1,B), is_a(B, B').

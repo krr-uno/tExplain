@@ -1,1 +1,1 @@
-%!show_trace numberObjectsbyEntityatTime(N, daniel, 4).
+%!show_trace {numberObjectsbyEntityatTime(N, daniel, 4)}.

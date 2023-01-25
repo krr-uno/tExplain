@@ -1,4 +1,10 @@
-Answer 1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative1.tp.lp /bin/text2ALM/Master/Queries/query1.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 1 items at time point 4
+  |__"mary is holding 1 items at time point 4"
+  |  |__"Since mary obtained the football in sentence 4"
 
+##Total Explanations:	1
+Models:	1

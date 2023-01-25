@@ -1,3 +1,10 @@
 xclingo version 2.0b16
 Reading from /bin/text2ALM/Master/LogicPrograms/countingC/countingCNarrative1.tp.lp /bin/text2ALM/Master/Queries/query1.lp trace-rule.lp
-*** ERROR: (xclingo, explainer program) too many messages.
+Answer: 1
+##Explanation: 1.1
+  *
+  |__"daniel is holding 1 items at time point 2"
+  |  |__"Since daniel obtained the apple in sentence 2"
+
+##Total Explanations:	1
+Models:	1

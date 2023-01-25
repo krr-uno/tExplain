@@ -1,4 +1,9 @@
-Answer 1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative4.tp.lp /bin/text2ALM/Master/Queries/query4.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding 0 items at time point 12
+  |__"mary is holding 0 items at time point 12"
 
+##Total Explanations:	1
+Models:	1

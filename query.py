@@ -62,7 +62,7 @@ for q in questions:
         f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
         f.write('is_aB(%s, %s).\n' % (q[1], q[1]))
     elif val == 7: # counting
-        f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))
+        f.write('%%!show_trace {numberObjectsbyEntityatTime(N, %s, %d)}.\n' % (q[0], q[1]))
     elif val == 8: # lists
         f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (q[0], q[1]))
     adjust += 1
