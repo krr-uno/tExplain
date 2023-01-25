@@ -124,5 +124,5 @@ command = "python query.py %s %s %s" % (argv[1], num, queriesDir)
 os.system(command)
 
 
-# RUN XCLINGO
+# RUN XCLINGO0
 xclingo()
