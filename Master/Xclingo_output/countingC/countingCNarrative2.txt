@@ -1,0 +1,3 @@
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingC/countingCNarrative2.tp.lp /bin/text2ALM/Master/Queries/query2.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.

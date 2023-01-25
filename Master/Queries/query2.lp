@@ -1,1 +1,1 @@
-%!show_trace xclingo_locationT2(apple,L,6).
+%!show_trace numberObjectsbyEntityatTime(N, daniel, 4).
