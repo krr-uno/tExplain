@@ -1,20 +1,15 @@
-Answer 1
-  *
-  |__mary is holding 1 items at time point 4
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 6
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 8
-
-Answer 1
-  *
-  |__mary is holding 0 items at time point 12
-
-Answer 1
-  *
-  |__mary is holding 1 items at time point 14
-
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative1.tp.lp /usr/bin/text2ALM/query1.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative2.tp.lp /usr/bin/text2ALM/query2.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative3.tp.lp /usr/bin/text2ALM/query3.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative4.tp.lp /usr/bin/text2ALM/query4.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/countingA/countingANarrative5.tp.lp /usr/bin/text2ALM/query5.lp trace-rule.lp
+*** ERROR: (xclingo, explainer program) too many messages.
