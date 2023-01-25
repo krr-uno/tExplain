@@ -63,7 +63,7 @@ changeLoc(Oname, L1, L2name, T) :-
 % !show_trace changeLoc(N, M, O, T).
 
 xclingo_locationT2(Oname,L,T) :- 
-    is_a(Oref,Oname), location(Oref,L,T).
+    is_a(Oref,Oname), location(Oref,L,T). 
 
 % !show_trace locationT2(A,B,C).
 
