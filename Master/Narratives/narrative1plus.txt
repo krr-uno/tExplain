@@ -1,0 +1,18 @@
+1 Sandra journeyed to the bedroom.
+2 John went back to the bedroom.
+3 John journeyed to the office.
+4 John took the milk.
+5 John left the milk there.
+6 John travelled to the kitchen.
+7 Sandra went back to the garden.
+8 Sandra went to the office.
+9 Sandra went back to the hallway.
+10 Sandra travelled to the kitchen.
+11 Sandra went to the bedroom.
+12 Sandra took the milk.
+13 Sandra left the milk there.
+14 Sandra picked up the milk.
+15 Sandra travelled to the hallway.
+16 Sandra went to the kitchen.
+17 Mary left the football.
+18 Where was the milk before the kitchen? 	hallway	14 16 15
