@@ -133,4 +133,4 @@ elif num == 7:
 os.system(command)
 
 # RUN XCLINGO
-xclingo()
+# xclingo()

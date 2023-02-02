@@ -1,0 +1,5 @@
+23 Mary dropped the football.
+24 John moved to the bedroom.
+26 John travelled to the office.
+43 Mary left the football.
+47 Where was the milk before the kitchen? 	hallway	42 46 44
