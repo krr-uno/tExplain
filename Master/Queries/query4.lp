@@ -1,1 +1,1 @@
-%!show_trace xclingo_locationT2(football,L,12).
+%!show_trace xclingo_locationT2(milk,L,26).
