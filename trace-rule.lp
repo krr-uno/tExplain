@@ -9,29 +9,29 @@ numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeSte
 entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
 
 
-must_possess(D_G,O_G,TS_G) :- 
-    event_donor(X_G,D_G),
-    event_object(X_G,O_G),
-    occurs(X_G,TS_G),
-    instance(X_G,transfer),
-    entity(O_G),universe(X_G),
-    entity(D_G),event(X_G),
-    timeStep(TS_G),
-    actions(X_G).
+% must_possess(D_G,O_G,TS_G) :- 
+%     event_donor(X_G,D_G),
+%     event_object(X_G,O_G),
+%     occurs(X_G,TS_G),
+%     instance(X_G,transfer),
+%     entity(O_G),universe(X_G),
+%     entity(D_G),event(X_G),
+%     timeStep(TS_G),
+%     actions(X_G).
 
-other_possessor(X0_G,X1_G,VAR_0) :- possesses(X2_G,X1_G,VAR_0), X2_G != X0_G, entity(X0_G).
+% other_possessor(X0_G,X1_G,VAR_0) :- possesses(X2_G,X1_G,VAR_0), X2_G != X0_G, entity(X0_G).
 
-must_possess(X0_G,X1_G,VAR_0) :-
-    must_possess(X0_G,X1_G,I_G),
-    not -possesses(X0_G,X1_G,VAR_0),
-    not other_possessor(X0_G,X1_G,VAR_0),
-    VAR_0=I_G-1,
-    entity(X0_G),
-    entity(X1_G),
-    timeStep(I_G),
-    timeStep(VAR_0).
+% must_possess(X0_G,X1_G,VAR_0) :-
+%     must_possess(X0_G,X1_G,I_G),
+%     not -possesses(X0_G,X1_G,VAR_0),
+%     not other_possessor(X0_G,X1_G,VAR_0),
+%     VAR_0=I_G-1,
+%     entity(X0_G),
+%     entity(X1_G),
+%     timeStep(I_G),
+%     timeStep(VAR_0).
 
-possesses(D_G,O_G,TS_G) :- must_possess(D_G,O_G,TS_G).
+% possesses(D_G,O_G,TS_G) :- must_possess(D_G,O_G,TS_G).
 
 
 %!trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').

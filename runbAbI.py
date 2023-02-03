@@ -118,7 +118,7 @@ process(filename)
 
 # GENERATE LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = ""
@@ -133,4 +133,4 @@ elif num == 7:
 os.system(command)
 
 # RUN XCLINGO
-# xclingo()
+xclingo()
