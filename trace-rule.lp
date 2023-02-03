@@ -33,6 +33,7 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 must_possesses(X0_G,X1_G,VAR_0) :-
     must_possesses(X0_G,X1_G,I_G),
     not -possesses(X0_G,X1_G,VAR_0),
+    dom_possesses(X0_G,X1_G,VAR_0),
     VAR_0=I_G-1,
     entity(X0_G),
     entity(X1_G),
