@@ -1,1 +1,1 @@
-%!show_trace numberObjectsbyEntityatTime(N, mary, 12).
+%!show_trace locationT2(milk,L,26).
