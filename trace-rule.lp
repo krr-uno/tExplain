@@ -11,6 +11,7 @@ entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), time
 
 possesses(X0_G,X1_G,VAR_0) :-
     possesses(X0_G,X1_G,I_G),
+    held_by(X0_G,X1_G),
     not -possesses(X0_G,X1_G,VAR_0),
     dom_possesses(X0_G,X1_G,VAR_0),
     VAR_0=I_G-1,
@@ -42,6 +43,7 @@ possesses(D_G,O_G,TS_G) :-
 %     timeStep(VAR_0).
 
 % !trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
+% !trace {"possesses(D_G,O_G,TS_G)"} : possesses(D_G,O_G,TS_G).
 
 
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
@@ -50,7 +52,6 @@ possesses(D_G,O_G,TS_G) :-
 top_concept(move).
 top_concept(obtain).
 top_concept(relinquish).
-top_concept(lose).
 link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).

@@ -1,6 +1,6 @@
 Answer 1
   *
   |__football is located at kitchen in sentence 12
-  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
-  |  |__happened(get_13_5_1_1,10);Since sandra obtained the football in sentence 11
+  |  |__sandra moved to kitchen in sentence 12
+  |  |__Since sandra obtained the football in sentence 11
 

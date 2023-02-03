@@ -1,11 +1,11 @@
 Answer 1
   *
   |__football is located at kitchen in sentence 14
-  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
-  |  |__happened(future_having_13_3,12);Since sandra relinquished the football in sentence 13
+  |  |__sandra moved to kitchen in sentence 12
+  |  |__Since sandra obtained the football in sentence 11
 
   *
   |__football is located at kitchen in sentence 14
-  |  |__happened(meander_47_7,11);sandra moved to kitchen in sentence 12
-  |  |__happened(get_13_5_1_1,10);Since sandra obtained the football in sentence 11
+  |  |__sandra moved to kitchen in sentence 12
+  |  |__Since sandra relinquished the football in sentence 13
 

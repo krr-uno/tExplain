@@ -1,1 +1,6 @@
 Answer 1
+  *
+  |__Location of john before office : bedroom in sentence 3
+  |  |__john moved to bedroom in sentence 2
+  |  |__john moved to office in sentence 3
+

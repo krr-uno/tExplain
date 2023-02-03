@@ -1,1 +1,1 @@
-%!show_trace changeLoc(football, L1, bathroom, T).
+%!show_trace locationT2(apple,L,4).

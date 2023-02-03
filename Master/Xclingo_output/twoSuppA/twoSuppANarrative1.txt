@@ -1,6 +1,11 @@
 Answer 1
   *
   |__apple is located at bedroom in sentence 4
-  |  |__happened(run_51_3_2_1,2);sandra moved to bedroom in sentence 3
-  |  |__happened(steal_10_5_1,0);Since sandra obtained the apple in sentence 1
+  |  |__sandra moved to bedroom in sentence 3
+  |  |__Since sandra obtained the apple in sentence 1
+
+  *
+  |__apple is located at bedroom in sentence 4
+  |  |__sandra moved to bedroom in sentence 3
+  |  |__Since sandra relinquished the apple in sentence 4
 
