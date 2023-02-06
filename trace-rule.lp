@@ -11,7 +11,7 @@ entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), time
 
 possesses(X0_G,X1_G,VAR_0) :-
     possesses(X0_G,X1_G,I_G),
-    held_by(X0_G,X1_G),
+    % held_by(X0_G,X1_G),
     not -possesses(X0_G,X1_G,VAR_0),
     dom_possesses(X0_G,X1_G,VAR_0),
     VAR_0=I_G-1,
@@ -47,7 +47,7 @@ possesses(D_G,O_G,TS_G) :-
 
 
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
-% !show_trace entityCarrying(L,E,T).
+%!show_trace entityCarrying(L,E,T).
 
 top_concept(move).
 top_concept(obtain).
