@@ -106,7 +106,7 @@
 -possesses(r6,r8,40)
 -possesses(r6,r8,41)
 -possesses(r6,r8,42)
- possesses(r3,r8,37)
+-possesses(r3,r8,37)
 -possesses(r1,r5,24)
 -possesses(r1,r5,25)
 -possesses(r1,r5,26)
