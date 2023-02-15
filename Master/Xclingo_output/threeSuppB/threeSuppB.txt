@@ -1,14 +1,56 @@
 Answer 1
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__happened(run_51_3_2_1,15);sandra moved to office in sentence 16
-  |  |__happened(meander_47_7,16);sandra moved to hallway in sentence 17
-  |  |__happened(get_13_5_1,11);Since sandra obtained the apple in sentence 12
+  |  |__sandra moved to office in sentence 16
+  |  |__sandra moved to hallway in sentence 17
+  |  |__Since sandra obtained the apple in sentence 12
+
+  *
+  |__Location of apple before hallway : office in sentence 17
+  |  |__sandra moved to office in sentence 16
+  |  |__sandra moved to hallway in sentence 17
+  |  |__Since sandra obtained the apple in sentence 12
+  |  |__Since sandra relinquished the apple in sentence 18
 
 Answer 1
   *
   |__Location of milk before bathroom : kitchen in sentence 39
-  |  |__happened(slide_11_2,38);sandra moved to bathroom in sentence 39
-  |  |__happened(run_51_3_2_1,35);sandra moved to kitchen in sentence 36
-  |  |__happened(get_13_5_1,30);Since sandra obtained the milk in sentence 31
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+
+Answer 1
+  *
+  |__Location of milk before hallway : bathroom in sentence 54
+  |  |__daniel moved to bathroom in sentence 53
+  |  |__daniel moved to hallway in sentence 54
+  |  |__Since daniel obtained the milk in sentence 52
+
+Answer 1
+  *
+  |__Location of milk before hallway : bathroom in sentence 54
+  |  |__daniel moved to bathroom in sentence 53
+  |  |__daniel moved to hallway in sentence 54
+  |  |__Since daniel obtained the milk in sentence 52
+
+  *
+  |__Location of milk before hallway : bathroom in sentence 54
+  |  |__daniel moved to bathroom in sentence 53
+  |  |__daniel moved to hallway in sentence 54
+  |  |__Since daniel obtained the milk in sentence 52
+  |  |__Since daniel relinquished the milk in sentence 55
+
+Answer 1
+  *
+  |__Location of milk before hallway : bathroom in sentence 54
+  |  |__daniel moved to bathroom in sentence 53
+  |  |__daniel moved to hallway in sentence 54
+  |  |__Since daniel obtained the milk in sentence 52
+
+  *
+  |__Location of milk before hallway : bathroom in sentence 54
+  |  |__daniel moved to bathroom in sentence 53
+  |  |__daniel moved to hallway in sentence 54
+  |  |__Since daniel obtained the milk in sentence 52
+  |  |__Since daniel relinquished the milk in sentence 55
 

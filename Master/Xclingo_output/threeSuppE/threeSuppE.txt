@@ -1,0 +1,55 @@
+Answer 1
+  *
+  |__Location of milk before office : kitchen in sentence 82
+  |  |__daniel moved to kitchen in sentence 81
+  |  |__daniel moved to office in sentence 82
+  |  |__Since daniel obtained the milk in sentence 80
+
+Answer 1
+  *
+  |__Location of milk before office : kitchen in sentence 82
+  |  |__daniel moved to kitchen in sentence 81
+  |  |__daniel moved to office in sentence 82
+  |  |__Since daniel obtained the milk in sentence 80
+
+Answer 1
+  *
+  |__Location of milk before office : kitchen in sentence 82
+  |  |__daniel moved to kitchen in sentence 81
+  |  |__daniel moved to office in sentence 82
+  |  |__Since daniel obtained the milk in sentence 80
+
+Answer 1
+  *
+  |__Location of milk before office : kitchen in sentence 82
+  |  |__daniel moved to kitchen in sentence 81
+  |  |__daniel moved to office in sentence 82
+  |  |__Since daniel obtained the milk in sentence 80
+
+Answer 1
+  *
+  |__Location of apple before bathroom : hallway in sentence 28
+  |  |__john moved to bathroom in sentence 28
+  |  |__john moved to hallway in sentence 25
+  |  |__Since john obtained the apple in sentence 27
+  |  |__Since john obtained the apple in sentence 23
+
+  *
+  |__Location of apple before bathroom : hallway in sentence 28
+  |  |__john moved to bathroom in sentence 28
+  |  |__john moved to hallway in sentence 25
+  |  |__Since john obtained the apple in sentence 27
+  |  |__Since john relinquished the apple in sentence 26
+
+  *
+  |__Location of apple before bathroom : hallway in sentence 28
+  |  |__john moved to bathroom in sentence 28
+  |  |__john moved to hallway in sentence 25
+  |  |__Since john obtained the apple in sentence 27
+
+  *
+  |__Location of apple before bathroom : hallway in sentence 131
+  |  |__daniel moved to bathroom in sentence 131
+  |  |__daniel moved to hallway in sentence 129
+  |  |__Since daniel obtained the apple in sentence 128
+

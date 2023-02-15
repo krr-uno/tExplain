@@ -1,1 +1,1 @@
-%!show_trace locationT2(apple,L,4).
+%!show_trace changeLoc(milk, L1, office, T).

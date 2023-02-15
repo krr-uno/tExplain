@@ -1,1 +1,1 @@
-%!show_trace locationT2(football,L,12).
+%!show_trace changeLoc(milk, L1, office, T).

@@ -1,0 +1,47 @@
+Answer 1
+  *
+  |__Location of football before office : garden in sentence 4
+  |  |__daniel moved to garden in sentence 3
+  |  |__daniel moved to office in sentence 4
+  |  |__Since daniel obtained the football in sentence 2
+
+Answer 1
+  *
+  |__Location of football before office : garden in sentence 4
+  |  |__daniel moved to garden in sentence 3
+  |  |__daniel moved to office in sentence 4
+  |  |__Since daniel obtained the football in sentence 2
+
+Answer 1
+  *
+  |__Location of football before office : bedroom in sentence 15
+  |  |__daniel moved to office in sentence 15
+  |  |__daniel moved to bedroom in sentence 13
+  |  |__Since daniel obtained the football in sentence 10
+
+  *
+  |__Location of football before office : garden in sentence 4
+  |  |__daniel moved to garden in sentence 3
+  |  |__daniel moved to office in sentence 4
+  |  |__Since daniel obtained the football in sentence 2
+
+Answer 1
+  *
+  |__Location of apple before bedroom : kitchen in sentence 32
+  |  |__mary moved to kitchen in sentence 24
+  |  |__mary moved to bedroom in sentence 32
+  |  |__Since mary obtained the apple in sentence 16
+
+  *
+  |__Location of apple before bedroom : bathroom in sentence 20
+  |  |__mary moved to bedroom in sentence 20
+  |  |__mary moved to bathroom in sentence 5
+  |  |__Since mary obtained the apple in sentence 16
+
+Answer 1
+  *
+  |__Location of apple before garden : bedroom in sentence 37
+  |  |__mary moved to garden in sentence 37
+  |  |__mary moved to bedroom in sentence 32
+  |  |__Since mary obtained the apple in sentence 16
+

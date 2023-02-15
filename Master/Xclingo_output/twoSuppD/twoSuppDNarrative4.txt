@@ -1,0 +1,6 @@
+Answer 1
+  *
+  |__milk is located at bedroom in sentence 12
+  |  |__sandra moved to bedroom in sentence 12
+  |  |__Since sandra obtained the milk in sentence 9
+

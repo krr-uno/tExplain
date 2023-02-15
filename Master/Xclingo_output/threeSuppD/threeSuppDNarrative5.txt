@@ -1,0 +1,7 @@
+Answer 1
+  *
+  |__Location of football before kitchen : bathroom in sentence 24
+  |  |__john moved to kitchen in sentence 24
+  |  |__john moved to bathroom in sentence 22
+  |  |__Since john obtained the football in sentence 17
+

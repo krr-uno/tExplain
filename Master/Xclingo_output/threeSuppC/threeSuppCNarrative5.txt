@@ -1,0 +1,7 @@
+Answer 1
+  *
+  |__Location of apple before garden : bedroom in sentence 37
+  |  |__mary moved to garden in sentence 37
+  |  |__mary moved to bedroom in sentence 32
+  |  |__Since mary obtained the apple in sentence 16
+

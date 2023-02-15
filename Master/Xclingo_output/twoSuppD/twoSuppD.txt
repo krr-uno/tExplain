@@ -1,0 +1,50 @@
+Answer 1
+  *
+  |__apple is located at bathroom in sentence 6
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john obtained the apple in sentence 5
+
+  *
+  |__apple is located at bathroom in sentence 6
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john relinquished the apple in sentence 6
+
+Answer 1
+  *
+  |__apple is located at bathroom in sentence 8
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john obtained the apple in sentence 5
+
+  *
+  |__apple is located at bathroom in sentence 8
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john relinquished the apple in sentence 6
+
+Answer 1
+  *
+  |__apple is located at bathroom in sentence 10
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john obtained the apple in sentence 5
+
+  *
+  |__apple is located at bathroom in sentence 10
+  |  |__john moved to bathroom in sentence 3
+  |  |__Since john relinquished the apple in sentence 6
+
+Answer 1
+  *
+  |__milk is located at bedroom in sentence 12
+  |  |__sandra moved to bedroom in sentence 12
+  |  |__Since sandra obtained the milk in sentence 9
+
+Answer 1
+  *
+  |__milk is located at kitchen in sentence 16
+  |  |__sandra moved to kitchen in sentence 14
+  |  |__Since sandra obtained the milk in sentence 9
+
+  *
+  |__milk is located at kitchen in sentence 16
+  |  |__sandra moved to kitchen in sentence 14
+  |  |__Since sandra relinquished the milk in sentence 15
+

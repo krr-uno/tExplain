@@ -1,0 +1,16 @@
+John travelled to the kitchen.
+Mary journeyed to the bedroom.
+Sandra travelled to the office.
+John went to the bedroom.
+John journeyed to the office.
+Sandra journeyed to the bedroom.
+John journeyed to the hallway.
+John journeyed to the office.
+Mary travelled to the hallway.
+Daniel moved to the hallway.
+Daniel grabbed the apple there.
+Mary journeyed to the bathroom.
+Daniel discarded the apple.
+Sandra journeyed to the kitchen.
+Sandra went back to the office.
+Mary went back to the kitchen.

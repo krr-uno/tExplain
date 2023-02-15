@@ -1,0 +1,45 @@
+Answer 1
+  *
+  |__apple is located at garden in sentence 16
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra obtained the apple in sentence 14
+
+  *
+  |__apple is located at garden in sentence 16
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra relinquished the apple in sentence 16
+
+Answer 1
+  *
+  |__apple is located at garden in sentence 18
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra obtained the apple in sentence 14
+
+  *
+  |__apple is located at garden in sentence 18
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra relinquished the apple in sentence 16
+
+Answer 1
+  *
+  |__apple is located at garden in sentence 20
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra obtained the apple in sentence 14
+
+  *
+  |__apple is located at garden in sentence 20
+  |  |__sandra moved to garden in sentence 11
+  |  |__Since sandra relinquished the apple in sentence 16
+
+Answer 1
+  *
+  |__milk is located at bedroom in sentence 26
+  |  |__sandra moved to bedroom in sentence 26
+  |  |__Since sandra obtained the milk in sentence 24
+
+Answer 1
+  *
+  |__milk is located at bedroom in sentence 28
+  |  |__sandra moved to bedroom in sentence 28
+  |  |__Since sandra obtained the milk in sentence 24
+

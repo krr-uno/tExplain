@@ -1,0 +1,7 @@
+Answer 1
+  *
+  |__Location of football before office : garden in sentence 4
+  |  |__daniel moved to garden in sentence 3
+  |  |__daniel moved to office in sentence 4
+  |  |__Since daniel obtained the football in sentence 2
+

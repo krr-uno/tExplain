@@ -1,7 +1,14 @@
 Answer 1
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__happened(run_51_3_2_1,15);sandra moved to office in sentence 16
-  |  |__happened(meander_47_7,16);sandra moved to hallway in sentence 17
-  |  |__happened(get_13_5_1,11);Since sandra obtained the apple in sentence 12
+  |  |__sandra moved to office in sentence 16
+  |  |__sandra moved to hallway in sentence 17
+  |  |__Since sandra obtained the apple in sentence 12
+
+  *
+  |__Location of apple before hallway : office in sentence 17
+  |  |__sandra moved to office in sentence 16
+  |  |__sandra moved to hallway in sentence 17
+  |  |__Since sandra obtained the apple in sentence 12
+  |  |__Since sandra relinquished the apple in sentence 18
 
