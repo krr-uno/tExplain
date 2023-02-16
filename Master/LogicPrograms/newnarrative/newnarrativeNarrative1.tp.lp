@@ -638,11 +638,11 @@ location(A_G,P_G,TS_G):-held_by(A_G,B_G,TS_G),location(B_G,P_G,TS_G),instance(A_
 happened(e1,0).
 happened(e2,1).
 happened(e3,2).
-happened(e4,3).
+happened(e4,4).
 occurs(e1,0):-happened(e1,0).
 occurs(e2,1):-happened(e2,1).
 occurs(e3,2):-happened(e3,2).
-occurs(e4,3):-happened(e4,3).
+occurs(e4,4):-happened(e4,4).
 spatial_entity(r2).
 spatial_entity(r3).
 spatial_entity(r4).
@@ -732,6 +732,7 @@ timeStep(1).
 timeStep(2).
 timeStep(3).
 timeStep(4).
+timeStep(5).
 event_path_(X1,X2):-event_path(X1,X2).
 event_path__(X1,X2):--event_path(X1,X2).
 dom_is_restrained_(X1,X2):-dom_is_restrained(X1,X2).

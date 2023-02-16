@@ -8,19 +8,7 @@ numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeSte
 
 entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
 
-
-possesses(X0_G,X1_G,VAR_0) :-
-    possesses(X0_G,X1_G,I_G),
-    % held_by(X0_G,X1_G),
-    not -possesses(X0_G,X1_G,VAR_0),
-    dom_possesses(X0_G,X1_G,VAR_0),
-    VAR_0=I_G-1,
-    entity(X0_G),
-    entity(X1_G),
-    timeStep(I_G),
-    timeStep(VAR_0).
-    
-possesses(D_G,O_G,TS_G) :- 
+must_possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
     event_object(X_G,O_G),
     occurs(X_G,TS_G),
@@ -30,8 +18,35 @@ possesses(D_G,O_G,TS_G) :-
     timeStep(TS_G),
     actions(X_G).
 
-#show possesses/3.
-#show -possesses/3.
+must_possesses(X0_G,X1_G,VAR_0) :-
+    must_possesses(X0_G,X1_G,I_G),
+    not -possesses(X0_G,X1_G,VAR_0),
+    dom_possesses(X0_G,X1_G,VAR_0),
+    VAR_0=I_G-1,
+    entity(X0_G),
+    entity(X1_G),
+    timeStep(I_G),
+    timeStep(VAR_0),
+    not takes(X0_G,X1_G,VAR_0).
+    
+takes(D_G,O_G,VAR_0) :-
+    event_recipient(X_G,D_G),
+    event_object(X_G,O_G),
+    occurs(X_G,VAR_0),
+    timeStep(VAR_0),
+    take_instance(X_G),
+    entity(O_G),universe(X_G),
+    entity(D_G),event(X_G).
+
+take_instance(X_G) :- instance(X_G, obtain).
+    
+possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
+
+#show.
+#show must_possesses(C,A,B) : must_possesses(A',B',C), is_a(A',A), is_a(B',B).
+% #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
+% #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
+#show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
 
 % possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
@@ -67,6 +82,7 @@ changeLoc(Oname, L1, L2name, T) :-
 
 % !show_trace changeLoc(N, M, O, T).
 
+% !show_trace changeLoc(milk, L1, bathroom, T).
 
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
