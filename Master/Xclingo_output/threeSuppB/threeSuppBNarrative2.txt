@@ -5,3 +5,56 @@ Answer 1
   |  |__sandra moved to kitchen in sentence 36
   |  |__Since sandra obtained the milk in sentence 31
 
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+  |  |__Since sandra loseed the milk in sentence 41
+
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra loseed the milk in sentence 41
+
+Answer 1
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+  |  |__Since sandra loseed the milk in sentence 41
+
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra loseed the milk in sentence 41
+
+Answer 1
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra obtained the milk in sentence 31
+  |  |__Since sandra loseed the milk in sentence 41
+
+  *
+  |__Location of milk before bathroom : kitchen in sentence 39
+  |  |__sandra moved to bathroom in sentence 39
+  |  |__sandra moved to kitchen in sentence 36
+  |  |__Since sandra loseed the milk in sentence 41
+

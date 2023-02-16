@@ -7,5 +7,5 @@ Answer 1
   *
   |__apple is located at hallway in sentence 12
   |  |__mary moved to hallway in sentence 9
-  |  |__Since mary relinquished the apple in sentence 10
+  |  |__Since mary relinquished the apple in sentence 10;Since mary loseed the apple in sentence 10
 
