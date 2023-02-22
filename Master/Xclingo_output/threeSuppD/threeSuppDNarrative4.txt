@@ -5,3 +5,16 @@ Answer 1
   |  |__mary moved to bedroom in sentence 4
   |  |__Since mary obtained the apple in sentence 1
 
+  *
+  |__Location of apple before bedroom : garden in sentence 4
+  |  |__mary moved to garden in sentence 3
+  |  |__mary moved to bedroom in sentence 4
+  |  |__Since mary obtained the apple in sentence 1
+  |  |__Since mary dropped the apple in sentence 6
+
+  *
+  |__Location of apple before bedroom : garden in sentence 4
+  |  |__mary moved to garden in sentence 3
+  |  |__mary moved to bedroom in sentence 4
+  |  |__Since mary dropped the apple in sentence 6
+

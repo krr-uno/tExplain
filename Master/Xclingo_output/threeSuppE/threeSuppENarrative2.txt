@@ -1,0 +1,7 @@
+Answer 1
+  *
+  |__Location of milk before office : kitchen in sentence 82
+  |  |__daniel moved to kitchen in sentence 81
+  |  |__daniel moved to office in sentence 82
+  |  |__Since daniel obtained the milk in sentence 80
+

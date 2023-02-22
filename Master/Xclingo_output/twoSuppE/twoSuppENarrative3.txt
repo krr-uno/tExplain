@@ -1,0 +1,11 @@
+Answer 1
+  *
+  |__milk is located at hallway in sentence 20
+  |  |__daniel moved to hallway in sentence 10
+  |  |__Since daniel obtained the milk in sentence 18
+
+  *
+  |__milk is located at hallway in sentence 20
+  |  |__daniel moved to hallway in sentence 10
+  |  |__Since daniel dropped the milk in sentence 20
+

@@ -4,4 +4,17 @@ Answer 1
   |  |__daniel moved to bathroom in sentence 15
   |  |__daniel moved to garden in sentence 20
   |  |__Since daniel obtained the apple in sentence 11
+  |  |__Since daniel dropped the apple in sentence 27
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__daniel moved to bathroom in sentence 15
+  |  |__daniel moved to garden in sentence 20
+  |  |__Since daniel dropped the apple in sentence 27
+
+  *
+  |__Location of apple before garden : bathroom in sentence 20
+  |  |__daniel moved to bathroom in sentence 15
+  |  |__daniel moved to garden in sentence 20
+  |  |__Since daniel obtained the apple in sentence 11
 

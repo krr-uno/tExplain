@@ -1,1 +1,1 @@
-%!show_trace changeLoc(milk, L1, hallway, T).
+%!show_trace changeLoc(milk, L1, office, T).
