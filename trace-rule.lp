@@ -75,15 +75,32 @@ link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).
 
-changeLoc(Oname, L1, L2name, T) :- 
-    is_a(Oref,Oname), is_a(L2ref,L2name), 
-    locationB(Oref, L1, T-1), 
+changeLoc(Oname, L1name, L2name, T) :- 
+    is_a(Oref,Oname),
+    is_a(L1ref, L1name),
+    is_a(L2ref, L2name), 
+    changeLocAux(Oref, L1ref, L2ref, T).
+
+changeLocAux(Oref, L1ref, L2ref, T) :- 
+    locationB(Oref, L1ref, T-1), 
     locationB(Oref, L2ref, T), 
-    L1 != L2ref.
+    L1ref != L2ref.
+
+lastChangeLocAux(Oref, L1ref, L2ref, T) :-
+    changeLocAux(Oref, L1ref, L2ref, T), T = #max{X: changeLocAux(Oref, _, L2ref, X)}.
+
+lastChangeLoc(Oname, L1name, L2name, T) :- 
+    is_a(Oref,Oname),
+    is_a(L1ref, L1name),
+    is_a(L2ref, L2name), 
+    lastChangeLocAux(Oref, L1ref, L2ref, T).
 
 % !show_trace changeLoc(N, M, O, T).
 
-% !show_trace changeLoc(milk, L1, bathroom, T).
+% !show_trace lastChangeLoc(apple, L1, bathroom, T).
+
+
+
 
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
@@ -103,7 +120,7 @@ locationT2(Oname,L,T) :-
 %!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
 %!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
 
-%!trace {"Location of % before % : % in sentence %", O, L2, L1',T} changeLoc(O, L1, L2, T) :  is_a(L1, L1').
+%!trace {"Location of % before % : % in sentence %", O, L2, L1,T} lastChangeLoc(O, L1, L2, T).
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
