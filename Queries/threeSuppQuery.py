@@ -20,6 +20,6 @@ print('here')
 for q in questions:
     filename = "query" + str(adjust) + ".lp"
     f = open(filename, "w")
-    f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
+    f.write('%%!show_trace lastChangeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
     adjust += 1
     f.close()

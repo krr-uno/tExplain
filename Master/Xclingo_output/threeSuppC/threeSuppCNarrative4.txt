@@ -3,12 +3,6 @@ Answer 1
   |__Location of apple before bedroom : kitchen in sentence 32
   |  |__mary moved to kitchen in sentence 24
   |  |__mary moved to bedroom in sentence 32
-  |  |__Since mary dropped the apple in sentence 39
-
-  *
-  |__Location of apple before bedroom : kitchen in sentence 32
-  |  |__mary moved to kitchen in sentence 24
-  |  |__mary moved to bedroom in sentence 32
   |  |__Since mary obtained the apple in sentence 16
   |  |__Since mary dropped the apple in sentence 39
 
@@ -16,24 +10,11 @@ Answer 1
   |__Location of apple before bedroom : kitchen in sentence 32
   |  |__mary moved to kitchen in sentence 24
   |  |__mary moved to bedroom in sentence 32
-  |  |__Since mary obtained the apple in sentence 16
-
-  *
-  |__Location of apple before bedroom : bathroom in sentence 20
-  |  |__mary moved to bedroom in sentence 20
-  |  |__mary moved to bathroom in sentence 5
-  |  |__Since mary obtained the apple in sentence 16
-
-  *
-  |__Location of apple before bedroom : bathroom in sentence 20
-  |  |__mary moved to bedroom in sentence 20
-  |  |__mary moved to bathroom in sentence 5
-  |  |__Since mary obtained the apple in sentence 16
   |  |__Since mary dropped the apple in sentence 39
 
   *
-  |__Location of apple before bedroom : bathroom in sentence 20
-  |  |__mary moved to bedroom in sentence 20
-  |  |__mary moved to bathroom in sentence 5
-  |  |__Since mary dropped the apple in sentence 39
+  |__Location of apple before bedroom : kitchen in sentence 32
+  |  |__mary moved to kitchen in sentence 24
+  |  |__mary moved to bedroom in sentence 32
+  |  |__Since mary obtained the apple in sentence 16
 

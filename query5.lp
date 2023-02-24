@@ -1,1 +1,1 @@
-%!show_trace changeLoc(apple, L1, bathroom, T).
+%!show_trace lastChangeLoc(apple, L1, bathroom, T).

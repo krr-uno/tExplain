@@ -97,7 +97,7 @@ lastChangeLoc(Oname, L1name, L2name, T) :-
 
 % !show_trace changeLoc(N, M, O, T).
 
-% !show_trace lastChangeLoc(apple, L1, bathroom, T).
+% !show_trace lastChangeLoc(football, L1, bathroom, T).
 
 
 
