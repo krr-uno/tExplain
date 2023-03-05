@@ -125,4 +125,4 @@ os.system(command)
 
 
 # RUN XCLINGO
-xclingo()
+# xclingo()

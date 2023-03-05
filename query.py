@@ -1,6 +1,7 @@
 import re, sys
 
 questions = []
+question_line_num = []
 adjust = 1
 val = int(sys.argv[2])
 regex = ""
@@ -47,9 +48,10 @@ for line in narrative:
             person = match.group(2).lower()
             questions.append((person, lineNum))
         adjust += 1
+        question_line_num.append(int(match.group(1)))
 
 adjust = 1
-for q in questions:
+for (q,n) in zip(questions,question_line_num):
     filename = "query" + str(adjust) + ".lp"
     filename = queriesDir + '/' + filename
     f = open(filename, "w")
@@ -65,5 +67,6 @@ for q in questions:
         f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))
     elif val == 8: # lists
         f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (q[0], q[1]))
+    f.write('query(%s).' % (n))
     adjust += 1
     f.close()
