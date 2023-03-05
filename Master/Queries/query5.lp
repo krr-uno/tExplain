@@ -1,2 +1,2 @@
-%!show_trace xclingo_locationT2(football,L,14).
-query(19).
+%!show_trace changeLoc(milk, L1, kitchen, T).
+query(47).

@@ -1,2 +1,2 @@
-%!show_trace xclingo_locationT2(apple,L,8).
-query(11).
+%!show_trace changeLoc(apple, L1, garden, T).
+query(31).

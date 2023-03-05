@@ -14,7 +14,7 @@ queriesDir = sys.argv[3]
 if val == 2: # two supporting facts
     regex = r"(\d+)\s.* the (.*)\?"
 elif val == 3: # three supporting facts
-    regex = r"(\d+)? .* the (\w+) .* the (\w+)\?"
+    regex = r"(\d+) .* the (\w+) .* the (\w+)\?"
 elif val == 6: # yes no 
     regex = r"(\d+) Is (.*) in the (.*)\?"
 elif val == 7: # counting
