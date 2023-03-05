@@ -1,4 +1,4 @@
-xclingo_location(A,B,C) :- location(A,B,C).
+locationB(A,B,C) :- location(A,B,C).
 
 notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref',T), Lref!=Lref'.
 notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_aB(Lref,Lname), location(Oref,Lref',T), Lref!=Lref', not is_a(Lref',Lname).
@@ -18,28 +18,49 @@ must_possesses(D_G,O_G,TS_G) :-
     timeStep(TS_G),
     actions(X_G).
 
-% possesses(X0_G,X1_G,VAR_0) :-
-%     possesses(X0_G,X1_G,I_G),
+must_possesses(X0_G,X1_G,VAR_0) :-
+    must_possesses(X0_G,X1_G,I_G),
+    not -possesses(X0_G,X1_G,VAR_0),
+    dom_possesses(X0_G,X1_G,VAR_0),
+    VAR_0=I_G-1,
+    entity(X0_G),
+    entity(X1_G),
+    timeStep(I_G),
+    timeStep(VAR_0),
+    not takes(X0_G,X1_G,VAR_0).
+    
+takes(D_G,O_G,VAR_0) :-
+    event_recipient(X_G,D_G),
+    event_object(X_G,O_G),
+    occurs(X_G,VAR_0),
+    timeStep(VAR_0),
+    take_instance(X_G),
+    entity(O_G),universe(X_G),
+    entity(D_G),event(X_G).
+
+take_instance(X_G) :- instance(X_G, obtain).
+    
+possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
+
+#show.
+#show must_possesses(C,A,B) : must_possesses(A',B',C), is_a(A',A), is_a(B',B).
+% #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
+% #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
+#show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
+
+% possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
+
+% must_possesses(X0_G,X1_G,VAR_0) :-
+%     must_possesses(X0_G,X1_G,I_G),
 %     not -possesses(X0_G,X1_G,VAR_0),
-%     dom_possesses(X0_G,X1_G,VAR_0),
 %     VAR_0=I_G-1,
 %     entity(X0_G),
 %     entity(X1_G),
 %     timeStep(I_G),
 %     timeStep(VAR_0).
 
-possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
-
-must_possesses(X0_G,X1_G,VAR_0) :-
-    must_possesses(X0_G,X1_G,I_G),
-    not -possesses(X0_G,X1_G,VAR_0),
-    VAR_0=I_G-1,
-    entity(X0_G),
-    entity(X1_G),
-    timeStep(I_G),
-    timeStep(VAR_0).
-
 % !trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
+% !trace {"possesses(D_G,O_G,TS_G)"} : possesses(D_G,O_G,TS_G).
 
 
 %!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
@@ -47,22 +68,41 @@ must_possesses(X0_G,X1_G,VAR_0) :-
 
 top_concept(move).
 top_concept(obtain).
-top_concept(relinquish).
+% top_concept(relinquish).
 top_concept(dropp).
-link(fire_10_10,dropp).
+link(lose,dropp).
 link_r(X,X'):-link(X,X').
 link_r(X,X'):-link_r(X,X1),link(X1,X').
 event_top_concept(E,C):-link_r(E,C),top_concept(C).
 
-changeLoc(Oname, L1, L2name, T) :- 
-    is_a(Oref,Oname), is_a(L2ref,L2name), 
-    xclingo_location(Oref, L1, T-1), 
-    xclingo_location(Oref, L2ref, T), 
-    L1 != L2ref.
+changeLoc(Oname, L1name, L2name, T) :- 
+    is_a(Oref,Oname),
+    is_a(L1ref, L1name),
+    is_a(L2ref, L2name), 
+    changeLocAux(Oref, L1ref, L2ref, T).
+
+changeLocAux(Oref, L1ref, L2ref, T) :- 
+    locationB(Oref, L1ref, T-1), 
+    locationB(Oref, L2ref, T), 
+    L1ref != L2ref.
+
+lastChangeLocAux(Oref, L1ref, L2ref, T) :-
+    changeLocAux(Oref, L1ref, L2ref, T), T = #max{X: changeLocAux(Oref, _, L2ref, X)}.
+
+lastChangeLoc(Oname, L1name, L2name, T) :- 
+    is_a(Oref,Oname),
+    is_a(L1ref, L1name),
+    is_a(L2ref, L2name), 
+    lastChangeLocAux(Oref, L1ref, L2ref, T).
 
 % !show_trace changeLoc(N, M, O, T).
 
-xclingo_locationT2(Oname,L,T) :- 
+% !show_trace lastChangeLoc(football, L1, bathroom, T).
+
+
+
+
+locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
 % !show_trace locationT2(A,B,C).
@@ -76,11 +116,11 @@ xclingo_locationT2(Oname,L,T) :-
 %!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_donor(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
 
 
-%!trace {"% is located at % in sentence %", O, S', B} xclingo_locationT2(O, S, B) : is_a(S, S').
+%!trace {"% is located at % in sentence %", O, S', B} locationT2(O, S, B) : is_a(S, S').
 %!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
 %!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
 
-%!trace {"Location of % before % : % in sentence %", O, L2, L1',T} changeLoc(O, L1, L2, T) :  is_a(L1, L1').
+%!trace {"Location of % before % : % in sentence %", O, L2, L1,T} lastChangeLoc(O, L1, L2, T).
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
