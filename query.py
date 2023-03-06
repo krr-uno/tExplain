@@ -1,7 +1,7 @@
 import re, sys
 
 questions = []
-question_line_num = []
+query_line_num = []
 adjust = 1
 val = int(sys.argv[2])
 regex = ""
@@ -48,10 +48,10 @@ for line in narrative:
             person = match.group(2).lower()
             questions.append((person, lineNum))
         adjust += 1
-        question_line_num.append(int(match.group(1)))
+        query_line_num.append(int(match.group(1)))
 
 adjust = 1
-for (q,n) in zip(questions,question_line_num):
+for (q,n) in zip(questions,query_line_num):
     filename = "query" + str(adjust) + ".lp"
     filename = queriesDir + '/' + filename
     f = open(filename, "w")
