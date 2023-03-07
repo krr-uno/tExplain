@@ -1,11 +1,1 @@
 Answer 1
-  *
-  |__apple is located at bedroom in sentence 8
-  |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra obtained the apple in sentence 1
-
-  *
-  |__apple is located at bedroom in sentence 8
-  |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra relinquished the apple in sentence 4
-

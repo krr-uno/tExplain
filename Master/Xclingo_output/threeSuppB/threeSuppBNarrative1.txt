@@ -1,1 +1,17 @@
 Answer 1
+  *
+  |__sandra moved to office in sentence 16
+  |__sandra moved to hallway in sentence 17
+  |__Since sandra obtained the apple in sentence 12
+  |__Since sandra dropped the apple in sentence 18
+
+  *
+  |__sandra moved to office in sentence 16
+  |__sandra moved to hallway in sentence 17
+  |__Since sandra dropped the apple in sentence 18
+
+  *
+  |__sandra moved to office in sentence 16
+  |__sandra moved to hallway in sentence 17
+  |__Since sandra obtained the apple in sentence 12
+

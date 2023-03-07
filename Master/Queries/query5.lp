@@ -1,2 +1,2 @@
-%!show_trace changeLoc(milk, L1, kitchen, T).
-query(47).
+%!show_trace changeLoc(milk, L1, hallway, T).
+query(63).

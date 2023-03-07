@@ -1,2 +1,2 @@
-%!show_trace changeLoc(football, L1, bathroom, T).
-query(28).
+%!show_trace changeLoc(milk, L1, bathroom, T).
+query(44).

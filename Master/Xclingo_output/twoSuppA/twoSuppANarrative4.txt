@@ -1,6 +1,1 @@
 Answer 1
-  *
-  |__football is located at kitchen in sentence 12
-  |  |__sandra moved to kitchen in sentence 12
-  |  |__Since sandra obtained the football in sentence 11
-

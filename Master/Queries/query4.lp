@@ -1,2 +1,2 @@
-%!show_trace changeLoc(apple, L1, garden, T).
-query(34).
+%!show_trace changeLoc(milk, L1, hallway, T).
+query(60).
