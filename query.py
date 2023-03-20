@@ -50,15 +50,18 @@ for line in narrative:
         adjust += 1
         query_line_num.append(int(match.group(1)))
 
+# for q in query_line_num:
+#     print(q)
+
 adjust = 1
-for (q,n) in zip(questions,query_line_num):
+for q in questions:
     filename = "query" + str(adjust) + ".lp"
     filename = queriesDir + '/' + filename
     f = open(filename, "w")
     if val == 2: # two supporting facts
         f.write('%%!show_trace xclingo_locationT2(%s,L,%d).\n' % (q[1], q[0]))
     elif val == 3: # three supporting facts
-        f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
+        f.write('%%!show_trace lastChangeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
     elif val == 6: # yes no 
         f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
         f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
@@ -67,6 +70,8 @@ for (q,n) in zip(questions,query_line_num):
         f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))
     elif val == 8: # lists
         f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (q[0], q[1]))
-    f.write('query(%s).' % (n))
+    for i in range(0,adjust):
+        f.write('query(%s).\n' % (query_line_num[i]))
+        print(adjust)
     adjust += 1
     f.close()

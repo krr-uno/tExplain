@@ -113,7 +113,7 @@ locationT2(Oname,L,T) :-
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 
-trace_aux1(X1, T2, X0', A, B', T2+T3) :- 
+trace_actions_vn_destination(X1, T2, X0', A, B', T2+T3) :- 
     happened(X1,T2),
     is_a(X1, X1'),
     event_agent(X1, X0),
@@ -123,10 +123,46 @@ trace_aux1(X1, T2, X0', A, B', T2+T3) :-
     is_a(B, B'),
     query(XXX), % this is for some xclingo bug
     T3 = #count{X: query(X), X < T2}.
-%!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_aux1(X1, X2, X0', A, B', X3).
-%!trace {"% %d to % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_location(X1,B), is_a(B, B').
-%!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_recipient(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
-%!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_donor(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
+
+trace_actions_vn_location(X1, T2, X0', A, B', T2+T3) :-
+    happened(X1,T2),
+    is_a(X1, X1'), 
+    event_agent(X1, X0), 
+    is_a(X0, X0'), 
+    event_top_concept(X1', A), 
+    actions_vn_location(X1,B), 
+    is_a(B, B'),
+    query(XXX),
+    T3 = #count{X: query(X), X < T2}.
+
+trace_event_recipient(X1, T2, X0', A, B', T2+T3) :-
+    happened(X1,T2),
+    is_a(X1, X1'),
+    event_recipient(X1, X0), 
+    event_object(X1, B), 
+    is_a(X0, X0'), 
+    event_top_concept(X1', A), 
+    is_a(B, B'),
+    query(XXX),
+    T3 = #count{X: query(X), X < T2}.
+
+trace_event_donor(X1, T2, X0', A, B', T2+T3+T4) :-
+    happened(X1,T2),
+    is_a(X1, X1'), 
+    event_donor(X1, X0), 
+    event_object(X1, B), 
+    is_a(X0, X0'), 
+    event_top_concept(X1', A), 
+    is_a(B, B'),
+    query(XXX),
+    T3 = #count{X: query(X), X < T2},
+    T4 = #count{X: query(X), X = T2 + T3}.
+
+
+%!trace {"% %d to % in sentence % (changed)", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
+%!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_location(X1, X2, X0', A, B', X3).
+%!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_recipient(X1, X2, X0', A, B', X3).
+%!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).
 
 
 %!trace {"% is located at % in sentence %", O, S', B} locationT2(O, S, B) : is_a(S, S').

@@ -1,2 +1,4 @@
-%!show_trace changeLoc(milk, L1, hallway, T).
+%!show_trace lastChangeLoc(milk, L1, hallway, T).
+query(19).
+query(44).
 query(57).
