@@ -1,2 +1,2 @@
-%!show_trace lastChangeLoc(apple, L1, hallway, T).
-query(19).
+%!show_trace xclingo_locationT2(ball,L,3).
+query(4).

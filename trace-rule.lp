@@ -109,7 +109,7 @@ lastChangeLoc(Oname, L1name, L2name, T) :-
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
-% !show_trace locationT2(A,B,C).
+%!show_trace locationT2(ball,S,3).
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 
@@ -146,17 +146,18 @@ trace_event_recipient(X1, T2, X0', A, B', T2+T3) :-
     query(XXX),
     T3 = #count{X: query(X), X < T2}.
 
-trace_event_donor(X1, T2, X0', A, B', T2+T3+T4) :-
+nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
+happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
+T2 >= Q'-N'}, nquery(Q,N).
+trace_event_donor(X1, T2, X0', A, B', T3) :-
     happened(X1,T2),
-    is_a(X1, X1'), 
-    event_donor(X1, X0), 
-    event_object(X1, B), 
-    is_a(X0, X0'), 
-    event_top_concept(X1', A), 
-    is_a(B, B'),
-    query(XXX),
-    T3 = #count{X: query(X), X < T2},
-    T4 = #count{X: query(X), X = T2 + T3}.
+    happened_mapping(T2,T3),
+    is_a(X1, X1'),
+    event_donor(X1, X0),
+    event_object(X1, B),
+    is_a(X0, X0'),
+    event_top_concept(X1', A),
+    is_a(B, B').
 
 
 %!trace {"% %d to % in sentence % (changed)", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
