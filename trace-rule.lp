@@ -47,8 +47,8 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 % % #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
 % % #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
 % #show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
-#show lastChangeLoc/4.
-
+#show nquery/2.
+#show happened_mapping/2.
 % possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
 % must_possesses(X0_G,X1_G,VAR_0) :-
@@ -114,7 +114,7 @@ nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
 happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
     T2 >= Q'-N'}, nquery(Q,N).
 
-trace_actions_vn_destination(X1, T2, X0', A, B', T2+T3) :- 
+trace_actions_vn_destination(X1, T2, X0', A, B', T3) :- 
     happened(X1,T2),
     happened_mapping(T2,T3),
     is_a(X1, X1'),
@@ -155,7 +155,7 @@ trace_event_donor(X1, T2, X0', A, B', T3) :-
     is_a(B, B').
 
 
-%!trace {"% % %d to % in sentence %", X2, X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
+%!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
 %!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_location(X1, X2, X0', A, B', X3).
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_recipient(X1, X2, X0', A, B', X3).
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).

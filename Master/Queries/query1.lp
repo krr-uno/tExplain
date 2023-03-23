@@ -1,2 +1,2 @@
-%!show_trace locationT2(ball,L,3).
-query(4).
+%!show_trace lastChangeLoc(apple, L1, hallway, T).
+query(19).

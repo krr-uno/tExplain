@@ -1,4 +1,4 @@
-%!show_trace locationT2(apple,L,8).
-query(5).
-query(8).
-query(11).
+%!show_trace lastChangeLoc(milk, L1, hallway, T).
+query(19).
+query(44).
+query(57).

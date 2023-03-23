@@ -1,19 +1,19 @@
 Answer 1
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra obtained the apple in sentence 12
 
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra dropped the apple in sentence 18
 
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra obtained the apple in sentence 12
   |  |__since sandra dropped the apple in sentence 18
@@ -21,21 +21,21 @@ Answer 1
 Answer 1
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 72
-  |  |__sandra moved to bathroom in sentence 78
+  |  |__sandra moved to kitchen in sentence 37
+  |  |__sandra moved to bathroom in sentence 40
   |  |__since sandra obtained the milk in sentence 32
   |  |__since sandra dropped the milk in sentence 42
 
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 72
-  |  |__sandra moved to bathroom in sentence 78
+  |  |__sandra moved to kitchen in sentence 37
+  |  |__sandra moved to bathroom in sentence 40
   |  |__since sandra obtained the milk in sentence 32
 
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 72
-  |  |__sandra moved to bathroom in sentence 78
+  |  |__sandra moved to kitchen in sentence 37
+  |  |__sandra moved to bathroom in sentence 40
   |  |__since sandra dropped the milk in sentence 42
 
 Answer 1

@@ -1,5 +1,5 @@
-%!show_trace locationT2(football,L,12).
-query(5).
-query(8).
-query(11).
-query(16).
+%!show_trace lastChangeLoc(milk, L1, hallway, T).
+query(19).
+query(44).
+query(57).
+query(60).

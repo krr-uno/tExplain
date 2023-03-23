@@ -1,19 +1,19 @@
 Answer 1
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra obtained the apple in sentence 12
 
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra dropped the apple in sentence 18
 
   *
   |__Location of apple before hallway : office in sentence 17
-  |  |__sandra moved to office in sentence 31
+  |  |__sandra moved to office in sentence 16
   |  |__sandra moved to hallway in sentence 17
   |  |__since sandra obtained the apple in sentence 12
   |  |__since sandra dropped the apple in sentence 18
