@@ -1,20 +1,20 @@
 Answer 1
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 37 (changed)
-  |  |__sandra moved to bathroom in sentence 40 (changed)
-  |  |__Since sandra obtained the milk in sentence 32
-  |  |__Since sandra dropped the milk in sentence 42
+  |  |__sandra moved to kitchen in sentence 72
+  |  |__sandra moved to bathroom in sentence 78
+  |  |__since sandra obtained the milk in sentence 32
+  |  |__since sandra dropped the milk in sentence 42
 
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 37 (changed)
-  |  |__sandra moved to bathroom in sentence 40 (changed)
-  |  |__Since sandra obtained the milk in sentence 32
+  |  |__sandra moved to kitchen in sentence 72
+  |  |__sandra moved to bathroom in sentence 78
+  |  |__since sandra obtained the milk in sentence 32
 
   *
   |__Location of milk before bathroom : kitchen in sentence 40
-  |  |__sandra moved to kitchen in sentence 37 (changed)
-  |  |__sandra moved to bathroom in sentence 40 (changed)
-  |  |__Since sandra dropped the milk in sentence 42
+  |  |__sandra moved to kitchen in sentence 72
+  |  |__sandra moved to bathroom in sentence 78
+  |  |__since sandra dropped the milk in sentence 42
 

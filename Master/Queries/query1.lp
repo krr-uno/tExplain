@@ -1,2 +1,2 @@
-%!show_trace xclingo_locationT2(ball,L,3).
+%!show_trace locationT2(ball,L,3).
 query(4).

@@ -102,53 +102,48 @@ lastChangeLoc(Oname, L1name, L2name, T) :-
 % !show_trace changeLoc(N, M, O, T).
 
 % !show_trace lastChangeLoc(football, L1, bathroom, T).
-
-
-
-
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
-%!show_trace locationT2(ball,S,3).
+% !show_trace locationT2(ball,S,3).
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 
+nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
+
+happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
+    T2 >= Q'-N'}, nquery(Q,N).
+
 trace_actions_vn_destination(X1, T2, X0', A, B', T2+T3) :- 
     happened(X1,T2),
+    happened_mapping(T2,T3),
     is_a(X1, X1'),
     event_agent(X1, X0),
     is_a(X0, X0'),
     event_top_concept(X1', A),
     actions_vn_destination(X1,B),
-    is_a(B, B'),
-    query(XXX), % this is for some xclingo bug
-    T3 = #count{X: query(X), X < T2}.
+    is_a(B, B').
 
-trace_actions_vn_location(X1, T2, X0', A, B', T2+T3) :-
+trace_actions_vn_location(X1, T2, X0', A, B', T3) :-
     happened(X1,T2),
+    happened_mapping(T2,T3),
     is_a(X1, X1'), 
     event_agent(X1, X0), 
     is_a(X0, X0'), 
     event_top_concept(X1', A), 
     actions_vn_location(X1,B), 
-    is_a(B, B'),
-    query(XXX),
-    T3 = #count{X: query(X), X < T2}.
+    is_a(B, B').
 
-trace_event_recipient(X1, T2, X0', A, B', T2+T3) :-
+trace_event_recipient(X1, T2, X0', A, B', T3) :-
     happened(X1,T2),
+    happened_mapping(T2,T3),
     is_a(X1, X1'),
     event_recipient(X1, X0), 
     event_object(X1, B), 
     is_a(X0, X0'), 
     event_top_concept(X1', A), 
-    is_a(B, B'),
-    query(XXX),
-    T3 = #count{X: query(X), X < T2}.
+    is_a(B, B').
 
-nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
-happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
-T2 >= Q'-N'}, nquery(Q,N).
 trace_event_donor(X1, T2, X0', A, B', T3) :-
     happened(X1,T2),
     happened_mapping(T2,T3),
@@ -160,7 +155,7 @@ trace_event_donor(X1, T2, X0', A, B', T3) :-
     is_a(B, B').
 
 
-%!trace {"% %d to % in sentence % (changed)", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
+%!trace {"% % %d to % in sentence %", X2, X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
 %!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_location(X1, X2, X0', A, B', X3).
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_recipient(X1, X2, X0', A, B', X3).
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).

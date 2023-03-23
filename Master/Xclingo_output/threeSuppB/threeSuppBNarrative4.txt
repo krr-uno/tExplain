@@ -3,18 +3,18 @@ Answer 1
   |__Location of milk before hallway : bathroom in sentence 56
   |  |__daniel moved to bathroom in sentence 55
   |  |__daniel moved to hallway in sentence 56
-  |  |__Since daniel obtained the milk in sentence 54
+  |  |__since daniel obtained the milk in sentence 54
 
   *
   |__Location of milk before hallway : bathroom in sentence 56
   |  |__daniel moved to bathroom in sentence 55
   |  |__daniel moved to hallway in sentence 56
-  |  |__Since daniel obtained the milk in sentence 54
-  |  |__Since daniel dropped the milk in sentence 57
+  |  |__since daniel obtained the milk in sentence 54
+  |  |__since daniel dropped the milk in sentence 58
 
   *
   |__Location of milk before hallway : bathroom in sentence 56
   |  |__daniel moved to bathroom in sentence 55
   |  |__daniel moved to hallway in sentence 56
-  |  |__Since daniel dropped the milk in sentence 57
+  |  |__since daniel dropped the milk in sentence 58
 
