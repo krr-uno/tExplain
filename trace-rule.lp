@@ -1,12 +1,41 @@
 locationB(A,B,C) :- location(A,B,C).
 
-notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref',T), Lref!=Lref'.
-notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_aB(Lref,Lname), location(Oref,Lref',T), Lref!=Lref', not is_a(Lref',Lname).
-inLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref,T).
+notInLocation(Oname,Lname,T) :- 
+    % happened_mapping(T,T'),
+    is_a(Oref,Oname), 
+    is_a(Lref,Lname), 
+    location(Oref,Lref',T), 
+    Lref!=Lref'.
 
-numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeStep(T), living_entity(Eref), is_a(Eref,Ename).
+notInLocation(Oname,Lname,T) :-
+    % happened_mapping(T,T'),
+    is_a(Oref,Oname), 
+    is_aB(Lref,Lname), 
+    location(Oref,Lref',T), 
+    Lref!=Lref', 
+    not is_a(Lref',Lname).
+    
+inLocation(Oname,Lname,T) :- 
+    % happened_mapping(T,T'),
+    is_a(Oref,Oname), 
+    is_a(Lref,Lname), 
+    location(Oref,Lref,T).
 
-entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
+%!trace {"YES % is located at % in sentence %", O, S, T} inLocation(O, S, B, T).
+%!trace {"NO  % is not located at % in sentence %", O, S, T} notInLocation(O, S, B, T).
+
+numberObjectsbyEntityatTime(N,Ename,T):- 
+    N=#count{O: held_by(O,Eref,T)}, 
+    timeStep(T), 
+    living_entity(Eref), 
+    is_a(Eref,Ename).
+
+entityCarrying(Lname,Ename,T) :- 
+    held_by(Lref,Eref,T), 
+    living_entity(Eref), 
+    timeStep(T), 
+    is_a(Eref,Ename), 
+    is_a(Lref,Lname).
 
 must_possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
@@ -49,6 +78,12 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 % #show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
 #show nquery/2.
 #show happened_mapping/2.
+% #show notInLocation/4.
+% #show notInLocation/3.
+#show inLocation/4.
+#show inLocation/3.
+% #show location/3.
+% #show happened/2.
 % possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
 % must_possesses(X0_G,X1_G,VAR_0) :-
@@ -161,9 +196,7 @@ trace_event_donor(X1, T2, X0', A, B', T3) :-
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).
 
 
-%!trace {"% is located at % in sentence %", O, S', B} locationT2(O, S, B) : is_a(S, S').
-%!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
-%!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
+%!trace {"% is located at % in sentence %", O, S', T} locationT2(O, S, B, T) : is_a(S, S').
 
 %!trace {"Location of % before % : % in sentence %", O, L2, L1,T} lastChangeLoc(O, L1, L2, T).
 

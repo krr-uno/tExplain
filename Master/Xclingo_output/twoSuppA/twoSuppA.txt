@@ -1,34 +1,34 @@
 Answer 1
   *
   |__apple is located at bedroom in sentence 4
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 4
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra obtained the apple in sentence 1
 
 Answer 1
   *
   |__apple is located at bedroom in sentence 6
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 6
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra obtained the apple in sentence 1
 
 Answer 1
   *
   |__apple is located at bedroom in sentence 8
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 8
-  |  |__2 sandra moved to bedroom in sentence 5
+  |  |__sandra moved to bedroom in sentence 3
   |  |__since sandra obtained the apple in sentence 1
 
 Answer 1
