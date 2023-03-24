@@ -1,1 +1,1 @@
-%!show_trace xclingo_locationT2(apple,L,16).
+%!show_trace changeLoc(football, L1, bathroom, T).

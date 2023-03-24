@@ -1,1 +1,1 @@
-%!show_trace xclingo_locationT2(milk,L,28).
+%!show_trace changeLoc(milk, L1, kitchen, T).

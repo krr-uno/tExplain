@@ -54,7 +54,7 @@ for q in questions:
     filename = queriesDir + '/' + filename
     f = open(filename, "w")
     if val == 2: # two supporting facts
-        f.write('%%!show_trace xclingo_locationT2(%s,L,%d).\n' % (q[1], q[0]))
+        f.write('%%!show_trace locationT2(%s,L,%d).\n' % (q[1], q[0]))
     elif val == 3: # three supporting facts
         f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
     elif val == 6: # yes no 

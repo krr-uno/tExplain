@@ -2,7 +2,7 @@ Answer 1
   *
   |__apple is located at bedroom in sentence 4
   |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra relinquished the apple in sentence 4
+  |  |__Since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 4
@@ -13,23 +13,23 @@ Answer 1
   *
   |__apple is located at bedroom in sentence 6
   |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra obtained the apple in sentence 1
+  |  |__Since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 6
   |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra relinquished the apple in sentence 4
+  |  |__Since sandra obtained the apple in sentence 1
 
 Answer 1
   *
   |__apple is located at bedroom in sentence 8
   |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra obtained the apple in sentence 1
+  |  |__Since sandra dropped the apple in sentence 4
 
   *
   |__apple is located at bedroom in sentence 8
   |  |__sandra moved to bedroom in sentence 3
-  |  |__Since sandra relinquished the apple in sentence 4
+  |  |__Since sandra obtained the apple in sentence 1
 
 Answer 1
   *
@@ -41,10 +41,10 @@ Answer 1
   *
   |__football is located at kitchen in sentence 14
   |  |__sandra moved to kitchen in sentence 12
-  |  |__Since sandra relinquished the football in sentence 13
+  |  |__Since sandra obtained the football in sentence 11
 
   *
   |__football is located at kitchen in sentence 14
   |  |__sandra moved to kitchen in sentence 12
-  |  |__Since sandra obtained the football in sentence 11
+  |  |__Since sandra dropped the football in sentence 13
 
