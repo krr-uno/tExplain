@@ -1,1 +1,1 @@
-%!show_trace locationT2(apple,L,8).
+%!show_trace locationT2(milk,L,28).

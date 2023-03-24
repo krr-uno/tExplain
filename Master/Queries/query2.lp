@@ -1,1 +1,1 @@
-%!show_trace locationT2(apple,L,6).
+%!show_trace numberObjectsbyEntityatTime(N, mary, 26).

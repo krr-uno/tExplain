@@ -1,1 +1,1 @@
-%!show_trace locationT2(football,L,14).
+%!show_trace entityCarrying(N, sandra, 42).

@@ -1,9 +1,6 @@
 import re, sys
 
-questions = []
 adjust = 1
-# val = int(sys.argv[2])
-regex = ""
 
 with open(sys.argv[1]) as f:
     narrative = f.readlines()
@@ -28,43 +25,60 @@ for line in narrative:
             if val == 2: # two supporting facts
                 qNum = int(match.group(1)) - adjust
                 object = match.group(2)
-                questions.append((qNum, object))
+                questions = ((qNum, object))
             elif val == 3: # three supporting facts
                 object = match.group(2)
                 loc2 = match.group(3)
-                questions.append((object, loc2))
+                questions = ((object, loc2))
             elif val == 6: # yes no 
                 lineNum = int(match.group(1)) - adjust
                 person = match.group(2).lower()
                 location = match.group(3).lower()
-                questions.append((person, location, lineNum))
+                questions = ((person, location, lineNum))
             elif val == 7: # counting
                 lineNum = int(match.group(1)) - adjust
                 person = match.group(2).lower()
-                questions.append((person, lineNum))
+                questions = ((person, lineNum))
             elif val == 8: # lists
                 lineNum = int(match.group(1)) - adjust
                 person = match.group(2).lower()
-                questions.append((person, lineNum))
+                questions = ((person, lineNum))
+            filename = "query" + str(adjust) + ".lp"
+            filename = queriesDir + '/' + filename
+            f = open(filename, "w")
+            if val == 2: # two supporting facts
+                f.write('%%!show_trace locationT2(%s,L,%d).\n' % (questions[1], questions[0]))
+            elif val == 3: # three supporting facts
+                f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (questions[0], questions[1]))
+            elif val == 6: # yes no 
+                f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (questions[0], questions[1], questions[2]))
+                f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (questions[0], questions[1], questions[2]))
+                f.write('is_aB(%s, %s).\n' % (questions[1], questions[1]))
+            elif val == 7: # counting
+                f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (questions[0], questions[1]))
+            elif val == 8: # lists
+                f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
+            f.close()
+            
             adjust += 1
             break
 
-adjust = 1
-for q in questions:
-    filename = "query" + str(adjust) + ".lp"
-    filename = queriesDir + '/' + filename
-    f = open(filename, "w")
-    if val == 2: # two supporting facts
-        f.write('%%!show_trace locationT2(%s,L,%d).\n' % (q[1], q[0]))
-    elif val == 3: # three supporting facts
-        f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
-    elif val == 6: # yes no 
-        f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
-        f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
-        f.write('is_aB(%s, %s).\n' % (q[1], q[1]))
-    elif val == 7: # counting
-        f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))
-    elif val == 8: # lists
-        f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (q[0], q[1]))
-    adjust += 1
-    f.close()
+# adjust = 1
+# for q in questions:
+#     filename = "query" + str(adjust) + ".lp"
+#     filename = queriesDir + '/' + filename
+#     f = open(filename, "w")
+#     if val == 2: # two supporting facts
+#         f.write('%%!show_trace locationT2(%s,L,%d).\n' % (q[1], q[0]))
+#     elif val == 3: # three supporting facts
+#         f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
+#     elif val == 6: # yes no 
+#         f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
+#         f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (q[0], q[1], q[2]))
+#         f.write('is_aB(%s, %s).\n' % (q[1], q[1]))
+#     elif val == 7: # counting
+#         f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))
+#     elif val == 8: # lists
+#         f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (q[0], q[1]))
+#     adjust += 1
+#     f.close()
