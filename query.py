@@ -63,8 +63,8 @@ for q in questions:
     elif val == 3: # three supporting facts
         f.write('%%!show_trace lastChangeLoc(%s, L1, %s, T).\n' % (q[0], q[1]))
     elif val == 6: # yes no 
-        f.write('%%!show_trace notInLocation(%s, %s, T, %d).\n' % (q[0], q[1], q[2]))
-        f.write('%%!show_trace inLocation(%s, %s, T, %d).\n' % (q[0], q[1], q[2]))
+        f.write('%%!show_trace notInLocation(%s, %s, %d, T).\n' % (q[0], q[1], q[2]))
+        f.write('%%!show_trace inLocation(%s, %s, %d, T).\n' % (q[0], q[1], q[2]))
         f.write('is_aB(%s, %s).\n' % (q[1], q[1]))
     elif val == 7: # counting
         f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (q[0], q[1]))

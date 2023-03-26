@@ -1,15 +1,20 @@
 Answer 1
   *
-  |__NO  daniel is not located at bedroom in sentence 8
+  |__YES daniel is located at bedroom in sentence 11
   |  |__mary moved to bedroom in sentence 4
-  |  |__daniel moved to hallway in sentence 5
+  |  |__daniel moved to bedroom in sentence 11
 
   *
-  |__NO  daniel is not located at bedroom in sentence 8
-  |  |__daniel moved to hallway in sentence 5
+  |__YES daniel is located at bedroom in sentence 11
+  |  |__daniel moved to bedroom in sentence 11
+
+  *
+  |__YES daniel is located at bedroom in sentence 11
+  |  |__daniel moved to bedroom in sentence 11
+  |  |__since daniel obtained the football in sentence 10
+
+  *
+  |__YES daniel is located at bedroom in sentence 11
   |  |__sandra moved to kitchen in sentence 7
-
-  *
-  |__NO  daniel is not located at bedroom in sentence 8
-  |  |__daniel moved to hallway in sentence 5
+  |  |__daniel moved to bedroom in sentence 11
 

@@ -1,25 +1,31 @@
 locationB(A,B,C) :- location(A,B,C).
 
-notInLocation(Oname,Lname,T) :- 
-    % happened_mapping(T,T'),
-    is_a(Oref,Oname), 
-    is_a(Lref,Lname), 
-    location(Oref,Lref',T), 
-    Lref!=Lref'.
+location_mapping(Oref,T2,T2+N+1) :- location(Oref,X2,T2), Q = #max{Q' : nquery(Q',N'),
+    T2 > Q'-N'}, nquery(Q,N).
 
-notInLocation(Oname,Lname,T) :-
-    % happened_mapping(T,T'),
+time_point(T) :- location(Oref,X2,T).
+time_point(T) :- happened(E,T).
+
+mapping(T2,T2+N+1) :- time_point(T2), Q = #max{Q' : nquery(Q',N'),
+    T2 > Q'-N'}, nquery(Q,N).
+
+notInLocation(Oname,Lname,T,T2-1) :- 
     is_a(Oref,Oname), 
     is_aB(Lref,Lname), 
     location(Oref,Lref',T), 
     Lref!=Lref', 
-    not is_a(Lref',Lname).
-    
-inLocation(Oname,Lname,T) :- 
-    % happened_mapping(T,T'),
+    not is_a(Lref',Lname),
+    mapping(T,T2).
+    % location_mapping(Oref,T,T2).
+    % most_recent(T2).
+
+inLocation(Oname,Lname,T,T2-1) :- 
     is_a(Oref,Oname), 
     is_a(Lref,Lname), 
-    location(Oref,Lref,T).
+    location(Oref,Lref,T),
+    mapping(T,T2).
+    % location_mapping(Oref,T,T2).
+    % most_recent(T2).
 
 %!trace {"YES % is located at % in sentence %", O, S, T} inLocation(O, S, B, T).
 %!trace {"NO  % is not located at % in sentence %", O, S, T} notInLocation(O, S, B, T).
@@ -77,7 +83,7 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 % % #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
 % #show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
 #show nquery/2.
-#show happened_mapping/2.
+#show location_mapping/2.
 % #show notInLocation/4.
 % #show notInLocation/3.
 #show inLocation/4.

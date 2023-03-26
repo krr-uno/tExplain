@@ -1,5 +1,5 @@
-%!show_trace notInLocation(daniel, bedroom, T, 10).
-%!show_trace inLocation(daniel, bedroom, T, 10).
+%!show_trace notInLocation(daniel, bedroom, 10, T).
+%!show_trace inLocation(daniel, bedroom, 10, T).
 is_aB(bedroom, bedroom).
 query(3).
 query(6).

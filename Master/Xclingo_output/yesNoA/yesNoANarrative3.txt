@@ -1,1 +1,15 @@
 Answer 1
+  *
+  |__NO  daniel is not located at office in sentence 8
+  |  |__mary moved to bedroom in sentence 4
+  |  |__daniel moved to bathroom in sentence 8
+
+  *
+  |__NO  daniel is not located at office in sentence 8
+  |  |__daniel moved to bathroom in sentence 8
+
+  *
+  |__NO  daniel is not located at office in sentence 8
+  |  |__sandra moved to kitchen in sentence 7
+  |  |__daniel moved to bathroom in sentence 8
+
