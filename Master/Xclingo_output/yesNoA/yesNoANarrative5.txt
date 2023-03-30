@@ -1,25 +1,5 @@
 Answer 1
   *
   |__YES daniel is located at bedroom in sentence 14
-  |  |__mary moved to bedroom in sentence 4
   |  |__daniel moved to bedroom in sentence 11
-
-  *
-  |__YES daniel is located at bedroom in sentence 14
-  |  |__daniel moved to bedroom in sentence 11
-
-  *
-  |__YES daniel is located at bedroom in sentence 14
-  |  |__daniel moved to bedroom in sentence 11
-  |  |__since daniel obtained the football in sentence 10
-
-  *
-  |__YES daniel is located at bedroom in sentence 14
-  |  |__john moved to office in sentence 13
-  |  |__daniel moved to bedroom in sentence 11
-
-  *
-  |__YES daniel is located at bedroom in sentence 14
-  |  |__daniel moved to bedroom in sentence 11
-  |  |__sandra moved to garden in sentence 14
 

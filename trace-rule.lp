@@ -208,7 +208,7 @@ trace_event_donor(X1, T2, X0', A, B', T3) :-
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
-
+%!mute time_point(T).
 %!mute dom_location(X,Y,Z).
 %!mute dom_actions_vn_extent(X,Y).
 %!mute dom_actions_vn_coagent(X,Y).
