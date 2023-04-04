@@ -1,8 +1,6 @@
-%!show_trace notInLocation(daniel, bedroom, 10, T).
-%!show_trace inLocation(daniel, bedroom, 10, T).
-is_aB(bedroom, bedroom).
-query(3).
-query(6).
-query(9).
-query(12).
-query(15).
+%!show_trace locationT2(football,L,14).
+query(5).
+query(8).
+query(11).
+query(16).
+query(19).
