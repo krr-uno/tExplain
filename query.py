@@ -1,6 +1,7 @@
 import re, sys
 
 adjust = 1
+query_line_num = []
 
 with open(sys.argv[1]) as f:
     narrative = f.readlines()
@@ -45,21 +46,24 @@ for line in narrative:
                 questions = ((person, lineNum))
             filename = "query" + str(adjust) + ".lp"
             filename = queriesDir + '/' + filename
+            query_line_num.append(int(match.group(1)))
             f = open(filename, "w")
             if val == 2: # two supporting facts
                 f.write('%%!show_trace locationT2(%s,L,%d).\n' % (questions[1], questions[0]))
             elif val == 3: # three supporting facts
-                f.write('%%!show_trace changeLoc(%s, L1, %s, T).\n' % (questions[0], questions[1]))
+                f.write('%%!show_trace lastChangeLoc(%s, L1, %s, T).\n' % (questions[0], questions[1]))
             elif val == 6: # yes no 
-                f.write('%%!show_trace notInLocation(%s, %s, %d).\n' % (questions[0], questions[1], questions[2]))
-                f.write('%%!show_trace inLocation(%s, %s, %d).\n' % (questions[0], questions[1], questions[2]))
+                f.write('%%!show_trace notInLocation(%s, %s, B, %d).\n' % (questions[0], questions[1], questions[2]))
+                f.write('%%!show_trace inLocation(%s, %s, B, %d).\n' % (questions[0], questions[1], questions[2]))
                 f.write('is_aB(%s, %s).\n' % (questions[1], questions[1]))
             elif val == 7: # counting
                 f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (questions[0], questions[1]))
             elif val == 8: # lists
                 f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
+            for i in range(0,adjust):
+                f.write('query(%s).\n' % (query_line_num[i]))
             f.close()
-            
+
             adjust += 1
             break
 

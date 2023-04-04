@@ -17,7 +17,7 @@ nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
 #show mapping/2.
 #show nquery/2.
 
-notInLocation(Oname,Lname,T,T2-1) :- 
+notInLocation(Oname,Lname,T2,T) :- 
     is_a(Oref,Oname), 
     is_aB(Lref,Lname), 
     location(Oref,Lref',T), 
@@ -27,7 +27,7 @@ notInLocation(Oname,Lname,T,T2-1) :-
     % location_mapping(Oref,T,T2).
     % most_recent(T2).
 
-inLocation(Oname,Lname,T,T2-1) :- 
+inLocation(Oname,Lname,T2,T) :- 
     is_a(Oref,Oname), 
     is_a(Lref,Lname), 
     location(Oref,Lref,T),
@@ -144,10 +144,10 @@ lastChangeLoc(Oname, L1name, L2name,T2) :-
     is_a(L1ref, L1name),
     is_a(L2ref, L2name), 
     lastChangeLocAux(Oref, L1ref, L2ref, T2),
-    % mapping(T,T2).
-    query(X1), % this is for some xclingo bug
-    T3 = #count{X: query(X), X < T2},
-    T = T2+T3-1.
+    mapping(T,T2).
+    % query(X1), % this is for some xclingo bug
+    % T3 = #count{X: query(X), X < T2},
+    % T = T2+T3-1.
 
 % !show_trace changeLoc(N, M, O, T).
 
@@ -207,9 +207,9 @@ trace_event_donor(X1, T2, X0', A, B', T3) :-
 %!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).
 
 
-%!trace {"% is located at % in sentence %", O, S',B} locationT2(O, S, B) : is_a(S, S').
+%!trace {"% is located at %", O, S'} locationT2(O, S, B) : is_a(S, S').
 
-%!trace {"Location of % before % : % in sentence %", O, L2, L1,T} lastChangeLoc(O, L1, L2, T).
+%!trace {"Location of % before % : %", O, L2, L1} lastChangeLoc(O, L1, L2, T).
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
