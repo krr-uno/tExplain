@@ -1,12 +1,55 @@
 locationB(A,B,C) :- location(A,B,C).
 
-notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref',T), Lref!=Lref'.
-notInLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_aB(Lref,Lname), location(Oref,Lref',T), Lref!=Lref', not is_a(Lref',Lname).
-inLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,Lref,T).
+location_mapping(Oref,T2,T2+N+1) :- location(Oref,X2,T2), Q = #max{Q' : nquery(Q',N'),
+    T2 > Q'-N'}, nquery(Q,N).
 
-numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeStep(T), living_entity(Eref), is_a(Eref,Ename).
+time_point(T) :- location(Oref,X2,T).
+time_point(T) :- happened(E,T).
 
-entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
+mapping(T2,T2+N+1) :- time_point(T2), Q = #max{Q' : nquery(Q',N'),
+    T2 >= Q'-N'}, nquery(Q,N).
+
+happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
+    T2 >= Q'-N'}, nquery(Q,N).
+
+nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
+
+#show mapping/2.
+#show nquery/2.
+
+notInLocation(Oname,Lname,T,T2-1) :- 
+    is_a(Oref,Oname), 
+    is_aB(Lref,Lname), 
+    location(Oref,Lref',T), 
+    Lref!=Lref', 
+    not is_a(Lref',Lname),
+    mapping(T,T2).
+    % location_mapping(Oref,T,T2).
+    % most_recent(T2).
+
+inLocation(Oname,Lname,T,T2-1) :- 
+    is_a(Oref,Oname), 
+    is_a(Lref,Lname), 
+    location(Oref,Lref,T),
+    mapping(T,T2).
+    % location_mapping(Oref,T,T2).
+    % most_recent(T2).
+
+%!trace {"YES % is located at % in sentence %", O, S, T} inLocation(O, S, B, T).
+%!trace {"NO  % is not located at % in sentence %", O, S, T} notInLocation(O, S, B, T).
+
+numberObjectsbyEntityatTime(N,Ename,T):- 
+    N=#count{O: held_by(O,Eref,T)}, 
+    timeStep(T), 
+    living_entity(Eref), 
+    is_a(Eref,Ename).
+
+entityCarrying(Lname,Ename,T) :- 
+    held_by(Lref,Eref,T), 
+    living_entity(Eref), 
+    timeStep(T), 
+    is_a(Eref,Ename), 
+    is_a(Lref,Lname).
 
 must_possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
@@ -42,12 +85,19 @@ take_instance(X_G) :- instance(X_G, obtain).
     
 possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
-#show.
-#show must_possesses(C,A,B) : must_possesses(A',B',C), is_a(A',A), is_a(B',B).
-% #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
-% #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
-#show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
-
+% #show.
+% #show must_possesses(C,A,B) : must_possesses(A',B',C), is_a(A',A), is_a(B',B).
+% % #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
+% % #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
+% #show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
+% #show nquery/2.
+% #show location_mapping/2.
+% #show notInLocation/4.
+% #show notInLocation/3.
+% #show inLocation/4.
+% #show inLocation/3.
+% #show location/3.
+% #show happened/2.
 % possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
 % must_possesses(X0_G,X1_G,VAR_0) :-
@@ -89,42 +139,81 @@ changeLocAux(Oref, L1ref, L2ref, T) :-
 lastChangeLocAux(Oref, L1ref, L2ref, T) :-
     changeLocAux(Oref, L1ref, L2ref, T), T = #max{X: changeLocAux(Oref, _, L2ref, X)}.
 
-lastChangeLoc(Oname, L1name, L2name, T) :- 
+lastChangeLoc(Oname, L1name, L2name,T2) :- 
     is_a(Oref,Oname),
     is_a(L1ref, L1name),
     is_a(L2ref, L2name), 
-    lastChangeLocAux(Oref, L1ref, L2ref, T).
+    lastChangeLocAux(Oref, L1ref, L2ref, T2),
+    % mapping(T,T2).
+    query(X1), % this is for some xclingo bug
+    T3 = #count{X: query(X), X < T2},
+    T = T2+T3-1.
 
 % !show_trace changeLoc(N, M, O, T).
 
 % !show_trace lastChangeLoc(football, L1, bathroom, T).
-
-
-
-
 locationT2(Oname,L,T) :- 
     is_a(Oref,Oname), location(Oref,L,T).
 
-% !show_trace locationT2(A,B,C).
+% !show_trace locationT2(ball,S,3).
 
 %!trace {"% is holding % items at time point %", E, N, T} numberObjectsbyEntityatTime(N,E,T).
 
 
-%!trace {"% %d to % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_destination(X1,B), is_a(B, B').
-%!trace {"% %d to % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_agent(X1, X0), is_a(X0, X0'), event_top_concept(X1', A), actions_vn_location(X1,B), is_a(B, B').
-%!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_recipient(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
-%!trace {"Since % %ed the % in sentence %", X0', A, B', X2 + 1} happened(X1,X2) : is_a(X1, X1'), event_donor(X1, X0), event_object(X1, B), is_a(X0, X0'), event_top_concept(X1', A), is_a(B, B').
+trace_actions_vn_destination(X1, T2, X0', A, B', T3) :- 
+    happened(X1,T2),
+    mapping(T2,T3),
+    is_a(X1, X1'),
+    event_agent(X1, X0),
+    is_a(X0, X0'),
+    event_top_concept(X1', A),
+    actions_vn_destination(X1,B),
+    is_a(B, B').
+
+trace_actions_vn_location(X1, T2, X0', A, B', T3) :-
+    happened(X1,T2),
+    mapping(T2,T3),
+    is_a(X1, X1'), 
+    event_agent(X1, X0), 
+    is_a(X0, X0'), 
+    event_top_concept(X1', A), 
+    actions_vn_location(X1,B), 
+    is_a(B, B').
+
+trace_event_recipient(X1, T2, X0', A, B', T3) :-
+    happened(X1,T2),
+    mapping(T2,T3),
+    is_a(X1, X1'),
+    event_recipient(X1, X0), 
+    event_object(X1, B), 
+    is_a(X0, X0'), 
+    event_top_concept(X1', A), 
+    is_a(B, B').
+
+trace_event_donor(X1, T2, X0', A, B', T3) :-
+    happened(X1,T2),
+    mapping(T2,T3),
+    is_a(X1, X1'),
+    event_donor(X1, X0),
+    event_object(X1, B),
+    is_a(X0, X0'),
+    event_top_concept(X1', A),
+    is_a(B, B').
 
 
-%!trace {"% is located at % in sentence %", O, S', B} locationT2(O, S, B) : is_a(S, S').
-%!trace {"YES % is located at % in sentence %", O, S, B} inLocation(O, S, B).
-%!trace {"NO  % is not located at % in sentence %", O, S, B} notInLocation(O, S, B).
+%!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_destination(X1, X2, X0', A, B', X3).
+%!trace {"% %d to % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_actions_vn_location(X1, X2, X0', A, B', X3).
+%!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_recipient(X1, X2, X0', A, B', X3).
+%!trace {"since % %ed the % in sentence %", X0', A, B', X3} happened(X1,X2) : trace_event_donor(X1, X2, X0', A, B', X3).
+
+
+%!trace {"% is located at % in sentence %", O, S',B} locationT2(O, S, B) : is_a(S, S').
 
 %!trace {"Location of % before % : % in sentence %", O, L2, L1,T} lastChangeLoc(O, L1, L2, T).
 
 %  !trace {"% is carrying % items in sentence %", E, N, T}
 
-
+%!mute time_point(T).
 %!mute dom_location(X,Y,Z).
 %!mute dom_actions_vn_extent(X,Y).
 %!mute dom_actions_vn_coagent(X,Y).
@@ -211,3 +300,8 @@ locationT2(Oname,L,T) :-
 %!mute dom_held_by(X,Y,Z).
 %!mute dom_is_in_front_of(X,Y,Z).
 %!mute dom_possesses(X,Y,Z).
+
+%!mute mapping(A,B).
+%!mute happened_mapping(A,B).
+
+query(0).

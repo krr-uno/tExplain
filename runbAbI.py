@@ -8,7 +8,6 @@ from sys import argv
 #6 – Yes/No Questions 
 #7 – Counting 
 #8 – Lists/Sets 
-valid = [2,3,6,7,8]
 
 def process(name):
     i = 0
@@ -24,7 +23,7 @@ def process(name):
         if '?' in line:
             current += 1
             if seen < current:
-                print(re.sub('^\d+ ', '', line), file = questionFile, end="")
+                print(re.sub('\?.*', '?', line), file = questionFile, end="")
                 seen += 1
                 if i == len(narrative):
                     break
@@ -37,7 +36,7 @@ def process(name):
                 i = 0
                 current = 0
         else:
-            print(re.sub('^\d+ ', '', line), file = narrativeFile, end="")
+            print(re.sub('\?.*', '?', line), file = narrativeFile, end="")
 
 def getLogicPrograms(filename):
     directory = "%s/%s" % (logicDir, filename)
@@ -81,16 +80,6 @@ def xclingo():
         command = "cat %s >> %s" % (outputfile, masteroutputfile)
         os.system(command)
 
-num = argv[2]
-if str.isdigit(num):
-    if int(num) not in valid:
-        print("ERROR: second arguments must be either: %s." % valid)
-        quit()
-else:
-    print("ERROR: second argument must be integer")
-    quit()
-
-num = int(argv[2])
 filename = os.path.basename(argv[1]).replace('.txt', '')
 
 with open(argv[1]) as f:
@@ -120,7 +109,7 @@ os.chdir(baseDir)
 # getLogicPrograms(filename)
 
 # GENERATE QUERIES
-command = "python query.py %s %s %s" % (argv[1], num, queriesDir)
+command = "python query.py %s %s" % (argv[1], queriesDir)
 os.system(command)
 
 
