@@ -1,1 +1,1 @@
-%!show_trace entityCarrying(N, sandra, 42).
+%!show_trace changeLoc(milk, L1, kitchen, T).
