@@ -36,7 +36,7 @@ def process(name):
                 i = 0
                 current = 0
         else:
-            print(re.sub('\?.*', '?', line), file = narrativeFile, end="")
+            print(re.sub('^\d+ ', '', line), file = narrativeFile, end="")
 
 def getLogicPrograms(filename):
     directory = "%s/%s" % (logicDir, filename)
@@ -114,4 +114,4 @@ os.system(command)
 
 
 # RUN XCLINGO
-xclingo()
+# xclingo()

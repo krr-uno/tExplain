@@ -1,2 +1,4 @@
-%!show_trace locationT2(apple,L,4).
-query(5).
+%!show_trace notInLocation(sandra, hallway, B, 2).
+%!show_trace inLocation(sandra, hallway, B, 2).
+is_aB(hallway, hallway).
+query(3).

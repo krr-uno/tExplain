@@ -1,24 +1,24 @@
-1 Mary moved to the bathroom.
-2 Sandra journeyed to the bedroom.
-3 Mary got the football there.
-4 John went back to the bedroom.
-5 Mary journeyed to the office.
-6 John journeyed to the office.
-7 John took the milk.
-8 Daniel went back to the kitchen.
-9 John moved to the bedroom.
-10 Daniel went back to the hallway.
-11 Daniel took the apple.
-12 John left the milk there.
-13 John travelled to the kitchen.
-14 Sandra went back to the bathroom.
-15 Daniel journeyed to the bathroom.
-16 John journeyed to the bathroom.
-17 Mary journeyed to the bathroom.
-18 Sandra went back to the garden.
-19 Sandra went to the office.
-20 Daniel went to the garden.
-21 Sandra went back to the hallway.
-22 Daniel journeyed to the office.
-23 Mary dropped the football.
-24 John moved to the bedroom.
+Mary moved to the bathroom.
+Sandra journeyed to the bedroom.
+Mary got the football there.
+John went back to the bedroom.
+Mary journeyed to the office.
+John journeyed to the office.
+John took the milk.
+Daniel went back to the kitchen.
+John moved to the bedroom.
+Daniel went back to the hallway.
+Daniel took the apple.
+John left the milk there.
+John travelled to the kitchen.
+Sandra went back to the bathroom.
+Daniel journeyed to the bathroom.
+John journeyed to the bathroom.
+Mary journeyed to the bathroom.
+Sandra went back to the garden.
+Sandra went to the office.
+Daniel went to the garden.
+Sandra went back to the hallway.
+Daniel journeyed to the office.
+Mary dropped the football.
+John moved to the bedroom.

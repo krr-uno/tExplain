@@ -1,4 +1,6 @@
-%!show_trace locationT2(apple,L,8).
-query(5).
-query(8).
-query(11).
+%!show_trace notInLocation(daniel, office, B, 6).
+%!show_trace inLocation(daniel, office, B, 6).
+is_aB(office, office).
+query(3).
+query(6).
+query(9).

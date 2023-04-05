@@ -1,8 +1,8 @@
-1 Sandra grabbed the apple there.
-2 Daniel moved to the kitchen.
-3 Sandra journeyed to the bedroom.
-4 Sandra put down the apple.
-6 John journeyed to the kitchen.
-7 Sandra went back to the garden.
-9 Mary journeyed to the garden.
-10 Sandra went to the hallway.
+Sandra grabbed the apple there.
+Daniel moved to the kitchen.
+Sandra journeyed to the bedroom.
+Sandra put down the apple.
+John journeyed to the kitchen.
+Sandra went back to the garden.
+Mary journeyed to the garden.
+Sandra went to the hallway.
