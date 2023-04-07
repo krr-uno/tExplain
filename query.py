@@ -60,6 +60,7 @@ for line in narrative:
                 f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (questions[0], questions[1]))
             elif val == 8: # lists
                 f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
+                f.write('%%!show_trace entityNotCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
             for i in range(0,adjust):
                 f.write('query(%s).\n' % (query_line_num[i]))
             f.close()

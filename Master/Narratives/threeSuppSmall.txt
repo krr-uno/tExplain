@@ -1,0 +1,4 @@
+1 Mary journeyed to the office.
+2 Mary picked up the football.
+3 Mary journeyed to the bathroom.
+4 Where was the football before the bathroom? 	office	1 2 3

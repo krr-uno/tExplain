@@ -14,9 +14,6 @@ happened_mapping(T2,T2+N+1) :- happened(X1,T2), Q = #max{Q' : nquery(Q',N'),
 
 nquery(Q,N-1) :- query(Q), N = #count{X: query(X), X <= Q}.
 
-#show mapping/2.
-#show nquery/2.
-
 notInLocation(Oname,Lname,T2,T) :- 
     is_a(Oref,Oname), 
     is_aB(Lref,Lname), 
@@ -50,6 +47,19 @@ entityCarrying(Lname,Ename,T) :-
     timeStep(T), 
     is_a(Eref,Ename), 
     is_a(Lref,Lname).
+
+entityNotCarrying(Lname,Ename,T) :- 
+    -held_by(Lref,Eref,T), 
+    living_entity(Eref), 
+    timeStep(T), 
+    is_a(Eref,Ename), 
+    is_a(Lref,Lname).
+
+#show entityNotCarrying/3.
+#show entityCarrying/3.
+%!trace {"% is holding nothing", E} entityNotCarrying(L,E,T).
+%!trace {"% is holding %", E,L} entityCarrying(L,E,T).
+% !show_trace entityCarrying(L,E,T).
 
 must_possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
@@ -85,19 +95,6 @@ take_instance(X_G) :- instance(X_G, obtain).
     
 possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
-% #show.
-% #show must_possesses(C,A,B) : must_possesses(A',B',C), is_a(A',A), is_a(B',B).
-% % #show possesses(C,A,B)  : possesses(A',B',C), is_a(A',A), is_a(B',B).
-% % #show -possesses(C,A,B) : -possesses(A',B',C), is_a(A',A), is_a(B',B).
-% #show takes(C,A,B) : takes(A',B',C), is_a(A',A), is_a(B',B).
-% #show nquery/2.
-% #show location_mapping/2.
-% #show notInLocation/4.
-% #show notInLocation/3.
-% #show inLocation/4.
-% #show inLocation/3.
-% #show location/3.
-% #show happened/2.
 % possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 
 % must_possesses(X0_G,X1_G,VAR_0) :-
@@ -112,9 +109,6 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 % !trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
 % !trace {"possesses(D_G,O_G,TS_G)"} : possesses(D_G,O_G,TS_G).
 
-
-%!trace {"% is holding %", E,L,T} entityCarrying(L,E,T).
-% !show_trace entityCarrying(L,E,T).
 
 top_concept(move).
 top_concept(obtain).
