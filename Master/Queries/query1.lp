@@ -1,4 +1,2 @@
-%!show_trace notInLocation(sandra, hallway, B, 2).
-%!show_trace inLocation(sandra, hallway, B, 2).
-is_aB(hallway, hallway).
-query(3).
+%!show_trace entityCarrying(N, mary, 4).
+query(5).

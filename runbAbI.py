@@ -23,7 +23,7 @@ def process(name):
         if '?' in line:
             current += 1
             if seen < current:
-                print(re.sub('\?.*', '?', line), file = questionFile, end="")
+                print(re.sub('^\d+ ', '', line), file = questionFile, end="")
                 seen += 1
                 if i == len(narrative):
                     break
@@ -114,4 +114,4 @@ os.system(command)
 
 
 # RUN XCLINGO
-# xclingo()
+xclingo()

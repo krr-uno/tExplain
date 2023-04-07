@@ -113,7 +113,7 @@ possesses(D_G,O_G,TS_G) :- must_possesses(D_G,O_G,TS_G).
 % !trace {"possesses(D_G,O_G,TS_G)"} : possesses(D_G,O_G,TS_G).
 
 
-%!trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
+%!trace {"% is holding %", E,L,T} entityCarrying(L,E,T).
 % !show_trace entityCarrying(L,E,T).
 
 top_concept(move).

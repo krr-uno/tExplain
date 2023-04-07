@@ -1,7 +1,5 @@
-%!show_trace notInLocation(daniel, bedroom, B, 8).
-%!show_trace inLocation(daniel, bedroom, B, 8).
-is_aB(bedroom, bedroom).
-query(3).
-query(6).
-query(9).
-query(12).
+%!show_trace entityCarrying(N, sandra, 10).
+query(5).
+query(8).
+query(11).
+query(14).

@@ -1,5 +1,5 @@
 Answer 1
   *
-  |__sandra is holding [milk] at time point 10
-  |  |__Since sandra obtained the milk in sentence 9
+  |__sandra is holding milk
+  |  |__since sandra obtained the milk in sentence 12
 
