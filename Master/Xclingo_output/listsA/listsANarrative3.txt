@@ -1,5 +1,29 @@
-Answer 1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/listsA/listsANarrative3.tp.lp /bin/text2ALM/Master/Queries/query3.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__mary is holding [football] at time point 8
-  |  |__Since mary obtained the football in sentence 7
+  |__"mary is holding [football] at time point 8"
+  |  |__"Since mary obtained the football in sentence 3"
+  |  |__"Since mary obtained the football in sentence 7"
+  |  |__"Since mary dropped the football in sentence 6"
 
+##Explanation: 1.2
+  *
+  |__"mary is holding [football] at time point 8"
+  |  |__"Since mary obtained the football in sentence 3"
+  |  |__"Since mary obtained the football in sentence 7"
+
+##Explanation: 1.3
+  *
+  |__"mary is holding [football] at time point 8"
+  |  |__"Since mary obtained the football in sentence 7"
+  |  |__"Since mary dropped the football in sentence 6"
+
+##Explanation: 1.4
+  *
+  |__"mary is holding [football] at time point 8"
+  |  |__"Since mary obtained the football in sentence 7"
+
+##Total Explanations:	4
+Models:	1

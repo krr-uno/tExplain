@@ -1,5 +1,10 @@
-Answer 1
+xclingo version 2.0b16
+Reading from /bin/text2ALM/Master/LogicPrograms/listsA/listsANarrative4.tp.lp /bin/text2ALM/Master/Queries/query4.lp trace-rule.lp
+Answer: 1
+##Explanation: 1.1
   *
-  |__sandra is holding [milk] at time point 10
-  |  |__Since sandra obtained the milk in sentence 9
+  |__"sandra is holding [milk] at time point 10"
+  |  |__"Since sandra obtained the milk in sentence 9"
 
+##Total Explanations:	1
+Models:	1

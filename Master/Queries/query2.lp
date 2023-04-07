@@ -1,1 +1,1 @@
-%!show_trace {numberObjectsbyEntityatTime(N, mary, 6)}.
+%!show_trace {entityCarrying(N, mary, 6)}.

@@ -6,7 +6,12 @@ inLocation(Oname,Lname,T) :- is_a(Oref,Oname), is_a(Lref,Lname), location(Oref,L
 
 numberObjectsbyEntityatTime(N,Ename,T):- N=#count{O: held_by(O,Eref,T)}, timeStep(T), living_entity(Eref), is_a(Eref,Ename).
 
-entityCarrying(Lname,Ename,T) :- held_by(Lref,Eref,T), living_entity(Eref), timeStep(T), is_a(Eref,Ename), is_a(Lref,Lname).
+entityCarrying(Lname,Ename,T) :- 
+    held_by(Lref,Eref,T), 
+    living_entity(Eref), 
+    timeStep(T), 
+    is_a(Eref,Ename), 
+    is_a(Lref,Lname).
 
 must_possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
@@ -43,7 +48,7 @@ must_possesses(X0_G,X1_G,VAR_0) :-
 % !trace {"happened(%,%)", A', B} happened(A,B) : is_a(A,A').
 
 
-% !trace {"% is holding [%] at time point %", E,L,T} entityCarrying(L,E,T).
+%!trace {entityCarrying(L,E,T), "% is holding [%] at time point %", E,L,T}.
 % !show_trace entityCarrying(L,E,T).
 
 top_concept(move).
