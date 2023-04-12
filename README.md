@@ -21,10 +21,8 @@ sh run_http_server.sh 8071 '../../models/eng/'
 cd resources/stanford-corenlp-full-2018-10-05/
 java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9001 -timeout 45000
 ```
-
 ## Config file
-Locate the config.ini file in the root directory.
-You are able to configure the **direct** file paths to `LogicProgram_directory`, `Tuples_directory`, and `Queries_directory` if you wish.
+You are able to configure the **direct** file paths of `LogicProgram_directory`, `Tuples_directory`, `Queries_directory`, and `Xclingo_directory` if you wish.
 
 
 ## bAbI Narrative
@@ -38,4 +36,4 @@ Where the first argument `Tuples/countingA.txt` is the text file containing ONE 
 * create queries from the scripts located in the `Queries_directory`
 * create narratives in the `Tuples_directory` location
 * create logic programs in the `LogicProgram_directory` location
-* execute xclingo on each tuple, logic program, and query
+* show xclingo output for each narrative, logic program, and query in the `Xclingo_directory` location
