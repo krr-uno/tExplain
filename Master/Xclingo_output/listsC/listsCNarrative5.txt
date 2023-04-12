@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__sandra is holding football
+  |  |__since sandra obtained the football in sentence 10
+
+  *
+  |__sandra is holding apple
+  |  |__since sandra obtained the apple in sentence 13
+

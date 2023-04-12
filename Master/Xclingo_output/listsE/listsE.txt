@@ -1,0 +1,45 @@
+Answer 1
+  *
+  |__daniel is holding football
+  |  |__since daniel obtained the football in sentence 17
+
+  *
+  |__daniel is holding milk
+  |  |__since daniel obtained the milk in sentence 18
+
+Answer 1
+  *
+  |__daniel is holding football
+  |  |__since daniel obtained the football in sentence 17
+
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the milk in sentence 21
+
+Answer 1
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the milk in sentence 21
+
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the football in sentence 24
+
+Answer 1
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the football in sentence 24
+
+  *
+  |__daniel is holding milk
+  |  |__since daniel obtained the milk in sentence 26
+
+Answer 1
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the football in sentence 24
+
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the milk in sentence 29
+

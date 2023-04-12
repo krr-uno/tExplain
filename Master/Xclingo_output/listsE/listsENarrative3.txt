@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the milk in sentence 21
+
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the football in sentence 24
+

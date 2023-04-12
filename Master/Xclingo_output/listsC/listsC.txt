@@ -1,0 +1,41 @@
+Answer 1
+  *
+  |__mary is holding milk
+  |  |__since mary obtained the milk in sentence 1
+
+Answer 1
+  *
+  |__mary is holding milk
+  |  |__since mary obtained the milk in sentence 1
+
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 4
+
+Answer 1
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the milk in sentence 7
+
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the apple in sentence 8
+
+Answer 1
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the milk in sentence 7
+
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the apple in sentence 8
+
+Answer 1
+  *
+  |__sandra is holding football
+  |  |__since sandra obtained the football in sentence 10
+
+  *
+  |__sandra is holding apple
+  |  |__since sandra obtained the apple in sentence 13
+

@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__daniel is holding football
+  |  |__since daniel obtained the football in sentence 17
+
+  *
+  |__daniel is holding milk
+  |  |__since daniel obtained the milk in sentence 18
+

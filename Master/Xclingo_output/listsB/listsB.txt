@@ -1,0 +1,37 @@
+Answer 1
+  *
+  |__daniel is holding football
+  |  |__since daniel obtained the football in sentence 4
+
+Answer 1
+  *
+  |__mary is holding football
+  |  |__since mary obtained the football in sentence 7
+
+Answer 1
+  *
+  |__mary is holding football
+  |  |__since mary obtained the football in sentence 7
+
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 10
+
+Answer 1
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 10
+
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the football in sentence 13
+
+Answer 1
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 10
+
+  *
+  |__mary is holding football
+  |  |__since mary obtained the football in sentence 15
+

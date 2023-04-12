@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__sandra is holding milk
+  |  |__since sandra obtained the milk in sentence 9
+
+  *
+  |__sandra is holding nothing
+  |  |__since sandra dropped the football in sentence 13
+

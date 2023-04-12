@@ -1,0 +1,5 @@
+Answer 1
+  *
+  |__daniel is holding football
+  |  |__since daniel obtained the football in sentence 4
+

@@ -1,0 +1,5 @@
+Answer 1
+  *
+  |__sandra is holding nothing
+  |  |__since sandra dropped the milk in sentence 6
+

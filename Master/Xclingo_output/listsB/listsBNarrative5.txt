@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 10
+
+  *
+  |__mary is holding football
+  |  |__since mary obtained the football in sentence 15
+

@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the milk in sentence 7
+
+  *
+  |__mary is holding nothing
+  |  |__since mary dropped the apple in sentence 8
+

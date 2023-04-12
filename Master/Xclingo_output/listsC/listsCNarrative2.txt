@@ -1,0 +1,9 @@
+Answer 1
+  *
+  |__mary is holding milk
+  |  |__since mary obtained the milk in sentence 1
+
+  *
+  |__mary is holding apple
+  |  |__since mary obtained the apple in sentence 4
+
