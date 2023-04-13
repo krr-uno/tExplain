@@ -53,7 +53,12 @@ entityNotCarrying(Lname,Ename,T) :-
     living_entity(Eref), 
     timeStep(T), 
     is_a(Eref,Ename), 
-    is_a(Lref,Lname).
+    is_a(Lref,Lname),
+    not entityCarryingSomething(Ename,T).
+
+entityCarryingSomething(Ename,T) :- entityCarrying(Lname,Ename,T).
+
+
 
 #show entityNotCarrying/3.
 #show entityCarrying/3.
