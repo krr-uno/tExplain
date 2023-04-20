@@ -1,2 +1,2 @@
-%!show_trace entityCarrying(N, mary, 4).
-query(5).
+%!show_trace locationT2(ball,L,3).
+query(4).
