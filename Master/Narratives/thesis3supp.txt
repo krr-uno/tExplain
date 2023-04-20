@@ -1,0 +1,6 @@
+1 Daniel went to the bedroom.
+2 Daniel picked up the apple there.
+3 Daniel journeyed to the office.
+4 Daniel journeyed to the bedroom.
+5 Daniel put down the apple there.
+6 Where was the apple before the bedroom?

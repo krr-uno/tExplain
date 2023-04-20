@@ -1,4 +1,5 @@
-%!show_trace entityCarrying(N, mary, 4).
-%!show_trace entityNotCarrying(N, mary, 4).
-query(3).
-query(6).
+%!show_trace notInLocation(daniel, bedroom, B, 2).
+%!show_trace inLocation(daniel, bedroom, B, 2).
+is_aB(bedroom, bedroom).
+query(2).
+query(4).

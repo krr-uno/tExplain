@@ -7,7 +7,7 @@ with open(sys.argv[1]) as f:
     narrative = f.readlines()
 
 queriesDir = sys.argv[2]
-
+one_supp_regex = r"(\d) Where is (.*)\?"
 two_supp_regex = r"(\d+) Where is the (.*)\?"
 three_supp_regex = r"(\d+)? Where was the (.*) before the (.*)\?"
 yes_no_regex = r"(\d+) Is (.*) in the (.*)\?"

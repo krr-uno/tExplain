@@ -1,0 +1,4 @@
+1 Daniel went to the bedroom.
+2 Is Daniel in the bedroom?
+3 Daniel went to the office.
+4 Is Daniel in the bedroom?

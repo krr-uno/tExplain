@@ -1,0 +1,20 @@
+Answer 1
+  *
+  |__Location of apple before bedroom : office
+  |  |__daniel moved to office in sentence 3
+  |  |__daniel moved to bedroom in sentence 4
+  |  |__since daniel obtained the apple in sentence 2
+
+  *
+  |__Location of apple before bedroom : office
+  |  |__daniel moved to office in sentence 3
+  |  |__daniel moved to bedroom in sentence 4
+  |  |__since daniel obtained the apple in sentence 2
+  |  |__since daniel dropped the apple in sentence 5
+
+  *
+  |__Location of apple before bedroom : office
+  |  |__daniel moved to office in sentence 3
+  |  |__daniel moved to bedroom in sentence 4
+  |  |__since daniel dropped the apple in sentence 5
+

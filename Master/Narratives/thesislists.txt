@@ -1,0 +1,5 @@
+1 Daniel went to the bedroom.
+2 Daniel picked up the apple there.
+3 Daniel went to the office.
+4 Daniel put down the apple there.
+5 What is Daniel carrying?

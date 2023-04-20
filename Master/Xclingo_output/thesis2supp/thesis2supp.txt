@@ -1,11 +1,6 @@
 Answer 1
   *
-  |__apple is located at bedroom in sentence 6
+  |__apple is located at bedroom
   |  |__daniel moved to bedroom in sentence 1
-  |  |__Since daniel obtained the apple in sentence 2
-
-  *
-  |__apple is located at bedroom in sentence 6
-  |  |__daniel moved to bedroom in sentence 1
-  |  |__Since daniel dropped the apple in sentence 6
+  |  |__since daniel dropped the apple in sentence 2
 

@@ -1,0 +1,5 @@
+Answer 1
+  *
+  |__daniel is holding nothing
+  |  |__since daniel dropped the apple in sentence 4
+

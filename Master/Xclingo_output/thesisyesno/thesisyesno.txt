@@ -1,0 +1,10 @@
+Answer 1
+  *
+  |__YES daniel is located at bedroom in sentence 1
+  |  |__daniel moved to bedroom in sentence 1
+
+Answer 1
+  *
+  |__NO  daniel is not located at bedroom in sentence 2
+  |  |__daniel moved to office in sentence 3
+

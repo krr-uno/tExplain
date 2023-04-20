@@ -1,7 +1,6 @@
-%!show_trace entityCarrying(N, sandra, 10).
-%!show_trace entityNotCarrying(N, sandra, 10).
-query(3).
-query(6).
-query(9).
-query(12).
-query(15).
+%!show_trace locationT2(football,L,14).
+query(5).
+query(8).
+query(11).
+query(16).
+query(19).

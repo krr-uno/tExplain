@@ -6,13 +6,17 @@ Answer 1
 Answer 1
   *
   |__mary is holding nothing
-  |  |__mary is holding 0 items at time point 6
   |  |__since mary dropped the football in sentence 7
 
 Answer 1
   *
   |__mary is holding football
   |  |__since mary obtained the football in sentence 9
+
+Answer 1
+  *
+  |__sandra is holding milk
+  |  |__since sandra obtained the milk in sentence 12
 
 Answer 1
   *

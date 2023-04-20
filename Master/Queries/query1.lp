@@ -1,3 +1,3 @@
-%!show_trace entityCarrying(N, mary, 2).
-%!show_trace entityNotCarrying(N, mary, 2).
-query(3).
+%!show_trace entityCarrying(N, daniel, 4).
+%!show_trace entityNotCarrying(N, daniel, 4).
+query(5).
