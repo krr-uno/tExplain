@@ -7,7 +7,7 @@ with open(sys.argv[1]) as f:
     narrative = f.readlines()
 
 queriesDir = sys.argv[2]
-
+one_supp_regex = r"(\d) Where is (.*)\?"
 two_supp_regex = r"(\d+) Where is the (.*)\?"
 three_supp_regex = r"(\d+)? Where was the (.*) before the (.*)\?"
 yes_no_regex = r"(\d+) Is (.*) in the (.*)\?"
@@ -60,6 +60,7 @@ for line in narrative:
                 f.write('%%!show_trace numberObjectsbyEntityatTime(N, %s, %d).\n' % (questions[0], questions[1]))
             elif val == 8: # lists
                 f.write('%%!show_trace entityCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
+                f.write('%%!show_trace entityNotCarrying(N, %s, %d).\n' % (questions[0], questions[1]))
             for i in range(0,adjust):
                 f.write('query(%s).\n' % (query_line_num[i]))
             f.close()
