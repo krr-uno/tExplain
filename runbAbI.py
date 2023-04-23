@@ -95,7 +95,7 @@ baseDir = os.getcwd()
 
 
 
-# GENERATE TUPLES
+# GENERATE NARRATIVES
 os.chdir(tuplesDir)
 if os.path.exists(filename):
     shutil.rmtree(filename)
@@ -104,9 +104,9 @@ os.chdir(filename)
 specificTupleDir = os.getcwd()
 process(filename)
 
-# GENERATE LOGIC PROGRAMS
+# GENERATE CLINGO LOGIC PROGRAMS
 os.chdir(baseDir)
-getLogicPrograms(filename)
+# getLogicPrograms(filename)
 
 # GENERATE QUERIES
 command = "python query.py %s %s" % (argv[1], queriesDir)
