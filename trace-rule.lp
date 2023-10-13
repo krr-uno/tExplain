@@ -66,7 +66,7 @@ entityCarryingSomething(Ename,T) :- entityCarrying(Lname,Ename,T).
 %!trace {"% is holding %", E,L} entityCarrying(L,E,T).
 % !show_trace entityCarrying(L,E,T).
 
-must_possesses(D_G,O_G,TS_G) :- 
+possesses(D_G,O_G,TS_G) :- 
     event_donor(X_G,D_G),
     event_object(X_G,O_G),
     occurs(X_G,TS_G),
